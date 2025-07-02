@@ -40,7 +40,7 @@ function FunFactCounter({ gap, color, heading, counters, counterDetails }) {
                                         item
                                         xs={12}
                                         sm={6}
-                                        md={4}
+                                        md={3}
                                         key={index}
                                         textAlign="center"
                                     >

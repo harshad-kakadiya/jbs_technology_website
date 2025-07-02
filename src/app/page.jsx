@@ -26,14 +26,16 @@ export default function Home() {
                 color={false}
                 heading="Fun Facts"
                 counters={[
-                    { value: 199 },
-                    { value: 575 },
-                    { value: 69 },
+                    { value: 100 },
+                    { value: 160 },
+                    { value: 30 },
+                    { value: 9300 },
                 ]}
                 counterDetails={[
-                    "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.",
-                    "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.",
-                    "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those.",
+                    "Happy Clients",
+                    "Projects",
+                    "In-house specialists",
+                    "Hours Spent",
                 ]}
             />
             <Testimonial />
