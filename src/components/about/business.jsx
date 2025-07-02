@@ -69,7 +69,7 @@ const Business = () => {
                                           pt:{lg:"40px",sm:"10px",md:"30px",xs:"0px"},
                                           letterSpacing: '5px'
                                 }}>
-                                    WHY CHOOSE BEYOND TECH SOLUTION
+                                    WHY CHOOSE JBS Technology
                                 </Typography>
                             </Box>
                             <Box>

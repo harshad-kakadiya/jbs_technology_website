@@ -73,7 +73,7 @@ const Clients = () => {
                                             mb: "0px",
                                         }}
                                     >
-                                        Clients Trust Beyond Tech Solution.
+                                        Clients Trust JBS Technology.
                                     </Typography>
                                 </Box>
                             </Grid>

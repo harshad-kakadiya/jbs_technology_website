@@ -30,7 +30,7 @@ function Footer2() {
             details: [
                 "s-25/26 Satyam Plaza Raspaan Cross Road Nikol Ahemdabad,Gujarat",
                 "Call us: +91 9016402670",
-                "Email: beyondtech.official@gmail.com",
+                "Email: jbstechnology.official@gmail.com",
                 "Mon–Sat: 8.00am–18.00pm / Holiday: Closed",
             ],
         },
@@ -76,8 +76,8 @@ function Footer2() {
                             src={footerData.logo}
                             alt="Logo"
                             style={{
-                                width: '75%',
-                                height: '150px',
+                                width: '30%',
+                                height: '30%',
                                 objectFit: 'cover'
                             }}
                         />

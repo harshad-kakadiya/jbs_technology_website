@@ -155,9 +155,9 @@ const Customers = () => {
                                                             textAlign: { xs: "start", md: "left" },
                                                         }}
                                                     >
-                                                        Giles and his team at Beyond tech solution Business Consulting
+                                                        Giles and his team at Jbs Technology Business Consulting
                                                         have been absolutely great to work with and they
-                                                        definitely have gone above and beyond tech solution for us by
+                                                        definitely have gone above and Jbs Technology for us by
                                                         streamlining all of our accounts so that we can
                                                         focus.
                                                     </Typography>
