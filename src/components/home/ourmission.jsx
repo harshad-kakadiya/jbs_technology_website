@@ -58,7 +58,7 @@ function Ourmission() {
                                     letterSpacing: "3.2px",
                                 }}
                             >
-                                Beyond Tech Solution since 1996
+                                Jbs Technology since 1996
                             </Typography>
                             <Typography
                                 sx={{

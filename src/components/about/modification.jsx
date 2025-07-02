@@ -153,7 +153,7 @@ const Modification = () => {
                                         width:"90%"
                                     }}
                                 >
-                                    At Beyond tech solution, we are a renowned global consulting firm
+                                    At Jbs Technology, we are a renowned global consulting firm
                                     committed to collaborating with business and societal leaders
                                     in overcoming their most critical challenges and seizing their
                                     greatest opportunities. Our achievements are rooted in

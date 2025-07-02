@@ -153,7 +153,7 @@ const TeamPage = () => {
                         fontWeight: 'bold',
                     }}
                 >
-                    The Family Beyond tech solution
+                    The Family Jbs Technology
                 </Typography>
             </Box>
         </Box>

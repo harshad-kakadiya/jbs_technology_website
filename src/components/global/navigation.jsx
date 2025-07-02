@@ -14,8 +14,8 @@ import ListItemText from '@mui/material/ListItemText';
 import Box from '@mui/material/Box';
 import Link from 'next/link';
 import Image from 'next/image';
-import imgBlack from '../../assets/images/navigation/Png-04.png';
-import imgWhite from '../../assets/images/navigation/Png-03.png';
+import imgBlack from '../../assets/images/navigation/jbslogo.bd0e554edce80df4661f.png';
+import imgWhite from '../../assets/images/navigation/jbslogo.bd0e554edce80df4661f.png';
 import EastIcon from '@mui/icons-material/East';
 import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
 import { usePathname } from 'next/navigation';
@@ -76,7 +76,7 @@ function Navigation() {
                                 <Image
                                     src={(scrolled || path === '/') ? imgBlack : imgWhite}
                                     alt="Logo"
-                                    style={{ width: '230px', height: '90px', objectFit: 'cover' }}
+                                    style={{ width: '230px', height: '50px', objectFit: 'contain' }}
                                 />
                             </Link>
                         </Box>

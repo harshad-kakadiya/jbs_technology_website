@@ -243,7 +243,7 @@ function MediaProject() {
                                                 lineHeight: "25px",
                                             }}
                                         >
-                                            Altar.io added value to the project far beyond the intended scope of work. Their advice
+                                            Altar.io added value to the project far JBS the intended scope of work. Their advice
                                             and guidance about running a new business have been invaluable. The team is clearly
                                             passionate about the work and shares innovative ideas and solutions to drive the project
                                             forward.
