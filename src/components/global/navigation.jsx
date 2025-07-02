@@ -62,7 +62,7 @@ function Navigation() {
                     backgroundColor: (scrolled || path === '/') ? 'white' : 'rgba(128, 128, 128, 0.5)',
                     color: (scrolled || path === '/') ? '#000' : '#fff',
                     borderBottom: '1px solid #ddd',
-                    padding: '0',
+                    padding: '10px 0',
                     boxShadow: (scrolled || path === '/') ? '0 2px 10px rgba(0, 0, 0, 0.1)' : 'none',
                     transition: 'all 0.3s ease',
                 }}
