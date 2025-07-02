@@ -1,13 +1,13 @@
 import React from 'react';
 import {Box, Container, Grid} from "@mui/material";
 import Img1 from "../../assets/images/home/Capabilities/Img1.jpg";
-import Img2 from "../../assets/images/home/Capabilities/Img2.jpg";
+import Img2 from "../../assets/images/home/Capabilities/web-dev.5f67e27742ec775b6919.png";
 import Img3 from "../../assets/images/home/Capabilities/Img3.jpg";
-import Img4 from "../../assets/images/home/Capabilities/Img4.jpg";
-import Img5 from "../../assets/images/home/Capabilities/Img5.jpg";
-import Img6 from "../../assets/images/home/Capabilities/Img6.png";
-import Img7 from "../../assets/images/home/Capabilities/Img7.jpg";
-import Img8 from "../../assets/images/home/Capabilities/Img8.jpg";
+import Img4 from "../../assets/images/home/Capabilities/game.0190d5398dee0a494033.png";
+import Img5 from "../../assets/images/home/Capabilities/mobileAppDevelopment.png";
+import Img6 from "../../assets/images/home/Capabilities/UI-UX.08fda19222eb922b6da9.png";
+import Img7 from "../../assets/images/home/Capabilities/digital.4e1932029eb8550230bf.png";
+import Img8 from "../../assets/images/home/Capabilities/adndroid.bfba33262b094f29bff8.jpg";
 
 function Capabilities() {
     const capability = [
@@ -17,8 +17,8 @@ function Capabilities() {
             img: Img1,
         },
         {
-            title: "Business Process Services",
-            describtion: "Unveil new ways to disrupt your industry",
+            title: "Web Development",
+            describtion: "From sleek brochure sites to robust web applications, we craft digital experiences that captivate, convert, and elevate your business.",
             img: Img2,
         },
         {
@@ -27,28 +27,28 @@ function Capabilities() {
             img: Img3,
         },
         {
-            title: "Digital Enterprise Applications",
-            describtion: "Experience unparalleled innovation, efficiency, and adaptability",
+            title: "Game Development",
+            describtion: "At JBS Technology, we create captivating, high-quality games with a collaborative team of skilled developers, designers, and artists.",
             img: Img4,
         },
         {
-            title: "Engineering Services",
-            describtion: "Enable seamless cyber-physical integration for enhanced visibility and predictability",
+            title: "Mobile App Development",
+            describtion: "Turn your app idea into reality with our expertise. From concept to launch, we develop bespoke applications that deliver measurable outcomes.",
             img: Img5,
         },
         {
-            title: "Experience Services",
-            describtion: "Practice the art of giving your customers truly memorable experiences",
+            title: "UI/UX Designing",
+            describtion: "UI (User Interface) and UX (User Experience) design are fundamental components critical to the success of any digital product.",
             img: Img6,
         },
         {
-            title: "Network Services",
-            describtion: "Leverage new opportunities to enhance network operations",
+            title: "Digital Marketing",
+            describtion: "At JBS Technology, we boost your online presence with tailored digital marketing strategies for optimal engagement and conversions.",
             img: Img7,
         },
         {
-            title: "Testing Services",
-            describtion: "Accelerate the development of end-to-end automated operations for your business",
+            title: "Android Development",
+            describtion: "JBS Technology's Android Development course offers hands-on training to build dynamic mobile apps, guided by expert trainers in a practical setting.",
             img: Img8,
         }
     ];

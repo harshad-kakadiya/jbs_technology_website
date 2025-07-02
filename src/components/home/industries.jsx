@@ -34,41 +34,49 @@ function Industries() {
             title: "Private Equity",
             icon: <PowerOutlinedIcon/>,
             img: img1,
+            route: "/home/private-equity",
         },
         {
             title: "Technology",
             icon: <DevicesOutlinedIcon/>,
             img: img2,
+            route: "/home/technology",
         },
         {
             title: "Healthcare",
             icon: <LocalHospitalOutlinedIcon/>,
             img: img3,
+            route: "/home/healthcare",
         },
         {
             title: "Real Estate",
             icon: <HomeOutlinedIcon/>,
             img: img4,
+            route: "/home/real-estate",
         },
         {
             title: "Finance",
             icon: <AccountBalanceOutlinedIcon/>,
             img: img5,
+            route: "/home/finance",
         },
         {
             title: "Education",
             icon: <SchoolOutlinedIcon/>,
             img: img6,
+            route: "/home/education",
         },
         {
             title: "Retail",
             icon: <ShoppingCartOutlinedIcon/>,
             img: img7,
+            route: "/home/retail",
         },
         {
             title: "Transportation",
             icon: <DirectionsCarOutlinedIcon/>,
             img: img8,
+            route: "/home/transportation",
         },
     ];
 
@@ -181,7 +189,7 @@ function Industries() {
                             alignItems: "center",
                         }}
                     >
-                        <Box onClick={() => router.push('/home/industries')}
+                        <Box onClick={() => router.push(item.route)}
                              sx={{
                                  width: '100%',
                                  transition: '0.5s',
