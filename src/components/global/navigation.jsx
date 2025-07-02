@@ -141,7 +141,7 @@ function Navigation() {
                             sx={{
                                 border: '1px solid #8E8E8EFF',
                                 color: (scrolled || path === '/') ? '#000' : '#fff',
-                                display: { lg: 'flex', xs: 'flex' },
+                                display: { lg: 'none', xs: 'flex' },
                                 ':hover': { backgroundColor: '#000', color: '#fff' },
                             }}
                             onClick={toggleDrawer(true)}
@@ -192,6 +192,7 @@ function Navigation() {
                             <Image
                                 src={(scrolled || path === '/') ? imgBlack : imgWhite}
                                 alt="Logo"
+                                onClick={toggleDrawer(false)}
                                 style={{ width: '230px', height: '90px', objectFit: 'cover' }}
                             />
                         </Link>
@@ -203,6 +204,7 @@ function Navigation() {
                                 <Link href={route} passHref>
                                     <ListItemButton
                                         component="a"
+                                        onClick={toggleDrawer(false)}
                                         sx={{
                                             padding: "10px 0",
                                             textAlign: "start",

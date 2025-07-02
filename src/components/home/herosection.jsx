@@ -34,7 +34,7 @@ function Herosection() {
         <Swiper
             modules={[EffectFade, Autoplay]}
             autoplay={{
-                delay: 2000,
+                delay: 5000,
                 disableOnInteraction: false,
             }}
             loop={true}

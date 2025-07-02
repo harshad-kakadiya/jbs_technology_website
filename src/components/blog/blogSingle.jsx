@@ -354,7 +354,7 @@ const BlogSingle = () => {
 
 
           <Grid item xs={12} lg={4}>
-            <Box sx={{ position: 'sticky', top: 0 }}>
+            <Box sx={{ position: 'sticky', top: '12%' }}>
               <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", padding: 2, }}>
                 <Box sx={{ maxWidth: 400, border: "1px solid #d7d7d7", textAlign: "center", mb: "50px", padding: 3, }}>
                   <Avatar alt="Profile Picture" src={photo.src} sx={{ width: "207px", height: "auto", margin: "0 auto", marginBottom: 2, }} />

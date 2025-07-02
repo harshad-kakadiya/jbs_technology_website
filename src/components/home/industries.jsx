@@ -188,6 +188,7 @@ function Industries() {
                                  overflow: 'hidden',
                                  ':hover img': {filter: 'grayscale(0%) !important'},
                                  ':hover ': {transform: 'scaleX(1.05)'},
+                                 cursor: "pointer",
                              }}>
                             <Box sx={{
                                 position: 'relative',
