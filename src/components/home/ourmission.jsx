@@ -9,20 +9,22 @@ import img1 from '../../assets/images/home/ourmission/overmission.png'
 import Image from "next/image";
 import WestIcon from "@mui/icons-material/West";
 import EastIcon from "@mui/icons-material/East";
+import {useRouter} from "next/navigation";
 
 const slides = [
     {
         title: "Our Mission",
-        description: "To drive business growth for our clients by offering top-quality solutions and delivering superior services through our highly skilled and reliable team. To be the leading trusted technology partner for global."
+        description: "At JBS Technology, our mission is to deliver innovative digital solutions and education services that empower businesses to grow, adapt, and succeed in a fast-changing world."
     },
     {
         title: "Our Vision",
-        description: "To drive business growth for our clients by offering top-quality solutions and delivering superior services through our highly skilled and reliable team. To be the leading trusted technology partner for global."
+        description: "To be a trusted global leader in technology and education solutions, driving innovation and shaping a smarter, more connected future for businesses and communities."
     }
 ];
 
 function Ourmission() {
     const swiperRef = useRef(null);
+    const router = useRouter();
 
     const handleNext1 = () => {
         if (swiperRef.current && swiperRef.current.swiper) {
@@ -109,6 +111,7 @@ function Ourmission() {
                                         fontSize: {xs: "14px", md: "15px"},
                                         cursor: "pointer",
                                     }}
+                                    onClick={() => router.push('/about')}
                                 >
                                     More About Us
                                 </Box>

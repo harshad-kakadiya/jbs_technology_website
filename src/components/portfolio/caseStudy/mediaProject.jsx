@@ -10,58 +10,7 @@ import LightbulbCircleIcon from '@mui/icons-material/LightbulbCircle';
 import  img2 from '../../../assets/images/portfolio/mediaProject/women.jpeg'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
-const slides = [
-    {
-        name: 'The Challenges',
-        number: '01',
-        title1: 'Fans creating artist-related content',
-        title2: 'Creators want to monetize their intellectual property',
-        title3: 'Native vs. hybrid',
-        description1:
-            'From an architectural perspective, the solution had a challenge from the beginning, which was the realtime ingestion of data from hundreds of different sources, to keep server stability.',
-        description2:
-            'Fave allows creators to monetize their IP through their fans’ content and gives access to in-depth data. This uses the latent potential of a digital footprint from fans.',
-        description3:
-            'We decided on NativeScript for an MVP launch and planned to replace it with a fully native app for scalability.',
-        icon: <ArrowCircleRightIcon fontSize={'large'} />,
-        image: phoneimg1,
-    },
-    {
-        name: 'The Process',
-        number: '02',
-        title1: 'Product Scope',
-        title2: 'Product Rationale and Tech Scope',
-        title3: 'Clickable Prototype',
-        title4: 'Final UX/UI Development',
-        description1:
-            'We created a comprehensive brief by gathering market research, competitor benchmarks, and necessary data.',
-        description2:
-            'Our experts in Product, UX/UI, and Tech Architecture focused on answering key questions during scope preparation.',
-        description3:
-            'We developed a non-functional prototype to simulate user interaction and test information architecture.',
-        description4:
-            'Final product development proceeded through agile cycles with continuous stakeholder feedback.',
-        icon: <LightbulbCircleIcon fontSize={'large'} />,
-        image: phoneimg2,
-    },
-    {
-        name: 'Key Features',
-        number: '03',
-        title1: 'Fandom',
-        title2: 'Coin System',
-        title3: 'Leaderboard',
-        description1:
-            'A digital space where fans upload content and interact, creating a centralized area for engagement.',
-        description2:
-            'Users earn coins for content contributions, redeemable for merchandise from their favorite creators.',
-        description3:
-            'Fans compete on leaderboards to win prizes based on their activity and scoring.',
-        icon: <ArrowCircleRightIcon fontSize={'large'} />,
-        image: phoneimg3,
-    },
-];
-
-function MediaProject() {
+function MediaProject({title  , description , slides , projectdes , status ,name}) {
     return (
         <Box>
             <Container maxWidth="xl" sx={{ padding: { xs: '16px', sm: '32px' } }}>
@@ -88,8 +37,7 @@ function MediaProject() {
                                     marginBottom: '15px',
                                 }}
                             >
-                                For over a decade, Jacquelle Amankonah Horton has been dedicated
-                                to innovating within the music industry, launching award-winning apps.
+                                {title}
                             </Typography>
                             <Typography
                                 sx={{
@@ -98,16 +46,7 @@ function MediaProject() {
                                     color: '#1F1C31',
                                 }}
                             >
-                                She worked at Google for 7 years, driving product development for YouTube creators and artists.
-                            </Typography>
-                            <Typography
-                                sx={{
-                                    fontSize: '16px',
-                                    marginBottom: '15px',
-                                    color: '#1F1C31',
-                                }}
-                            >
-                                Jacquelle was named one of the “Top 100 Young Entrepreneurs in the World,” and made the “Forbes 30 Under 30” list in 2020.
+                                {description}
                             </Typography>
                         </Box>
                     </Grid>
@@ -155,7 +94,7 @@ function MediaProject() {
                                         {item.name}
                                     </Typography>
                                 </Box>
-                                {[item.title1, item.title2, item.title3, item.title4].map(
+                                {[item.title1, item.title2, item.title3, item.title4 , item.title5 , item.title6 , item.title7].map(
                                     (title, i) =>
                                         title && (
                                             <Box key={i} sx={{ display: 'flex', marginBottom: '20px' }}>
@@ -223,7 +162,7 @@ function MediaProject() {
                                                 paddingBottom: "10px",
                                             }}
                                         >
-                                            Jacquelle Amankonah Horton
+                                            {name}
                                         </Typography>
                                         <Typography
                                             variant="body1"
@@ -233,7 +172,7 @@ function MediaProject() {
                                                 paddingBottom: "20px",
                                             }}
                                         >
-                                            Founder & CEO
+                                            {status}
                                         </Typography>
                                         <Typography
                                             variant="body2"
@@ -243,10 +182,7 @@ function MediaProject() {
                                                 lineHeight: "25px",
                                             }}
                                         >
-                                            Altar.io added value to the project far JBS the intended scope of work. Their advice
-                                            and guidance about running a new business have been invaluable. The team is clearly
-                                            passionate about the work and shares innovative ideas and solutions to drive the project
-                                            forward.
+                                            {projectdes}
                                         </Typography>
                                     </Box>
                                     <Box

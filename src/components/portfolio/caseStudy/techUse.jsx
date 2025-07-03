@@ -7,30 +7,7 @@ import img4 from '../../../assets/images/portfolio/techuse/tech.mongodb.svg';
 import img5 from '../../../assets/images/portfolio/techuse/tech-express-js.svg';
 import Image from "next/image";
 
-const app = [
-    {
-        name: "Figma",
-        image: img1,
-    },
-    {
-        name: "NativeScript",
-        image: img2,
-    },
-    {
-        name: "Node.js",
-        image: img3,
-    },
-    {
-        name: "MongoDB",
-        image: img4,
-    },
-    {
-        name: "Express.js",
-        image: img5,
-    },
-];
-
-function TechUse() {
+function TechUse({app}) {
     return (
         <Box sx={{ padding: "96px 0" }}>
             <Container maxWidth="xl">
@@ -63,7 +40,7 @@ function TechUse() {
                                 <Image
                                     src={item.image}
                                     alt={item.name}
-                                    style={{ marginRight: "10px" }}
+                                    style={{ marginRight: "10px" , height:'22px' , width:'22px'}}
                                 />
                                 <Typography
                                     sx={{
