@@ -69,7 +69,7 @@ const Business = () => {
                                           pt:{lg:"40px",sm:"10px",md:"30px",xs:"0px"},
                                           letterSpacing: '5px'
                                 }}>
-                                    WHY CHOOSE JBS Technology
+                                    WHY CHOOSE JBS TECHNOLOGY
                                 </Typography>
                             </Box>
                             <Box>
@@ -141,16 +141,16 @@ const Business = () => {
                                        '& .MuiLinearProgress-bar': { backgroundColor: 'black'}
                                 }} />
                             </Box>
-                            <button style={{
-                                color:"white",
-                                backgroundColor:"black",
-                                height:"50px",width:"160px",
-                                marginTop:"40px",
-                                borderRadius:"30px",
-                                cursor:"pointer"
-                            }}>
-                                Discovery More
-                            </button>
+                            {/*<button style={{*/}
+                            {/*    color:"white",*/}
+                            {/*    backgroundColor:"black",*/}
+                            {/*    height:"50px",width:"160px",*/}
+                            {/*    marginTop:"40px",*/}
+                            {/*    borderRadius:"30px",*/}
+                            {/*    cursor:"pointer"*/}
+                            {/*}}>*/}
+                            {/*    Discovery More*/}
+                            {/*</button>*/}
                         </Grid>
                     </Grid>
                 </Box>

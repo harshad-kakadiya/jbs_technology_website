@@ -79,7 +79,7 @@ function Ourmission() {
                                     textWrap: "warp"
                                 }}
                             >
-                                The technology works for Tomorrow.
+                                The Technology works for Tomorrow.
                             </Typography>
                             <Typography
                                 sx={{
@@ -89,11 +89,12 @@ function Ourmission() {
                                     width: {lg: "90%", xs: "100%"}
                                 }}
                             >
-                                Our membership of Acora marks us out from competitors. Our clients can tap into the
-                                strength, expertise, and financial stability of our parent group. As part of Acora, we
-                                can
-                                offer proven expertise in areas like security and application development, offering
-                                enterprise-grade solutions to SMEs.
+                                At JBS Technology, we believe in building more than just software—we build the future.
+                                Our tech-driven solutions are designed to scale, adapt, and elevate businesses in an
+                                ever-evolving digital world. Whether it's automation, data intelligence, or digital
+                                transformation, we ensure our innovations are not just relevant for today—but ready for
+                                tomorrow. With a focus on performance, security, and user-centric design, we deliver
+                                technology that helps your vision take flight.
                             </Typography>
                             <Box sx={{
                                 paddingTop: "50px",
@@ -127,6 +128,7 @@ function Ourmission() {
                                         margin: {sm: "0 0 0 15px", xs: "10px 0 0 0"},
                                         cursor: "pointer",
                                     }}
+                                    onClick={() => router.push('/contact')}
                                 >
                                     Get your FREE IT consultation today
                                 </Box>
@@ -140,8 +142,8 @@ function Ourmission() {
                             ref={swiperRef}
                             modules={[Autoplay, Navigation]}
                             // navigation={{
-                                // nextEl: ".swiper-button-next"
-                                // prevEl: ".swiper-button-prev",
+                            // nextEl: ".swiper-button-next"
+                            // prevEl: ".swiper-button-prev",
                             // }}
                             autoplay={{
                                 delay: 3000,
@@ -191,48 +193,48 @@ function Ourmission() {
                                     </Box>
                                 </SwiperSlide>
                             ))}
-                                <Button
-                                    className="swiper-button-prev"
-                                    sx={{
-                                        color: '#fff',
-                                        position: 'absolute',
-                                        top: {xs: '80%', lg: '78%'},
-                                        left: {xs: 0, lg: 30},
-                                        borderRadius: '50%',
-                                        height: '75px',
-                                        width: '75px',
-                                        p: 2.5,
-                                        display: "block",
-                                        transition: '0.5s',
-                                        "&:hover": {
-                                            transform: 'scale(0.8)',
-                                        },
-                                    }}
-                                    onClick={handlePrev1}
-                                >
-                                    <WestIcon/>
-                                </Button>
-                                <Button
-                                    className="swiper-button-next"
-                                    sx={{
-                                        color: '#fff',
-                                        position: 'absolute',
-                                        top: {xs: '80%', lg: '78%'},
-                                        left: {xs: 50, lg: 90},
-                                        height: '75px',
-                                        width: '75px',
-                                        borderRadius: '50%',
-                                        p: 2.5,
-                                        display: "block",
-                                        transition: '0.5s',
-                                        "&:hover": {
-                                            transform: 'scale(0.8)',
-                                        },
-                                    }}
-                                    onClick={handleNext1}
-                                >
-                                    <EastIcon/>
-                                </Button>
+                            <Button
+                                className="swiper-button-prev"
+                                sx={{
+                                    color: '#fff',
+                                    position: 'absolute',
+                                    top: {xs: '80%', lg: '78%'},
+                                    left: {xs: 0, lg: 30},
+                                    borderRadius: '50%',
+                                    height: '75px',
+                                    width: '75px',
+                                    p: 2.5,
+                                    display: "block",
+                                    transition: '0.5s',
+                                    "&:hover": {
+                                        transform: 'scale(0.8)',
+                                    },
+                                }}
+                                onClick={handlePrev1}
+                            >
+                                <WestIcon/>
+                            </Button>
+                            <Button
+                                className="swiper-button-next"
+                                sx={{
+                                    color: '#fff',
+                                    position: 'absolute',
+                                    top: {xs: '80%', lg: '78%'},
+                                    left: {xs: 50, lg: 90},
+                                    height: '75px',
+                                    width: '75px',
+                                    borderRadius: '50%',
+                                    p: 2.5,
+                                    display: "block",
+                                    transition: '0.5s',
+                                    "&:hover": {
+                                        transform: 'scale(0.8)',
+                                    },
+                                }}
+                                onClick={handleNext1}
+                            >
+                                <EastIcon/>
+                            </Button>
                         </Swiper>
                     </Grid>
                 </Grid>

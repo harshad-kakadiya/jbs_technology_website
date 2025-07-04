@@ -9,8 +9,10 @@ import {
     Grid,
 } from "@mui/material";
 import { Facebook, Twitter, Instagram, Telegram } from "@mui/icons-material";
-import img1 from "../../assets/images/fotter2/Png-03.png";
+import img1 from "../../assets/images/logo/logo.png";
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Image from "next/image";
 import EastIcon from '@mui/icons-material/East';
 import {useRouter} from "next/navigation";
@@ -20,17 +22,17 @@ function Footer2() {
     const footerData = {
         logo: img1,
         socialLinks: [
-            { name: "Facebook", link: "https://facebook.com" },
-            { name: "Twitter", link: "https://twitter.com" },
-            { name: "Instagram", link: "https://instagram.com" },
-            { name: "Telegram", link: "https://telegram.org" },
+            { name: "LinkedIn", link: "https://www.linkedin.com/company/jbs-technique/posts/?feedView=all" },
+            { name: "Twitter", link: "https://x.com/JBSTechnology26" },
+            { name: "Instagram", link: "https://www.instagram.com/jbs_technology/?hl=en" },
+            { name: "WhatsApp", link: "https://wa.me/917984443901?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20services." },
         ],
         contact: {
             title: "Get in Touch!",
             details: [
-                "s-25/26 Satyam Plaza Raspaan Cross Road Nikol Ahemdabad,Gujarat",
-                "Call us: +91 9016402670",
-                "Email: jbstechnology.official@gmail.com",
+                "203, City Center, Savlia Cir, Sanman Society, Mansarovar Society, Yoginagar Society, Surat, Gujarat 395006",
+                "Call us: +91 79844 43901",
+                "Email: jbs.technology26@gmail.com",
                 "Mon–Sat: 8.00am–18.00pm / Holiday: Closed",
             ],
         },
@@ -38,15 +40,13 @@ function Footer2() {
             title: "Our Services",
             links: [
                 "Web Development",
-                "SEO",
-                "IT Consulting",
-                "Conversion Optimization",
-            ],
-            path: [
-                '/webdevelopment',
-                '/seo',
-                '/itconsulting',
-                '/conversionoptimization'
+                "Artificial Intelligence",
+                "Cloud and Infrastructure Services",
+                "Game Development",
+                "Mobile App Development",
+                "UI/UX Designing",
+                "Digital Marketing",
+                "Android Development",
             ]
         },
         newsletter: {
@@ -55,7 +55,7 @@ function Footer2() {
             description: "Sign up for updates and exclusive content.",
         },
         footerBottom: {
-            left: "© 2024 Custom Company. All rights reserved.",
+            left: "© 2025 Custom Company. All rights reserved.",
             links: ["Privacy Policy", "Terms of Use", "Support"],
         },
     };
@@ -72,8 +72,8 @@ function Footer2() {
                 <Grid container alignItems="center" spacing={2}>
                     <Grid  item xs={12} md={4}>
                         <Box  sx={{ display: "flex", justifyContent: { xs: "center" , md: "left" }}}>
-                        <Image
-                            src={footerData.logo}
+                        <img
+                            src={footerData.logo.src}
                             alt="Logo"
                             style={{
                                 width: '30%',
@@ -99,10 +99,10 @@ function Footer2() {
                         >
                             {footerData.socialLinks.map((social, index) => {
                                 const Icon = {
-                                    Facebook: Facebook,
+                                    LinkedIn: LinkedInIcon,
                                     Twitter: Twitter,
                                     Instagram: Instagram,
-                                    Telegram: Telegram,
+                                    WhatsApp: WhatsAppIcon,
                                 }[social.name];
                                 return Icon ? (
                                     <Icon
@@ -126,7 +126,6 @@ function Footer2() {
                             </Typography>
                             {footerData.services.links.map((service, index) => (
                                 <Typography
-                                    onClick={() => router.push(footerData.services.path[index])}
                                     key={index}
                                     variant="body2"
                                     sx={{
@@ -145,6 +144,7 @@ function Footer2() {
                                             transform: "translateX(5px)",
                                         },
                                     }}
+                                    onClick={() => router.push('./services')}
                                 >
                                     <Box
                                         className="icon"

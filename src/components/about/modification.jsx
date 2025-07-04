@@ -10,8 +10,11 @@ import {Navigation} from "swiper/modules";
 import circleimg from "../../assets/images/about/modification/Ellipse-797.png"
 import Image from "next/image";
 import {Span} from "next/dist/server/lib/trace/tracer";
+import {useRouter} from "next/navigation";
 
 const Modification = () => {
+    const router = useRouter();
+
     return (
         <Box>
             <Grid container item xs={12} spacing={2}>
@@ -38,7 +41,7 @@ const Modification = () => {
                                 sx={{
                                     fontWeight: 400,
                                     textTransform: "uppercase",
-                                    letterSpacing: "0.10em",
+                                    letterSpacing: "5px",
                                     fontSize: "12px",
                                     color: "#888",
                                     textAlign: "start",
@@ -50,7 +53,7 @@ const Modification = () => {
                                     pt: 2,
                                 }}
                             >
-                                W E L C O M E <span>T O</span> J B S <span>T E C H N O L O G Y</span>
+                                WELCOME TO JBS TECHNOLOGY
                             </Typography>
                             <Image
                                 src={circleimg}
@@ -118,6 +121,7 @@ const Modification = () => {
                                             py: 1.5,
                                             m: {xs: "5px", md: "0px"},
                                         }}
+                                        onClick={() => router.push("/contact")}
                                     >
                                         Let’s Develop Together
                                     </Button>
@@ -133,6 +137,7 @@ const Modification = () => {
                                             m: {xs: "5px", md: "0px"},
                                             ":hover": {backgroundColor: "#000", color: "#fff"}
                                         }}
+                                        onClick={() => router.push("/services")}
                                     >
                                         View All Services
                                     </Button>

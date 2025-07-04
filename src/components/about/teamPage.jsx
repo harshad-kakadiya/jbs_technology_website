@@ -1,12 +1,17 @@
+'use client'
+
 import React from 'react';
 import { Box, Button, Typography, Grid, List, ListItem, ListItemText, Container } from '@mui/material';
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 import CheckIcon from '@mui/icons-material/Check';
 import BG from '../../assets/images/about/teamPage/ab3.webp';
 import Team from '../../assets/images/about/teamPage/team2.webp'
+import {useRouter} from "next/navigation";
 const TeamPage = () => {
+    const router = useRouter();
+
     return (
-        <Box sx={{ px: 1.6 }}>
+        <Box sx={{px: {md:6 , xs:3}}}>
             <Box
                 sx={{
                     position: 'relative',
@@ -63,21 +68,21 @@ const TeamPage = () => {
                                 mt: { xs: '18px', lg: '0px' }
                             }}
                         >
-                            <Button
-                                variant="contained"
-                                sx={{
-                                    backgroundColor: '#fff',
-                                    color: '#121212',
-                                    fontSize: '15px',
-                                    fontWeight: '400',
-                                    lineHeight: '50px',
-                                    borderRadius: '50px',
-                                    padding: '0px 35px',
-                                    textTransform: 'capitalize',
-                                }}
-                            >
-                                More The Teams
-                            </Button>
+                            {/*<Button*/}
+                            {/*    variant="contained"*/}
+                            {/*    sx={{*/}
+                            {/*        backgroundColor: '#fff',*/}
+                            {/*        color: '#121212',*/}
+                            {/*        fontSize: '15px',*/}
+                            {/*        fontWeight: '400',*/}
+                            {/*        lineHeight: '50px',*/}
+                            {/*        borderRadius: '50px',*/}
+                            {/*        padding: '0px 35px',*/}
+                            {/*        textTransform: 'capitalize',*/}
+                            {/*    }}*/}
+                            {/*>*/}
+                            {/*    More The Teams*/}
+                            {/*</Button>*/}
                             <Button
                                 variant="text"
                                 sx={{
@@ -104,6 +109,7 @@ const TeamPage = () => {
                                         right: '0',
                                     },
                                 }}
+                                onClick={() => router.push("/contact")}
                             >
                                 Become Part Of Our Team
                                 <TrendingFlatIcon sx={{ ml: '14px', fontSize: '33px' }} />
@@ -114,7 +120,7 @@ const TeamPage = () => {
                 <Box sx={{ border: '0.1px solid #4b535d ', my: 7 }}/>
                 </Container>
                 <Container maxWidth={'xl'}>
-                    <Grid container spacing={4} sx={{ marginTop: '3rem' }}>
+                    <Grid container spacing={4} sx={{ display: 'flex' , justifyContent: 'center' }}>
                         {[
                             'We are Always Dedicated to our Work',
                             'Are Leading Consultants that you can Trust',

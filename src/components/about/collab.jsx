@@ -1,9 +1,14 @@
+'use client'
+
 import React from "react";
 import {Box, Container, Typography, Button} from "@mui/material";
 import aboutData from "../../components/global/aboutProps";
+import {useRouter} from "next/navigation";
 
 const Collab = () => {
+    const router = useRouter();
     const {image, title, description} = aboutData;
+
     return (
         <Box>
             <Box
@@ -64,6 +69,7 @@ const Collab = () => {
                                     fontSize: {xs: "12px", sm: "14px"},
                                     textTransform: "unset",
                                 }}
+                                onClick={() => router.push("/contact")}
                             >
                                 Let’s Develop Together
                             </Button>

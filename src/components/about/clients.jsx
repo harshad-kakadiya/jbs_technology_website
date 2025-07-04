@@ -69,7 +69,7 @@ const Clients = () => {
                                     sx={{
                                         fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                         fontWeight: "500",
-                                        lineHeight: { xs: "40px", sm: "55px" },
+                                        lineHeight: { xs: "60px", sm: "90px" },
                                         mb: "0px",
                                     }}
                                 >

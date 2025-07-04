@@ -2,6 +2,7 @@ import {Box, Grid, Typography, Container} from "@mui/material";
 import CloudOutlinedIcon from "@mui/icons-material/CloudOutlined";
 import FolderOutlinedIcon from "@mui/icons-material/FolderOutlined";
 import OpenInFullOutlinedIcon from "@mui/icons-material/OpenInFullOutlined";
+import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 // import img1 from '../../assets/images/home/value-proposition/wallet.png'
 // import img2 from '../../assets/images/home/value-proposition/network.png'
 // import img3 from '../../assets/images/home/value-proposition/file.png'
@@ -12,7 +13,7 @@ const valuePropositions = [
         title: "Cost-Effectiveness",
         description:
             "We guarantee to provide affordable business consulting solutions that help you reduce costs and improve your profits.",
-        icon: <CloudOutlinedIcon fontSize="large"/>,
+        icon: <AccountBalanceWalletIcon fontSize="large"/>,
     },
     {
         title: "Innovative Technology",

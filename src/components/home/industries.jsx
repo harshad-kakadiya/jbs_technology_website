@@ -96,10 +96,10 @@ function Industries() {
             <Box sx={{my: 10}}>
                 <Container maxWidth={'xl'}>
                     <Grid container>
-                        <Grid item xs={12} md={4}>
+                        <Grid item xs={12} md={5} lg={6}>
                             <Box component={'h2'} sx={{fontSize: 45, fontWeight: 600}}>Industries</Box>
                         </Grid>
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12} md={5} lg={4}>
                             <Box component={'p'} sx={{color: 'cardTextGrey', fontWeight: 500}}>
                                 Our expertise spans 13 industries from banking, insurance, telecommunications, media,
                                 entertainment, distribution, retail, to many more.</Box>
@@ -112,12 +112,11 @@ function Industries() {
                                         color: 'cardTextGrey',
                                         position: 'absolute',
                                         top: 0,
-                                        left: 0,
+                                        left: {xl:60 , lg:40 , md:0},
                                         border: '1px solid gray',
                                         borderRadius: '50%',
-                                        height: '75px',
-                                        width: '75px',
-                                        p: 2.5,
+                                        height: '65px',
+                                        width: '65px',
                                         display: {xs: "none", md: "flex"},
                                         transition: '0.5s',
                                         "&:hover": {
@@ -137,9 +136,8 @@ function Industries() {
                                         right: 12,
                                         border: '1px solid gray',
                                         borderRadius: '50%',
-                                        height: '75px',
-                                        width: '75px',
-                                        p: 2.5,
+                                        height: '65px',
+                                        width: '65px',
                                         display: {xs: "none", md: "flex"},
                                         transition: '0.5s',
                                         "&:hover": {
