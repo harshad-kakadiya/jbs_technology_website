@@ -91,7 +91,7 @@ function Testimonial() {
 
     return (
         <Box>
-            <Box sx={{padding: "120px 0px"}}>
+            <Box sx={{padding: "60px 0px"}}>
                 <Container maxWidth="xl">
                     <Grid container justifyContent={"center"} sx={{position: "relative"}}>
                         <Grid item xs={12}>
@@ -100,7 +100,7 @@ function Testimonial() {
                                     position: "absolute",
                                     top: {md: "-10%", sm: "-10%", xs: "-1%"},
                                     left: {md: "20%", sm: "20%", xs: "-10%"},
-                                    height: {md: "174px", sm: "100px", xs: "80px"},
+                                    height: {md: "17 4px", sm: "100px", xs: "80px"},
                                     width: {md: "197px", sm: "100px", xs: "0px"},
                                     opacity: "1",
                                     backgroundRepeat: "no-repeat",
@@ -138,7 +138,7 @@ function Testimonial() {
                                     </Typography>
                                 </Box>
                                 <Typography
-                                    sx={{paddingTop: "62px", fontSize: "18px", color: "#8c8c8c", fontWeight: "300"}}>
+                                    sx={{ fontSize: "18px", color: "#8c8c8c", fontWeight: "300"}}>
                                     <Typography
                                         variant="span"
                                         sx={{fontSize: "18px", color: "#181818", fontWeight: "300"}}
