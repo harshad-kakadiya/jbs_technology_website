@@ -3,57 +3,8 @@ import {Box, Container, Grid, Typography} from "@mui/material";
 import StarIcon from '@mui/icons-material/Star';
 
 
-const Detaile = [
-    {
-        title: "Industry",
-        description:"Entertainment",
-    },
-    {
-        title: "Project Duration",
-        description:"4 months",
-    },
-    {
-        title: "Location",
-        description:"USA & Switzerland",
-    },
-    {
-        title: "Funding Raised",
-        description:"$2.3M",
-    },
-    {
-        title: "Clutch Review",
-        description:"5.0",
-        icon:<StarIcon fontSize={"small"}/>,
-    },
-    {
-        title: "Awards",
-        description:"The 10 Most Innovative Social Media Companies 2022, by Fast Company",
-    }
 
-];
-
-const Data = [
-    {
-        name:"Problem",
-        title: "Fan engagement isn’t rewarded.",
-        description:"Fans want to keep up with their idols and it is exhausting to follow them across several social networks. They want to be recognized and rewarded for their engagement but with current solutions, their engagement is like a droplet in a sea, most of the time has zero expression giving a sense of unfairness and meaningless investment while making it very hard to find like-minded fans." ,
-
-         seconddes:"Creators aren’t generating meaningful digital revenue streams for their fans. On current platforms, fan satisfaction is too concentrated on the artists’ effort to generate content. In addition to that, creators don’t have a lot of intelligence about their fans.",
-    },
-    {
-        name:"Solution",
-        title: "A rewarding fan community.",
-        description:"A social network where fans can produce content about their idols and engage in a community with like-minded fans. Artists can be closer to their fans and monetize content produced with their intellectual property, while it is easier for fans to keep up with all the new information.",
-    },
-    {
-        name:"Results",
-        title: "An award-winning startup product backed by some of the biggest names in music.",
-        description:"Since working with us, Fave has gone on to win awards like “The 10 Most Innovative Social Media Companies 2022” by Fast Company. Moreover, Fave is now backed by some of the biggest names in music, like Sony Music & Warner Music Group.",
-    },
-
-];
-
-function Experiences() {
+function Experiences({Data ,Detaile }) {
     return (
         <Box sx={{padding:"80px 0 0 0"}}>
             <Container maxWidth={'xl'}>

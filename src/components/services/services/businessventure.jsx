@@ -29,7 +29,7 @@ function Businessventure(props) {
                             fontWeight: "700",
                             lineHeight: "45px"
                         }}>
-                            Why choose Altar for your next business venture?
+                            Why choose JBS Technology for your next business venture?
                         </Box>
                         <Box sx={{
                             fontSize: "16px",

@@ -108,26 +108,26 @@ function Ourproducts() {
                            </Box>
                        </Box>
                    ))}
-                   <Box sx={{paddingTop:"25px"}}>
-                       <Button
-                           sx={{
-                               background: "#fff",
-                               color: "#e7107e",
-                               border: "2px solid #e7107e",
-                               padding: "10px 50px",
-                               borderRadius: "25px",
-                               fontSize: "15px",
-                               fontWeight: "600",
-                               '&:hover': {
-                                   backgroundColor: "#e7107e",
-                                   color: "#fff",
-                               },
-                               transition: "background-color 0.3s, color 0.3s",
-                           }}
-                       >
-                           MORE ABOUT OUR TECH STACK
-                       </Button>
-                   </Box>
+                   {/*<Box sx={{paddingTop:"25px"}}>*/}
+                   {/*    <Button*/}
+                   {/*        sx={{*/}
+                   {/*            background: "#fff",*/}
+                   {/*            color: "#e7107e",*/}
+                   {/*            border: "2px solid #e7107e",*/}
+                   {/*            padding: "10px 50px",*/}
+                   {/*            borderRadius: "25px",*/}
+                   {/*            fontSize: "15px",*/}
+                   {/*            fontWeight: "600",*/}
+                   {/*            '&:hover': {*/}
+                   {/*                backgroundColor: "#e7107e",*/}
+                   {/*                color: "#fff",*/}
+                   {/*            },*/}
+                   {/*            transition: "background-color 0.3s, color 0.3s",*/}
+                   {/*        }}*/}
+                   {/*    >*/}
+                   {/*        MORE ABOUT OUR TECH STACK*/}
+                   {/*    </Button>*/}
+                   {/*</Box>*/}
                </Box>
            </Container>
         </Box>

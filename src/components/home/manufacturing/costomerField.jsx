@@ -33,7 +33,7 @@ const data = [
 
 const CostomerField = () => {
   return (
-    <Box sx={{padding:"0 20px"}}>
+    <Box sx={{padding:"0 20px 80px"}}>
       <Container maxWidth="xxl">
         <Box>
           <Grid container xs={12} item>

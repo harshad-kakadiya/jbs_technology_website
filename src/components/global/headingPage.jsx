@@ -1,4 +1,5 @@
 'use client'
+
 import React from 'react';
 import { Box } from "@mui/material";
 import bg1 from '../../assets/images/blog/b-1.webp';

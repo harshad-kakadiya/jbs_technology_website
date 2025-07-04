@@ -1,15 +1,16 @@
 'use client';
 import React from "react";
-import { Box, Typography, Button, Grid, IconButton } from "@mui/material";
-import { ArrowBack, ArrowForward } from "@mui/icons-material";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Box, Typography, Button, Grid, IconButton} from "@mui/material";
+import {ArrowBack, ArrowForward} from "@mui/icons-material";
+import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import {Navigation} from "swiper/modules";
 import circleimg from "../../assets/images/about/modification/Ellipse-797.png"
 import Image from "next/image";
 import {Span} from "next/dist/server/lib/trace/tracer";
+
 const Modification = () => {
     return (
         <Box>
@@ -29,7 +30,7 @@ const Modification = () => {
                             sx={{
                                 display: "flex",
                                 position: "relative",
-                                mb: { xs: 4, lg: 0 },
+                                mb: {xs: 4, lg: 0},
                             }}
                         >
                             <Typography
@@ -49,7 +50,7 @@ const Modification = () => {
                                     pt: 2,
                                 }}
                             >
-                                W E L C O M E <span>T O</span> B E Y O N D <span>T E C H</span> S O L U T I O N
+                                W E L C O M E <span>T O</span> J B S <span>T E C H N O L O G Y</span>
                             </Typography>
                             <Image
                                 src={circleimg}
@@ -77,10 +78,10 @@ const Modification = () => {
                         <Box
                             sx={{
                                 display: "flex",
-                                alignItems: { xs: "center", lg: "end" },
-                                justifyContent: { xs: "center", lg: "end" },
-                                height: { xs: "auto", lg: "80%" },
-                                textAlign: { xs: "start", lg: "left" },
+                                alignItems: {xs: "center", lg: "end"},
+                                justifyContent: {xs: "center", lg: "end"},
+                                height: {xs: "auto", lg: "80%"},
+                                textAlign: {xs: "start", lg: "left"},
                                 mt: 20,
                             }}
                         >
@@ -91,7 +92,7 @@ const Modification = () => {
                                         fontWeight: 500,
                                         color: "#000",
                                         mb: 4,
-                                        fontSize: { xs: "24px", md: "36px", lg: "45px" },
+                                        fontSize: {xs: "24px", md: "36px", lg: "45px"},
                                     }}
                                 >
                                     Our Focus is on Delivering Superior Value to our Clients for
@@ -99,9 +100,9 @@ const Modification = () => {
                                 </Typography>
                                 <Box
                                     sx={{
-                                        display: { xs: "block", sm: "flex", md: "flex" },
+                                        display: {xs: "block", sm: "flex", md: "flex"},
                                         gap: 2,
-                                        justifyContent: { xs: "center", lg: "start" },
+                                        justifyContent: {xs: "center", lg: "start"},
                                         pt: 2,
                                         pb: 10,
                                     }}
@@ -115,7 +116,7 @@ const Modification = () => {
                                             textTransform: "none",
                                             px: 4,
                                             py: 1.5,
-                                            m: { xs: "5px", md: "0px" },
+                                            m: {xs: "5px", md: "0px"},
                                         }}
                                     >
                                         Let’s Develop Together
@@ -129,8 +130,8 @@ const Modification = () => {
                                             textTransform: "none",
                                             px: 4,
                                             py: 1.5,
-                                            m: { xs: "5px", md: "0px" },
-                                            ":hover":{backgroundColor:"#000",color:"#fff"}
+                                            m: {xs: "5px", md: "0px"},
+                                            ":hover": {backgroundColor: "#000", color: "#fff"}
                                         }}
                                     >
                                         View All Services
@@ -142,15 +143,15 @@ const Modification = () => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={6} lg={6}>
                     <Box>
-                        <Box sx={{ padding: "80px 20px" }}>
-                            <Box sx={{ borderBottom: "1px solid #D3D5D6" }}>
+                        <Box sx={{padding: "80px 20px"}}>
+                            <Box sx={{borderBottom: "1px solid #D3D5D6"}}>
                                 <Typography
                                     sx={{
                                         fontSize: "15px",
                                         color: "#4B535D",
                                         lineHeight: "25px",
                                         py: 2,
-                                        width:"90%"
+                                        width: "90%"
                                     }}
                                 >
                                     At Jbs Technology, we are a renowned global consulting firm
@@ -166,7 +167,7 @@ const Modification = () => {
                                         color: "#4B535D",
                                         lineHeight: "25px",
                                         py: 2,
-                                        width:"90%"
+                                        width: "90%"
                                     }}
                                 >
                                     We have highly skilled engineers with excellent technical
@@ -191,7 +192,7 @@ const Modification = () => {
                                     <SwiperSlide>
                                         <Typography
                                             variant="h2"
-                                            sx={{ fontSize: "25px", fontWeight: "500", mb: "22px" }}
+                                            sx={{fontSize: "25px", fontWeight: "500", mb: "22px"}}
                                         >
                                             Our Mission
                                         </Typography>
@@ -204,17 +205,15 @@ const Modification = () => {
                                                 width: "90%",
                                             }}
                                         >
-                                            We embarked on our journey with a distinct approach.
-                                            Instead of adhering to a demanding, all-or-nothing career
-                                            path, we prioritized balance and well-being. Integer
-                                            dapibus eros massa, ut accumsan lacus vulputate nec. In ac
-                                            imperdiet metus.
+                                            At JBS Technology, our mission is to deliver innovative digital solutions
+                                            and education services that empower businesses to grow, adapt, and succeed
+                                            in a fast-changing world.
                                         </Typography>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <Typography
                                             variant="h2"
-                                            sx={{ fontSize: "25px", fontWeight: "500", mb: "22px" }}
+                                            sx={{fontSize: "25px", fontWeight: "500", mb: "22px"}}
                                         >
                                             Our Vision
                                         </Typography>
@@ -227,20 +226,18 @@ const Modification = () => {
                                                 width: "90%",
                                             }}
                                         >
-                                            We embarked on our journey with a distinct approach.
-                                            Instead of adhering to a demanding, all-or-nothing career
-                                            path, we prioritized balance and well-being. Integer
-                                            dapibus eros massa, ut accumsan lacus vulputate nec. In ac
-                                            imperdiet metus.
+                                            To be a trusted global leader in technology and education solutions, driving
+                                            innovation and shaping a smarter, more connected future for businesses and
+                                            communities.
                                         </Typography>
                                     </SwiperSlide>
                                 </Swiper>
-                                <Box sx={{ display: "flex", justifyContent: "start", mt: 4 }}>
-                                    <IconButton className="custom-prev" sx={{ mx: 2 }}>
-                                        <ArrowBack />
+                                <Box sx={{display: "flex", justifyContent: "start", mt: 4}}>
+                                    <IconButton className="custom-prev" sx={{mx: 2}}>
+                                        <ArrowBack/>
                                     </IconButton>
-                                    <IconButton className="custom-next" sx={{ mx: 2 }}>
-                                        <ArrowForward />
+                                    <IconButton className="custom-next" sx={{mx: 2}}>
+                                        <ArrowForward/>
                                     </IconButton>
                                 </Box>
                             </Box>

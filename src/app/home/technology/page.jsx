@@ -20,7 +20,7 @@ function Page() {
                     image={image}
             />
             <CostomerField/>
-            <Enterprise/>
+            {/*<Enterprise/>*/}
         </>
     );
 }
