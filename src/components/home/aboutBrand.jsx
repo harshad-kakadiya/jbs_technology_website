@@ -31,7 +31,7 @@ function AboutBrand() {
                         <Grid item key={ind} md={3} sm={4} xs={6}>
                             <Box
                                 sx={{
-                                    height: 140,
+                                    height: 90,
                                     px: 5,
                                     width: "100%",
                                     overflow: "hidden",

@@ -16,28 +16,29 @@ const AboutSlider = () => {
     const timelineData = [
         {
             year: "2021 - 2022",
-            title: "Strategic Innovation",
+            title: "Foundation & Digital Shift",
             description:
-                "A transformative phase where we embraced digital solutions, fostering growth and global outreach.",
+                "JBS Technology began its journey by establishing a strong digital foundation, adopting cloud infrastructure and modern development practices to support long-term growth.",
         },
         {
             year: "2022 - 2023",
-            title: "Strategic Innovation",
+            title: "Innovation & Expansion",
             description:
-                "A transformative phase where we embraced digital solutions, fostering growth and global outreach.",
+                "Building on its foundation, JBS expanded its solutions across industries, investing in R&D and launching innovative platforms to serve a global clientele.",
         },
         {
             year: "2023 - 2024",
-            title: "Sustainable Leadership",
+            title: "Sustainability & Leadership",
             description:
-                "Focused on sustainable development, diversity, and forward-thinking leadership across industries.",
+                "Focused on sustainable technologies and ethical innovation, JBS strengthened its leadership position by promoting diversity, green practices, and future-focused thinking.",
         },
         {
             year: "2024 - 2025",
-            title: "Sustainable Leadership",
+            title: "AI Integration & Global Impact",
             description:
-                "Focused on sustainable development, diversity, and forward-thinking leadership across industries.",
-        },
+                "Integrated advanced AI and automation across solutions, enabling smarter services and real-time decision-making, while expanding impact across new global markets.",
+        }
+
     ];
 
     return (

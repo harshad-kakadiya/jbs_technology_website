@@ -15,13 +15,8 @@ function Page() {
             {/*<Offices/>*/}
             <Box>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.6549429336176!2d72.89848194725786!3d21.21955690865314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6411e7f31a0a24f5%3A0x1c52672a58347a1d!2sBeyond%20Tech%20Solution!5e0!3m2!1sen!2sin!4v1736485321653!5m2!1sen!2sin"
-                    width="100%"
-                    height="450"
-                    style={{
-                        border:0
-                    }}
-                    allowFullScreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4423.12279067631!2d72.88773985240977!3d21.2164534994015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6c653d90c978a55f%3A0x5b466180ab933d3d!2sJBS%20Technology!5e0!3m2!1sen!2sin!4v1751617746451!5m2!1sen!2sin"
+                    width="100%" height="500" style={{border : 0}} allowFullScreen="" loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"></iframe>
             </Box>
 
