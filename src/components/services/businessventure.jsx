@@ -20,7 +20,7 @@ function Businessventure(props) {
     ];
 
     return (
-        <Box sx={{ paddingTop: "68px", padding: "0px 32px" }}>
+        <Box sx={{  padding: "90px 32px 0" }}>
             <Container maxWidth={"xl"}>
                 <Grid container spacing={3}>
                     <Grid item lg={5}>

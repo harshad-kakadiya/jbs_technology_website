@@ -305,7 +305,7 @@ const Navigation = () => {
         });
 
         tl.to(".nav", {
-            background: "rgba(0, 0, 0, 0.8)",
+            background: "rgba(26, 31, 38, 0.8)",
             backdropFilter: "blur(5.5px)",
             duration: 0.5,
         }).to(
