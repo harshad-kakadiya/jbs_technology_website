@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import { Box, Typography, Button, Stack, Container, Divider, Grid } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,11 +15,14 @@ import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 import img from '../../assets/images/blog/blogslider/bs-5.jpg';
 import Image from "next/image";
-
+import {useRouter} from "next/navigation";
+import img2 from "../../assets/images/blog/posts/Img2.jpg";
+import img3 from "../../assets/images/blog/posts/img3.jpg";
 const slides = [
     {
+        navigate:"/blog/marketing",
         image: bg1,
-        date: "16 Apr 24",
+        date: "23 Apr 24",
         smallimg: img,
         admin: "By admin",
         marketing: "Marketing",
@@ -30,11 +34,12 @@ const slides = [
         button: "Continue Reading",
     },
     {
+        navigate:"/blog/startup-consulting",
         image: bg2,
-        date: "16 Apr 24",
-        smallimg: img,
+        date: "23 Apr 24",
+        smallimg: img2,
         admin: "By admin",
-        marketing: "Marketing",
+        marketing: "Startup Consulting",
         comments: "Comments",
         title: "Revolutionizing the Future of Financial Services",
         description:
@@ -43,11 +48,12 @@ const slides = [
         button: "Continue Reading",
     },
     {
+        navigate:"/blog/corporate",
         image: bg3,
-        date: "16 Apr 24",
-        smallimg: img,
+        date: "23 Apr 24",
+        smallimg: img3,
         admin: "By admin",
-        marketing: "Marketing",
+        marketing: "Corporate",
         comments: "Comments",
         title: "A Guide to Embracing Meaningful Change in Banking",
         description:
@@ -56,8 +62,8 @@ const slides = [
         button: "Continue Reading",
     },
 ];
-
 function Blogslider() {
+    const router = useRouter();
     return (
         <Box sx={{ width: "100%", height: "100%", position: "relative", padding: "0 0 110px 0" }}>
             <Container maxWidth={'xl'}>
@@ -75,9 +81,11 @@ function Blogslider() {
                     {slides.map((item, index) => (
                         <SwiperSlide key={index}>
                             <Box
+                                onClick={() => router.push(item.navigate)}
                                 sx={{
                                     width: "100%",
                                     height: "556px",
+                                    cursor: "pointer",
                                     position: "relative",
                                     background: `linear-gradient(0deg, rgba(0, 0, 0, 1), transparent), 
                                     url(${item.image.src}) no-repeat center`,
@@ -96,32 +104,28 @@ function Blogslider() {
                                 >
                                     <Stack direction="row" spacing={1} alignItems="center" sx={{ pb: "10px" }}>
                                         <Grid container >
-
                                             <Grid item xs={12} sm={6}>
                                                 <Box sx={{ display: "flex", alignItems: "center" }}>
                                                     <DateRangeIcon sx={{ mr: 1 }} />
                                                     <Typography variant="body2">{item.date}</Typography>
                                                 </Box>
                                             </Grid>
-
-
                                             <Grid item xs={12} sm={6} md={2}>
                                                 <Box sx={{ display: "flex", alignItems: "center" }}>
                                                     <Image
                                                         src={item.smallimg}
                                                         alt="Admin"
-                                                        width={30}
-                                                        height={30}
+                                                        width={40}
+                                                        height={40}
                                                         style={{
                                                             borderRadius: "50%",
                                                             marginRight: "10px",
+                                                            objectFit:"contain"
                                                         }}
                                                     />
                                                     <Typography variant="body2">{item.admin}</Typography>
                                                 </Box>
                                             </Grid>
-
-
                                             <Grid item xs={12} md={2} sm={6}>
                                                 <Box sx={{ display: "flex", alignItems: "center" }}>
                                                     <Box
@@ -140,8 +144,6 @@ function Blogslider() {
                                                     <Typography variant="body2">{item.marketing}</Typography>
                                                 </Box>
                                             </Grid>
-
-
                                             <Grid item xs={12} md={2} sm={6}>
                                                 <Box sx={{ display: "flex", alignItems: "center" }}>
                                                     <Box
@@ -162,7 +164,6 @@ function Blogslider() {
                                             </Grid>
                                         </Grid>
                                     </Stack>
-
                                     <Divider sx={{ backgroundColor: "gray" , width:"100%"}} />
                                     <Typography variant="h5" sx={{
                                         p: "25px 0 15px",
@@ -180,6 +181,7 @@ function Blogslider() {
                                         {item.description}
                                     </Typography>
                                     <Button
+                                        onClick={() => router.push(item.navigate)}
                                         endIcon={<TrendingFlatIcon />}
                                         sx={{
                                             mt: 2,
@@ -200,5 +202,4 @@ function Blogslider() {
         </Box>
     );
 }
-
 export default Blogslider;

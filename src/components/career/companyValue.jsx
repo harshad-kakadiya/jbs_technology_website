@@ -55,7 +55,7 @@ const data = [
 
 function CompanyValue() {
     return (
-        <Box sx={{mt: {xs: "16px", md: "16px", lg: "50px"}}}>
+        <Box sx={{mt: {xs: 8, md: 10, lg: 16}}}>
             <Container maxWidth="lg">
                 <Typography sx={{
                     fontWeight: 400,
@@ -141,8 +141,6 @@ function CompanyValue() {
                                         justifyContent: "center",
                                         alignItems: "center",
                                         textAlign: "center",
-
-
                                     }}
                                 >
                                     <Box sx={{
@@ -175,8 +173,6 @@ function CompanyValue() {
                                                 left: '50%',
                                                 transform: 'translate(-50%, -50%)',
                                                 transition: '0.3s',
-
-
                                             }}
                                         />
 

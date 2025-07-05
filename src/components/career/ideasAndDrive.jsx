@@ -10,7 +10,7 @@ function IdeasAndDrive() {
 
     return (
         <>
-            <Box sx={{backgroundColor: '#E7E7E7', mx: { md: "30px", lg:"40px"}, mt: {xs:16,sm:16,md:20,lg:22}}}>
+            <Box sx={{backgroundColor: '#E7E7E7', mx: { md: "30px", lg:"40px"},mt:8}}>
                 <Container maxWidth="lg">
                     <Box
                         sx={{

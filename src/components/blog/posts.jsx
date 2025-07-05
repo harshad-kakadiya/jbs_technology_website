@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import { Box, Container, Grid, Typography } from "@mui/material";
 import Img1 from "../../assets/images/blog/posts/Img1.jpg";
@@ -8,16 +9,19 @@ import Img4 from "../../assets/images/blog/posts/Img4.webp";
 import Img5 from "../../assets/images/blog/posts/Img5.webp";
 import Img6 from "../../assets/images/blog/posts/Img6.webp";
 import Img7 from "../../assets/images/blog/posts/Img7.webp";
+import img2 from "../../assets/images/blog/posts/Img2.jpg";
+import img3 from "../../assets/images/blog/posts/img3.jpg";
+import img4 from "../../assets/images/blog/posts/img4.jpg";
+import img5 from "../../assets/images/blog/posts/img6.jpeg";
+import img6 from "../../assets/images/blog/posts/img7.jpg";
 import Image from "next/image";
 import EastIcon from '@mui/icons-material/East';
 import {useRouter} from "next/navigation";
-
 function Posts() {
-
     const router = useRouter();
-
     const Data = [
         {
+            navigate:"/blog/marketing",
             date: "23 April 2024",
             img: Img2,
             smallImg: Img1,
@@ -26,47 +30,51 @@ function Posts() {
             describtion: "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis, Pellentesque leo…",
         },
         {
+            navigate:"/blog/startup-consulting",
             date: "23 April 2024",
             img: Img3,
-            smallImg: Img1,
+            smallImg: img2,
             btn: "Startup Consulting",
             title: "Revolutionizing the Future of Financial Services",
             describtion: "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis, Pellentesque leo…",
         },
         {
+            navigate:"/blog/corporate",
             date: "23 April 2024",
             img: Img4,
-            smallImg: Img1,
+            smallImg: img3,
             btn: "Corporate",
             title: "A Guide to Embracing Meaningful Change in Banking",
             describtion: "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis, Pellentesque leo…",
         },
         {
+            navigate:"/blog/startup",
             date: "23 April 2024",
             img: Img5,
-            smallImg: Img1,
+            smallImg: img4,
             btn: "Startup Consulting",
             title: "For the Wealthy, Work Is the New Retirement",
             describtion: "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis, Pellentesque leo…",
         },
         {
+            navigate:"/blog/consulting",
             date: "18 April 2024",
             img: Img6,
-            smallImg: Img1,
-            btn: "Startup Consulting",
+            smallImg: img5,
+            btn: "Buisness Consulting",
             title: "Providing bettest service for customers",
             describtion: "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis, Pellentesque leo…",
         },
         {
+            navigate:"/blog/corporatee",
             date: "18 April 2024",
             img: Img7,
-            smallImg: Img1,
+            smallImg: img6,
             btn: "Corporate",
             title: "A New Age for Trade & Supply Chain Finance",
             describtion: "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis, Pellentesque leo…",
         }
     ];
-
     return (
         <Box>
             <Container maxWidth={"xl"}>
@@ -75,14 +83,16 @@ function Posts() {
                 </Typography>
                 <Grid container spacing={3}>
                     {Data.map((item, index) => (
-                        <Grid item xs={12} md={6} lg={4} key={index}>
+                        <Grid item xs={12} md={6} lg={4} key={index} >
                             <Box
+                                onClick={() => router.push(item.navigate)}
                                 sx={{
                                     margin: "0 0 67px",
                                     padding: "0 15px",
                                     overflow: "hidden",
                                     position: "relative",
                                     transition: "transform 0.3s ease-in-out",
+                                    cursor: "pointer",
                                     '&:hover .image': {
                                         transform: "scale(1.1)",
                                     },
@@ -103,13 +113,13 @@ function Posts() {
                                         style={{
                                             borderRadius: "50%",
                                             marginRight: "10px",
+                                            objectFit:"contain"
                                         }}
                                     />
                                     <Typography variant="body2" sx={{ color: "mediumGray" }}>
                                         By Admin &nbsp;
                                     </Typography>
                                 </Box>
-
                                 <Box
                                     sx={{
                                         position: "relative",
@@ -117,16 +127,15 @@ function Posts() {
                                     }}
                                 >
                                     <Image className={'image'}
-                                        src={item.img}
-                                        alt={item.title}
-                                        style={{
-                                            width: "100%",
-                                            height: "auto",
-                                            display: "block",
-                                            transition: "transform 0.3s ease-in-out",
-                                        }}
+                                           src={item.img}
+                                           alt={item.title}
+                                           style={{
+                                               width: "100%",
+                                               height: "auto",
+                                               display: "block",
+                                               transition: "transform 0.3s ease-in-out",
+                                           }}
                                     />
-
                                     <Box
                                         sx={{
                                             position: "absolute",
@@ -159,10 +168,6 @@ function Posts() {
                                             {item.date.split(" ")[1]}
                                         </Typography>
                                     </Box>
-
-
-
-
                                     <Box
                                         sx={{
                                             position: "absolute",
@@ -187,7 +192,6 @@ function Posts() {
                                         {item.btn}
                                     </Box>
                                 </Box>
-
                                 <Box
                                     sx={{
                                         fontSize: "23px",
@@ -200,7 +204,6 @@ function Posts() {
                                 >
                                     {item.title}
                                 </Box>
-
                                 <Box
                                     sx={{
                                         color: "mediumGray",
@@ -208,8 +211,7 @@ function Posts() {
                                 >
                                     {item.describtion}
                                 </Box>
-
-                                <Box onClick={() => router.push('/blog/singleBlog')}
+                                <Box
                                     sx={{
                                         marginTop: "20px",
                                         display: "flex",
@@ -231,5 +233,4 @@ function Posts() {
         </Box>
     );
 }
-
 export default Posts;
