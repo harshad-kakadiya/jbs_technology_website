@@ -1,9 +1,9 @@
+"use client";
 import React from 'react';
 import {Box, Container, Grid, List, ListItem, ListItemText, Typography} from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 function HowItWorks() {
-
     const sections = [
         {
             title: "Product Scope",
@@ -37,7 +37,7 @@ function HowItWorks() {
         {
             title: "Test and Launch",
             description:
-                "Once your product is fully developed, we enter a testing phase during which we’re in constant contact to fix major bugs and make sure your product is ready to go to market.",
+                "Once your product is fully developed, we enter a testing phase during which we're in constant contact to fix major bugs and make sure your product is ready to go to market.",
             items: [
                 "Bug Reports & Fixes",
                 "User Acceptance Testing (UAT)",
@@ -61,106 +61,157 @@ function HowItWorks() {
     return (
         <Box>
             <Container maxWidth="lg" sx={{py: 6}}>
-                <Grid container spacing={4} sx={{padding: "50px 0 68px"}}>
+                <Box sx={{ position: 'relative',}}>
                     <Box
                         sx={{
                             fontSize: "45px",
                             fontWeight: "700",
                             paddingBottom: "30px",
                             textAlign: "center",
-                            paddingLeft: "20px"
+                            paddingLeft: "20px",
+                            position: 'relative',
+                            zIndex: 1000,
+                            background: '#fff',
                         }}
                     >
                         How it works
                     </Box>
                     {sections.map((section, index) => (
-                        <Grid item xs={12} key={index}>
-                            <Box sx={{display: 'inline-block'}}><ArrowForwardIcon sx={{
-                                bgcolor: '#E6107E',
-                                color: '#FFF',
-                                borderRadius: '50%',
-                                fontSize: '28px',
-                                ml: -1.6
-                            }}/></Box>
-                            <Box sx={{borderLeft: '1px solid #000', pl: 4}}>
+                        <Box
+                            key={index}
+                            sx={{
+                                position: 'sticky',
+                                top: '20%',
+                                height: '100%',
+                                display: 'flex',
+                                alignItems: 'center',
+                                zIndex: index + 1,
+                                background: '#fff',
+                                boxShadow: index === 0 ? 'none' : '0px 4px 6px rgba(0,0,0,0.04)',
+                                transition: 'box-shadow 0.3s',
+                                py:5
+                            }}
+                        >
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'flex-start',
+                                    width: '100%',
+                                }}
+                            >
+                                {/* Arrow and line */}
+                                <Box sx={{
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    minWidth: '40px',
+                                    mr: 2,
+                                }}>
+                                    <ArrowForwardIcon sx={{
+                                        bgcolor: '#E6107E',
+                                        color: '#FFF',
+                                        borderRadius: '50%',
+                                        fontSize: '28px',
+                                        mb: 0.5,
+                                    }}/>
+                                    {/* Vertical line, only show if not last section */}
+                                    {index < sections.length - 1 && (
+                                        <Box sx={{
+                                            width: '3px',
+                                            height: 'calc(100% - 28px)',
+                                            background: '#000',
+                                            margin: '0 auto',
+                                            flexGrow: 1,
+                                        }}/>
+                                    )}
+                                </Box>
+                                {/* Main content box */}
                                 <Box
                                     sx={{
-                                        p: 4,
-                                        borderRadius: "8px",
-                                        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-                                        backgroundColor: "#fff",
+                                        borderLeft: '1px solid #000',
+                                        pl: 4,
+                                        width: '100%',
                                     }}
                                 >
-                                    <Typography
-                                        variant="h5"
+                                    <Box
                                         sx={{
-                                            fontWeight: "bold",
-                                            mb: 2,
-                                            color: "#000",
-                                            fontSize: "30px",
+                                            p: 4,
+                                            borderRadius: "8px",
+                                            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                                            backgroundColor: "#fff",
                                         }}
                                     >
-                                        {section.title}
-                                    </Typography>
-                                    <Typography
-                                        variant="body1"
-                                        sx={{
-                                            mb: 3,
-                                            color: "#000",
-                                            fontSize: "16px",
-                                            lineHeight: "1.5",
-                                        }}
-                                    >
-                                        {section.description}
-                                    </Typography>
-                                    <Typography
-                                        variant="h6"
-                                        sx={{
-                                            fontWeight: "bold",
-                                            paddingTop: "20px",
-                                            color: "#000",
-                                            fontSize: "18px",
-                                        }}
-                                    >
-                                        Phase deliverables:
-                                    </Typography>
-                                    <Grid container spacing={2}>
-                                        <Grid item xs={12} sm={6}>
-                                            <List>
-                                                {section.items.slice(0, Math.ceil(section.items.length / 2)).map((item, index) => (
-                                                    <ListItem key={index} sx={{pl: 0}}>
-                                                        <ListItemText
-                                                            primary={`• ${item}`}
-                                                            primaryTypographyProps={{
-                                                                variant: "body2",
-                                                                sx: {fontSize: "16px", color: "#000"},
-                                                            }}
-                                                        />
-                                                    </ListItem>
-                                                ))}
-                                            </List>
+                                        <Typography
+                                            variant="h5"
+                                            sx={{
+                                                fontWeight: "bold",
+                                                mb: 2,
+                                                color: "#000",
+                                                fontSize: "30px",
+                                            }}
+                                        >
+                                            {section.title}
+                                        </Typography>
+                                        <Typography
+                                            variant="body1"
+                                            sx={{
+                                                mb: 3,
+                                                color: "#000",
+                                                fontSize: "16px",
+                                                lineHeight: "1.5",
+                                            }}
+                                        >
+                                            {section.description}
+                                        </Typography>
+                                        <Typography
+                                            variant="h6"
+                                            sx={{
+                                                fontWeight: "bold",
+                                                paddingTop: "20px",
+                                                color: "#000",
+                                                fontSize: "18px",
+                                            }}
+                                        >
+                                            Phase deliverables:
+                                        </Typography>
+                                        <Grid container spacing={2}>
+                                            <Grid item xs={12} sm={6}>
+                                                <List>
+                                                    {section.items.slice(0, Math.ceil(section.items.length / 2)).map((item, idx) => (
+                                                        <ListItem key={idx} sx={{pl: 0}}>
+                                                            <ListItemText
+                                                                primary={`• ${item}`}
+                                                                primaryTypographyProps={{
+                                                                    variant: "body2",
+                                                                    sx: {fontSize: "16px", color: "#000"},
+                                                                }}
+                                                            />
+                                                        </ListItem>
+                                                    ))}
+                                                </List>
+                                            </Grid>
+                                            <Grid item xs={12} sm={6}>
+                                                <List>
+                                                    {section.items.slice(Math.ceil(section.items.length / 2)).map((item, idx) => (
+                                                        <ListItem key={idx} sx={{pl: 0}}>
+                                                            <ListItemText
+                                                                primary={`• ${item}`}
+                                                                primaryTypographyProps={{
+                                                                    variant: "body2",
+                                                                    sx: {fontSize: "16px", color: "#000"},
+                                                                }}
+                                                            />
+                                                        </ListItem>
+                                                    ))}
+                                                </List>
+                                            </Grid>
                                         </Grid>
-                                        <Grid item xs={12} sm={6}>
-                                            <List>
-                                                {section.items.slice(Math.ceil(section.items.length / 2)).map((item, index) => (
-                                                    <ListItem key={index} sx={{pl: 0}}>
-                                                        <ListItemText
-                                                            primary={`• ${item}`}
-                                                            primaryTypographyProps={{
-                                                                variant: "body2",
-                                                                sx: {fontSize: "16px", color: "#000"},
-                                                            }}
-                                                        />
-                                                    </ListItem>
-                                                ))}
-                                            </List>
-                                        </Grid>
-                                    </Grid>
+                                    </Box>
                                 </Box>
                             </Box>
-                        </Grid>
+                        </Box>
                     ))}
-                </Grid>
+                </Box>
             </Container>
         </Box>
     );

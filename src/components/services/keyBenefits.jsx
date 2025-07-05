@@ -53,6 +53,8 @@ function KeyBenefits() {
                             sx={{
                                 position: "sticky",
                                 top:'40%',
+                                display:'flex',
+                                justifyContent:'center'
                             }}
                         >
                             <Box>

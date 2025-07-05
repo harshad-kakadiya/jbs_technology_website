@@ -8,10 +8,10 @@ function Software() {
         <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center',paddingTop:"30px"}}>
             <Container maxWidth={"xl"}>
 
-                <Box sx={{ width: '80%', mx: {xs:'auto',md:"0"} }}>
+                <Box sx={{ width: '100%', px: {xs:'20px',md:"50px" , lg:'unset'} }}>
                     <Box
                         sx={{
-                            fontSize: { lg: "50px", sm: "45px" },
+                            fontSize: { lg: "50px", sm: "45px" , xs:'40px' },
                             fontWeight: "700",
                             lineHeight: "75px",
                             display: "flex",
@@ -26,8 +26,8 @@ function Software() {
                         sx={{
                             fontSize: "20px",
                             paddingTop: "10px",
-                            color:"#4B535D"
-
+                            color:"#4B535D",
+                            textAlign:{ xs: "center", lg: "left" }
                         }}
                     >
                         Whatever problem you’re solving, choose the right tech and build the right User Experience
