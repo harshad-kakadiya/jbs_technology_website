@@ -239,7 +239,7 @@ function Service(props) {
                                             color: '#fff',
                                             position: 'absolute',
                                             top: {lg: 15, md: 15},
-                                            left: {lg: 145, md: 20},
+                                            left: {xl: '60%', lg:'50%', md: 20},
                                             borderRadius: '50%', // Ensures the button is round
                                             height: '40px', // Equal height
                                             width: '40px', // Equal width
