@@ -69,7 +69,6 @@ const AboutSlider = () => {
                     >
                         <Container maxWidth={'xl'}>
                             {(isLgUp && timelineData.length === 4) ? (
-                                // Static layout for 4 items on large screens
                                 <Box
                                     sx={{
                                         display: "flex",
