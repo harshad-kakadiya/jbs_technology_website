@@ -210,23 +210,24 @@ function Hiring() {
                                 color: 'white',
                                 '&:before': { display: 'none' },
                                 borderRadius: '4px !important',
-                                mb: 1.5
+                                mb: 1.5,
+                                boxShadow:"none"
+
                             }}
                         >
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
                                 sx={{
-                                    backgroundColor: '#2C3032',
-                                    '&:hover': { backgroundColor: '#2C3032' },
+                                    backgroundColor: '#121C27',
                                     borderRadius: '4px',
-                                    py: "7px"
+                                    py: "7px",
                                 }}
                             >
                                 <Typography
                                     sx={{
                                         fontWeight: 'bold',
                                         fontSize: '17px',
-                                        color: '#DCDAD7 !important',
+                                        color: '#fff !important',
                                         margin: "0px 30px"
                                     }}
                                 >
@@ -234,7 +235,7 @@ function Hiring() {
                                 </Typography>
                             </AccordionSummary>
 
-                            <AccordionDetails sx={{ backgroundColor: '#CDCAC6', p: "45px 40px 50px" }}>
+                            <AccordionDetails sx={{ backgroundColor: '#E9EAEA', p: "45px 40px 50px" }}>
                                 <Typography sx={{ mb: '17px', color: '#000', fontWeight: 600 }}>
                                     Job description
                                 </Typography>
@@ -248,7 +249,7 @@ function Hiring() {
                                     <span style={{ color: '#545A5E' }}> {job.request}</span>
                                 </Typography>
 
-                                <Typography sx={{ mb: '30px' }}>
+                                <Typography sx={{ mb: '35px' }}>
                                     <span style={{ fontWeight: 600, color: '#000' }}>Salary received:</span>
                                     <span style={{ color: '#545A5E' }}> {job.salary}</span>
                                 </Typography>

@@ -1,20 +1,20 @@
 import React from 'react';
 import {Box, Button, Container} from "@mui/material";
 import { Grid, Typography, Card, CardContent } from '@mui/material';
-import Img1 from "../../../assets/images/services/ourproducts/tech-figma.svg"
-import Img2 from "../../../assets/images/services/ourproducts/tech-nativescript.svg"
-import Img3 from "../../../assets/images/services/ourproducts/tech-node-js.svg"
-import Img4 from "../../../assets/images/services/ourproducts/tech-express-js.svg"
-import Img5 from "../../../assets/images/services/ourproducts/js.webp"
-import Img6 from "../../../assets/images/services/ourproducts/sql.jpg"
-import Img7 from "../../../assets/images/services/ourproducts/html.png"
-import Img8 from "../../../assets/images/services/ourproducts/php.png"
-import Img9 from "../../../assets/images/services/ourproducts/gpt.png"
-import Img10 from "../../../assets/images/services/ourproducts/cloud.png"
-import Img11 from "../../../assets/images/services/ourproducts/ocean.jpeg"
-import Img12 from "../../../assets/images/services/ourproducts/mongodb.png"
-import Img13 from "../../../assets/images/services/ourproducts/next.png"
-import Img14 from "../../../assets/images/services/ourproducts/microsoft.jpeg"
+import Img1 from "../../assets/images/services/ourproducts/tech-figma.svg"
+import Img2 from "../../assets/images/services/ourproducts/tech-nativescript.svg"
+import Img3 from "../../assets/images/services/ourproducts/tech-node-js.svg"
+import Img4 from "../../assets/images/services/ourproducts/tech-express-js.svg"
+import Img5 from "../../assets/images/services/ourproducts/js.webp"
+import Img6 from "../../assets/images/services/ourproducts/sql.jpg"
+import Img7 from "../../assets/images/services/ourproducts/html.png"
+import Img8 from "../../assets/images/services/ourproducts/php.png"
+import Img9 from "../../assets/images/services/ourproducts/gpt.png"
+import Img10 from "../../assets/images/services/ourproducts/cloud.png"
+import Img11 from "../../assets/images/services/ourproducts/ocean.jpeg"
+import Img12 from "../../assets/images/services/ourproducts/mongodb.png"
+import Img13 from "../../assets/images/services/ourproducts/next.png"
+import Img14 from "../../assets/images/services/ourproducts/microsoft.jpeg"
 import Image from "next/image";
 
 function Ourproducts() {

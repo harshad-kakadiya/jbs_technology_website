@@ -1,6 +1,6 @@
 import React from 'react';
 import {Box, Container, Grid} from "@mui/material";
-import Img1 from "../../../assets/images/services/businessventure/Img1.png";
+import Img1 from "../../assets/images/services/businessventure/Img1.png";
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import Image from "next/image";

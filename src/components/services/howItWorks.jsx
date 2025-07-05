@@ -1,0 +1,169 @@
+import React from 'react';
+import {Box, Container, Grid, List, ListItem, ListItemText, Typography} from "@mui/material";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+
+function HowItWorks() {
+
+    const sections = [
+        {
+            title: "Product Scope",
+            description:
+                "The Product Scope is an intensive 15-day structured process. It starts with an immersive focus session where you'll sit down with product experts and early-stage founders to dive into the product vision from a business standpoint.",
+            items: ["User Stories", "Sitemap", "UX Personas", "Key BPMN", "Tech Spike", "Stakeholder Analysis"],
+        },
+        {
+            title: "Key Screens",
+            description:
+                "We start by creating the most important screens for your product. This allows you to see exactly how your product will look and then approve the design.",
+            items: ["UI Concept", "Design System"],
+        },
+        {
+            title: "All Screens",
+            description:
+                "Once you are happy and approve the Key Screens, we extend the design to the remaining screens necessary for the MVP.",
+            items: ["Full Product UX/UI"],
+        },
+        {
+            title: "Development",
+            description:
+                "After your product is fully designed and approved, we start the implementation phase. During this phase, we progressively deliver the modules of the app, so you can test them during the process.",
+            items: [
+                "Progressive Module Delivery",
+                "Ongoing Testing and Feedback",
+                "Codebase Documentation",
+                "Regular Progress Updates",
+            ],
+        },
+        {
+            title: "Test and Launch",
+            description:
+                "Once your product is fully developed, we enter a testing phase during which we’re in constant contact to fix major bugs and make sure your product is ready to go to market.",
+            items: [
+                "Bug Reports & Fixes",
+                "User Acceptance Testing (UAT)",
+                "Final Quality Assurance (QA)",
+                "Launch Readiness Sign-Off",
+            ],
+        },
+        {
+            title: "Iterations and Improvements",
+            description:
+                "When your product is in the world and has started gaining traction, we work with you to digest user feedback and iterate your product, improving it for your customers.",
+            items: [
+                "User Feedback Reports",
+                "Bug Fixes & Technical Improvements",
+                "Updated Product Features",
+                "Performance Optimization Reports",
+            ],
+        },
+    ];
+
+    return (
+        <Box>
+            <Container maxWidth="lg" sx={{py: 6}}>
+                <Grid container spacing={4} sx={{padding: "50px 0 68px"}}>
+                    <Box
+                        sx={{
+                            fontSize: "45px",
+                            fontWeight: "700",
+                            paddingBottom: "30px",
+                            textAlign: "center",
+                            paddingLeft: "20px"
+                        }}
+                    >
+                        How it works
+                    </Box>
+                    {sections.map((section, index) => (
+                        <Grid item xs={12} key={index}>
+                            <Box sx={{display: 'inline-block'}}><ArrowForwardIcon sx={{
+                                bgcolor: '#E6107E',
+                                color: '#FFF',
+                                borderRadius: '50%',
+                                fontSize: '28px',
+                                ml: -1.6
+                            }}/></Box>
+                            <Box sx={{borderLeft: '1px solid #000', pl: 4}}>
+                                <Box
+                                    sx={{
+                                        p: 4,
+                                        borderRadius: "8px",
+                                        boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                                        backgroundColor: "#fff",
+                                    }}
+                                >
+                                    <Typography
+                                        variant="h5"
+                                        sx={{
+                                            fontWeight: "bold",
+                                            mb: 2,
+                                            color: "#000",
+                                            fontSize: "30px",
+                                        }}
+                                    >
+                                        {section.title}
+                                    </Typography>
+                                    <Typography
+                                        variant="body1"
+                                        sx={{
+                                            mb: 3,
+                                            color: "#000",
+                                            fontSize: "16px",
+                                            lineHeight: "1.5",
+                                        }}
+                                    >
+                                        {section.description}
+                                    </Typography>
+                                    <Typography
+                                        variant="h6"
+                                        sx={{
+                                            fontWeight: "bold",
+                                            paddingTop: "20px",
+                                            color: "#000",
+                                            fontSize: "18px",
+                                        }}
+                                    >
+                                        Phase deliverables:
+                                    </Typography>
+                                    <Grid container spacing={2}>
+                                        <Grid item xs={12} sm={6}>
+                                            <List>
+                                                {section.items.slice(0, Math.ceil(section.items.length / 2)).map((item, index) => (
+                                                    <ListItem key={index} sx={{pl: 0}}>
+                                                        <ListItemText
+                                                            primary={`• ${item}`}
+                                                            primaryTypographyProps={{
+                                                                variant: "body2",
+                                                                sx: {fontSize: "16px", color: "#000"},
+                                                            }}
+                                                        />
+                                                    </ListItem>
+                                                ))}
+                                            </List>
+                                        </Grid>
+                                        <Grid item xs={12} sm={6}>
+                                            <List>
+                                                {section.items.slice(Math.ceil(section.items.length / 2)).map((item, index) => (
+                                                    <ListItem key={index} sx={{pl: 0}}>
+                                                        <ListItemText
+                                                            primary={`• ${item}`}
+                                                            primaryTypographyProps={{
+                                                                variant: "body2",
+                                                                sx: {fontSize: "16px", color: "#000"},
+                                                            }}
+                                                        />
+                                                    </ListItem>
+                                                ))}
+                                            </List>
+                                        </Grid>
+                                    </Grid>
+                                </Box>
+                            </Box>
+                        </Grid>
+                    ))}
+                </Grid>
+            </Container>
+        </Box>
+    );
+}
+
+export default HowItWorks;
