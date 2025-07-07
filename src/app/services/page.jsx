@@ -19,8 +19,8 @@ function Page() {
             <Software/>
             <KeyBenefits/>
             {/*<Service />*/}
-            <HowItWorks/>
             <BusinessVenture/>
+            <HowItWorks/>
             <Ourproducts/>
         </>
     );
