@@ -20,21 +20,21 @@ function Businessventure(props) {
     ];
 
     return (
-        <Box sx={{  padding: "90px 32px 0" }}>
+        <Box sx={{  padding: "90px 32px 0" ,backgroundColor: '#141C25'}}>
             <Container maxWidth={"xl"}>
                 <Grid container spacing={3}>
                     <Grid item lg={5}>
                         <Box sx={{
                             fontSize: "36px",
                             fontWeight: "700",
-                            lineHeight: "45px"
+                            lineHeight: "45px",color: '#fff'
                         }}>
                             Why choose JBS Technology for your next business venture?
                         </Box>
                         <Box sx={{
                             fontSize: "16px",
                             padding: "20px 0 25px 0",
-                            color:"#4B535D"
+                            color:"#fff"
                         }}>
                             Our company was formed by ex-startup founders that learned how to bring new innovative products to market by doing it.
                         </Box>
