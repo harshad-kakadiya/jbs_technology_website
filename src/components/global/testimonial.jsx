@@ -91,7 +91,7 @@ function Testimonial() {
     }, []);
 
     return (
-        <Box sx={{my:10}}>
+        <Box sx={{my:10, mt:4}}>
             <Box
                 component={"h2"}
                 sx={{
@@ -135,7 +135,7 @@ function Testimonial() {
                                 }}
                             />
                             <Box textAlign={"center"} sx={{padding: {md: "0px 40px", sm: "0px 30px", xs: "0px 0px"}}}>
-                                <Box sx={{height: '162px', overflow: 'hidden'}}>
+                                <Box sx={{height: '122px', overflow: 'hidden'}}>
                                     <Typography
                                         variant="p"
                                         sx={{
@@ -159,7 +159,7 @@ function Testimonial() {
                                     - COO, AMERIMAR ENTERPRISES, INC.
                                 </Typography>
                             </Box>
-                            <Box sx={{paddingTop: "60px"}}>
+                            <Box sx={{paddingTop: "20px"}}>
                                 <Typography
                                     variant="ul"
                                     sx={{

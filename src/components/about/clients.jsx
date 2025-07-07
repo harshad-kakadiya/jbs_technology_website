@@ -41,28 +41,16 @@ const Clients = () => {
                             <Box sx={{ display: "flex", mb: { xs: "12px", sm: "0px" } }}>
                                 <Typography
                                     variant="span"
-                                    sx={{ fontSize: { xs: "15px", md: "18px" } }}
-                                >
-                                    R E C O G N I Z E D
+                                    sx={{
+                                        fontSize: "12px",
+                                        fontWeight: 400,
+                                        textTransform: "uppercase",
+                                        letterSpacing: "5px",
+                                        gap: 1,
+                                    }}>
+                                    Recognized by the best
                                 </Typography>
-                                <Typography
-                                    variant="span"
-                                    sx={{ mx: 2, fontSize: { xs: "15px", md: "18px" } }}
-                                >
-                                    B Y
-                                </Typography>
-                                <Typography
-                                    variant="span"
-                                    sx={{ mr: 2, fontSize: { xs: "15px", md: "18px" } }}
-                                >
-                                    T H E
-                                </Typography>
-                                <Typography
-                                    variant="span"
-                                    sx={{ fontSize: { xs: "15px", md: "18px" } }}
-                                >
-                                    B E S T
-                                </Typography>
+
                             </Box>
                             <Box>
                                 <Typography
