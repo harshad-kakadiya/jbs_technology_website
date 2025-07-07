@@ -119,7 +119,7 @@ function Footer2() {
                     </Grid>
                 </Grid>
 
-                <Divider sx={{my: 4, backgroundColor: "gray"}}/>
+                <Divider sx={{my: 2, backgroundColor: "gray"}}/>
 
                 <Grid container spacing={4}>
                     <Grid item xs={12} sm={6} md={3}>

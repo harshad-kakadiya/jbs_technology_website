@@ -86,7 +86,6 @@ function HowItWorks() {
                                 alignItems: 'center',
                                 zIndex: index + 1,
                                 background: '#fff',
-                                transition: 'box-shadow 0.3s',
                                 py: 6,
                             }}
                         >
@@ -97,7 +96,6 @@ function HowItWorks() {
                                     width: '100%',
                                 }}
                             >
-                                {/* Arrow and line */}
                                 <Box sx={{
                                     display: 'flex',
                                     flexDirection: 'column',

@@ -48,7 +48,7 @@ function Ourproducts() {
         };
 
     return (
-        <Box sx={{padding:"0 0 160px"}}>
+        <Box sx={{padding:"0 0 40px"}}>
            <Container maxWidth={"xl"}>
                <Box sx={{
                    fontSize: {md:"55px",sm:"44px"},
