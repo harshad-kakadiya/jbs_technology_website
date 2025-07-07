@@ -182,70 +182,70 @@ const Modification = () => {
                                     expectations and budget.
                                 </Typography>
                             </Box>
-                            <Box mt={5}>
-                                <Swiper
-                                    slidesPerView={1}
-                                    spaceBetween={30}
-                                    className="mySwiper"
-                                    navigation={{
-                                        prevEl: ".custom-prev",
-                                        nextEl: ".custom-next",
-                                    }}
-                                    modules={[Navigation]}
-                                    loop={true}
-                                >
-                                    <SwiperSlide>
-                                        <Typography
-                                            variant="h2"
-                                            sx={{fontSize: "25px", fontWeight: "500", mb: "22px"}}
-                                        >
-                                            Our Mission
-                                        </Typography>
-                                        <Typography
-                                            variant="h2"
-                                            sx={{
-                                                fontSize: "17px",
-                                                lineHeight: "28px",
-                                                color: "#0A1119",
-                                                width: "90%",
-                                            }}
-                                        >
-                                            At JBS Technology, our mission is to deliver innovative digital solutions
-                                            and education services that empower businesses to grow, adapt, and succeed
-                                            in a fast-changing world.
-                                        </Typography>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <Typography
-                                            variant="h2"
-                                            sx={{fontSize: "25px", fontWeight: "500", mb: "22px"}}
-                                        >
-                                            Our Vision
-                                        </Typography>
-                                        <Typography
-                                            variant="h2"
-                                            sx={{
-                                                fontSize: "17px",
-                                                lineHeight: "28px",
-                                                color: "#0A1119",
-                                                width: "90%",
-                                            }}
-                                        >
-                                            To be a trusted global leader in technology and education solutions, driving
-                                            innovation and shaping a smarter, more connected future for businesses and
-                                            communities.
-                                        </Typography>
-                                    </SwiperSlide>
-                                </Swiper>
-                                <Box sx={{display: "flex", justifyContent: "start", mt: 4}}>
-                                    <IconButton className="custom-prev" sx={{mx: 2}}>
-                                        <ArrowBack/>
-                                    </IconButton>
-                                    <IconButton className="custom-next" sx={{mx: 2}}>
-                                        <ArrowForward/>
-                                    </IconButton>
-                                </Box>
-                            </Box>
+                            {/*<Box mt={5}>*/}
+                            {/*    <Swiper*/}
+                            {/*        slidesPerView={1}*/}
+                            {/*        spaceBetween={30}*/}
+                            {/*        className="mySwiper"*/}
+                            {/*        navigation={{*/}
+                            {/*            prevEl: ".custom-prev",*/}
+                            {/*            nextEl: ".custom-next",*/}
+                            {/*        }}*/}
+                            {/*        modules={[Navigation]}*/}
+                            {/*        loop={true}*/}
+                            {/*    >*/}
+                            {/*        <SwiperSlide>*/}
+                            {/*            <Typography*/}
+                            {/*                variant="h2"*/}
+                            {/*                sx={{fontSize: "25px", fontWeight: "500", mb: "22px"}}*/}
+                            {/*            >*/}
+                            {/*                Our Mission*/}
+                            {/*            </Typography>*/}
+                            {/*            <Typography*/}
+                            {/*                variant="h2"*/}
+                            {/*                sx={{*/}
+                            {/*                    fontSize: "17px",*/}
+                            {/*                    lineHeight: "28px",*/}
+                            {/*                    color: "#0A1119",*/}
+                            {/*                    width: "90%",*/}
+                            {/*                }}*/}
+                            {/*            >*/}
+                            {/*                At JBS Technology, our mission is to deliver innovative digital solutions*/}
+                            {/*                and education services that empower businesses to grow, adapt, and succeed*/}
+                            {/*                in a fast-changing world.*/}
+                            {/*            </Typography>*/}
+                            {/*        </SwiperSlide>*/}
+                            {/*        <SwiperSlide>*/}
+                            {/*            <Typography*/}
+                            {/*                variant="h2"*/}
+                            {/*                sx={{fontSize: "25px", fontWeight: "500", mb: "22px"}}*/}
+                            {/*            >*/}
+                            {/*                Our Vision*/}
+                            {/*            </Typography>*/}
+                            {/*            <Typography*/}
+                            {/*                variant="h2"*/}
+                            {/*                sx={{*/}
+                            {/*                    fontSize: "17px",*/}
+                            {/*                    lineHeight: "28px",*/}
+                            {/*                    color: "#0A1119",*/}
+                            {/*                    width: "90%",*/}
+                            {/*                }}*/}
+                            {/*            >*/}
+                            {/*                To be a trusted global leader in technology and education solutions, driving*/}
+                            {/*                innovation and shaping a smarter, more connected future for businesses and*/}
+                            {/*                communities.*/}
+                            {/*            </Typography>*/}
+                            {/*        </SwiperSlide>*/}
+                            {/*    </Swiper>*/}
+                            {/*    <Box sx={{display: "flex", justifyContent: "start", mt: 4}}>*/}
+                            {/*        <IconButton className="custom-prev" sx={{mx: 2}}>*/}
+                            {/*            <ArrowBack/>*/}
+                            {/*        </IconButton>*/}
+                            {/*        <IconButton className="custom-next" sx={{mx: 2}}>*/}
+                            {/*            <ArrowForward/>*/}
+                            {/*        </IconButton>*/}
+                            {/*    </Box>*/}
+                            {/*</Box>*/}
                         </Box>
                     </Box>
                 </Grid>

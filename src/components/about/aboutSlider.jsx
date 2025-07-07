@@ -44,20 +44,20 @@ const AboutSlider = () => {
     return (
         <>
             <Box>
-                <Box>
-                    <Typography
-                        component="img"
-                        src={image.src}
-                        alt={image.alt || "Image description"}
-                        sx={{
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                            height: {xs: "300px", md: "500px"},
-                            width: "100%",
-                            objectFit: "cover",
-                        }}
-                    />
-                </Box>
+                {/*<Box>*/}
+                {/*    <Typography*/}
+                {/*        component="img"*/}
+                {/*        src={image.src}*/}
+                {/*        alt={image.alt || "Image description"}*/}
+                {/*        sx={{*/}
+                {/*            backgroundSize: "cover",*/}
+                {/*            backgroundPosition: "center",*/}
+                {/*            height: {xs: "300px", md: "500px"},*/}
+                {/*            width: "100%",*/}
+                {/*            objectFit: "cover",*/}
+                {/*        }}*/}
+                {/*    />*/}
+                {/*</Box>*/}
                 <Box>
                     <Box
                         sx={{

@@ -68,7 +68,7 @@ function Footer2() {
             sx={{
                 backgroundColor: "#1A1F26",
                 color: "white",
-                padding: "60px 0",
+                padding: "20px 0 40px",
             }}
         >
             <Container maxWidth="xl">

@@ -1,4 +1,5 @@
 'use client';
+
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import log1 from "../../assets/images/about/clients/brand-11.png";
@@ -23,7 +24,7 @@ const logoData = [
     { id: 1, logo1: log1, logo11: log11 },
     { id: 2, logo1: log2, logo11: log22 },
     { id: 3, logo1: log3, logo11: log33 },
-    { id: 4, logo1: log4, logo11: log44 }, // <-- This one gets top: 0
+    { id: 4, logo1: log4, logo11: log44 },
     { id: 5, logo1: log5, logo11: log55 },
     { id: 6, logo1: log6, logo11: log66 },
     { id: 7, logo1: log7, logo11: log77 },

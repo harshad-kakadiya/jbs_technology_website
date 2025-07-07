@@ -1,35 +1,20 @@
 import React from 'react';
 import {Box, Container, Grid} from "@mui/material";
 import Img1 from "../../assets/images/home/Capabilities/Img1.jpg";
-import Img2 from "../../assets/images/home/Capabilities/web-dev.5f67e27742ec775b6919.png";
-import Img3 from "../../assets/images/home/Capabilities/Img3.jpg";
-import Img4 from "../../assets/images/home/Capabilities/game.0190d5398dee0a494033.png";
+import Img2 from "../../assets/images/home/Capabilities/b1c38c995a9bc2cef954124ac5e6c1df_720.jpg";
+import Img3 from "../../assets/images/home/Capabilities/portrait-person-ai-robot.jpg";
+import Img4 from "../../assets/images/home/Capabilities/image_360.png";
 import Img5 from "../../assets/images/home/Capabilities/mobileAppDevelopment.png";
 import Img6 from "../../assets/images/home/Capabilities/UI-UX.08fda19222eb922b6da9.png";
-import Img7 from "../../assets/images/home/Capabilities/digital.4e1932029eb8550230bf.png";
-import Img8 from "../../assets/images/home/Capabilities/adndroid.bfba33262b094f29bff8.jpg";
+import Img7 from "../../assets/images/home/Capabilities/image_720.png";
+import Img8 from "../../assets/images/home/Capabilities/top-view-unrecognizable-hacker-performing-cyberattack-night_720.jpg";
 
 function Capabilities() {
     const capability = [
         {
-            title: "Artificial Intelligence",
-            describtion: "Amplify your business with TechM by infusing AI in every aspect of your business, democratizing AI responsibly",
-            img: Img1,
-        },
-        {
             title: "Web Development",
             describtion: "From sleek brochure sites to robust web applications, we craft digital experiences that captivate, convert, and elevate your business.",
             img: Img2,
-        },
-        {
-            title: "Cloud and Infrastructure Services",
-            describtion: "Empower your organization with a powerfully designed infrastructure stack and support technologies",
-            img: Img3,
-        },
-        {
-            title: "Game Development",
-            describtion: "At JBS Technology, we create captivating, high-quality games with a collaborative team of skilled developers, designers, and artists.",
-            img: Img4,
         },
         {
             title: "Mobile App Development",
@@ -47,8 +32,23 @@ function Capabilities() {
             img: Img7,
         },
         {
-            title: "Android Development",
-            describtion: "JBS Technology's Android Development course offers hands-on training to build dynamic mobile apps, guided by expert trainers in a practical setting.",
+            title: "Artificial Intelligence",
+            describtion: "Amplify your business with TechM by infusing AI in every aspect of your business, democratizing AI responsibly",
+            img: Img1,
+        },
+        {
+            title: "Agentic AI",
+            describtion: "Empower your organization with a powerfully designed infrastructure stack and support technologies",
+            img: Img3,
+        },
+        {
+            title: "Frontend",
+            describtion: "At JBS Technology, we create Pixel-perfect, responsive, and high-performance UI built with modern tech like React and Tailwind CSS.",
+            img: Img4,
+        },
+        {
+            title: "Backend",
+            describtion: "Secure, scalable, and high-performance server-side solutions using Node.js, Express, and modern databases.",
             img: Img8,
         }
     ];

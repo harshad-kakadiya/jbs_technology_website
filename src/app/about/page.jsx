@@ -27,7 +27,7 @@ const Page = () => {
             <ProgecksRets/>
             <TeamPage/>
             <Customers/>
-            <Clients/>
+            {/*<Clients/>*/}
             <Collab/>
         </>
     );

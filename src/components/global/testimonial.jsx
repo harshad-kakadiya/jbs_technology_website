@@ -1,4 +1,5 @@
 'use client';
+
 import {Box, Container, Grid, Typography} from "@mui/material";
 import React, {useEffect, useState} from "react";
 import background1 from "../../assets/images/about/testimonial/img-1.png";
@@ -19,7 +20,7 @@ const users = [
         imageSrc: img1.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "Aklima The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.",
+            "JBS Technology delivered exactly what we needed. Aklima was impressed by their quick response time and excellent development quality.",
     },
     {
         id: 2,
@@ -27,7 +28,7 @@ const users = [
         imageSrc: img2.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "Fatima Asrafy standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.",
+            "We worked with JBS Technology for a custom solution. Fatima appreciated their strong technical skills and professional communication.",
     },
     {
         id: 3,
@@ -35,15 +36,15 @@ const users = [
         imageSrc: img3.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.",
+            "JBS Technology handled our web development project efficiently. Jannat praised their timely delivery and attention to detail.",
     },
     {
         id: 4,
-        name: "JOHNS DUE ",
+        name: "JOHNS DUE",
         imageSrc: img4.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "Standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.",
+            "Johns Due found JBS Technology to be reliable and easy to work with. Their team delivered a solid product within the expected time frame.",
     },
     {
         id: 5,
@@ -51,7 +52,7 @@ const users = [
         imageSrc: img5.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "John Doe The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.",
+            "John appreciated the transparency and quality JBS Technology brought to the project. The experience was smooth from start to finish.",
     },
     {
         id: 6,
@@ -59,15 +60,15 @@ const users = [
         imageSrc: img6.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "Chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.",
+            "Amar mentioned how the JBS Technology team was responsive and helpful. Their ability to customize features was especially valuable.",
     },
     {
         id: 7,
-        name: "FATIMA MA ",
+        name: "FATIMA MA",
         imageSrc: img7.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.",
+            "Fatima shared a great experience with JBS Technology. The final result exceeded her expectations, and support was excellent.",
     },
 ];
 
@@ -90,8 +91,18 @@ function Testimonial() {
     }, []);
 
     return (
-        <Box>
-            <Box sx={{padding: "60px 0px"}}>
+        <Box sx={{my:10}}>
+            <Box
+                component={"h2"}
+                sx={{
+                    fontSize: 45,
+                    fontWeight: 600,
+                    textAlign: "center",
+                }}
+            >
+                Clients we are proud of
+            </Box>
+            <Box sx={{padding: "30px 0px"}}>
                 <Container maxWidth="xl">
                     <Grid container justifyContent={"center"} sx={{position: "relative"}}>
                         <Grid item xs={12}>

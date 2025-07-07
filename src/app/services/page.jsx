@@ -18,7 +18,7 @@ function Page() {
             <HeadingPage bgImg={bg1.src} heading={'Services'} breadcrumbs={breadCrumbs}/>
             <Software/>
             <KeyBenefits/>
-            <Service />
+            {/*<Service />*/}
             <HowItWorks/>
             <BusinessVenture/>
             <Ourproducts/>

@@ -8,6 +8,7 @@ import Capabilities from "../components/home/capabilities";
 import ValuePropositions from "../components/home/value-propositions";
 import AboutBrand from "../components/home/aboutBrand";
 import FunFactCounter from "../components/global/funfactcouter";
+import Clients from "@/components/about/clients";
 
 export default function Home() {
     return (
@@ -39,7 +40,8 @@ export default function Home() {
                 ]}
             />
             <Testimonial />
-            <AboutBrand />
+            <Clients />
+            {/*<AboutBrand />*/}
             {/*<Enterprise />*/}
             {/*<Herosection />*/}
             {/*<Services />*/}
