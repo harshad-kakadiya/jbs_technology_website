@@ -17,7 +17,7 @@ const Modification = () => {
 
     return (
         <Box>
-            <Grid container item xs={12} spacing={2}>
+            <Grid container item xs={12} spacing={2} alignItems="center">
                 <Grid item xs={12} sm={12} md={6} lg={6} sx={{backgroundColor: "#F4F4F4",}}>
                     <Box
                         sx={{
@@ -25,7 +25,7 @@ const Modification = () => {
                             display: "flex",
                             flexDirection: "column",
                             justifyContent: "center",
-                            padding: "80px 20px",
+                            padding: "50px 20px",
                             overflow: "hidden",
                         }}
                     >
@@ -50,33 +50,33 @@ const Modification = () => {
                                     left: "0",
                                     display: "flex",
                                     gap: 1,
-                                    pt: 2,
+                                    // pt: 2,
                                 }}
                             >
                                 WELCOME TO JBS TECHNOLOGY
                             </Typography>
-                            <Image
-                                src={circleimg}
-                                alt=""
-                                style={{
-                                    width: "400px",
-                                    height: "400px",
-                                    position: "absolute",
-                                    top: "-250px",
-                                    left: "60%",
-                                }}
-                            />
-                            <Image
-                                src={circleimg}
-                                alt=""
-                                style={{
-                                    width: "400px",
-                                    height: "400px",
-                                    position: "absolute",
-                                    top: "-180px",
-                                    left: "70%",
-                                }}
-                            />
+                            {/*<Image*/}
+                            {/*    src={circleimg}*/}
+                            {/*    alt=""*/}
+                            {/*    style={{*/}
+                            {/*        width: "400px",*/}
+                            {/*        height: "400px",*/}
+                            {/*        position: "absolute",*/}
+                            {/*        top: "-250px",*/}
+                            {/*        left: "60%",*/}
+                            {/*    }}*/}
+                            {/*/>*/}
+                            {/*<Image*/}
+                            {/*    src={circleimg}*/}
+                            {/*    alt=""*/}
+                            {/*    style={{*/}
+                            {/*        width: "400px",*/}
+                            {/*        height: "400px",*/}
+                            {/*        position: "absolute",*/}
+                            {/*        top: "-180px",*/}
+                            {/*        left: "70%",*/}
+                            {/*    }}*/}
+                            {/*/>*/}
                         </Box>
                         <Box
                             sx={{
@@ -85,7 +85,7 @@ const Modification = () => {
                                 justifyContent: {xs: "center", lg: "end"},
                                 height: {xs: "auto", lg: "80%"},
                                 textAlign: {xs: "start", lg: "left"},
-                                mt: 20,
+                                mt: 5,
                             }}
                         >
                             <Box>
@@ -107,7 +107,7 @@ const Modification = () => {
                                         gap: 2,
                                         justifyContent: {xs: "center", lg: "start"},
                                         pt: 2,
-                                        pb: 10,
+                                        // pb: 4,
                                     }}
                                 >
                                     <Button
@@ -148,8 +148,8 @@ const Modification = () => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={6} lg={6}>
                     <Box>
-                        <Box sx={{padding: "80px 20px"}}>
-                            <Box sx={{borderBottom: "1px solid #D3D5D6"}}>
+                        <Box sx={{padding: { xs:"20px 20px",lg:"80px 20px"}}}>
+                            <Box >
                                 <Typography
                                     sx={{
                                         fontSize: "15px",
@@ -172,6 +172,7 @@ const Modification = () => {
                                         color: "#4B535D",
                                         lineHeight: "25px",
                                         py: 2,
+                                        pb:{xs:3,lg:0},
                                         width: "90%"
                                     }}
                                 >

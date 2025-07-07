@@ -13,18 +13,14 @@ const slides = [
     {
         title: "Excellence in Software Engineering.",
         description:
-            "Achieve the right growth curve with the virtuous Technology Partner. " +
-            "Utilizing the foremost technology accompanied by a great team will power " +
-            "you to be world-class digital experiences and identity.",
+            "Empower your business with elite software solutions tailored to your vision. Our expert team combines cutting-edge technologies and industry best practices to craft scalable, secure, and high-performing digital products.",
         button: "Schedule A Free Consultation",
         image: img1,
     },
     {
         title: "Technology Made With Trust.",
         description:
-            "Achieve the right growth curve with the virtuous Technology Partner. " +
-            "Utilizing the foremost technology accompanied by a great team will power " +
-            "you to be world-class digital experiences and identity.",
+            "Build lasting digital solutions with a partner you can rely on. We bring transparency, technical excellence, and a commitment to your success—ensuring technology that’s not only advanced, but trustworthy.",
         button: "Schedule A Free Consultation",
         image: img2,
     },
@@ -82,26 +78,12 @@ function Herosection() {
                                         sx={{
                                             fontSize: { xl: "55px", md: '45px', sm: "35px", xs: "28px" },
                                             fontWeight: 500,
-                                            margin: "0 0 20px",
+                                            margin: "0 0 30px",
                                         }}
                                     >
                                         {item.title}
                                     </Typography>
-                                    <Box
-                                        sx={{
-                                            width: "60px",
-                                            height: "4px",
-                                            backgroundColor: "white",
-                                            bottom:{marginBottom:".5px"}
-                                        }}
-                                    />
-                                    <Box sx={{maxWidth: "100%",
-                                        height: ".5px",
-                                        backgroundColor: "#5A6168",
-                                        margin: "0 0 25px",
-                                        display:"flex",
-                                        alignItems:"center",
-                                    }}/>
+
                                     <Typography
                                         variant="body1"
                                         sx={{

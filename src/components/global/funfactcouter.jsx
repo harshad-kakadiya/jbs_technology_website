@@ -49,7 +49,7 @@ function FunFactCounter({ gap, color, heading, counters, counterDetails }) {
                                             sx={{
                                                 fontSize: { xs: 60, sm: 65, md: 72 },
                                                 fontWeight: 600,
-                                                color: color ? "white" : "red",
+                                                color: color ? "white" : "#1A1F26",
                                             }}
                                         >
                                             <CountUp start={0} end={counter.value} duration={1} />+

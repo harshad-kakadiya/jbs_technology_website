@@ -57,11 +57,13 @@ function Ourmission() {
                                     lineHeight: "30px",
                                     fontWeight: 400,
                                     color: "#fff",
+                                    textTransform:"uppercase",
                                     letterSpacing: "3.2px",
                                 }}
                             >
-                                Jbs Technology since 1996
+                                Jbs Technology since 2021
                             </Typography>
+
                             <Typography
                                 sx={{
                                     fontSize: {md: "35px", xs: "26px", lg: "45px"},
