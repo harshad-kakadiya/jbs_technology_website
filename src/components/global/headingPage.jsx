@@ -79,6 +79,7 @@ function HeadingPage({bgImg , heading , breadcrumbs}) {
                                         color: "white",
                                         "&:hover": {
                                             textDecoration: "underline",
+                                            cursor: "pointer",
                                         },
                                     }}
                                 >

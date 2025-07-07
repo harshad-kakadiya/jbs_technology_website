@@ -3,20 +3,20 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import log1 from "../../assets/images/about/clients/brand-11.png";
-import log11 from "../../assets/images/about/clients/brand-1.png";
 import log2 from "../../assets/images/about/clients/brand-22.png";
-import log22 from "../../assets/images/about/clients/brand-2.png";
 import log3 from "../../assets/images/about/clients/brand-33.png";
-import log33 from "../../assets/images/about/clients/brand-3.png";
 import log4 from "../../assets/images/about/clients/brand-44.png";
-import log44 from "../../assets/images/about/clients/brand-4.png";
 import log5 from "../../assets/images/about/clients/brand-55.png";
-import log55 from "../../assets/images/about/clients/brand-5.png";
 import log6 from "../../assets/images/about/clients/brand-66.png";
-import log66 from "../../assets/images/about/clients/brand-6.png";
 import log7 from "../../assets/images/about/clients/brand-77.png";
-import log77 from "../../assets/images/about/clients/brand-7.png";
 import log8 from "../../assets/images/about/clients/brand-88.png";
+import log11 from "../../assets/images/about/clients/brand-1.png";
+import log22 from "../../assets/images/about/clients/brand-2.png";
+import log33 from "../../assets/images/about/clients/brand-3.png";
+import log44 from "../../assets/images/about/clients/brand-4.png";
+import log55 from "../../assets/images/about/clients/brand-5.png";
+import log66 from "../../assets/images/about/clients/brand-6.png";
+import log77 from "../../assets/images/about/clients/brand-7.png";
 import log88 from "../../assets/images/about/clients/brand-8.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 

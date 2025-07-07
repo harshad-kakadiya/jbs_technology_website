@@ -7,18 +7,19 @@ import img4 from '../../assets/images/portfolio/4.png';
 import img5 from '../../assets/images/portfolio/5.jpg';
 import img6 from '../../assets/images/portfolio/6.jpg';
 import img7 from '../../assets/images/portfolio/7 (1).png';
+
+import log11 from "../../assets/images/portfolio/brand-1.png";
+import log33 from "../../assets/images/portfolio/brand-3.png";
+import log44 from "../../assets/images/portfolio/brand-4.png";
+import log66 from "../../assets/images/portfolio/brand-6.png";
+import log77 from "../../assets/images/portfolio/brand-7.png";
+import log88 from "../../assets/images/portfolio/brand-8-removebg-preview.png";
+import img99 from "../../assets/images/portfolio/jbs-xigw9mwa_720.png";
+
 import { Box, Grid } from '@mui/material';
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 const slides = [
-    {
-        name: 'Education CRM',
-        title: 'Institute Management System',
-        description:
-            'The Institute Management System (IMS) developed by JBS Technology is a comprehensive CRM solution tailored for educational institutions. This robust platform streamlines administrative tasks, enhances communication, and improves overall efficiency, allowing institutes to focus on delivering quality education.',
-        button: 'See Case Study',
-        image: img1,
-        route:'/portfolio/education-crm',
-    },
     {
         name: 'Social Impact Finance',
         title: 'Girls First Finance',
@@ -27,15 +28,21 @@ const slides = [
         button: 'See Case Study',
         image: img2,
         route:'/portfolio/social-impact-finance',
+        bgcolor: '#FFF',
+        color: '#1A1F26',
+        logo:log11
     },
     {
-        name: 'Programmatic Advertising',
-        title: 'War Room Website',
+        name: 'Education CRM',
+        title: 'Institute Management System',
         description:
-            "At War Room, we excel in one area: programmatic ads. Our highly specialized ad ops team delivers exceptional ad campaigns that go beyond the capabilities of traditional agencies. Our deep expertise allows us to exceed conversion goals consistently, and we're confident we can achieve the same success for you.",
+            'The Institute Management System (IMS) developed by JBS Technology is a comprehensive CRM solution tailored for educational institutions. This robust platform streamlines administrative tasks, enhances communication, and improves overall efficiency, allowing institutes to focus on delivering quality education.',
         button: 'See Case Study',
-        image: img3,
-        route:'/portfolio/programmatic-advertising',
+        image: img1,
+        route:'/portfolio/education-crm',
+        bgcolor: '#BFAFED',
+        color: '#1A1F26',
+        logo:img99,
     },
     {
         name: 'Gold Loan Services',
@@ -45,15 +52,21 @@ const slides = [
         button: 'See Case Study',
         image: img4,
         route:'/portfolio/gold-loan-services',
+        bgcolor: '#FFF',
+        color: '#1A1F26',
+        logo:log33
     },
     {
-        name: 'Stock Market Community',
-        title: 'Hedger Community Website',
+        name: 'Programmatic Advertising',
+        title: 'War Room Website',
         description:
-            "Hedger Community is your go-to platform for all things related to the stock market. Whether you're a seasoned investor or a beginner, our website provides the resources, tools, and community support you need to navigate the stock market with confidence. At Hedger Community, we aim to empower our users with comprehensive information, real-time updates, and expert insights to help you make informed investment decisions.",
+            "At War Room, we excel in one area: programmatic ads. Our highly specialized ad ops team delivers exceptional ad campaigns that go beyond the capabilities of traditional agencies. Our deep expertise allows us to exceed conversion goals consistently, and we're confident we can achieve the same success for you.",
         button: 'See Case Study',
-        image: img5,
-        route:'/portfolio/stock-market-community',
+        image: img3,
+        route:'/portfolio/programmatic-advertising',
+        bgcolor: '#F4CBD4',
+        color: '#1A1F26',
+        logo: log88
     },
     {
         name: 'Consumer Co-operative',
@@ -63,6 +76,21 @@ const slides = [
         button: 'See Case Study',
         image: img6,
         route: '/portfolio/consumer-co-operative',
+        bgcolor: '#FFF',
+        color: '#1A1F26',
+        logo:log44
+    },
+    {
+        name: 'Stock Market Community',
+        title: 'Hedger Community Website',
+        description:
+            "Hedger Community is your go-to platform for all things related to the stock market. Whether you're a seasoned investor or a beginner, our website provides the resources, tools, and community support you need to navigate the stock market with confidence. At Hedger Community, we aim to empower our users with comprehensive information, real-time updates, and expert insights to help you make informed investment decisions.",
+        button: 'See Case Study',
+        image: img5,
+        route:'/portfolio/stock-market-community',
+        bgcolor: '#758694',
+        color: '#1A1F26',
+        logo:log66
     },
     {
         name: 'Jewelry ERP',
@@ -72,6 +100,9 @@ const slides = [
         button: 'See Case Study',
         image: img7,
         route: '/portfolio/jewelry-erp',
+        bgcolor: '#F2EFEB',
+        color: '#1A1F26',
+        logo:log77
     }
 ];
 function Socialmedia() {
@@ -87,8 +118,8 @@ function Socialmedia() {
                     key={index}
                     sx={{
                         padding: { md: '0 32px', sm: '0' },
-                        backgroundColor: index % 2 === 0 ? '#fff' : '#000',
-                        color: index % 2 === 0 ? '#000' : '#fff',
+                        backgroundColor: item.bgcolor,
+                        color: item.color,
                         // height:{md:"600px"},
                         display:"flex",
                         alignItems:"center"
@@ -105,14 +136,8 @@ function Socialmedia() {
                                 <>
                                     <Grid item md={6} sm={12}>
                                         <Box>
-                                            <Box
-                                                sx={{
-                                                    color: '#0fa4ea',
-                                                    fontSize: '18px',
-                                                    fontWeight: '400',
-                                                }}
-                                            >
-                                                {item.name}
+                                            <Box sx={{height:'100%' , width: '120px'}}>
+                                                <img src={item.logo.src} alt={item.name} style={{objectFit: 'contain' , height: '100%' , width:'100%'}} />
                                             </Box>
                                             <Box
                                                 sx={{
@@ -138,15 +163,16 @@ function Socialmedia() {
                                                     fontSize: '14px',
                                                     textDecoration: 'none',
                                                     padding: '15px 30px',
-                                                    border: '2px solid #c36',
+                                                    border: '2px solid #1A1F26',
                                                     display: 'inline-block',
                                                     fontWeight: '700',
                                                     cursor: 'pointer',
                                                     lineHeight: '1',
                                                     borderRadius: '500px 500px',
                                                     mt: '23px',
+                                                    transition:'.3s',
                                                     ':hover': {
-                                                        background: '#c36',
+                                                        background: '#1A1F26',
                                                         color: '#fff',
                                                     },
                                                 }}
@@ -186,14 +212,8 @@ function Socialmedia() {
                                     </Grid>
                                     <Grid item md={6} sm={12}>
                                         <Box sx={{padding:"0 20px" }}>
-                                            <Box
-                                                sx={{
-                                                    color: '#0fa4ea',
-                                                    fontSize: '18px',
-                                                    fontWeight: '400',
-                                                }}
-                                            >
-                                                {item.name}
+                                            <Box sx={{height:'100%' , width: '120px'}}>
+                                                <img src={item.logo.src} alt={item.name} style={{objectFit: 'contain' , height: '100%' , width:'100%'}} />
                                             </Box>
                                             <Box
                                                 sx={{
@@ -219,15 +239,17 @@ function Socialmedia() {
                                                     fontSize: '14px',
                                                     textDecoration: 'none',
                                                     padding: '15px 30px',
-                                                    border: '2px solid #c36',
+                                                    border: '2px solid #1A1F26',
                                                     display: 'inline-block',
                                                     fontWeight: '700',
-                                                    lineHeight: '1',
                                                     cursor: 'pointer',
+                                                    lineHeight: '1',
                                                     borderRadius: '500px 500px',
                                                     mt: '23px',
+                                                    transition:'.3s',
                                                     ':hover': {
-                                                        background: '#c36',
+                                                        background: '#1A1F26',
+                                                        color: '#fff',
                                                     },
                                                 }}
                                                 onClick={() => router.push(item.route)}
