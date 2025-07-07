@@ -86,9 +86,8 @@ function HowItWorks() {
                                 alignItems: 'center',
                                 zIndex: index + 1,
                                 background: '#fff',
-                                // boxShadow: index === 0 ? 'none' : '0px 4px 6px rgba(0,0,0,0.04)',
                                 transition: 'box-shadow 0.3s',
-                                py: 5,
+                                py: 6,
                             }}
                         >
                             <Box
