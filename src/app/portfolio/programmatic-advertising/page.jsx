@@ -60,7 +60,7 @@ function Page() {
         {
             name: "Results",
             title: "Consistently Higher Conversions and ROI",
-            description: "Clients consistently see a measurable increase in conversions, improved ROI, and overall campaign performance that far exceeds expectations—proving that when ads are done right, results follow.",
+            description: "Clients consistently see a measurable increase in conversions, improved ROI, and overall campaign performance that far exceeds expectations proving that when ads are done right, results follow.",
         },
 
     ];
@@ -109,7 +109,7 @@ function Page() {
             description2:
                 'Without real-time campaign optimization, ad spend is wasted on underperforming channels or irrelevant audiences.',
             description3:
-                'Broad targeting methods result in impressions without conversions — failing to capture high-intent users at the right time.',
+                'Broad targeting methods result in impressions without conversions failing to capture high-intent users at the right time.',
             description4:
                 'Managing multiple disconnected tools and platforms creates inefficiencies and poor attribution accuracy.',
             icon: <ArrowCircleRightIcon fontSize={'large'} />,
@@ -125,7 +125,7 @@ function Page() {
             description1:
                 'We begin with a comprehensive analysis of past ad performance, user behavior, and platform gaps to identify areas of opportunity.',
             description2:
-                'Custom targeting blueprints are created using behavioral data, device info, and location — reaching the right person at the right moment.',
+                'Custom targeting blueprints are created using behavioral data, device info, and location reaching the right person at the right moment.',
             description3:
                 'Our ad ops team monitors campaign performance live, making intelligent adjustments on-the-fly to maximize effectiveness.',
             description4:

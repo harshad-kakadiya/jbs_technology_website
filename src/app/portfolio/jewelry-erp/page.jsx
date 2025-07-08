@@ -57,13 +57,13 @@ function Page() {
             name: "Solution",
             title: "Custom ERP for Seamless Hardware-Software Integration",
             description:
-                "JBS Technology designed a robust ERP platform tailored to the jewelry industry that connected directly with RFID and EAS systems—offering real-time insights, instant alerts, and powerful analytics in a simplified interface.",
+                "JBS Technology designed a robust ERP platform tailored to the jewelry industry that connected directly with RFID and EAS systems offering real-time insights, instant alerts, and powerful analytics in a simplified interface.",
         },
         {
             name: "Results",
             title: "Efficient Operations with Real-Time Visibility",
             description:
-                "The integrated ERP enhanced operational accuracy, reduced theft risks through real-time tracking, and empowered staff with actionable data—leading to faster decision-making and improved system reliability.",
+                "The integrated ERP enhanced operational accuracy, reduced theft risks through real-time tracking, and empowered staff with actionable data leading to faster decision-making and improved system reliability.",
         },
     ];
 
@@ -177,7 +177,7 @@ function Page() {
                 name={'Siddharth Desai'}
                 status={'CTO, Diamond Software'}
                 projectdes={
-                    'We were impressed by JBS Technology’s ability to understand our unique hardware-software challenge and deliver a platform that not only worked—but elevated our system altogether. The integration, performance, and intuitive design exceeded our expectations.'
+                    'We were impressed by JBS Technology’s ability to understand our unique hardware-software challenge and deliver a platform that not only worked but elevated our system altogether. The integration, performance, and intuitive design exceeded our expectations.'
                 }
             />
         </>

@@ -61,7 +61,7 @@ function HowItWorks() {
     return (
         <Box>
             <Container maxWidth="lg" sx={{py: 6}}>
-                <Box sx={{position: 'relative',}}>
+                <Box sx={{ position: 'relative',}}>
                     <Box
                         sx={{
                             fontSize: "45px",
@@ -70,6 +70,7 @@ function HowItWorks() {
                             textAlign: "center",
                             paddingLeft: "20px",
                             position: 'relative',
+                            zIndex: 1000,
                             background: '#fff',
                         }}
                     >
@@ -86,7 +87,7 @@ function HowItWorks() {
                                 alignItems: 'center',
                                 zIndex: index + 1,
                                 background: '#fff',
-                                py: 6,
+                                py:6
                             }}
                         >
                             <Box
@@ -96,6 +97,7 @@ function HowItWorks() {
                                     width: '100%',
                                 }}
                             >
+                                {/* Arrow and line */}
                                 <Box sx={{
                                     display: 'flex',
                                     flexDirection: 'column',
@@ -103,20 +105,18 @@ function HowItWorks() {
                                     minWidth: '40px',
                                     mr: 2,
                                 }}>
-                                    <Typography sx={{
-                                        display: 'flex',
-                                        justifyContent: 'center',
-                                        alignItems: 'center',
-                                        color: '#141C25',
-                                        fontSize: '40px',
-                                        fontWeight: '600',
-                                    }}>
-                                        {index + 1}.
-                                    </Typography>
+                                    <ArrowForwardIcon sx={{
+                                        bgcolor: '#E6107E',
+                                        color: '#FFF',
+                                        borderRadius: '50%',
+                                        fontSize: '28px',
+                                        mb: 0.5,
+                                    }}/>
+                                    {/* Vertical line, only show if not last section */}
                                     {index < sections.length - 1 && (
                                         <Box sx={{
                                             width: '3px',
-                                            height: '100%',
+                                            height: 'calc(100% - 28px)',
                                             background: '#000',
                                             margin: '0 auto',
                                             flexGrow: 1,
@@ -126,17 +126,17 @@ function HowItWorks() {
                                 {/* Main content box */}
                                 <Box
                                     sx={{
-                                        // borderLeft: '1px solid #000',
-                                        // pl: 4,
+                                        borderLeft: '1px solid #000',
+                                        pl: 4,
                                         width: '100%',
                                     }}
                                 >
                                     <Box
                                         sx={{
                                             p: 4,
-                                            borderRadius: "24px",
-                                            // boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-                                            backgroundColor: "#141C25",
+                                            borderRadius: "8px",
+                                            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                                            backgroundColor: "#fff",
                                         }}
                                     >
                                         <Typography
@@ -144,7 +144,7 @@ function HowItWorks() {
                                             sx={{
                                                 fontWeight: "bold",
                                                 mb: 2,
-                                                color: "#FFF",
+                                                color: "#000",
                                                 fontSize: "30px",
                                             }}
                                         >
@@ -154,7 +154,7 @@ function HowItWorks() {
                                             variant="body1"
                                             sx={{
                                                 mb: 3,
-                                                color: "#FFF",
+                                                color: "#000",
                                                 fontSize: "16px",
                                                 lineHeight: "1.5",
                                             }}
@@ -166,7 +166,7 @@ function HowItWorks() {
                                             sx={{
                                                 fontWeight: "bold",
                                                 paddingTop: "20px",
-                                                color: "#FFF",
+                                                color: "#000",
                                                 fontSize: "18px",
                                             }}
                                         >
@@ -181,7 +181,7 @@ function HowItWorks() {
                                                                 primary={`• ${item}`}
                                                                 primaryTypographyProps={{
                                                                     variant: "body2",
-                                                                    sx: {fontSize: "16px", color: "#FFF"},
+                                                                    sx: {fontSize: "16px", color: "#000"},
                                                                 }}
                                                             />
                                                         </ListItem>
@@ -196,7 +196,7 @@ function HowItWorks() {
                                                                 primary={`• ${item}`}
                                                                 primaryTypographyProps={{
                                                                     variant: "body2",
-                                                                    sx: {fontSize: "16px", color: "#FFF"},
+                                                                    sx: {fontSize: "16px", color: "#000"},
                                                                 }}
                                                             />
                                                         </ListItem>

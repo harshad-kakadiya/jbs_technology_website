@@ -49,7 +49,7 @@ function Page() {
         {
             name: "Problem",
             title: "The Price of Education: Exploitation in Exchange for Opportunity",
-            description: "Many girls and young women face sexual exploitation by individuals in positions of power—such as sugar daddies, teachers, and employers—who offer tuition, grades, or job opportunities in exchange for sexual favors. This practice undermines their dignity, limits their opportunities, and perpetuates cycles of poverty and abuse. Without safe and affordable funding options, too many are forced to choose between their future and their safety.",
+            description: "Many girls and young women face sexual exploitation by individuals in positions of power such as sugar daddies, teachers, and employers who offer tuition, grades, or job opportunities in exchange for sexual favors. This practice undermines their dignity, limits their opportunities, and perpetuates cycles of poverty and abuse. Without safe and affordable funding options, too many are forced to choose between their future and their safety.",
         },
         {
             name: "Solution",
@@ -59,7 +59,7 @@ function Page() {
         {
             name: "Results",
             title: "Freedom and Dignity Restored: A Generation of Empowered Women",
-            description: "Girls and young women are now gaining access to education, training, and work opportunities on their own terms—free from coercion or abuse. With increased financial independence and awareness, they are able to make empowered decisions about their futures. Communities are beginning to reject exploitative practices, and a new generation of confident, capable women is rising to lead.",
+            description: "Girls and young women are now gaining access to education, training, and work opportunities on their own terms free from coercion or abuse. With increased financial independence and awareness, they are able to make empowered decisions about their futures. Communities are beginning to reject exploitative practices, and a new generation of confident, capable women is rising to lead.",
         },
 
     ];
@@ -136,13 +136,13 @@ function Page() {
             title3: 'Financial Literacy & Mentorship',
             title4: 'Social Impact Dashboard & Reporting',
             description1:
-                'A secure digital platform where girls can apply for and manage educational or startup funds — without middlemen or risks of exploitation.',
+                'A secure digital platform where girls can apply for and manage educational or startup funds without middlemen or risks of exploitation.',
             description2:
                 'Flexible financial products designed specifically for education and early-stage entrepreneurship, with low to no interest.',
             description3:
                 'Built-in financial education tools, budgeting support, and mentorship matching to help girls make informed decisions.',
             description4:
-                'Real-time dashboards that track impact, application rates, and funding allocation — visible to partners, funders, and communities.',
+                'Real-time dashboards that track impact, application rates, and funding allocation visible to partners, funders, and communities.',
             icon: <ArrowCircleRightIcon fontSize={'large'}/>,
             image: phoneimg3,
         },
@@ -168,7 +168,7 @@ function Page() {
                 slides={slides}
                 name={'Amina Yusuf'}
                 status={'Founder & CEO'}
-                projectdes={'JBS Technology delivered far more than just a product — they became a strategic partner in our digital transformation journey. Their deep understanding of the education sector and commitment to quality helped us streamline operations across over 300 institutions. The team\'s collaborative approach, consistent support, and innovative mindset made all the difference in scaling our impact.'}
+                projectdes={'JBS Technology delivered far more than just a product they became a strategic partner in our digital transformation journey. Their deep understanding of the education sector and commitment to quality helped us streamline operations across over 300 institutions. The team\'s collaborative approach, consistent support, and innovative mindset made all the difference in scaling our impact.'}
             />
         </>
     );

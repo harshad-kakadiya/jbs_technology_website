@@ -123,8 +123,8 @@ function Footer2() {
 
                 <Grid container spacing={4}>
                     <Grid item xs={12} sm={6} md={3}>
-                        <Box sx={{padding: "20px", backgroundColor: "#1A1F26", borderRadius: "8px"}}>
-                            <Typography variant="h6" sx={{fontWeight: 500, mb: 3, marginLeft: "23px"}}>
+                        <Box sx={{py: "20px", backgroundColor: "#1A1F26", borderRadius: "8px"}}>
+                            <Typography variant="h6" sx={{fontWeight: 500, mb: 3, marginLeft:'23px'}}>
                                 {footerData.services.title}
                             </Typography>
                             {footerData.services.links.map((service, index) => (
@@ -140,11 +140,11 @@ function Footer2() {
                                         cursor: "pointer",
                                         '&:hover': {
                                             color: "#fff",
-                                            transform: "translateX(10px)",
+                                            transform: "translateX(5px)",
                                         },
                                         '&:hover .icon': {
                                             opacity: 1,
-                                            transform: "translateX(5px)",
+                                            transform: "translateX(0px)",
                                         },
                                     }}
                                     onClick={() => router.push('./services')}

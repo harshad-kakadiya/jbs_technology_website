@@ -16,7 +16,7 @@ function Page() {
             <HeadingPage bgImg={bg1.src} heading={'Real Estate'} breadcrumbs={breadCrumbs}/>
 
             <Sector
-                    description={'At JBS Technology, we help real estate companies embrace digital transformation to stay ahead in a competitive market. Our smart solutions simplify property management, automate workflows, and enhance the buying, selling, and leasing experience for both agents and clients. From virtual tours and CRM integration to AI-powered market insights and smart contract systems, we equip real estate businesses with the tools they need to operate efficiently and deliver exceptional service. With innovation at the core, JBS Technology is shaping the future of real estate—one property at a time.'}
+                    description={'At JBS Technology, we help real estate companies embrace digital transformation to stay ahead in a competitive market. Our smart solutions simplify property management, automate workflows, and enhance the buying, selling, and leasing experience for both agents and clients. From virtual tours and CRM integration to AI-powered market insights and smart contract systems, we equip real estate businesses with the tools they need to operate efficiently and deliver exceptional service. With innovation at the core, JBS Technology is shaping the future of real estate one property at a time.'}
                     image={image}
             />
             <CostomerField/>
