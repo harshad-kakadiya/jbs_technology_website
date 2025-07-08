@@ -55,7 +55,7 @@ function Capabilities() {
 
     return (
         <Container maxWidth={"xl"}>
-            <Box sx={{marginTop: {xs:"30px",lg:"70px"}}}>
+            <Box sx={{marginTop: {xs:"25px",lg:"70px"}}}>
                 <Grid container spacing={4}>
                     <Grid item lg={6}>
                         <Box

@@ -91,7 +91,7 @@ function Testimonial() {
     }, []);
 
     return (
-        <Box sx={{my:10, mt:4}}>
+        <Box sx={{my:{xs:5,lg:14}}}>
             <Box
                 component={"h2"}
                 sx={{

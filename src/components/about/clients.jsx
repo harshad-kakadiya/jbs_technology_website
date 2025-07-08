@@ -35,7 +35,7 @@ const Clients = () => {
     return (
         <Box>
             <Container maxWidth="xl">
-                <Box sx={{ borderTop: "1px solid #4B535D", mt: 8 }}>
+                <Box sx={{ mt: 12 }}>
                     <Grid container spacing={2} sx={{ mt: 8 }}>
                         <Grid item xs={12} sm={6}>
                             <Box sx={{ display: "flex", mb: { xs: "12px", sm: "0px" } }}>
@@ -58,8 +58,9 @@ const Clients = () => {
                                     sx={{
                                         fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                         fontWeight: "500",
-                                        lineHeight: { xs: "60px", sm: "90px" },
+                                        lineHeight: { xs: "30px", sm: "30px" },
                                         mb: "0px",
+                                        mt:2
                                     }}
                                 >
                                     Clients Trust JBS Technology.
