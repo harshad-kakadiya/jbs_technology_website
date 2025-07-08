@@ -6,6 +6,7 @@ import SomeofthePerks from "@/components/career/someofthePerks";
 import Hiring from "@/components/career/hiring";
 import HeadingPage from "@/components/global/headingPage";
 import bg1 from "@/assets/images/career/cr1.webp";
+import Openings from "@/components/career/openings";
 
 function Page() {
 
@@ -17,11 +18,12 @@ function Page() {
     return (
         <>
             <HeadingPage bgImg={bg1.src} heading={'Career'} breadcrumbs={breadCrumbs}/>
-            <IdeasAndDrive/>
-            <CompanyValue/>
-            <SeeAbout/>
-            <SomeofthePerks/>
-            <Hiring/>
+            {/*<IdeasAndDrive/>*/}
+            {/*<CompanyValue/>*/}
+            {/*<SeeAbout/>*/}
+            {/*<SomeofthePerks/>*/}
+            {/*<Hiring/>*/}
+            <Openings/>
         </>
     );
 }

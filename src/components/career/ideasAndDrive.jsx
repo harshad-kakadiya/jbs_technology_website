@@ -49,7 +49,7 @@ function IdeasAndDrive() {
                                     textAlign: {xs: 'center', md: 'left'},
                                 }}
                             >
-                                Herrington is seeking problem solvers, creative thinkers, engineers, and business
+                                JBS is seeking problem solvers, creative thinkers, engineers, and business
                                 builders
                                 like you. Embrace a world of limitless opportunities where your talents can shine, and
                                 each
