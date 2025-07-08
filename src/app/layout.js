@@ -4,6 +4,7 @@ import { ThemeProvider } from "@mui/material";
 import theme from "../components/theme/theme";
 import Navigation from "../components/global/navigation";
 import Footer2 from "../components/global/footer2";
+import Script from "next/script";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -32,6 +33,23 @@ export default function RootLayout({ children }) {
         <ThemeProvider theme={theme}>
             <Navigation />
             {children}
+            <Script
+                id="tawkto"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `
+              var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+              (function(){
+                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/686cdcbcf905731911104cee/1ivkjsgka';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+              })();
+            `
+                }}
+            />
             <Footer2 />
         </ThemeProvider>
         </body>
