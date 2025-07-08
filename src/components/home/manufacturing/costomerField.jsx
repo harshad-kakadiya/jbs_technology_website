@@ -33,7 +33,7 @@ const data = [
 
 const CostomerField = () => {
   return (
-    <Box sx={{padding:"0 20px 80px"}}>
+    <Box sx={{padding: {sm:"0 20px 80px" , xs:'0 0 80px'}}}>
       <Container maxWidth="xxl">
         <Box>
           <Grid container xs={12} item>
@@ -46,13 +46,13 @@ const CostomerField = () => {
                 backgroundColor: "#121C27",
                 display: "flex",
                 alignItems: "center",
-                  padding:"15px 100px 15px 96px"
+                  padding: {sm:"50px 100px 50px 96px" , xs:'15px 10px 15px 40px'}
               }}
             >
 
               <Box>
                   <Grid container spacing={4} alignItems="center">
-                      <Grid item xs={12} sm={3} md={2} lg={3}  xl={2}>
+                      <Grid item xs={4} sm={3} md={2} lg={3}  xl={2}>
                           <Box
                               sx={{
                                   color: "#fff",
@@ -68,7 +68,7 @@ const CostomerField = () => {
                               <MessageIcon />
                           </Box>
                       </Grid>
-                      <Grid item xs={12} sm={6} md={5} lg={6} xl={5}>
+                      <Grid item xs={6} sm={6} md={5} lg={6} xl={5}>
                           <Typography
                               sx={{
                                   fontWeight: "500",
@@ -76,7 +76,7 @@ const CostomerField = () => {
                                   color: "white",
                               }}
                           >
-                              <CountUp end={23860} duration={5} />
+                              <CountUp end={100} duration={5} />+
                           </Typography>
                       </Grid>
                       <Grid item xs={12} sm={12} md={5} lg={12} xl={5}>
@@ -112,8 +112,8 @@ const CostomerField = () => {
                       fontSize: { xs: "25px", md: "45px" },
                       fontWeight: "500",
                       color: "#ffffff",
-                        lineHeight:"55px",
-                      padding:"80px 0 50px 0 "
+                      lineHeight: {md:"55px" , xs:'45px'},
+                      padding: {sm:"40px 0 30px 0 " , xs:'30px 0 20px 0'}
                     }}
                   >
                     We are Always Confident the Best in our Field and
@@ -140,7 +140,7 @@ const CostomerField = () => {
                 sx={{
                   backgroundImage: `url(${idd4.src})`,
                   width: "100%",
-                  height: { xs: "300px", md: "650px" },
+                  height: { xs: "400px", lg: "100%" },
                   backgroundPosition: "50%",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "cover",

@@ -51,7 +51,7 @@ function Page() {
             name: "Problem",
             title: "Disconnected Cooperative Systems & Legacy Operations",
             description:
-                "NCCF and its member cooperatives operated in fragmented environments with paper-based systems, poor visibility, and inconsistent implementation of best practices — limiting efficiency and transparency.",
+                "NCCF and its member cooperatives operated in fragmented environments with paper-based systems, poor visibility, and inconsistent implementation of best practices limiting efficiency and transparency.",
         },
         {
             name: "Solution",

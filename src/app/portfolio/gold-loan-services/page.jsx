@@ -120,7 +120,7 @@ function Page() {
             title3: 'Real-Time Customer Notifications',
             title4: 'Compliance-Ready Infrastructure',
             description1:
-                'We mapped and automated each loan-related step—integrating e-KYC, credit scoring, and valuation modules.',
+                'We mapped and automated each loan-related step integrating e-KYC, credit scoring, and valuation modules.',
             description2:
                 'Developed a responsive platform for web and mobile to serve both customers and staff across branches.',
             description3:

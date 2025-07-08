@@ -91,10 +91,10 @@ function Ourmission() {
                                     width: {lg: "90%", xs: "100%"}
                                 }}
                             >
-                                At JBS Technology, we believe in building more than just software—we build the future.
+                                At JBS Technology, we believe in building more than just software we build the future.
                                 Our tech-driven solutions are designed to scale, adapt, and elevate businesses in an
                                 ever-evolving digital world. Whether it's automation, data intelligence, or digital
-                                transformation, we ensure our innovations are not just relevant for today—but ready for
+                                transformation, we ensure our innovations are not just relevant for today but ready for
                                 tomorrow. With a focus on performance, security, and user-centric design, we deliver
                                 technology that helps your vision take flight.
                             </Typography>

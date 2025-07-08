@@ -20,7 +20,7 @@ const slides = [
     {
         title: "Technology Made With Trust.",
         description:
-            "Build lasting digital solutions with a partner you can rely on. We bring transparency, technical excellence, and a commitment to your success—ensuring technology that’s not only advanced, but trustworthy.",
+            "Build lasting digital solutions with a partner you can rely on. We bring transparency, technical excellence, and a commitment to your success ensuring technology that’s not only advanced, but trustworthy.",
         button: "Schedule A Free Consultation",
         image: img2,
     },

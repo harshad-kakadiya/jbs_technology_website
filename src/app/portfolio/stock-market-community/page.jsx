@@ -56,7 +56,7 @@ function Page() {
             name: "Solution",
             title: "Interactive Community Platform with Live Market Insights",
             description:
-                "JBS Technology created a responsive platform where users can access real-time market updates, educational content, expert advice, and community discussions — all in one place.",
+                "JBS Technology created a responsive platform where users can access real-time market updates, educational content, expert advice, and community discussions all in one place.",
         },
         {
             name: "Results",
