@@ -13,7 +13,7 @@ const features = [
         title: 'Experience and Expertise',
         description:
             'With years of proven success across industries, JBS Technology brings deep expertise and practical experience to every project delivering reliable, scalable, and future-ready solutions.',
-        background: '#121212',
+        background: '#1A1F26',
         color: 'white',
     },
     {
@@ -56,14 +56,14 @@ const Industry = () => {
                         <Grid item xs={12} sm={6} lg={4} key={index} sx={{mb: 3}}>
                             <Box sx={{
                                 display: 'flex', alignItems: 'start', gap: '1rem', '&:hover .icon': {
-                                    backgroundColor: '#121212',
+                                    backgroundColor: '#1A1F26',
                                     color: '#FFF',
                                 },
                             }}>
                                 <Avatar className={'icon'}
                                         sx={{
                                             backgroundColor: '#FFF',
-                                            color: '#121212',
+                                            color: '#1A1F26',
                                             border: '0.5px solid #000',
                                             width: '64px',
                                             height: '62px',

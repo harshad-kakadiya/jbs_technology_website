@@ -5,7 +5,7 @@ import Img1 from '../../assets/images/services/1services/Img1.svg';
 
 function Software() {
     return (
-        <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center',paddingTop:"30px"}}>
+        <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center',py:"120px"}}>
             <Container maxWidth={"xl"}>
 
                 <Box sx={{ width: '100%', px: {xs:'20px',md:"50px" , lg:'unset'} }}>

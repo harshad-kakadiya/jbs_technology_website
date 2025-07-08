@@ -11,19 +11,19 @@ import {useRouter} from "next/navigation";
 
 const slides = [
     {
-        title: "Excellence in Software Engineering.",
+        title: "Top-Rated Software Development Company",
         description:
-            "Empower your business with elite software solutions tailored to your vision. Our expert team combines cutting-edge technologies and industry best practices to craft scalable, secure, and high-performing digital products.",
-        button: "Schedule A Free Consultation",
+            "Unlock scalable growth with a trusted software engineering partner. We deliver cutting-edge custom software solutions, web applications, and digital experiences designed to accelerate your business success.",
+        button: "Book Your Free Consultation",
         image: img1,
     },
     {
-        title: "Technology Made With Trust.",
+        title: "Custom Software Solutions You Can Trust",
         description:
-            "Build lasting digital solutions with a partner you can rely on. We bring transparency, technical excellence, and a commitment to your success ensuring technology that’s not only advanced, but trustworthy.",
-        button: "Schedule A Free Consultation",
+            "Partner with a reliable technology company to build future-ready digital products. Our expert developers craft secure, scalable, and innovative solutions tailored to your business goals.",
+        button: "Book Your Free Consultation",
         image: img2,
-    },
+    }
 ];
 
 function Herosection() {

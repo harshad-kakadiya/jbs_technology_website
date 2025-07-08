@@ -113,7 +113,7 @@ const Modification = () => {
                                     <Button
                                         variant="contained"
                                         sx={{
-                                            backgroundColor: "#000",
+                                            backgroundColor: "#1A1F26",
                                             color: "#fff",
                                             borderRadius: "50px",
                                             textTransform: "none",
@@ -128,14 +128,14 @@ const Modification = () => {
                                     <Button
                                         variant="outlined"
                                         sx={{
-                                            borderColor: "#000",
+                                            borderColor: "#1A1F26",
                                             color: "#000",
                                             borderRadius: "50px",
                                             textTransform: "none",
                                             px: 4,
                                             py: 1.5,
                                             m: {xs: "5px", md: "0px"},
-                                            ":hover": {backgroundColor: "#000", color: "#fff"}
+                                            ":hover": {backgroundColor: "#1A1F26", color: "#fff"}
                                         }}
                                         onClick={() => router.push("/services")}
                                     >

@@ -61,7 +61,7 @@ const Collab = () => {
                             <Button
                                 sx={{
                                     color: "white",
-                                    backgroundColor: "black",
+                                    backgroundColor: "#1A1F26",
                                     height: {xs: "40px", sm: "45px", md: "50px"},
                                     width: {xs: "180px", sm: "200px", md: "220px"},
                                     marginTop: "40px",

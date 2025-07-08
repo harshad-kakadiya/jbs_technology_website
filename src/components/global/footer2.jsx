@@ -36,7 +36,7 @@ function Footer2() {
                 "203, City Center, Savlia Cir, Sanman Society, Mansarovar Society, Yoginagar Society, Surat, Gujarat 395006",
                 "Call us: +91 79844 43901",
                 "Email: jbs.technology26@gmail.com",
-                "Mon–Sat: 8.00am–18.00pm / Holiday: Closed",
+                "Mon–Sat: 8:00am–7:00pm / Holiday: Closed",
             ],
         },
         services: {

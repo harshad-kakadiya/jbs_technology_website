@@ -14,11 +14,11 @@ import {useRouter} from "next/navigation";
 const slides = [
     {
         title: "Our Mission",
-        description: "At JBS Technology, our mission is to deliver innovative digital solutions and education services that empower businesses to grow, adapt, and succeed in a fast-changing world."
+        description: "At JBS Technology, a leading software development company in Surat, Gujarat, our mission is to deliver custom software solutions, web applications, and future-ready digital products that empower businesses to grow through technology, adapt quickly, and thrive in a competitive digital world."
     },
     {
         title: "Our Vision",
-        description: "To be a trusted global leader in technology and education solutions, driving innovation and shaping a smarter, more connected future for businesses and communities."
+        description: "To be a trusted technology partner and global leader in software development and education, providing scalable digital experiences and innovative solutions that drive business growth and create a smarter, more connected future."
     }
 ];
 
@@ -57,7 +57,7 @@ function Ourmission() {
                                     lineHeight: "30px",
                                     fontWeight: 400,
                                     color: "#fff",
-                                    textTransform:"uppercase",
+                                    textTransform: "uppercase",
                                     letterSpacing: "3.2px",
                                 }}
                             >
@@ -71,7 +71,7 @@ function Ourmission() {
                                     marginBottom: "10px",
                                 }}
                             >
-                                Tech Solutions That Soar
+                                Future-Ready Tech Solutions by JBS Technology
                             </Typography>
                             <Typography
                                 sx={{
@@ -81,7 +81,7 @@ function Ourmission() {
                                     textWrap: "warp"
                                 }}
                             >
-                                The Technology works for Tomorrow.
+                                Custom Software That Powers Tomorrow's Growth
                             </Typography>
                             <Typography
                                 sx={{
@@ -91,12 +91,12 @@ function Ourmission() {
                                     width: {lg: "90%", xs: "100%"}
                                 }}
                             >
-                                At JBS Technology, we believe in building more than just software we build the future.
-                                Our tech-driven solutions are designed to scale, adapt, and elevate businesses in an
-                                ever-evolving digital world. Whether it's automation, data intelligence, or digital
-                                transformation, we ensure our innovations are not just relevant for today but ready for
-                                tomorrow. With a focus on performance, security, and user-centric design, we deliver
-                                technology that helps your vision take flight.
+                                At JBS Technology, a leading software development company in Surat, Gujarat, we
+                                specialize in delivering custom software solutions, scalable digital experiences, and
+                                web applications tailored to your business needs. As a trusted technology partner, our
+                                future-ready digital products are designed to drive business growth through technology.
+                                Whether you need automation, AI, cloud infrastructure, or expert software engineers—we
+                                build platforms that empower your business today and scale for tomorrow.
                             </Typography>
                             <Box sx={{
                                 paddingTop: "50px",

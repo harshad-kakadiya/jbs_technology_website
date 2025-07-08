@@ -262,8 +262,8 @@ const menuItems = [
     { text: "Services", path: "/services" },
     { text: "Portfolio", path: "/portfolio" },
     { text: "Blog", path: "/blog" },
-    { text: "Contact Us", path: "/contact" },
     { text: "Career", path: "/career" },
+    { text: "Contact Us", path: "/contact" },
 ];
 
 const Navigation = () => {

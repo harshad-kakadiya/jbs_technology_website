@@ -7,55 +7,56 @@ import Img4 from "../../assets/images/home/Capabilities/image_360.png";
 import Img5 from "../../assets/images/home/Capabilities/mobileAppDevelopment.png";
 import Img6 from "../../assets/images/home/Capabilities/UI-UX.08fda19222eb922b6da9.png";
 import Img7 from "../../assets/images/home/Capabilities/image_720.png";
-import Img8 from "../../assets/images/home/Capabilities/top-view-unrecognizable-hacker-performing-cyberattack-night_720.jpg";
+import Img8
+    from "../../assets/images/home/Capabilities/top-view-unrecognizable-hacker-performing-cyberattack-night_720.jpg";
 
 function Capabilities() {
     const capability = [
         {
+            title: "Artificial Intelligence",
+            describtion: "Amplify your business with JBS Technology, Surat's trusted technology partner, by integrating AI-powered custom software solutions and future-ready digital products to drive business growth through technology.",
+            img: Img1,
+        },
+        {
             title: "Web Development",
-            describtion: "From sleek brochure sites to robust web applications, we craft digital experiences that captivate, convert, and elevate your business.",
+            describtion: "JBS Technology, a leading software development company in Surat, Gujarat, builds high-performance web applications and scalable digital experiences to help businesses grow through technology.",
             img: Img2,
         },
         {
+            title: "Cloud and Infrastructure Services",
+            describtion: "Empower your enterprise with robust cloud infrastructure and scalable digital solutions from JBS Technology — your trusted technology partner offering expert software engineers in Surat, Gujarat.",
+            img: Img3,
+        },
+        {
+            title: "Game Development",
+            describtion: "JBS Technology specializes in creating high-quality, future-ready digital products and immersive games with expert software engineers, serving clients from Surat, Gujarat and beyond.",
+            img: Img4,
+        },
+        {
             title: "Mobile App Development",
-            describtion: "Turn your app idea into reality with our expertise. From concept to launch, we develop bespoke applications that deliver measurable outcomes.",
+            describtion: "Turn your vision into a future-ready mobile app with JBS Technology, Surat's custom software solutions leader. Our expert software engineers build scalable digital experiences that deliver results.",
             img: Img5,
         },
         {
             title: "UI/UX Designing",
-            describtion: "UI (User Interface) and UX (User Experience) design are fundamental components critical to the success of any digital product.",
+            describtion: "At JBS Technology, we craft intuitive UI/UX designs that elevate your digital products. As a Surat-based software development company, we ensure scalable digital experiences and better user engagement.",
             img: Img6,
         },
         {
             title: "Digital Marketing",
-            describtion: "At JBS Technology, we boost your online presence with tailored digital marketing strategies for optimal engagement and conversions.",
+            describtion: "JBS Technology, based in Surat, Gujarat, boosts your brand's online presence using strategic digital marketing and technology-driven solutions tailored for scalable growth and measurable ROI.",
             img: Img7,
         },
         {
-            title: "Artificial Intelligence",
-            describtion: "Amplify your business with TechM by infusing AI in every aspect of your business, democratizing AI responsibly",
-            img: Img1,
-        },
-        {
-            title: "Agentic AI",
-            describtion: "Empower your organization with a powerfully designed infrastructure stack and support technologies",
-            img: Img3,
-        },
-        {
-            title: "Frontend",
-            describtion: "At JBS Technology, we create Pixel-perfect, responsive, and high-performance UI built with modern tech like React and Tailwind CSS.",
-            img: Img4,
-        },
-        {
-            title: "Backend",
-            describtion: "Secure, scalable, and high-performance server-side solutions using Node.js, Express, and modern databases.",
+            title: "Android Development",
+            describtion: "Learn Android development at JBS Technology in Surat with expert software engineers guiding you through practical training to build custom software solutions and web applications.",
             img: Img8,
         }
     ];
 
     return (
         <Container maxWidth={"xl"}>
-            <Box sx={{marginTop: {xs:"25px",lg:"70px"}}}>
+            <Box sx={{marginTop: {xs: "25px", lg: "70px"}}}>
                 <Grid container spacing={4}>
                     <Grid item lg={6}>
                         <Box
@@ -76,13 +77,15 @@ function Capabilities() {
                                 color: 'cardTextGrey',
                                 fontWeight: 500,
                                 paddingBottom: {xs: "30px", lg: "80px"},
-                                width: {lg:"80%" , md:"100%"},
+                                width: {lg: "80%", md: "100%"},
                                 marginLeft: {lg: 15, xs: "0"}
                             }}
                         >
-                            We offer a wide range of digital solutions and best-in-class platforms to deliver meaningful
-                            outcomes, enhance customer experiences, and transform industries at scale and with
-                            unparalleled speed.
+                            At JBS Technology, a leading software development company in Surat, Gujarat, we offer a wide
+                            range of custom software solutions, web applications, and scalable digital experiences. As a
+                            trusted technology partner, we help businesses achieve meaningful outcomes, enhance customer
+                            engagement, and drive business growth through future-ready digital products—delivered with
+                            speed and precision.
                         </Box>
                     </Grid>
                 </Grid>

@@ -16,7 +16,7 @@ function MediaProject({title  , description , slides , projectdes , status ,name
             <Container maxWidth="xl" sx={{ padding: { xs: '16px', sm: '32px' } }}>
                 {/* Client Section */}
                 <Grid container spacing={4} alignItems="center">
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12}>
                         <Box sx={{ padding: { xs: '8px 0', md: '10px 0' } }}>
                             <Typography
                                 variant="h6"
@@ -50,15 +50,15 @@ function MediaProject({title  , description , slides , projectdes , status ,name
                             </Typography>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} md={6}>
-                        <Box sx={{ margin: { xs: '0', md: '0 0 0 40px' , display:"flex" , justifyContent:"center" } }}>
-                            <Image src={Img1} alt="About the Client" style={{ Width: '100%', height: 'auto'}} />
-                        </Box>
-                    </Grid>
+                    {/*<Grid item xs={12} md={6}>*/}
+                        {/*<Box sx={{ margin: { xs: '0', md: '0 0 0 40px' , display:"flex" , justifyContent:"center" } }}>*/}
+                        {/*    <Image src={Img1} alt="About the Client" style={{ Width: '100%', height: 'auto'}} />*/}
+                        {/*</Box>*/}
+                    {/*</Grid>*/}
                 </Grid>
 
                 {slides.map((item, index) => (
-                    <Box key={index + 1} sx={{ padding: '64px 0px' }}>
+                    <Box key={index + 1} sx={{ padding: {md:'64px 0px' , xs:'30px 0px'} }}>
                         <Grid
                             container
                             spacing={4}
@@ -123,7 +123,7 @@ function MediaProject({title  , description , slides , projectdes , status ,name
                     </Box>
                 ))}
 
-                <Box sx={{ padding: "96px 0" }}>
+                <Box sx={{ padding: "0 0 96px" }}>
                         <Box
                             sx={{
                                 background: "#F4FAFE",
@@ -134,21 +134,21 @@ function MediaProject({title  , description , slides , projectdes , status ,name
                             }}
                         >
                             <Grid container alignItems="center">
-                                <Grid item xs={12} md={3}  display="flex" justifyContent="center">
-                                    <Box>
-                                        <Image
-                                            src={img2}
-                                            alt="Jacquelle Amankonah Horton"
-                                            style={{
-                                                borderRadius: "10px",
-                                                height:"280px",
-                                                width:"280px"
-                                            }}
-                                        />
-                                    </Box>
-                                </Grid>
+                                {/*<Grid item xs={12} md={3}  display="flex" justifyContent="center">*/}
+                                {/*    <Box>*/}
+                                {/*        <Image*/}
+                                {/*            src={img2}*/}
+                                {/*            alt="Jacquelle Amankonah Horton"*/}
+                                {/*            style={{*/}
+                                {/*                borderRadius: "10px",*/}
+                                {/*                height:"280px",*/}
+                                {/*                width:"280px"*/}
+                                {/*            }}*/}
+                                {/*        />*/}
+                                {/*    </Box>*/}
+                                {/*</Grid>*/}
 
-                                <Grid item xs={12} md={9}>
+                                <Grid item xs={12}>
                                     <Box
                                         sx={{
                                             margin: { md: "30px 80px", xs: "30px 10px" },

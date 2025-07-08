@@ -26,25 +26,22 @@ function Collaborate(props) {
         {
             icon: <FmdGoodIcon/>,
             title: "Address Business",
-            description: "2220 Plymouth Rd #302\n" +
-                "Hopkins, Minnesota(MN), 55305"
+            description: "203, City Center, Savlia Cir, Sanman Society, Mansarovar Society, Yoginagar Society, Surat, Gujarat 395006"
         },
         {
             icon: <SmsIcon/>,
             title: "Contact With Us",
-            description: "Call Consulting: (234) 109-6666\n" +
-                "Call Cooperate: 234) 244-8888"
+            description: "Call Consulting: +91 79844 43901"
         },
         {
             icon: <DraftsIcon/>,
             title: "Email Address",
-            description: "Herringtonconsulting@gmail.com\n" +
-                "Herringtoncareers@gmail.com\n"
+            description: " jbs.technology26@gmail.com"
         },
         {
             icon: <AccessAlarmIcon/>,
             title: "Working Time",
-            description: "Mon - Sat: 8.00am - 18.00pm\n" +
+            description: "Mon - Sat: 8:00am - 7:00pm\n" +
                 "Holiday : Closed"
         }
     ]

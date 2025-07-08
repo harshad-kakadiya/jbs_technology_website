@@ -28,7 +28,7 @@ const TeamPage = () => {
                         left: 0,
                         right: 0,
                         bottom: 0,
-                        backgroundColor: '#000',
+                        backgroundColor: '#1A1F26',
                         zIndex: -1,
                     },
                 }}

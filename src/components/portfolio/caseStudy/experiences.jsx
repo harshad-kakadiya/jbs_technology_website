@@ -27,7 +27,7 @@ function Experiences({Data ,Detaile }) {
                     </Grid>
                     <Grid item xs={12} md={9}>
                         {Data.map((item , index) => (
-                            <Box  key={index+1}  padding={"0 0 50px"}>
+                            <Box  key={index+1}  padding={"0 0 30px"}>
                                 <Typography variant="h6" component="h6" sx={{color:"#4A4A68" , fontSize:"16px" , fontWeight:"500" , padding:"0 0 15px"}}>
                                     {item.name}
                                 </Typography>
