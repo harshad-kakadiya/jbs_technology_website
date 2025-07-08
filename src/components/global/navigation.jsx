@@ -267,7 +267,7 @@ const menuItems = [
 ];
 
 const Navigation = () => {
-    const isMobile = useMediaQuery("(max-width:900px)");
+    const isMobile = useMediaQuery("(max-width:1200px)");
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const router = useRouter();
