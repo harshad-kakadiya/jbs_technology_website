@@ -14,7 +14,7 @@ const stats = [
         icon: (
             <FavoriteIcon sx={{fontSize: {xs: "20px", sm: "22px", md: "25px"}}}/>
         ),
-        value: 4500,
+        value: 4900,
         label: "Customer Satisfaction",
     },
     {
@@ -30,7 +30,7 @@ const stats = [
         icon: (
             <FolderIcon sx={{fontSize: {xs: "20px", sm: "22px", md: "25px"}}}/>
         ),
-        value: 160,
+        value: 100,
         state:'+',
         label: "Projects We Have Completed",
     },
@@ -38,7 +38,7 @@ const stats = [
         icon: (
             <PeopleAltIcon  sx={{fontSize: {xs: "20px", sm: "22px", md: "25px"}}}/>
         ),
-        value: 24,
+        value: 14,
         label: "Team Members",
     },
 ];
