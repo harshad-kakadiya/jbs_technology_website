@@ -238,3 +238,6 @@ a {
     margin-bottom: 15px !important;
 }
 
+#tawk-bubble-container img[alt="Chat attention grabber"] {
+    display: none !important;
+}

@@ -30,7 +30,7 @@ const stats = [
         icon: (
             <FolderIcon sx={{fontSize: {xs: "20px", sm: "22px", md: "25px"}}}/>
         ),
-        value: 100,
+        value: 160,
         state:'+',
         label: "Projects We Have Completed",
     },
