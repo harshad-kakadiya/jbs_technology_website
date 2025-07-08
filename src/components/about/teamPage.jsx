@@ -149,7 +149,7 @@ const TeamPage = () => {
                     src={Team.src}
                     sx={{
                         width: '100%',
-                        height: '600px',
+                        height: '550px',
                         objectFit: 'cover',
                         objectPosition: 'center 70%'
                     }}
