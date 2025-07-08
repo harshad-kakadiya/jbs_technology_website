@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import {Box, Container, Grid} from "@mui/material";
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
@@ -20,8 +22,14 @@ import {
     TextareaAutosize,
 } from "@mui/material";
 import Image from "next/image";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import {Instagram, Twitter} from "@mui/icons-material";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import {useRouter} from "next/navigation";
 
-function Collaborate(props) {
+function Collaborate() {
+    const router = useRouter();
+
     const Details = [
         {
             icon: <FmdGoodIcon/>,
@@ -45,6 +53,27 @@ function Collaborate(props) {
                 "Holiday : Closed"
         }
     ]
+
+    const socialLinks = [
+        {
+            name: "LinkedIn",
+            link: "https://www.linkedin.com/company/jbs-technique/posts/?feedView=all",
+        },
+        {
+            name: "Twitter",
+            link: "https://x.com/JBSTechnology26",
+        },
+        {
+            name: "Instagram",
+            link: "https://www.instagram.com/jbs_technology/?hl=en",
+        },
+        {
+            name: "WhatsApp",
+            link: "https://wa.me/917984443901?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20services.",
+        },
+    ];
+
+
     return (
         <Box sx={{padding: "85px 15px"}}>
             <Container maxWidth={"xxl"}>
@@ -126,41 +155,38 @@ function Collaborate(props) {
                                                 </Grid>
                                             ))}
                                         </Grid>
-                                        <Box sx={{
-                                            display: "flex",
-                                            paddingTop: "80px",
-                                            fontSize: "14px",
-                                            justifyContent: {xs: "center", lg: "start"}
-                                        }}>
-                                            <Box sx={{paddingRight: "35px", transition: ".2s"}}>
-                                                <FacebookIcon sx={{
-                                                    "&:hover": {
-                                                        color: "blue"
-                                                    }
-                                                }}/>
-                                            </Box>
-                                            <Box sx={{paddingRight: "35px", transition: ".2s"}}>
-                                                <TwitterIcon sx={{
-                                                    "&:hover": {
-                                                        color: "skyblue"
-                                                    }
-                                                }}/>
-                                            </Box>
-                                            <Box sx={{paddingRight: "35px", transition: ".2s"}}>
-                                                <InstagramIcon sx={{
-                                                    "&:hover": {
-                                                        color: "#F501CF"
-                                                    }
-                                                }}/>
-                                            </Box>
-                                            <Box sx={{paddingRight: "35px", transition: ".2s"}}>
-                                                <TelegramIcon sx={{
-                                                    "&:hover": {
-                                                        color: "#28A5E5"
-                                                    }
-                                                }}/>
-                                            </Box>
+                                        <Box
+                                            sx={{
+                                                display: "flex",
+                                                paddingTop: "32px",
+                                                fontSize: "14px",
+                                                justifyContent: { xs: "center", lg: "flex-start" },
+                                                gap: "16px",
+                                            }}
+                                        >
+                                            {socialLinks.map((social, index) => {
+                                                const Icon = {
+                                                    LinkedIn: LinkedInIcon,
+                                                    Twitter: Twitter,
+                                                    Instagram: Instagram,
+                                                    WhatsApp: WhatsAppIcon,
+                                                }[social.name];
+
+                                                return Icon ? (
+                                                    <Icon
+                                                        key={index}
+                                                        sx={{
+                                                            fontSize: 25,
+                                                            cursor: "pointer",
+                                                            transition: "color 0.3s",
+                                                            "&:hover": { color: "#0072b1" }, // Example hover color
+                                                        }}
+                                                        onClick={() => window.open(social.link, "_blank")}
+                                                    />
+                                                ) : null;
+                                            })}
                                         </Box>
+
 
                                     </Box>
                                 </Grid>
