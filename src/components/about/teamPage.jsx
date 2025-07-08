@@ -5,7 +5,7 @@ import { Box, Button, Typography, Grid, List, ListItem, ListItemText, Container 
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 import CheckIcon from '@mui/icons-material/Check';
 import BG from '../../assets/images/about/teamPage/ab3.webp';
-import Team from '../../assets/images/about/teamPage/team2.webp'
+import Team from '../../assets/images/about/teamPage/team.jpg'
 import {useRouter} from "next/navigation";
 const TeamPage = () => {
     const router = useRouter();
@@ -147,8 +147,15 @@ const TeamPage = () => {
                 <Typography
                     component={'img'}
                     src={Team.src}
-                    sx={{ width: '100%', height: '550px',objectFit:"cover" }}
+                    sx={{
+                        width: '100%',
+                        height: '600px',
+                        objectFit: 'cover',
+                        objectPosition: 'center 70%'
+                    }}
                 />
+
+
                 <Typography
                     sx={{
                         position: 'absolute',
