@@ -74,12 +74,12 @@ const BlogSingle = () => {
           }
         ],
         quote: {
-          text: "Digital transformation isn’t just an IT project—it’s a business revolution.",
+          text: "Digital transformation isn’t just an IT project it’s a business revolution.",
           author: "Elena Wirth – CIO Insights"
         },
         images: [single2, single3],
         conclusion: [
-          "In a tech-driven world, aligning IT with core business priorities is no longer optional—it's essential for long-term growth and success.",
+          "In a tech-driven world, aligning IT with core business priorities is no longer optional it's essential for long-term growth and success.",
           "Organizations that embrace these elements are better positioned to innovate, compete, and thrive in dynamic markets."
         ]
       },
@@ -149,7 +149,7 @@ const BlogSingle = () => {
             subsections: [
               {
                 title: "1. Rethinking Outdated Infrastructure",
-                content: "Legacy systems limit growth and customer experience — strategic upgrades are vital."
+                content: "Legacy systems limit growth and customer experience strategic upgrades are vital."
               },
               {
                 title: "2. Driving Cultural and Process Shifts",
@@ -159,7 +159,7 @@ const BlogSingle = () => {
           }
         ],
         quote: {
-          text: "Transformation in banking doesn’t start with systems — it starts with courage.",
+          text: "Transformation in banking doesn’t start with systems it starts with courage.",
           author: "Michael Lee"
         },
         images: [single2],
@@ -187,7 +187,7 @@ const BlogSingle = () => {
         sections: [
           {
             title: "Redefining Retirement for the Ultra-Wealthy",
-            content: "For many high-net-worth individuals, retirement no longer means stepping away — it means engaging more meaningfully.",
+            content: "For many high-net-worth individuals, retirement no longer means stepping away it means engaging more meaningfully.",
             subsections: [
               {
                 title: "1. Purpose Over Rest",
@@ -201,13 +201,13 @@ const BlogSingle = () => {
           }
         ],
         quote: {
-          text: "For some, work isn’t about income anymore — it’s about identity and meaning.",
+          text: "For some, work isn’t about income anymore it’s about identity and meaning.",
           author: "Michael Lee"
         },
         images: [single2],
         conclusion: [
           "Retirement, for the wealthy, is less about escape and more about evolution.",
-          "The next chapter isn’t about slowing down — it’s about shifting focus with purpose."
+          "The next chapter isn’t about slowing down it’s about shifting focus with purpose."
         ]
       },
       tags: ["Wealth", "Lifestyle", "Retirement", "Purpose", "Identity"]
@@ -233,7 +233,7 @@ const BlogSingle = () => {
             subsections: [
               {
                 title: "1. Listening Actively",
-                content: "Effective service starts with understanding — listening to your customer is key."
+                content: "Effective service starts with understanding listening to your customer is key."
               },
               {
                 title: "2. Personalizing the Experience",
@@ -299,7 +299,7 @@ const BlogSingle = () => {
           }
         ],
         quote: {
-          text: "Trade finance isn't just about money—it's the backbone of global commerce.",
+          text: "Trade finance isn't just about money it's the backbone of global commerce.",
           author: "Michael Lee"
         },
         images: [single2],
@@ -387,7 +387,7 @@ const BlogSingle = () => {
           author: "Rakesh Nair",
           date: "July 4, 2025, at 10:05 am",
           avatar: photo,
-          text: "Legacy systems are really holding many banks back — totally agree with the insights here."
+          text: "Legacy systems are really holding many banks back totally agree with the insights here."
         },
         {
           id: 2,
@@ -420,7 +420,7 @@ const BlogSingle = () => {
           author: "Daniel Reiss",
           date: "July 4, 2025, at 11:00 am",
           avatar: photo,
-          text: "Completely agree — purpose-driven work keeps people mentally sharp and engaged."
+          text: "Completely agree purpose-driven work keeps people mentally sharp and engaged."
         },
         {
           id: 3,
@@ -472,7 +472,7 @@ const BlogSingle = () => {
           author: "Raj Patel",
           date: "June 13, 2024, at 02:45 pm",
           avatar: photo,
-          text: "Real-time payments are revolutionizing cross-border trade—makes you wonder how we managed before."
+          text: "Real-time payments are revolutionizing cross-border trade makes you wonder how we managed before."
         },
         {
           id: 3,

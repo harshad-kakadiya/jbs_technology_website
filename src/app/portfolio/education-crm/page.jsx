@@ -53,7 +53,7 @@ function Page() {
         {
             name: "Solution",
             title: "A Centralized, Smart CRM – IMS by JBS Technology",
-            description: "JBS Technology developed the Institute Management System (IMS) — a comprehensive CRM platform specifically designed for educational institutions. IMS automates administrative workflows, centralizes student and staff data, and streamlines communication through integrated tools for admissions, attendance, fee management, academics, and reporting.",
+            description: "JBS Technology developed the Institute Management System (IMS) a comprehensive CRM platform specifically designed for educational institutions. IMS automates administrative workflows, centralizes student and staff data, and streamlines communication through integrated tools for admissions, attendance, fee management, academics, and reporting.",
         },
         {
             name: "Results",
@@ -95,13 +95,13 @@ function Page() {
             title3: 'User Accessibility Across Devices',
             title4: 'Scalability and Security',
             description1:
-                'Most educational institutions operated with disconnected systems for admissions, attendance, fee collection, and academic records — causing data silos and inefficiencies.',
+                'Most educational institutions operated with disconnected systems for admissions, attendance, fee collection, and academic records causing data silos and inefficiencies.',
             description2:
                 'The client required real-time synchronization of student and staff data across multiple departments and branches without affecting system performance or user experience.',
             description3:
                 'The solution had to work seamlessly across web and mobile platforms. While a hybrid framework was considered, the final decision leaned toward React Native for better performance and native-like behavior.',
             description4:
-                'With thousands of users accessing the platform simultaneously, the architecture had to prioritize both scalability and data security — especially for sensitive student and financial information.',
+                'With thousands of users accessing the platform simultaneously, the architecture had to prioritize both scalability and data security especially for sensitive student and financial information.',
             icon: <ArrowCircleRightIcon fontSize={'large'}/>,
             image: phoneimg1,
         },
@@ -138,7 +138,7 @@ function Page() {
             description1:
                 'A role-based dashboard offering real-time visibility into admissions, fees, attendance, academic records, and communication logs.',
             description2:
-                'Tracks payments, sends reminders, and generates receipts — reducing manual effort and ensuring timely collections.',
+                'Tracks payments, sends reminders, and generates receipts reducing manual effort and ensuring timely collections.',
             description3:
                 'Instant attendance marking with biometric or manual options, integrated with analytics and alerts.',
             description4:
@@ -174,7 +174,7 @@ function Page() {
                 slides={slides}
                 name={'Ravi Sharma'}
                 status={'Founder & CEO'}
-                projectdes={'JBS Technology delivered far more than just a product — they became a strategic partner in our digital transformation journey. Their deep understanding of the education sector and commitment to quality helped us streamline operations across over 300 institutions. The team\'s collaborative approach, consistent support, and innovative mindset made all the difference in scaling our impact.'}
+                projectdes={'JBS Technology delivered far more than just a product they became a strategic partner in our digital transformation journey. Their deep understanding of the education sector and commitment to quality helped us streamline operations across over 300 institutions. The team\'s collaborative approach, consistent support, and innovative mindset made all the difference in scaling our impact.'}
             />
         </>
     );

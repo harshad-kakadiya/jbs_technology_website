@@ -9,7 +9,7 @@ import Image from "next/image";
 
 function TechUse({app}) {
     return (
-        <Box sx={{ padding: "96px 0" }}>
+        <Box sx={{ padding: {md:"96px 0" , xs:'20px 0 30px'} }}>
             <Container maxWidth="xl">
                 <Typography
                     variant="h2"

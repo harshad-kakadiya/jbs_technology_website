@@ -16,7 +16,7 @@ function Page() {
             <HeadingPage bgImg={bg1.src} heading={'Education'} breadcrumbs={breadCrumbs}/>
 
             <Sector
-                description={'At JBS Technology, we believe education is the foundation for innovation and progress. Our mission is to bridge the gap between traditional learning and modern digital tools by offering smart, scalable, and future-ready solutions for schools, colleges, and institutions. From interactive e-learning platforms to AI-powered classroom management systems, we empower educators to deliver personalized and engaging learning experiences. With a strong focus on accessibility and adaptability, JBS Technology is transforming how knowledge is delivered and received—making learning more effective, inclusive, and inspiring for the next generation.'}
+                description={'At JBS Technology, we believe education is the foundation for innovation and progress. Our mission is to bridge the gap between traditional learning and modern digital tools by offering smart, scalable, and future-ready solutions for schools, colleges, and institutions. From interactive e-learning platforms to AI-powered classroom management systems, we empower educators to deliver personalized and engaging learning experiences. With a strong focus on accessibility and adaptability, JBS Technology is transforming how knowledge is delivered and received making learning more effective, inclusive, and inspiring for the next generation.'}
                 image={image}
             />
             <CostomerField/>

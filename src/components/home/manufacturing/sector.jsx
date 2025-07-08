@@ -4,7 +4,7 @@ import React from 'react'
 
 const Sector = ({description , image}) => {
   return (
-    <Box sx={{padding: {md:"90px 20px" , sm:'40px 20px'}}}>
+    <Box sx={{padding: {md:"90px 20px" , xs:'40px 0px 80px'}}}>
         <Container maxWidth={'xxl'}>
        <Box>
             <Box sx={{display:"flex",justifyContent:"center",py:5}}>

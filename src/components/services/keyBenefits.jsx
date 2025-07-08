@@ -45,7 +45,7 @@ function KeyBenefits() {
     ];
 
     return (
-        <Box sx={{py: '120px'}}>
+        <Box sx={{pb: '120px'}}>
             <Container maxWidth={'xl'}>
                 <Grid container spacing={4}>
                     <Grid item xs={12} lg={3} >

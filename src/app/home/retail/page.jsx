@@ -16,7 +16,7 @@ function Page() {
             <HeadingPage bgImg={bg1.src} heading={'Retail'} breadcrumbs={breadCrumbs}/>
 
             <Sector
-                    description={'At JBS Technology, we empower retail businesses to thrive in a fast-evolving digital marketplace. Our technology solutions help streamline operations, enhance customer experiences, and drive sales—both online and in-store. From custom eCommerce platforms and inventory management systems to personalized marketing tools and data-driven insights, we deliver smart, scalable solutions tailored to modern retail needs. Whether you\'re a small boutique or a large retail chain, JBS Technology helps you stay ahead of trends and build stronger connections with your customers.'}
+                    description={'At JBS Technology, we empower retail businesses to thrive in a fast-evolving digital marketplace. Our technology solutions help streamline operations, enhance customer experiences, and drive sales both online and in-store. From custom eCommerce platforms and inventory management systems to personalized marketing tools and data-driven insights, we deliver smart, scalable solutions tailored to modern retail needs. Whether you\'re a small boutique or a large retail chain, JBS Technology helps you stay ahead of trends and build stronger connections with your customers.'}
                     image={image}
             />
             <CostomerField/>
