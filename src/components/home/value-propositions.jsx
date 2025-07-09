@@ -10,34 +10,35 @@ import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 
 const valuePropositions = [
     {
-        title: "Cost-Effectiveness",
+        title: "Cost Effectiveness",
         description:
-            "Achieve cost-efficiency with our custom software solutions and business consulting services. Designed to support business growth through technology, we help reduce expenses while boosting long-term profitability.",
-        icon: <AccountBalanceWalletIcon fontSize="large"/>,
+            "Cut costs and boost profits with our custom software solutions and tech-driven business consulting",
+        icon: <AccountBalanceWalletIcon fontSize="large" />,
     },
     {
         title: "Innovative Technology",
         description:
-            "We integrate cutting-edge and future-ready digital products using the latest web applications and scalable digital experiences — all developed by expert software engineers.",
-        icon: <CloudOutlinedIcon fontSize="large"/>,
+            "Build future-ready digital products with expert software engineers and modern web applications",
+        icon: <CloudOutlinedIcon fontSize="large" />,
     },
     {
         title: "Industry Expertise",
         description:
-            "Our expert software engineers bring deep industry knowledge to deliver trusted technology partner-level service and tailored custom software solutions for your business.",
-        icon: <FolderOutlinedIcon fontSize="large"/>,
+            "Get trusted software solutions tailored by expert engineers with deep industry knowledge",
+        icon: <FolderOutlinedIcon fontSize="large" />,
     },
     {
         title: "Scale Expansion",
         description:
-            "Drive business growth through technology with scalable digital experiences, custom software solutions, and support from a reliable software development company.",
-        icon: <OpenInFullOutlinedIcon fontSize="large"/>,
+            "Grow faster with scalable digital experiences from a top software development company",
+        icon: <OpenInFullOutlinedIcon fontSize="large" />,
     }
+
 ];
 
 const ValuePropositions = () => {
     return (
-        <Container maxWidth="xl" sx={{paddingY: 6}}>
+        <Container maxWidth="xl" sx={{paddingY: 3}}>
             <Grid container spacing={0} justifyContent="center">
                 {valuePropositions.map((item, index) => (
                     <Grid

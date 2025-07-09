@@ -1,7 +1,11 @@
 'use client';
 
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import React from "react";
+import WestIcon from "@mui/icons-material/West";
+import EastIcon from "@mui/icons-material/East";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import log1 from "../../assets/images/about/clients/brand-11.png";
 import log2 from "../../assets/images/about/clients/brand-22.png";
 import log3 from "../../assets/images/about/clients/brand-33.png";
@@ -18,7 +22,7 @@ import log55 from "../../assets/images/about/clients/brand-5.png";
 import log66 from "../../assets/images/about/clients/brand-6.png";
 import log77 from "../../assets/images/about/clients/brand-7.png";
 import log88 from "../../assets/images/about/clients/brand-8.png";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Autoplay, EffectFade} from "swiper/modules";
 
 const logoData = [
     { id: 1, logo1: log1, logo11: log11 },
@@ -32,41 +36,50 @@ const logoData = [
 ];
 
 const Clients = () => {
+    const swiperRef = React.useRef(null);
+
+    const handleNext = () => {
+        if (swiperRef.current && swiperRef.current.swiper) {
+            swiperRef.current.swiper.slideNext();
+        }
+    };
+
+    const handlePrev = () => {
+        if (swiperRef.current && swiperRef.current.swiper) {
+            swiperRef.current.swiper.slidePrev();
+        }
+    };
+
     return (
         <Box>
             <Container maxWidth="xl">
-                <Box sx={{ mt: 12 }}>
+                <Box sx={{ mt: 7 }}>
                     <Grid container spacing={2} sx={{ mt: 8 }}>
                         <Grid item xs={12} sm={6}>
-                            <Box sx={{ display: "flex", mb: { xs: "12px", sm: "0px" } }}>
-                                <Typography
-                                    variant="span"
-                                    sx={{
-                                        fontSize: "12px",
-                                        fontWeight: 400,
-                                        textTransform: "uppercase",
-                                        letterSpacing: "5px",
-                                        gap: 1,
-                                    }}>
-                                    Recognized by the best
-                                </Typography>
-
-                            </Box>
-                            <Box>
-                                <Typography
-                                    variant="h3"
-                                    sx={{
-                                        fontSize: { xs: "30px", md: "35px", lg: "45px" },
-                                        fontWeight: "500",
-                                        lineHeight: { xs: "30px", sm: "30px" },
-                                        mb: "0px",
-                                        mt:2
-                                    }}
-                                >
-                                    Clients Trust JBS Technology.
-                                </Typography>
-                            </Box>
+                            <Typography
+                                variant="span"
+                                sx={{
+                                    fontSize: "12px",
+                                    fontWeight: 400,
+                                    textTransform: "uppercase",
+                                    letterSpacing: "2.5px",
+                                }}
+                            >
+                                Recognized by the best
+                            </Typography>
+                            <Typography
+                                variant="h3"
+                                sx={{
+                                    fontSize: { xs: "30px", md: "35px", lg: "45px" },
+                                    fontWeight: "600",
+                                    lineHeight: { xs: "30px", sm: "30px" },
+                                    mt: 2,
+                                }}
+                            >
+                                Clients Trust JBS Technology
+                            </Typography>
                         </Grid>
+
                         <Grid item xs={12} sm={6}>
                             <Box
                                 sx={{
@@ -79,40 +92,52 @@ const Clients = () => {
                                     sx={{
                                         width: { xs: "100%", md: "80%" },
                                         color: "#4B535D",
-                                        fontSize: "15px",
+                                        fontSize: "16px",
                                         lineHeight: "26px",
                                     }}
                                 >
                                     From an early stage start-up’s growth strategies to helping
                                     existing businesses, we have done it all! The results speak
-                                    for themselves. Our services work.
+                                    for themselves Our services work
                                 </Typography>
                             </Box>
                         </Grid>
                     </Grid>
 
-                    <Box sx={{ my: 12 }}>
+                    {/* Slider Section */}
+                    <Box
+                        sx={{
+                            my: 9,
+                            position: "relative",
+                            px: { xs: 2, sm: 4 },
+                        }}
+                    >
                         <Swiper
+                            modules={[Autoplay]}
+                            ref={swiperRef}
                             spaceBetween={0}
                             slidesPerView={6}
                             loop={true}
-                            autoplay={false}
-                            speed={0}
+                            autoplay={{
+                                delay: 3000, // 2 seconds between slides
+                                disableOnInteraction: false,
+                            }}
+                            speed={500} // smooth transition
                             breakpoints={{
-                                1200: { slidesPerView: 6 },
+                                1200: { slidesPerView: 5 },
                                 992: { slidesPerView: 4 },
                                 768: { slidesPerView: 3 },
                                 425: { slidesPerView: 2 },
                                 320: { slidesPerView: 1 },
                             }}
                         >
-                            {logoData.map((logo) => (
+
+                        {logoData.map((logo) => (
                                 <SwiperSlide key={logo.id}>
                                     <Box
                                         sx={{
                                             border: "1px solid #D2D4D5",
                                             py: 3,
-                                            width: "100%",
                                             px: 4,
                                             display: "flex",
                                             justifyContent: "center",
@@ -155,7 +180,14 @@ const Clients = () => {
                                                 className="logo1"
                                                 sx={{
                                                     position: "absolute",
-                                                    top: logo.id === 4 ? 0 : logo.id === 8 ? 12 : logo.id === 7 ? 68 : 50,
+                                                    top:
+                                                        logo.id === 4
+                                                            ? 0
+                                                            : logo.id === 8
+                                                                ? 12
+                                                                : logo.id === 7
+                                                                    ? 68
+                                                                    : 50,
                                                     left: 0,
                                                     width: "100%",
                                                     opacity: 1,
@@ -168,6 +200,66 @@ const Clients = () => {
                                 </SwiperSlide>
                             ))}
                         </Swiper>
+
+                        {/* Navigation Buttons (Only on lg and up) */}
+                        <Button
+                            onClick={handlePrev}
+                            sx={{
+                                display: { xs: "none", lg: "flex" },
+                                position: "absolute",
+                                top: "50%",
+                                left: 0,
+                                transform: "translateY(-50%)",
+                                zIndex: 10,
+                                border: '1px solid gray',
+                                borderRadius: '50%',
+                                height: '60px',
+                                width: '60px',
+                                minWidth: "unset", // prevent MUI from forcing default button width
+                                padding: 0,
+                                alignItems: "center",
+                                justifyContent: "center",
+                                color: "cardTextGrey",
+                                backgroundColor: "#fff",
+                                boxShadow: 2,
+                                transition: "0.3s",
+                                "&:hover": {
+                                    transform: "scale(0.9) translateY(-50%)",
+                                },
+                            }}
+                        >
+                            <WestIcon />
+                        </Button>
+
+                        <Button
+                            onClick={handleNext}
+                            sx={{
+                                display: { xs: "none", lg: "flex" },
+                                position: "absolute",
+                                top: "50%",
+                                right: 0,
+                                transform: "translateY(-50%)",
+                                zIndex: 10,
+                                border: '1px solid gray',
+                                borderRadius: '50%',
+                                height: '60px',
+                                width: '60px',
+                                minWidth: "unset", // prevent MUI from forcing default button width
+                                padding: 0,
+                                alignItems: "center",
+                                justifyContent: "center",
+                                color: "cardTextGrey",
+                                backgroundColor: "#fff",
+                                boxShadow: 2,
+                                transition: "0.3s",
+                                "&:hover": {
+                                    transform: "scale(0.9) translateY(-50%)",
+                                },
+                            }}
+                        >
+                            <EastIcon fontSize="small" />
+                        </Button>
+
                     </Box>
                 </Box>
             </Container>
