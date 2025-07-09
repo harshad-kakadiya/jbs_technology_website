@@ -19,9 +19,6 @@ export default function Home() {
             <Herosection/>
             <ValuePropositions />
             <Capabilities/>
-            <Ourmission  />
-            <Industries/>
-
             <FunFactCounter
                 gap={true}
                 color={false}
@@ -39,6 +36,9 @@ export default function Home() {
                     "Hours Spent",
                 ]}
             />
+            <Ourmission  />
+            <Industries/>
+
             <Testimonial />
             <Clients />
             {/*<AboutBrand />*/}
