@@ -74,7 +74,7 @@ function Openings() {
                             <Card
                                 sx={{
                                     height: "100%",
-                                    boxShadow: 3,
+                                    boxShadow: "0 0 10px rgba(72, 69, 224, .1)",
                                     borderRadius: 0,
                                     p:"10px",
                                     bgcolor: "white",
@@ -123,9 +123,9 @@ function Openings() {
                                     >
                                         {job.title}
                                     </Typography>
-                                    <Typography sx={{fontSize:"14px", lineHeight: 1.8}}>Experience: {job.experience}</Typography>
-                                    <Typography sx={{fontSize:"14px", lineHeight: 1.8}}>No of Openings: {job.openings}</Typography>
-                                    <Typography sx={{fontSize:"14px", lineHeight: 1.8}}>Location: {job.location}</Typography>
+                                    <Typography sx={{fontSize:"14px", lineHeight: 1.8, color:"#6084a4"}}>Experience: {job.experience}</Typography>
+                                    <Typography sx={{fontSize:"14px", lineHeight: 1.8, color:"#6084a4"}}>No of Openings: {job.openings}</Typography>
+                                    <Typography sx={{fontSize:"14px", lineHeight: 1.8, color:"#6084a4"}}>Location: {job.location}</Typography>
                                 </CardContent>
                             </Card>
                         </Grid>

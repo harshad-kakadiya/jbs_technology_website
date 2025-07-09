@@ -372,59 +372,105 @@ function Page() {
                         <Grid container spacing={2}>
                             {/* First and Last Name */}
                             <Grid item xs={12} sm={6}>
-                                <TextField
-                                    label="First Name"
-                                    fullWidth
-                                    variant="outlined"
-                                    sx={{
-                                        borderRadius: 2,
-                                        backgroundColor: '#fff',
-                                        '& .MuiOutlinedInput-root': {
+                                <Box>
+                                    <TextField
+                                        label="First Name"
+                                        fullWidth
+                                        size ="small"
+                                        variant="outlined"
+                                        sx={{
+                                            backgroundColor: '#fff',
                                             borderRadius: 2,
-                                            '&.Mui-focused fieldset': {
-                                                borderColor: 'black', // Black border on focus
+                                            '& .MuiOutlinedInput-root': {
+                                                borderRadius: 2,
+                                                '& fieldset': {
+                                                    border: 'none',
+                                                },
+                                                '&:hover fieldset': {
+                                                    border: '2px solid gray',
+                                                },
+                                                '&.Mui-focused fieldset': {
+                                                    border: '2px solid black',
+                                                },
                                             },
-                                        },
-                                        '& label.Mui-focused': {
-                                            color: 'black', // 👈 Black label on focus
-                                        },
-                                    }}
-                                    InputProps={{
-                                        sx: {
-                                            borderRadius: 2,
-                                        },
-                                    }}
-                                    {...register('firstName', { required: 'First name is required' })}
-                                    error={!!errors.firstName}
-                                    helperText={errors.firstName?.message}
-                                />
+                                            '& label.Mui-focused': {
+                                                color: 'black',
+                                            },
+                                        }}
+                                        InputProps={{
+                                            sx: {
+                                                borderRadius: 2,
+                                            },
+                                        }}
+                                        {...register('firstName', { required: 'First name is required' })}
+                                        error={!!errors.firstName}
+                                    />
+
+                                    {errors.firstName && (
+                                        <Box
+                                            sx={{
+                                                backgroundColor: '#f5f5f5',
+                                                color: '#d32f2f', // MUI default error color
+                                                fontSize: '0.75rem',
+                                                padding: '4px 8px',
+                                                borderBottomLeftRadius: 8,
+                                                borderBottomRightRadius: 8,
+                                                mt: '2px',
+                                            }}
+                                        >
+                                            {errors.firstName.message}
+                                        </Box>
+                                    )}
+                                </Box>
                             </Grid>
+
 
 
                             <Grid item xs={12} sm={6}>
                                 <TextField
                                     label="Last Name"
                                     fullWidth
+                                    size ="small"
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 2,
                                         backgroundColor: '#fff',
+                                        borderRadius: 2,
                                         '& .MuiOutlinedInput-root': {
                                             borderRadius: 2,
+                                            '& fieldset': {
+                                                border: 'none',
+                                            },
+                                            '&:hover fieldset': {
+                                                border: '2px solid gray',
+                                            },
                                             '&.Mui-focused fieldset': {
-                                                borderColor: 'black', // Black border on focus
+                                                border: '2px solid black',
                                             },
                                         },
                                         '& label.Mui-focused': {
-                                            color: 'black', // 👈 Black label on focus
+                                            color: 'black',
                                         },
                                     }}
 
                                     InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('lastName', { required: 'Last name is required' })}
                                     error={!!errors.lastName}
-                                    helperText={errors.lastName?.message}
                                 />
+                                {errors.lastName && (
+                                <Box
+                                    sx={{
+                                        backgroundColor: '#f5f5f5',
+                                        color: '#d32f2f', // MUI default error color
+                                        fontSize: '0.75rem',
+                                        padding: '4px 8px',
+                                        borderBottomLeftRadius: 8,
+                                        borderBottomRightRadius: 8,
+                                        mt: '2px',
+                                    }}
+                                >
+                                    {errors.lastName.message}
+                                </Box>
+                            )}
                             </Grid>
 
                             {/* Email & Phone */}
@@ -433,52 +479,95 @@ function Page() {
                                     type="email"
                                     label="Email"
                                     fullWidth
+                                    size ="small"
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 2,
-                                        backgroundColor: '#fff',
-                                        '& .MuiOutlinedInput-root': {
+                                            backgroundColor: '#fff',
                                             borderRadius: 2,
-                                            '&.Mui-focused fieldset': {
-                                                borderColor: 'black', // Black border on focus
+                                            '& .MuiOutlinedInput-root': {
+                                                borderRadius: 2,
+                                                '& fieldset': {
+                                                    border: 'none',
+                                                },
+                                                '&:hover fieldset': {
+                                                    border: '2px solid gray',
+                                                },
+                                                '&.Mui-focused fieldset': {
+                                                    border: '2px solid black',
+                                                },
                                             },
-                                        },
-                                        '& label.Mui-focused': {
-                                            color: 'black', // 👈 Black label on focus
-                                        },
-                                    }}
+                                            '& label.Mui-focused': {
+                                                color: 'black',
+                                            },
+                                        }}
 
                                     InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('email', { required: 'Email is required' })}
                                     error={!!errors.email}
-                                    helperText={errors.email?.message}
+
                                 />
+                                {errors.email && (
+                                    <Box
+                                        sx={{
+                                            backgroundColor: '#f5f5f5',
+                                            color: '#d32f2f', // MUI default error color
+                                            fontSize: '0.75rem',
+                                            padding: '4px 8px',
+                                            borderBottomLeftRadius: 8,
+                                            borderBottomRightRadius: 8,
+                                            mt: '2px',
+                                        }}
+                                    >
+                                        {errors.email.message}
+                                    </Box>
+                                )}
                             </Grid>
 
                             <Grid item xs={12} sm={6}>
                                 <TextField
                                     label="Phone Number"
                                     fullWidth
+                                    size ="small"
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 2,
-                                        backgroundColor: '#fff',
-                                        '& .MuiOutlinedInput-root': {
+                                            backgroundColor: '#fff',
                                             borderRadius: 2,
-                                            '&.Mui-focused fieldset': {
-                                                borderColor: 'black', // Black border on focus
+                                            '& .MuiOutlinedInput-root': {
+                                                borderRadius: 2,
+                                                '& fieldset': {
+                                                    border: 'none',
+                                                },
+                                                '&:hover fieldset': {
+                                                    border: '2px solid gray',
+                                                },
+                                                '&.Mui-focused fieldset': {
+                                                    border: '2px solid black',
+                                                },
                                             },
-                                        },
-                                        '& label.Mui-focused': {
-                                            color: 'black', // 👈 Black label on focus
-                                        },
-                                    }}
+                                            '& label.Mui-focused': {
+                                                color: 'black',
+                                            },
+                                        }}
 
                                     InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('phone', { required: 'Phone number is required' })}
                                     error={!!errors.phone}
-                                    helperText={errors.phone?.message}
-                                />
+
+                                />{errors.phone && (
+                                <Box
+                                    sx={{
+                                        backgroundColor: '#f5f5f5',
+                                        color: '#d32f2f', // MUI default error color
+                                        fontSize: '0.75rem',
+                                        padding: '4px 8px',
+                                        borderBottomLeftRadius: 8,
+                                        borderBottomRightRadius: 8,
+                                        mt: '2px',
+                                    }}
+                                >
+                                    {errors.phone.message}
+                                </Box>
+                            )}
                             </Grid>
 
                             {/* CV Upload */}
@@ -496,26 +585,48 @@ function Page() {
                                     label="Total experience in Years"
                                     placeholder="e.g. 4.5"
                                     fullWidth
+                                    size ="small"
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 2,
-                                        backgroundColor: '#fff',
-                                        '& .MuiOutlinedInput-root': {
+                                            backgroundColor: '#fff',
                                             borderRadius: 2,
-                                            '&.Mui-focused fieldset': {
-                                                borderColor: 'black', // Black border on focus
+                                            '& .MuiOutlinedInput-root': {
+                                                borderRadius: 2,
+                                                '& fieldset': {
+                                                    border: 'none',
+                                                },
+                                                '&:hover fieldset': {
+                                                    border: '2px solid gray',
+                                                },
+                                                '&.Mui-focused fieldset': {
+                                                    border: '2px solid black',
+                                                },
                                             },
-                                        },
-                                        '& label.Mui-focused': {
-                                            color: 'black', // 👈 Black label on focus
-                                        },
-                                    }}
+                                            '& label.Mui-focused': {
+                                                color: 'black',
+                                            },
+                                        }}
 
                                     InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('experience', { required: 'Experience is required' })}
                                     error={!!errors.experience}
-                                    helperText={errors.experience?.message}
+
                                 />
+                                {errors.experience && (
+                                    <Box
+                                        sx={{
+                                            backgroundColor: '#f5f5f5',
+                                            color: '#d32f2f', // MUI default error color
+                                            fontSize: '0.75rem',
+                                            padding: '4px 8px',
+                                            borderBottomLeftRadius: 8,
+                                            borderBottomRightRadius: 8,
+                                            mt: '2px',
+                                        }}
+                                    >
+                                        {errors.experience.message}
+                                    </Box>
+                                )}
                             </Grid>
 
                             {/* Description */}
@@ -525,24 +636,32 @@ function Page() {
                                     multiline
                                     rows={3}
                                     fullWidth
+                                    size ="small"
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 2,
-                                        backgroundColor: '#fff',
-                                        '& .MuiOutlinedInput-root': {
+                                            backgroundColor: '#fff',
                                             borderRadius: 2,
-                                            '&.Mui-focused fieldset': {
-                                                borderColor: 'black', // Black border on focus
+                                            '& .MuiOutlinedInput-root': {
+                                                borderRadius: 2,
+                                                '& fieldset': {
+                                                    border: 'none',
+                                                },
+                                                '&:hover fieldset': {
+                                                    border: '2px solid gray',
+                                                },
+                                                '&.Mui-focused fieldset': {
+                                                    border: '2px solid black',
+                                                },
                                             },
-                                        },
-                                        '& label.Mui-focused': {
-                                            color: 'black', // 👈 Black label on focus
-                                        },
-                                    }}
+                                            '& label.Mui-focused': {
+                                                color: 'black',
+                                            },
+                                        }}
 
                                     InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('description')}
                                 />
+
                             </Grid>
 
                             {/* Location */}
@@ -550,46 +669,75 @@ function Page() {
                                 <TextField
                                     label="Where are you currently located?"
                                     fullWidth
+                                    size ="small"
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 2,
-                                        backgroundColor: '#fff',
-                                        '& .MuiOutlinedInput-root': {
+                                            backgroundColor: '#fff',
                                             borderRadius: 2,
-                                            '&.Mui-focused fieldset': {
-                                                borderColor: 'black', // Black border on focus
+                                            '& .MuiOutlinedInput-root': {
+                                                borderRadius: 2,
+                                                '& fieldset': {
+                                                    border: 'none',
+                                                },
+                                                '&:hover fieldset': {
+                                                    border: '2px solid gray',
+                                                },
+                                                '&.Mui-focused fieldset': {
+                                                    border: '2px solid black',
+                                                },
                                             },
-                                        },
-                                        '& label.Mui-focused': {
-                                            color: 'black', // 👈 Black label on focus
-                                        },
-                                    }}
+                                            '& label.Mui-focused': {
+                                                color: 'black',
+                                            },
+                                        }}
 
                                     InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('location', { required: 'Location is required' })}
                                     error={!!errors.location}
-                                    helperText={errors.location?.message}
+
                                 />
+                                {errors.location && (
+                                    <Box
+                                        sx={{
+                                            backgroundColor: '#f5f5f5',
+                                            color: '#d32f2f', // MUI default error color
+                                            fontSize: '0.75rem',
+                                            padding: '4px 8px',
+                                            borderBottomLeftRadius: 8,
+                                            borderBottomRightRadius: 8,
+                                            mt: '2px',
+                                        }}
+                                    >
+                                        {errors.location.message}
+                                    </Box>
+                                )}
                             </Grid>
 
                             {/* Relocation */}
                             <Grid item xs={12}>
                                 <FormControl
                                     fullWidth
-                                    error={!!errors.relocate}
+                                    size ="small"
+
                                     sx={{
-                                        borderRadius: 2,
-                                        backgroundColor: '#fff',
-                                        '& .MuiOutlinedInput-root': {
+                                            backgroundColor: '#fff',
                                             borderRadius: 2,
-                                            '&.Mui-focused fieldset': {
-                                                borderColor: 'black', // Black border on focus
+                                            '& .MuiOutlinedInput-root': {
+                                                borderRadius: 2,
+                                                '& fieldset': {
+                                                    border: 'none',
+                                                },
+                                                '&:hover fieldset': {
+                                                    border: '2px solid gray',
+                                                },
+                                                '&.Mui-focused fieldset': {
+                                                    border: '2px solid black',
+                                                },
                                             },
-                                        },
-                                        '& label.Mui-focused': {
-                                            color: 'black', // 👈 Black label on focus
-                                        },
-                                    }}
+                                            '& label.Mui-focused': {
+                                                color: 'black',
+                                            },
+                                        }}
                                 >
                                     <InputLabel id="relocate-label">
                                         Are you willing to relocate to Surat, Gujarat?
@@ -597,7 +745,7 @@ function Page() {
                                     <Controller
                                         name="relocate"
                                         control={control}
-                                        rules={{ required: 'Please select an option' }}
+
                                         render={({ field }) => (
                                             <Select
                                                 {...field}
@@ -620,23 +768,46 @@ function Page() {
                                     label="Current CTC (LPA)"
                                     placeholder="e.g. 4 LPA"
                                     fullWidth
+                                    size ="small"
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 2,
-                                        backgroundColor: '#fff',
-                                        '& .MuiOutlinedInput-root': {
+                                            backgroundColor: '#fff',
                                             borderRadius: 2,
-                                            '&.Mui-focused fieldset': {
-                                                borderColor: 'black', // Black border on focus
+                                            '& .MuiOutlinedInput-root': {
+                                                borderRadius: 2,
+                                                '& fieldset': {
+                                                    border: 'none',
+                                                },
+                                                '&:hover fieldset': {
+                                                    border: '2px solid gray',
+                                                },
+                                                '&.Mui-focused fieldset': {
+                                                    border: '2px solid black',
+                                                },
                                             },
-                                        },
-                                        '& label.Mui-focused': {
-                                            color: 'black', // 👈 Black label on focus
-                                        },
-                                    }}
+                                            '& label.Mui-focused': {
+                                                color: 'black',
+                                            },
+                                        }}
                                     InputProps={{ sx: { borderRadius: 2 } }}
-                                    {...register('currentCTC')}
+                                    {...register('currentCTC', { required: 'Current CTC is required' })}
+                                    error={!!errors.currentCTC}
                                 />
+                                {errors.currentCTC && (
+                                    <Box
+                                        sx={{
+                                            backgroundColor: '#f5f5f5',
+                                            color: '#d32f2f', // MUI default error color
+                                            fontSize: '0.75rem',
+                                            padding: '4px 8px',
+                                            borderBottomLeftRadius: 8,
+                                            borderBottomRightRadius: 8,
+                                            mt: '2px',
+                                        }}
+                                    >
+                                        {errors.currentCTC.message}
+                                    </Box>
+                                )}
                             </Grid>
 
                             <Grid item xs={12} sm={6}>
@@ -644,98 +815,204 @@ function Page() {
                                     label="Expected CTC (LPA)"
                                     placeholder="e.g. 6 LPA"
                                     fullWidth
+                                    size ="small"
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 2,
-                                        backgroundColor: '#fff',
-                                        '& .MuiOutlinedInput-root': {
+                                            backgroundColor: '#fff',
                                             borderRadius: 2,
-                                            '&.Mui-focused fieldset': {
-                                                borderColor: 'black', // Black border on focus
+                                            '& .MuiOutlinedInput-root': {
+                                                borderRadius: 2,
+                                                '& fieldset': {
+                                                    border: 'none',
+                                                },
+                                                '&:hover fieldset': {
+                                                    border: '2px solid gray',
+                                                },
+                                                '&.Mui-focused fieldset': {
+                                                    border: '2px solid black',
+                                                },
                                             },
-                                        },
-                                        '& label.Mui-focused': {
-                                            color: 'black', // 👈 Black label on focus
-                                        },
-                                    }}
+                                            '& label.Mui-focused': {
+                                                color: 'black',
+                                            },
+                                        }}
                                     InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('expectedCTC', { required: 'Expected CTC is required' })}
                                     error={!!errors.expectedCTC}
-                                    helperText={errors.expectedCTC?.message}
-                                />
+
+                                />{errors.expectedCTC && (
+                                <Box
+                                    sx={{
+                                        backgroundColor: '#f5f5f5',
+                                        color: '#d32f2f', // MUI default error color
+                                        fontSize: '0.75rem',
+                                        padding: '4px 8px',
+                                        borderBottomLeftRadius: 8,
+                                        borderBottomRightRadius: 8,
+                                        mt: '2px',
+                                    }}
+                                >
+                                    {errors.expectedCTC.message}
+                                </Box>
+                            )}
                             </Grid>
 
                             {/* Interview Details */}
                             <Grid item xs={12}>
-                                <TextField
-                                    label="Interview Availability"
-                                    placeholder="e.g. I can be available on Saturday 10AM to 2PM"
-                                    fullWidth
-                                    variant="outlined"
-                                    sx={{
-                                        borderRadius: 2,
-                                        backgroundColor: '#fff',
-                                        '& .MuiOutlinedInput-root': {
+                                <Box>
+                                    <TextField
+                                        label="Interview Availability"
+                                        placeholder="e.g. I can be available on Saturday 10AM to 2PM"
+                                        fullWidth
+                                        size ="small"
+                                        variant="outlined"
+                                        sx={{
+                                            backgroundColor: '#fff',
                                             borderRadius: 2,
-                                            '&.Mui-focused fieldset': {
-                                                borderColor: 'black', // Black border on focus
+                                            '& .MuiOutlinedInput-root': {
+                                                borderRadius: 2,
+                                                '& fieldset': {
+                                                    border: 'none',
+                                                },
+                                                '&:hover fieldset': {
+                                                    border: '2px solid gray',
+                                                },
+                                                '&.Mui-focused fieldset': {
+                                                    border: '2px solid black',
+                                                },
                                             },
-                                        },
-                                        '& label.Mui-focused': {
-                                            color: 'black', // 👈 Black label on focus
-                                        },
-                                    }}
-                                    InputProps={{ sx: { borderRadius: 2 } }}
-                                    {...register('interviewAvailability')}
-                                />
+                                            '& label.Mui-focused': {
+                                                color: 'black',
+                                            },
+                                        }}
+                                        InputProps={{ sx: { borderRadius: 2 } }}
+                                        {...register('interviewAvailability', {
+                                            required: 'Interview availability is required',
+                                        })}
+                                        error={!!errors.interviewAvailability}
+                                    />
+
+                                    {errors.interviewAvailability && (
+                                        <Box
+                                            sx={{
+                                                backgroundColor: '#f5f5f5',
+                                                color: '#d32f2f',
+                                                fontSize: '0.75rem',
+                                                padding: '4px 8px',
+                                                borderBottomLeftRadius: 8,
+                                                borderBottomRightRadius: 8,
+                                                mt: '2px',
+                                            }}
+                                        >
+                                            {errors.interviewAvailability.message}
+                                        </Box>
+                                    )}
+                                </Box>
+                            </Grid>
+
+
+                            <Grid item xs={12}>
+                                <Box>
+                                    <TextField
+                                        label="Office or Online Interview Preference"
+                                        placeholder="e.g. I can come to office."
+                                        fullWidth
+                                        size ="small"
+                                        variant="outlined"
+                                        sx={{
+                                            backgroundColor: '#fff',
+                                            borderRadius: 2,
+                                            '& .MuiOutlinedInput-root': {
+                                                borderRadius: 2,
+                                                '& fieldset': {
+                                                    border: 'none',
+                                                },
+                                                '&:hover fieldset': {
+                                                    border: '2px solid gray',
+                                                },
+                                                '&.Mui-focused fieldset': {
+                                                    border: '2px solid black',
+                                                },
+                                            },
+                                            '& label.Mui-focused': {
+                                                color: 'black',
+                                            },
+                                        }}
+                                        InputProps={{ sx: { borderRadius: 2 } }}
+                                        {...register('interviewType', {
+                                            required: 'Interview preference is required',
+                                        })}
+                                        error={!!errors.interviewType}
+                                    />
+
+                                    {errors.interviewType && (
+                                        <Box
+                                            sx={{
+                                                backgroundColor: '#f5f5f5',
+                                                color: '#d32f2f',
+                                                fontSize: '0.75rem',
+                                                padding: '4px 8px',
+                                                borderBottomLeftRadius: 8,
+                                                borderBottomRightRadius: 8,
+                                                mt: '2px',
+                                            }}
+                                        >
+                                            {errors.interviewType.message}
+                                        </Box>
+                                    )}
+                                </Box>
                             </Grid>
 
                             <Grid item xs={12}>
-                                <TextField
-                                    label="Office or Online Interview Preference"
-                                    placeholder="e.g. I can come to office."
-                                    fullWidth
-                                    variant="outlined"
-                                    sx={{
-                                        borderRadius: 2,
-                                        backgroundColor: '#fff',
-                                        '& .MuiOutlinedInput-root': {
+                                <Box>
+                                    <TextField
+                                        label="Notice Period / Immediate Joiner?"
+                                        placeholder="e.g. Yes I can join immediately."
+                                        fullWidth
+                                        size ="small"
+                                        variant="outlined"
+                                        sx={{
+                                            backgroundColor: '#fff',
                                             borderRadius: 2,
-                                            '&.Mui-focused fieldset': {
-                                                borderColor: 'black', // Black border on focus
+                                            '& .MuiOutlinedInput-root': {
+                                                borderRadius: 2,
+                                                '& fieldset': {
+                                                    border: 'none',
+                                                },
+                                                '&:hover fieldset': {
+                                                    border: '2px solid gray',
+                                                },
+                                                '&.Mui-focused fieldset': {
+                                                    border: '2px solid black',
+                                                },
                                             },
-                                        },
-                                        '& label.Mui-focused': {
-                                            color: 'black', // 👈 Black label on focus
-                                        },
-                                    }}
-                                    InputProps={{ sx: { borderRadius: 2 } }}
-                                    {...register('interviewType')}
-                                />
-                            </Grid>
+                                            '& label.Mui-focused': {
+                                                color: 'black',
+                                            },
+                                        }}
+                                        InputProps={{ sx: { borderRadius: 2 } }}
+                                        {...register('noticePeriod', {
+                                            required: 'Notice period info is required',
+                                        })}
+                                        error={!!errors.noticePeriod}
+                                    />
 
-                            <Grid item xs={12}>
-                                <TextField
-                                    label="Notice Period / Immediate Joiner?"
-                                    placeholder="e.g. Yes I can join immediately."
-                                    fullWidth
-                                    variant="outlined"
-                                    sx={{
-                                        borderRadius: 2,
-                                        backgroundColor: '#fff',
-                                        '& .MuiOutlinedInput-root': {
-                                            borderRadius: 2,
-                                            '&.Mui-focused fieldset': {
-                                                borderColor: 'black', // Black border on focus
-                                            },
-                                        },
-                                        '& label.Mui-focused': {
-                                            color: 'black', // 👈 Black label on focus
-                                        },
-                                    }}
-                                    InputProps={{ sx: { borderRadius: 2 } }}
-                                    {...register('noticePeriod')}
-                                />
+                                    {errors.noticePeriod && (
+                                        <Box
+                                            sx={{
+                                                backgroundColor: '#f5f5f5',
+                                                color: '#d32f2f',
+                                                fontSize: '0.75rem',
+                                                padding: '4px 8px',
+                                                borderBottomLeftRadius: 8,
+                                                borderBottomRightRadius: 8,
+                                                mt: '2px',
+                                            }}
+                                        >
+                                            {errors.noticePeriod.message}
+                                        </Box>
+                                    )}
+                                </Box>
                             </Grid>
 
                             {/* Submit Button */}
