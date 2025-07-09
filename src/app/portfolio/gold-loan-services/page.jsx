@@ -95,7 +95,7 @@ function Page() {
 
     const slides = [
         {
-            name: 'The Challenges',
+            name: 'Challenges',
             number: '01',
             title1: 'Manual Loan Application Processes',
             title2: 'No Real-Time Customer Updates',
@@ -113,7 +113,7 @@ function Page() {
             image: phoneimg1,
         },
         {
-            name: 'The Process',
+            name: 'Process',
             number: '02',
             title1: 'Workflow Digitization & KYC Automation',
             title2: 'Cross-Device Platform Development',
@@ -131,7 +131,7 @@ function Page() {
             image: phoneimg2,
         },
         {
-            name: 'Key Features',
+            name: 'Features',
             number: '03',
             title1: 'Digital Loan Application Portal',
             title2: 'e-KYC and Document Upload',

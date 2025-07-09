@@ -7,6 +7,7 @@ import HeadingPage from "../../components/global/headingPage";
 import Software from "@/components/services/software";
 import KeyBenefits from "@/components/services/keyBenefits";
 import HowItWorks from "@/components/services/howItWorks";
+import Newsletter from "@/components/global/newsletter";
 
 function Page() {
     // const breadCrumbs = [
@@ -22,6 +23,7 @@ function Page() {
             <BusinessVenture/>
             <HowItWorks/>
             <Ourproducts/>
+            <Newsletter/>
         </>
     );
 }

@@ -48,13 +48,13 @@ function KeyBenefits() {
         <Box sx={{pb: '120px'}}>
             <Container maxWidth={'xl'}>
                 <Grid container spacing={4}>
-                    <Grid item xs={12} lg={3} >
+                    <Grid item xs={12} lg={3}>
                         <Box
                             sx={{
                                 position: "sticky",
-                                top:'40%',
-                                display:'flex',
-                                justifyContent:'center'
+                                top: '40%',
+                                display: 'flex',
+                                justifyContent: 'center'
                             }}
                         >
                             <Box>
@@ -78,7 +78,7 @@ function KeyBenefits() {
                             <Box>
                                 <Typography
                                     sx={{
-                                        fontSize: {xs: "24px", sm: "28px", lg: "36px"},
+                                        fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                         fontWeight: "700",
                                         display: "flex",
                                         justifyContent: {xs: "center", lg: "flex-start"},
@@ -126,7 +126,7 @@ function KeyBenefits() {
                                         fontSize: "46px",
                                         fontWeight: "700",
                                         color: "#fff",
-                                        padding: "100px 0 30px 0",
+                                        padding: "0px 0 30px 0",
                                     }}
                                 >
                                     Key Benefits
@@ -134,14 +134,18 @@ function KeyBenefits() {
                                 <Grid container>
                                     {Data.map((item, index) => (
                                         <Grid item xs={12} md={6} key={index}>
-                                            <Box sx={{padding: {md: "10px 17px 10px 0", xs: "10px 0px 10px 0"}}}>
+                                            <Box sx={{
+                                                padding: {md: "10px 17px 10px 0", xs: "10px 0px 10px 0"},
+                                                height: "100%"
+                                            }}>
                                                 <Box
                                                     sx={{
                                                         background: "#FFF",
                                                         borderRadius: "10px",
-                                                        height: {md: "345px"},
+                                                        height: '100%',
                                                         width: "100%",
                                                         padding: {lg: "40px", sm: "30px", xs: "20px"},
+                                                        boxShadow: '0 0 10px rgba(72, 69, 224, .1)'
                                                     }}
                                                 >
                                                     <Image src={item.icon} alt={item.title}/>
@@ -150,12 +154,12 @@ function KeyBenefits() {
                                                             margin: "25px 0 16px 0",
                                                             fontWeight: "700",
                                                             fontSize: "24px",
-                                                            color: "#000",
+                                                            color: "#0E314C",
                                                         }}
                                                     >
                                                         {item.title}
                                                     </Typography>
-                                                    <Typography sx={{color: "#000"}}>
+                                                    <Typography sx={{color: "#6084A4"}}>
                                                         {item.description}
                                                     </Typography>
                                                 </Box>

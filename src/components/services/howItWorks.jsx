@@ -82,12 +82,12 @@ function HowItWorks() {
                             sx={{
                                 position: 'sticky',
                                 top: '20%',
-                                height: '100%',
+                                height: '400px',
                                 display: 'flex',
                                 alignItems: 'center',
                                 zIndex: index + 1,
                                 background: '#fff',
-                                py:6
+                                // py:6
                             }}
                         >
                             <Box
@@ -135,8 +135,9 @@ function HowItWorks() {
                                         sx={{
                                             p: 4,
                                             borderRadius: "8px",
-                                            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-                                            backgroundColor: "#fff",
+                                            boxShadow:' 0 0 10px rgba(72, 69, 224, .1)',
+                                            // backgroundColor: "#fff",
+                                            // border:'1px solid #000',
                                         }}
                                     >
                                         <Typography

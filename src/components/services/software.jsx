@@ -11,7 +11,7 @@ function Software() {
                 <Box sx={{ width: '100%', px: {xs:'20px',md:"50px" , lg:'unset'} }}>
                     <Box
                         sx={{
-                            fontSize: { lg: "50px", sm: "45px" , xs:'40px' },
+                            fontSize: { xs: "30px", md: "35px", lg: "45px" },
                             fontWeight: "700",
                             lineHeight: "75px",
                             display: "flex",

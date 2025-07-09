@@ -98,7 +98,7 @@ function Page() {
 
     const slides = [
         {
-            name: 'The Challenges',
+            name: 'Challenges',
             number: '01',
             title1: 'Low ROI from Traditional Agencies',
             title2: 'Lack of Real-Time Optimization',
@@ -116,7 +116,7 @@ function Page() {
             image: phoneimg1,
         },
         {
-            name: 'The Process',
+            name: 'Process',
             number: '02',
             title1: 'Audit & Performance Review',
             title2: 'Precision Targeting Setup',
@@ -134,7 +134,7 @@ function Page() {
             image: phoneimg2,
         },
         {
-            name: 'Key Features',
+            name: 'Features',
             number: '03',
             title1: 'Specialized Ad Operations Team',
             title2: 'Advanced Targeting & Retargeting',

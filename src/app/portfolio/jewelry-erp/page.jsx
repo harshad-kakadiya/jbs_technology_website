@@ -100,7 +100,7 @@ function Page() {
 
     const slides = [
         {
-            name: 'The Challenges',
+            name: 'Challenges',
             number: '01',
             title1: 'Disconnected ERP and RFID/EAS Hardware',
             title2: 'Lack of Real-Time Monitoring Capabilities',
@@ -118,7 +118,7 @@ function Page() {
             image: phoneimg1,
         },
         {
-            name: 'The Process',
+            name: 'Process',
             number: '02',
             title1: 'Requirements Gathering & Hardware Sync Mapping',
             title2: 'Custom UI/UX with Real-Time Dashboard',
@@ -136,7 +136,7 @@ function Page() {
             image: phoneimg2,
         },
         {
-            name: 'Key Features',
+            name: 'Features',
             number: '03',
             title1: 'Hardware-Linked ERP Dashboard',
             title2: 'Real-Time RFID & EAS Monitoring',

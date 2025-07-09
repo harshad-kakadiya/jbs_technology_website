@@ -24,7 +24,6 @@ function Navigation() {
     const router = useRouter();
 
     const navItems = [
-        { name: 'Home', route: '/' },
         { name: 'About', route: '/about' },
         { name: 'Services', route: '/services' },
         { name: 'Portfolio', route: '/portfolio' },
@@ -78,10 +77,23 @@ function Navigation() {
                                             textTransform: 'capitalize',
                                             color: (scrolled || path === '/') ? '#000' : '#fff',
                                             cursor: 'pointer',
-                                            transition: '0.5s',
                                             fontSize: 15,
                                             padding: '0 15px',
-                                            ':hover': { textDecoration: 'none' },
+                                            position: 'relative',
+                                            display: 'inline-block',
+                                            '&::after': {
+                                                content: '""',
+                                                position: 'absolute',
+                                                left: 0,
+                                                bottom: -2,
+                                                height: '2px',
+                                                width: path === route ? '100%' : '0%',
+                                                backgroundColor: (scrolled || path === '/') ? '#000' : '#fff',
+                                                transition: 'width 0.4s ease-in-out',
+                                            },
+                                            '&:hover::after': {
+                                                width: '100%',
+                                            },
                                         }}
                                     >
                                         {name}
