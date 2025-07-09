@@ -75,7 +75,7 @@ function Collaborate() {
 
 
     return (
-        <Box sx={{padding: "85px 15px"}}>
+        <Box sx={{padding: "40px 15px"}}>
             <Container maxWidth={"xxl"}>
                 <Grid container>
                     <Grid item={12}>
@@ -199,12 +199,12 @@ function Collaborate() {
                                                     <Box sx={{padding: "10px"}}>
                                                         <TextField
                                                             fullWidth
-                                                            placeholder="*Full Name"
+                                                            placeholder="Full Name*"
                                                             variant="outlined"
                                                             InputProps={{
                                                                 sx: {
                                                                     color: "black", // Set font color to black
-                                                                    borderRadius: "50px",
+                                                                    borderRadius: 2,
                                                                     background: "#f2f2f2",
                                                                     height: "50px",
                                                                     fontSize: "15px",
@@ -229,12 +229,12 @@ function Collaborate() {
                                                     <Box sx={{padding: "10px"}}>
                                                         <TextField
                                                             fullWidth
-                                                            placeholder="*Email Address"
+                                                            placeholder="Email Address*"
                                                             variant="outlined"
                                                             InputProps={{
                                                                 sx: {
                                                                     color: "black", // Set font color to black
-                                                                    borderRadius: "50px",
+                                                                    borderRadius: 2,
                                                                     background: "#f2f2f2",
                                                                     height: "50px",
                                                                     fontSize: "15px",
@@ -258,12 +258,12 @@ function Collaborate() {
                                                     <Box sx={{padding: "10px"}}>
                                                         <TextField
                                                             fullWidth
-                                                            placeholder="*Phone Number"
+                                                            placeholder="Phone Number*"
                                                             variant="outlined"
                                                             InputProps={{
                                                                 sx: {
                                                                     color: "black",
-                                                                    borderRadius: "50px",
+                                                                    borderRadius: 2,
                                                                     background: "#f2f2f2",
                                                                     height: "50px",
                                                                     fontSize: "15px",
@@ -293,7 +293,7 @@ function Collaborate() {
                                                                     color: "#8a8a8a",
                                                                     pl: 2,
                                                                     background: "#f2f2f2",
-                                                                    borderRadius: "50px",
+                                                                    borderRadius: 2,
                                                                 }}
                                                             >
                                                                 What are your needs?
@@ -302,7 +302,7 @@ function Collaborate() {
                                                                 defaultValue=""
                                                                 variant="outlined"
                                                                 sx={{
-                                                                    borderRadius: "50px",
+                                                                    borderRadius: 2,
                                                                     background: "#f2f2f2",
                                                                     height: "50px",
                                                                     "& .MuiOutlinedInput-notchedOutline": {
@@ -379,18 +379,18 @@ function Collaborate() {
                                                     padding: "0px 55px 0px 25px",
                                                     position: "relative",
                                                     lineHeight: "50px",
-                                                    borderRadius: "11110px 11110px 11110px 11110px",
+                                                    borderRadius: "12px",
                                                     "&:hover  .icon": {
                                                         position: "absolute",
-                                                        left: "82%",
+                                                        left: "75%",
                                                     },
                                                 }}
                                             >
-                                                Submit Require <SendIcon className={"icon"} sx={{
+                                                Submit<SendIcon className={"icon"} sx={{
                                                 fontSize: "15px",
                                                 transition: "0.3s",
                                                 position: "absolute",
-                                                left: "80%"
+                                                left: "70%"
                                             }}/>
                                             </Button>
                                         </Box>

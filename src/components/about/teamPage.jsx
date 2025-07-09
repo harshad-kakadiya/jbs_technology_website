@@ -41,7 +41,7 @@ const TeamPage = () => {
                                 mb: '18px',
                                 fontSize: '13px',
                                 fontWeight: '400',
-                                letterSpacing: '4.8px',
+                                letterSpacing: '2.5px',
                             }}
                         >
                             THE TEAMS MEMBER

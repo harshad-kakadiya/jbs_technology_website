@@ -11,7 +11,7 @@ function FunFactCounter({ gap, color, heading, counters, counterDetails }) {
     });
 
     return (
-        <Box sx={{ my: 9 }}>
+        <Box sx={{ my: 7 }}>
             <Container maxWidth="xl">
                 <Box
                     ref={ref}
@@ -26,7 +26,7 @@ function FunFactCounter({ gap, color, heading, counters, counterDetails }) {
                             <Box
                                 component={"h2"}
                                 sx={{
-                                    fontSize: 45,
+                                    fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                     fontWeight: 600,
                                     textAlign: "center",
                                     my: 4,
@@ -38,8 +38,7 @@ function FunFactCounter({ gap, color, heading, counters, counterDetails }) {
                                 {counters.map((counter, index) => (
                                     <Grid
                                         item
-                                        xs={12}
-                                        sm={6}
+                                        xs={6}
                                         md={3}
                                         key={index}
                                         textAlign="center"
@@ -47,7 +46,7 @@ function FunFactCounter({ gap, color, heading, counters, counterDetails }) {
                                         <Typography
                                             variant="h2"
                                             sx={{
-                                                fontSize: { xs: 60, sm: 65, md: 72 },
+                                                fontSize: { xs: 40, sm: 55, md: 60 },
                                                 fontWeight: 600,
                                                 color: color ? "white" : "#1A1F26",
                                             }}

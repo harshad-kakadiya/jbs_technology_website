@@ -1,6 +1,6 @@
 'use client';
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Navigation, EffectFade} from "swiper/modules";
+import {Navigation} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import {useRef} from "react";
@@ -22,7 +22,7 @@ import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import DirectionsCarOutlinedIcon from '@mui/icons-material/DirectionsCarOutlined';
 import EastIcon from "@mui/icons-material/East";
-import {Box, Button, Container, Grid, Typography} from "@mui/material";
+import {Box, Button, Container, Grid} from "@mui/material";
 import Image from "next/image";
 import {useRouter} from "next/navigation";
 
@@ -91,28 +91,30 @@ function Industries() {
             swiperRef.current.swiper.slidePrev();
         }
     };
+
     return (
         <Box className={'industries'}>
-            <Box sx={{my: 10}}>
+            <Box sx={{my: 8}}>
                 <Container maxWidth={'xl'}>
-                    <Grid container>
-                        <Grid item xs={12} md={5} lg={6}>
-                            <Box component={'h2'} sx={{fontSize: 45, fontWeight: 600}}>Industries</Box>
-                        </Grid>
+                    <Grid container alignItems={'center'}>
                         <Grid item xs={12} md={5} lg={4}>
-                            <Box component={'p'} sx={{color: 'cardTextGrey', fontWeight: 500}}>
-                                Our expertise spans industries from banking, insurance, telecommunications, media,
-                                entertainment, distribution, retail, to many more.</Box>
+                            <Box component={'h2'} sx={{fontSize: { xs: "30px", md: "35px", lg: "45px" }, fontWeight: 600}}>Industries</Box>
                         </Grid>
-                        <Grid item xs={2} sx={{display:{xs:'none',md:'block'}}}>
+                        <Grid item xs={12} md={5} lg={6}>
+                            <Box component={'p'} sx={{color: 'cardTextGrey', fontWeight: 500,}}>
+                                Our expertise spans industries from banking, insurance, telecommunications, media,
+                                entertainment, distribution, retail, to many more.
+                            </Box>
+                        </Grid>
+                        <Grid item xs={2} sx={{display: {xs: 'none', md: 'block'}}}>
                             <Box sx={{position: 'relative'}}>
                                 <Button
                                     className="swiper-button-prev1"
                                     sx={{
                                         color: 'cardTextGrey',
                                         position: 'absolute',
-                                        top: 0,
-                                        left: {xl:60 , lg:40 , md:0},
+                                        top: -35,
+                                        left: {xl: 60, lg: 40, md: 0},
                                         border: '1px solid gray',
                                         borderRadius: '50%',
                                         height: '65px',
@@ -132,7 +134,7 @@ function Industries() {
                                     sx={{
                                         color: 'cardTextGrey',
                                         position: 'absolute',
-                                        top: 0,
+                                        top: -35    ,
                                         right: 12,
                                         border: '1px solid gray',
                                         borderRadius: '50%',
@@ -162,40 +164,40 @@ function Industries() {
                     nextEl: ".swiper-button-next1",
                     prevEl: ".swiper-button-prev1",
                 }}
-                centeredSlides={true}
-                pagination={{
-                    clickable: true,
-                }}
+                pagination={{clickable: true}}
                 breakpoints={{
                     0: {
                         slidesPerView: 2,
+                        centeredSlides: false,
+                        spaceBetween: 0,
                     },
                     600: {
                         slidesPerView: 3,
+                        centeredSlides: true,
+                        spaceBetween: 0,
                     },
                     1200: {
                         slidesPerView: 5,
+                        centeredSlides: true,
+                        spaceBetween: 0,
                     },
                 }}
             >
                 {allIndustries.map((item, index) => (
-                    <SwiperSlide
-                        key={index}
-                        sx={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                        }}
-                    >
-                        <Box onClick={() => router.push(item.route)}
-                             sx={{
-                                 width: '100%',
-                                 transition: '0.5s',
-                                 overflow: 'hidden',
-                                 ':hover img': {filter: 'grayscale(0%) !important'},
-                                 ':hover ': {transform: 'scaleX(1.05)'},
-                                 cursor: "pointer",
-                             }}>
+                    <SwiperSlide key={index}>
+                        <Box
+                            onClick={() => router.push(item.route)}
+                            sx={{
+                                width: '100%',
+                                transition: '0.5s',
+                                overflow: 'hidden',
+                                m: 0,
+                                p: 0,
+                                ':hover img': {filter: 'grayscale(0%) !important'},
+                                ':hover ': {transform: 'scaleX(1.05)'},
+                                cursor: "pointer",
+                            }}
+                        >
                             <Box sx={{
                                 position: 'relative',
                                 display: 'flex',
@@ -204,21 +206,24 @@ function Industries() {
                                 backgroundColor: 'white',
                                 border: '1px solid #E7E7E7'
                             }}>
-                                <Box sx={{p: {xs:'70px 7px',md:'80px 8px',sm:'100px 10px'}}}>
-                                    <Box sx={{' svg': {fontSize: {xs:'50px',md:'65px'}}}}>
+                                <Box sx={{p: {xs: '70px 7px', md: '80px 8px', sm: '100px 10px'}}}>
+                                    <Box sx={{' svg': {fontSize: {xs: '50px', md: '65px'}}}}>
                                         {item.icon}
                                     </Box>
                                     <Box sx={{my: 1, fontSize: 17}}>{item.title}</Box>
                                 </Box>
                             </Box>
-                            <Box>
-                                <Image src={item.img} alt={item.img} style={{width: '100%', height: '100%', filter: 'grayscale(90%)',mb: '-10px'}}/>
+                            <Box sx={{lineHeight: 0}}>
+                                <Image
+                                    src={item.img}
+                                    alt={item.title}
+                                    style={{width: '100%', height: '100%', filter: 'grayscale(90%)'}}
+                                />
                             </Box>
                         </Box>
                     </SwiperSlide>
                 ))}
             </Swiper>
-
         </Box>
     );
 }

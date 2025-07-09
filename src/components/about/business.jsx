@@ -67,7 +67,7 @@ const Business = () => {
                                           fontSize: '12px',
                                           color: '#505558',
                                           pt:{lg:"40px",sm:"10px",md:"30px",xs:"0px"},
-                                          letterSpacing: '5px'
+                                          letterSpacing: '2.5px'
                                 }}>
                                     WHY CHOOSE JBS TECHNOLOGY
                                 </Typography>

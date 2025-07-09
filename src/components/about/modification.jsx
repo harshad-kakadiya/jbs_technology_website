@@ -41,7 +41,7 @@ const Modification = () => {
                                 sx={{
                                     fontWeight: 400,
                                     textTransform: "uppercase",
-                                    letterSpacing: "5px",
+                                    letterSpacing: "2.5px",
                                     fontSize: "12px",
                                     color: "#888",
                                     textAlign: "start",
