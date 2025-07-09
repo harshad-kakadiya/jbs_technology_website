@@ -9,6 +9,7 @@ import flutter from "../../assets/images/career/flutter-logo.svg"
 import human from "../../assets/images/career/human-resources.webp"
 import node from "../../assets/images/career/node-logo.webp"
 import fullstack from "../../assets/images/career/full-stack-logo.webp"
+import uiux from "../../assets/images/career/uiux.webp"
 
 
 function Openings() {
@@ -54,10 +55,18 @@ function Openings() {
             logo: fullstack,
             navigate:"career/full-stack-developer"
         },
+        {
+            title: "UI/UX Designer",
+            experience: 1, // You can adjust this
+            openings: 1,   // Update based on actual availability
+            location: "Surat, Gujarat.",
+            logo: uiux,    // Replace with actual logo variable for UI/UX
+            navigate: "career/ui-ux-designer"
+        }
     ];
 
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'center', padding: 4 }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', py:8,px:2 }}>
             <Box sx={{ width: '100%', maxWidth: 1200 }}>
                 <Grid container spacing={3}>
                     {jobData.map((job, index) => (
@@ -65,18 +74,25 @@ function Openings() {
                             <Card
                                 sx={{
                                     height: "100%",
-                                    border: 1,
-                                    borderColor: "#1A1F26",
-                                    boxShadow: 2,
+                                    boxShadow: 3,
                                     borderRadius: 0,
                                     p:"10px",
-                                    bgcolor: "#1A1F26",
-                                    color: "#fff",
+                                    bgcolor: "white",
+                                    color: "#1A1F26",
                                     cursor: "pointer",
-
+                                    position: "relative",
+                                    "&:hover::after": {
+                                        content: '""',
+                                        position: "absolute",
+                                        bottom: 0,
+                                        left: 0,
+                                        width: 0,
+                                        height: 0,
+                                        borderLeft: "20px solid #1A1F26",
+                                        borderTop: "20px solid transparent",
+                                    }
                                 }}
                                 onClick={() => router.push(job.navigate)}
-
                             >
                                 <CardContent>
                                     <Box
@@ -96,14 +112,15 @@ function Openings() {
                                             style={{ objectFit: "contain" }}
                                         />
                                     </Box>
-                                    <Typography  sx={{
-                                        fontWeight: 500,
-                                        fontSize: "19px",
-                                        mb:"12px",
-                                        "&:hover":{
-                                            color: "#EF8920",
-                                        }
-                                    }}>
+                                    <Typography
+                                        sx={{
+                                            fontWeight: 500,
+                                            fontSize: "19px",
+                                            mb:"12px",
+                                            "&:hover":{
+                                            }
+                                        }}
+                                    >
                                         {job.title}
                                     </Typography>
                                     <Typography sx={{fontSize:"14px", lineHeight: 1.8}}>Experience: {job.experience}</Typography>
