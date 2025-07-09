@@ -14,54 +14,55 @@ function Capabilities() {
     const capability = [
         {
             title: "Artificial Intelligence",
-            describtion: "Amplify your business with JBS Technology, Surat's trusted technology partner, by integrating AI-powered custom software solutions and future-ready digital products to drive business growth through technology.",
+            describtion: "JBS Technology integrates AI powered custom software solutions to drive business growth with future-ready digital products",
             img: Img1,
         },
         {
             title: "Web Development",
-            describtion: "JBS Technology, a leading software development company in Surat, Gujarat, builds high-performance web applications and scalable digital experiences to help businesses grow through technology.",
+            describtion: "As a leading software company in Surat, we build web applications and scalable digital experiences for business success",
             img: Img2,
         },
         {
             title: "Cloud and Infrastructure Services",
-            describtion: "Empower your enterprise with robust cloud infrastructure and scalable digital solutions from JBS Technology — your trusted technology partner offering expert software engineers in Surat, Gujarat.",
+            describtion: "We offer cloud solutions and infrastructure support by expert software engineers trusted across Surat and beyond",
             img: Img3,
         },
         {
             title: "Game Development",
-            describtion: "JBS Technology specializes in creating high-quality, future-ready digital products and immersive games with expert software engineers, serving clients from Surat, Gujarat and beyond.",
+            describtion: "JBS Technology delivers immersive, high quality games powered by future-ready tech and expert developers",
             img: Img4,
         },
         {
             title: "Mobile App Development",
-            describtion: "Turn your vision into a future-ready mobile app with JBS Technology, Surat's custom software solutions leader. Our expert software engineers build scalable digital experiences that deliver results.",
+            describtion: "We create scalable mobile apps tailored to your goals with custom software solutions built in Surat, Gujarat",
             img: Img5,
         },
         {
             title: "UI/UX Designing",
-            describtion: "At JBS Technology, we craft intuitive UI/UX designs that elevate your digital products. As a Surat-based software development company, we ensure scalable digital experiences and better user engagement.",
+            describtion: "Our UI/UX design services enhance digital products with user focused, scalable experiences built by experts",
             img: Img6,
         },
         {
             title: "Digital Marketing",
-            describtion: "JBS Technology, based in Surat, Gujarat, boosts your brand's online presence using strategic digital marketing and technology-driven solutions tailored for scalable growth and measurable ROI.",
+            describtion: "Boost your brand with digital marketing strategies that drive ROI powered by technology and tailored solutions",
             img: Img7,
         },
         {
             title: "Android Development",
-            describtion: "Learn Android development at JBS Technology in Surat with expert software engineers guiding you through practical training to build custom software solutions and web applications.",
+            describtion: "Build powerful Android apps with hands on guidance from expert software engineers at JBS Technology, Surat",
             img: Img8,
         }
+
     ];
 
     return (
         <Container maxWidth={"xl"}>
-            <Box sx={{marginTop: {xs: "25px", lg: "70px"}}}>
-                <Grid container spacing={4}>
-                    <Grid item lg={6}>
+            <Box sx={{marginTop: {xs: "20px", lg: "50px"}}}>
+                <Grid container >
+                    <Grid item lg={3}>
                         <Box
                             sx={{
-                                fontSize: {xs: "24px", sm: "45px"},
+                                fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                 lineHeight: "55px",
                                 fontWeight: "600",
                                 paddingBottom: {md: "0px", lg: "80px"}
@@ -70,7 +71,7 @@ function Capabilities() {
                             Capabilities
                         </Box>
                     </Grid>
-                    <Grid item lg={6}>
+                    <Grid item lg={9}>
                         <Box
                             component={'p'}
                             sx={{
@@ -81,11 +82,9 @@ function Capabilities() {
                                 marginLeft: {lg: 15, xs: "0"}
                             }}
                         >
-                            At JBS Technology, a leading software development company in Surat, Gujarat, we offer a wide
-                            range of custom software solutions, web applications, and scalable digital experiences. As a
-                            trusted technology partner, we help businesses achieve meaningful outcomes, enhance customer
-                            engagement, and drive business growth through future-ready digital products—delivered with
-                            speed and precision.
+                            At JBS Technology, a top software development company in Surat, we deliver custom software
+                            solutions, scalable web applications, and future ready digital products As your trusted
+                            technology partner, we help drive business growth through innovation and speed
                         </Box>
                     </Grid>
                 </Grid>

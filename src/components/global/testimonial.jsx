@@ -20,7 +20,7 @@ const users = [
         imageSrc: img1.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "JBS Technology delivered exactly what we needed. Aklima was impressed by their quick response time and excellent development quality.",
+            "JBS Technology delivered exactly what we needed Aklima was impressed by their quick response time and excellent development quality",
     },
     {
         id: 2,
@@ -28,7 +28,7 @@ const users = [
         imageSrc: img2.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "We worked with JBS Technology for a custom solution. Fatima appreciated their strong technical skills and professional communication.",
+            "We worked with JBS Technology for a custom solution Fatima appreciated their strong technical skills and professional communication",
     },
     {
         id: 3,
@@ -36,7 +36,7 @@ const users = [
         imageSrc: img3.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "JBS Technology handled our web development project efficiently. Jannat praised their timely delivery and attention to detail.",
+            "JBS Technology handled our web development project efficiently Jannat praised their timely delivery and attention to detail",
     },
     {
         id: 4,
@@ -44,7 +44,7 @@ const users = [
         imageSrc: img4.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "Johns Due found JBS Technology to be reliable and easy to work with. Their team delivered a solid product within the expected time frame.",
+            "Johns Due found JBS Technology to be reliable and easy to work with Their team delivered a solid product within the expected time frame",
     },
     {
         id: 5,
@@ -52,7 +52,7 @@ const users = [
         imageSrc: img5.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "John appreciated the transparency and quality JBS Technology brought to the project. The experience was smooth from start to finish.",
+            "John appreciated the transparency and quality JBS Technology brought to the project The experience was smooth from start to finish",
     },
     {
         id: 6,
@@ -60,7 +60,7 @@ const users = [
         imageSrc: img6.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "Amar mentioned how the JBS Technology team was responsive and helpful. Their ability to customize features was especially valuable.",
+            "Amar mentioned how the JBS Technology team was responsive and helpful Their ability to customize features was especially valuable",
     },
     {
         id: 7,
@@ -68,7 +68,7 @@ const users = [
         imageSrc: img7.src,
         details: "COO, AMERIMAR ENTERPRISES, INC.",
         contain:
-            "Fatima shared a great experience with JBS Technology. The final result exceeded her expectations, and support was excellent.",
+            "Fatima shared a great experience with JBS Technology The final result exceeded her expectations, and support was excellent",
     },
 ];
 
@@ -91,11 +91,11 @@ function Testimonial() {
     }, []);
 
     return (
-        <Box sx={{my:{xs:5,lg:14}}}>
+        <Box sx={{my:{xs:5,lg:7}}}>
             <Box
                 component={"h2"}
                 sx={{
-                    fontSize: 45,
+                    fontSize: { xs: "30px", md: "35px", lg: "45px" },
                     fontWeight: 600,
                     textAlign: "center",
                 }}
@@ -139,8 +139,8 @@ function Testimonial() {
                                     <Typography
                                         variant="p"
                                         sx={{
-                                            fontSize: {md: "32px", sm: "28px", xs: "20px"},
-                                            fontWeight: "500",
+                                            fontSize: {md: "25px", xs: "20px"},
+                                            fontWeight: "400",
                                             position: "relative",
                                             zIndex: "11",
                                         }}

@@ -7,20 +7,29 @@ import {Autoplay, Navigation} from "swiper/modules";
 import "swiper/css";
 import img1 from '../../assets/images/home/ourmission/overmission.png'
 import Image from "next/image";
-import WestIcon from "@mui/icons-material/West";
-import EastIcon from "@mui/icons-material/East";
 import {useRouter} from "next/navigation";
 
 const slides = [
     {
         title: "Our Mission",
-        description: "At JBS Technology, a leading software development company in Surat, Gujarat, our mission is to deliver custom software solutions, web applications, and future-ready digital products that empower businesses to grow through technology, adapt quickly, and thrive in a competitive digital world."
+        description: "At JBS Technology in Surat, our mission is to deliver custom software, web applications, and future ready products that help businesses grow through technology"
     },
     {
         title: "Our Vision",
-        description: "To be a trusted technology partner and global leader in software development and education, providing scalable digital experiences and innovative solutions that drive business growth and create a smarter, more connected future."
+        description: "To be a trusted technology partner, offering scalable digital solutions that drive innovation and global business growth"
     }
+
 ];
+const WestIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+        <path fill="currentColor"
+              d="M497.333 239.999H80.092l95.995-95.995l-22.627-22.627L18.837 256L153.46 390.623l22.627-22.627l-95.997-95.997h417.243z"/>
+    </svg>
+);
+const EastIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path fill="currentColor" d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"/></svg>
+);
+
 
 function Ourmission() {
     const swiperRef = useRef(null);
@@ -38,19 +47,22 @@ function Ourmission() {
         }
     };
     return (
-        <Box sx={{mt: 10, mb: 4}}>
-            <Container maxWidth="xl" className={'ourMission'}>
-                <Grid container>
-                    <Grid item xs={12} md={9}>
-                        <Box
-                            sx={{
-                                height: "100%",
-                                background: `url(${bgImg.src}) no-repeat`,
-                                backgroundSize: "cover",
-                                objectFit: "contain",
-                                padding: {xl: "120px 60px", lg: "70px 30px", xs: "70px 30px"}
-                            }}
-                        >
+        <Box sx={{mt: 10, mb: 4, mx: {md: "45px", sm: "30px", xs: "0px"}}}>
+            {/*<Container maxWidth="xl" >*/}
+            <Grid container className={'ourMission'}>
+                <Grid item xs={12} md={9}>
+                    <Box
+                        sx={{
+                            height: "100%",
+                            background: `url(${bgImg.src}) no-repeat`,
+                            backgroundSize: "cover",
+                            objectFit: "contain",
+                        }}
+                    >
+                        <Box sx={{
+                            padding: {xl: "120px 220px", lg: "70px 30px", xs: "70px 30px"}
+
+                        }}>
                             <Typography
                                 sx={{
                                     fontSize: "13px",
@@ -58,7 +70,7 @@ function Ourmission() {
                                     fontWeight: 400,
                                     color: "#fff",
                                     textTransform: "uppercase",
-                                    letterSpacing: "3.2px",
+                                    letterSpacing: "2.5px",
                                 }}
                             >
                                 Jbs Technology since 2021
@@ -71,17 +83,7 @@ function Ourmission() {
                                     marginBottom: "10px",
                                 }}
                             >
-                                Future-Ready Tech Solutions by JBS Technology
-                            </Typography>
-                            <Typography
-                                sx={{
-                                    fontSize: {md: "35px", xs: "26px", lg: "45px"},
-                                    color: "#fff",
-                                    paddingBottom: "25px",
-                                    textWrap: "warp"
-                                }}
-                            >
-                                Custom Software That Powers Tomorrow's Growth
+                                Smart Software Solutions
                             </Typography>
                             <Typography
                                 sx={{
@@ -91,12 +93,11 @@ function Ourmission() {
                                     width: {lg: "90%", xs: "100%"}
                                 }}
                             >
-                                At JBS Technology, a leading software development company in Surat, Gujarat, we
-                                specialize in delivering custom software solutions, scalable digital experiences, and
-                                web applications tailored to your business needs. As a trusted technology partner, our
-                                future-ready digital products are designed to drive business growth through technology.
-                                Whether you need automation, AI, cloud infrastructure, or expert software engineers—we
-                                build platforms that empower your business today and scale for tomorrow.
+                                At JBS Technology in Surat, Gujarat, we offer custom software solutions, scalable
+                                digital experiences, and web applications As a trusted technology partner, our expert
+                                software engineers help businesses grow through future-ready digital products tailored
+                                to your needs
+
                             </Typography>
                             <Box sx={{
                                 paddingTop: "50px",
@@ -136,111 +137,106 @@ function Ourmission() {
                                 </Box>
                             </Box>
                         </Box>
-                    </Grid>
+                    </Box>
+                </Grid>
 
-                    <Grid item xs={12} md={3}>
+                <Grid item xs={12} md={3}>
 
-                        <Swiper
-                            ref={swiperRef}
-                            modules={[Autoplay, Navigation]}
-                            // navigation={{
-                            // nextEl: ".swiper-button-next"
-                            // prevEl: ".swiper-button-prev",
-                            // }}
-                            autoplay={{
-                                delay: 3000,
-                                disableOnInteraction: false,
-                            }}
-                            loop={true}
-                            style={{width: "100%", height: "100%", position: 'relative'}}
-                        >
-                            {slides.map((item, index) => (
-                                <SwiperSlide key={index}>
-                                    <Box
+                    <Swiper
+                        ref={swiperRef}
+                        modules={[Autoplay, Navigation]}
+                        // navigation={{
+                        // nextEl: ".swiper-button-next"
+                        // prevEl: ".swiper-button-prev",
+                        // }}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
+                        loop={true}
+                        style={{width: "100%", height: "100%", position: 'relative'}}
+                    >
+                        {slides.map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <Box
+                                    sx={{
+                                        height: "100%",
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignItems: "start",
+                                        flexDirection: "column",
+                                        textAlign: "center",
+                                        padding: {xl: "50px", xs: "70px 30px 120px 30px"},
+                                        backgroundColor: "darkBlue",
+                                    }}
+                                >
+                                    <Box sx={{paddingBottom: "25px"}}>
+                                        <Image src={img1} alt={img1}/>
+                                    </Box>
+                                    <Typography
+                                        variant="h5"
                                         sx={{
-                                            height: "100%",
-                                            display: "flex",
-                                            justifyContent: "center",
-                                            alignItems: "start",
-                                            flexDirection: "column",
-                                            textAlign: "center",
-                                            padding: {xl: "50px", xs: "70px 15px"},
-                                            backgroundColor: "darkBlue",
+                                            fontWeight: "bold",
+                                            color: "#fff",
                                         }}
                                     >
-                                        <Box sx={{paddingBottom: "25px"}}>
-                                            <Image src={img1} alt={img1}/>
-                                        </Box>
-                                        <Typography
-                                            variant="h5"
-                                            sx={{
-                                                fontWeight: "bold",
-                                                color: "#fff",
-                                            }}
-                                        >
-                                            {item.title}
-                                        </Typography>
-                                        <Typography
-                                            variant="body1"
-                                            sx={{
-                                                color: "#fff",
-                                                fontSize: "14px",
-                                                display: "flex",
-                                                textAlign: "left",
-                                                paddingTop: "25px",
-                                            }}
-                                        >
-                                            {item.description}
-                                        </Typography>
-                                    </Box>
-                                </SwiperSlide>
-                            ))}
-                            <Button
-                                className="swiper-button-prev"
-                                sx={{
-                                    color: '#fff',
-                                    position: 'absolute',
-                                    top: {xs: '80%', lg: '78%'},
-                                    left: {xs: 0, lg: 30},
-                                    borderRadius: '50%',
-                                    height: '75px',
-                                    width: '75px',
-                                    p: 2.5,
-                                    display: "block",
-                                    transition: '0.5s',
-                                    "&:hover": {
-                                        transform: 'scale(0.8)',
-                                    },
-                                }}
-                                onClick={handlePrev1}
-                            >
-                                <WestIcon/>
-                            </Button>
-                            <Button
-                                className="swiper-button-next"
-                                sx={{
-                                    color: '#fff',
-                                    position: 'absolute',
-                                    top: {xs: '80%', lg: '78%'},
-                                    left: {xs: 50, lg: 90},
-                                    height: '75px',
-                                    width: '75px',
-                                    borderRadius: '50%',
-                                    p: 2.5,
-                                    display: "block",
-                                    transition: '0.5s',
-                                    "&:hover": {
-                                        transform: 'scale(0.8)',
-                                    },
-                                }}
-                                onClick={handleNext1}
-                            >
-                                <EastIcon/>
-                            </Button>
-                        </Swiper>
-                    </Grid>
+                                        {item.title}
+                                    </Typography>
+                                    <Typography
+                                        variant="body1"
+                                        sx={{
+                                            color: "#fff",
+                                            fontSize: "14px",
+                                            display: "flex",
+                                            textAlign: "left",
+                                            paddingTop: "25px",
+                                        }}
+                                    >
+                                        {item.description}
+                                    </Typography>
+                                </Box>
+                            </SwiperSlide>
+                        ))}
+                        <Button
+                            className="swiper-button-prev"
+                            sx={{
+                                color: '#fff',
+                                position: 'absolute',
+                                top: {xs: '72%', lg: '78%'},
+                                left: {xs: 12, lg: 30},
+                                borderRadius: '50%',
+                                height: '75px',
+                                width: '75px',
+                                p: 2.5,
+                                display: "block",
+                                transition: '0.5s',
+                            }}
+                            onClick={handlePrev1}
+                        >
+                            <WestIcon/>
+                        </Button>
+                        <Button
+                            className="swiper-button-next"
+                            sx={{
+                                color: '#fff',
+                                position: 'absolute',
+                                top: {xs: '72%', lg: '78%'},
+                                left: {xs: 75, lg: 110},
+                                height: '75px',
+                                width: '75px',
+                                borderRadius: '50%',
+                                p: 2.5,
+                                display: "block",
+                                transition: '0.5s',
+                            }}
+                            onClick={handleNext1}
+                        >
+                            <EastIcon/>
+                        </Button>
+                    </Swiper>
                 </Grid>
-            </Container>
+            </Grid>
+            {/*</Container>*/}
         </Box>
     );
 }

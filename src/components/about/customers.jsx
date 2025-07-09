@@ -88,10 +88,11 @@ const Customers = () => {
                                         fontSize: "12px",
                                         pb: 2,
                                         color: "#121C27",
+                                        letterSpacing:"2.5px",
                                         textAlign: { xs: "center", md: "left" },
                                     }}
                                 >
-                                    T E S T I M O N I A L S
+                                    TESTIMONIALS
                                 </Typography>
                                 <Typography
                                     variant="h2"

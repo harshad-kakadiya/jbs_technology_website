@@ -7,8 +7,8 @@ function Newsletter() {
 
 
     return (
-        <Box sx={{ padding: "110px 0px" }}>
-            <Container maxWidth={'xl'}>
+        <Box sx={{ padding: "90px 0px" }}>
+            {/*<Container maxWidth={'xl'}>*/}
                 <Box sx={{ width: "100%" }}>
                     <Box
                         sx={{
@@ -16,7 +16,7 @@ function Newsletter() {
                             height: "100%",
                             width: "100%",
                             backgroundSize: "cover",
-                            padding: "44px 65px"
+                            padding: "44px 105px"
                         }}
                     >
                         <Grid container spacing={2} alignItems="center">
@@ -105,7 +105,7 @@ function Newsletter() {
                         </Grid>
                     </Box>
                 </Box>
-            </Container>
+            {/*</Container>*/}
         </Box>
     );
 }
