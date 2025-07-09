@@ -137,7 +137,7 @@ function KeyBenefits() {
                                             <Box sx={{padding: {md: "10px 17px 10px 0", xs: "10px 0px 10px 0"}}}>
                                                 <Box
                                                     sx={{
-                                                        background: "#141C25",
+                                                        background: "#FFF",
                                                         borderRadius: "10px",
                                                         height: {md: "345px"},
                                                         width: "100%",
@@ -150,12 +150,12 @@ function KeyBenefits() {
                                                             margin: "25px 0 16px 0",
                                                             fontWeight: "700",
                                                             fontSize: "24px",
-                                                            color: "#fff",
+                                                            color: "#000",
                                                         }}
                                                     >
                                                         {item.title}
                                                     </Typography>
-                                                    <Typography sx={{color: "#f5f5f5"}}>
+                                                    <Typography sx={{color: "#000"}}>
                                                         {item.description}
                                                     </Typography>
                                                 </Box>

@@ -10,14 +10,14 @@ import TechUse from "../../components/portfolio/caseStudy/techUse";
 import MediaProject from "../../components/portfolio/caseStudy/mediaProject";
 import Socialmedia from "../../components/portfolio/socialmedia";
 
-const breadCrumbs = [
-    {label:'Home',route: '/'},
-    {label:'Blogs',route: '/blog'},
-]
+// const breadCrumbs = [
+//     {label:'Home',route: '/'},
+//     {label:'Blogs',route: '/blog'},
+// ]
 const Page = () => {
     return (
         <>
-            <HeadingPage bgImg={bg1.src} heading={'Blogs'} breadcrumbs={breadCrumbs}/>
+            <HeadingPage bgImg={bg1.src} heading={'Blogs'} />
             <Newsletter />
             <Blogslider/>
             <Posts/>

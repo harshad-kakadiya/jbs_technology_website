@@ -22,7 +22,7 @@ import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07
 function Page() {
     const breadCrumbs = [
         {label: 'Home', route: '/'},
-        {label: 'Jewelry ERP', route: '/portfolio/jewelry-erp'},
+        {label: 'Portfolio', route: '/portfolio'},
     ]
 
     const detaile = [

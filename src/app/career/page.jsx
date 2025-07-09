@@ -12,7 +12,7 @@ function Page() {
 
     const breadCrumbs = [
         {label:'Home',route: '/'},
-        {label:'Career',route: '/career'},
+        {label:'Careers',route: '/careers'},
     ]
 
     return (

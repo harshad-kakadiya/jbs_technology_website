@@ -20,7 +20,7 @@ import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07
 function Page() {
     const breadCrumbs = [
         {label: 'Home', route: '/'},
-        {label: 'Education CRM', route: '/portfolio/education-crm'},
+        {label: 'Portfolio', route: '/portfolio'},
     ]
 
     const detaile = [

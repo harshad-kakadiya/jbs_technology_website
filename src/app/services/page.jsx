@@ -9,13 +9,13 @@ import KeyBenefits from "@/components/services/keyBenefits";
 import HowItWorks from "@/components/services/howItWorks";
 
 function Page() {
-    const breadCrumbs = [
-        {label:'Home',route: '/'},
-        {label:'Services',route: '/services'},
-    ]
+    // const breadCrumbs = [
+    //     {label:'Home',route: '/'},
+    //     {label:'Services',route: '/services'},
+    // ]
     return (
         <>
-            <HeadingPage bgImg={bg1.src} heading={'Services'} breadcrumbs={breadCrumbs}/>
+            <HeadingPage bgImg={bg1.src} heading={'Services'} />
             <Software/>
             <KeyBenefits/>
             {/*<Service />*/}

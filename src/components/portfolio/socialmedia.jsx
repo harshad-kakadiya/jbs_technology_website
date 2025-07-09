@@ -34,7 +34,7 @@ const slides = [
     },
     {
         name: 'Education CRM',
-        title: 'Institute Management System',
+        title: 'Eduaura',
         description:
             'The Institute Management System (IMS) developed by JBS Technology is a comprehensive CRM solution tailored for educational institutions. This robust platform streamlines administrative tasks, enhances communication, and improves overall efficiency, allowing institutes to focus on delivering quality education.',
         button: 'See Case Study',
@@ -46,7 +46,7 @@ const slides = [
     },
     {
         name: 'Gold Loan Services',
-        title: 'Easy Gold Fincorp',
+        title: 'EGF',
         description:
             'At Easy Gold Fincorp, we are dedicated to providing innovative financial solutions tailored to meet your needs. With a commitment to excellence and customer satisfaction, we deliver reliable services that empower individuals and businesses alike. Our experienced team is here to assist you every step of the way, ensuring transparency, security, and efficiency in all our endeavors. Trust Easy Gold Fincorp for your financial needs and embark on a journey towards prosperity today.',
         button: 'See Case Study',
@@ -58,7 +58,7 @@ const slides = [
     },
     {
         name: 'Programmatic Advertising',
-        title: 'War Room Website',
+        title: 'War Room',
         description:
             "At War Room, we excel in one area: programmatic ads. Our highly specialized ad ops team delivers exceptional ad campaigns that go beyond the capabilities of traditional agencies. Our deep expertise allows us to exceed conversion goals consistently, and we're confident we can achieve the same success for you.",
         button: 'See Case Study',
@@ -70,7 +70,7 @@ const slides = [
     },
     {
         name: 'Consumer Co-operative',
-        title: "National Co-operative Consumers' Federation of India Ltd",
+        title: "NCCF",
         description:
             'NCCF promotes the consumer cooperative movement by facilitating the formation and democratic functioning of cooperatives, emphasizing self-reliance and mutual aid. We aim to meet consumer needs satisfactorily while maintaining transparency and a focus on consumer satisfaction. Our mission includes striving for higher performance standards, fostering growth among member cooperatives through best practices and technology, achieving better market penetration, and undertaking essential civil and infrastructure works as outlined by government guidelines.',
         button: 'See Case Study',
@@ -82,7 +82,7 @@ const slides = [
     },
     {
         name: 'Stock Market Community',
-        title: 'Hedger Community Website',
+        title: 'Hedger Community',
         description:
             "Hedger Community is your go-to platform for all things related to the stock market. Whether you're a seasoned investor or a beginner, our website provides the resources, tools, and community support you need to navigate the stock market with confidence. At Hedger Community, we aim to empower our users with comprehensive information, real-time updates, and expert insights to help you make informed investment decisions.",
         button: 'See Case Study',
@@ -94,7 +94,7 @@ const slides = [
     },
     {
         name: 'Jewelry ERP',
-        title: 'Jewelery ERP System Of Loyal String',
+        title: 'Loyal String',
         description:
             'Diamond Software approached us to develop a comprehensive software solution tailored to their advanced EAS and RFID systems. The project involved creating a user-friendly platform that integrates seamlessly with their existing hardware, offering real-time monitoring, instant notifications, and robust data analytics.Diamond Software approached us to develop a comprehensive software solution tailored to their advanced EAS and RFID systems. The project involved creating a user-friendly platform that integrates seamlessly with their existing hardware, offering real-time monitoring, instant notifications, and robust data analytics.',
         button: 'See Case Study',
@@ -141,7 +141,7 @@ function Socialmedia() {
                                             </Box>
                                             <Box
                                                 sx={{
-                                                    fontSize: { sm: '48px', xs: '36px' },
+                                                    fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                                     fontWeight: '500',
                                                     paddingLeft: '0',
                                                     marginTop: '16px',

@@ -21,7 +21,7 @@ import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07
 function Page() {
     const breadCrumbs = [
         {label: 'Home', route: '/'},
-        {label: 'Stock Market Community', route: '/portfolio/stock-market-community'},
+        {label: 'Portfolio', route: '/portfolio'},
     ]
 
     const detaile = [
