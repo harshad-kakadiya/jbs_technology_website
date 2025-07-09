@@ -15,6 +15,7 @@ import human from '@/assets/images/career/human-resources.webp';
 import node from '@/assets/images/career/node-logo.webp';
 import fullstack from '@/assets/images/career/full-stack-logo.webp';
 import form from '@/assets/images/career/formlogo.png';
+import uiux from '@/assets/images/career/uiux.webp';
 
 const jobListings = [
     {
@@ -149,6 +150,34 @@ const jobListings = [
             "Good understanding of DevOps tools and version control systems."
         ]
     },
+    {
+        slug: "ui-ux-designer",
+        id: 6,
+        logo: uiux, // Replace with actual logo variable or path
+        title: "UI/UX Designer",
+        category: "Careers",
+        description: [
+            "We are hiring a UI/UX Designer who has a strong understanding of user-centered design principles. You will be responsible for creating engaging, user-friendly interfaces and experiences across web and mobile platforms."
+        ],
+        experience: "1 year",
+        openings: 0,
+        location: "Surat, Gujarat.",
+        responsibilities: [
+            "Designing user interface elements like menus, tabs, and widgets for web and mobile applications.",
+            "Conducting user research and evaluating user feedback to improve usability.",
+            "Creating wireframes, prototypes, and mockups using tools like Figma, Adobe XD, or Sketch.",
+            "Collaborating with developers and stakeholders to implement user-centric designs.",
+            "Ensuring consistent branding and design standards across all platforms."
+        ],
+        qualifications: [
+            "Bachelor’s degree in Design, Human-Computer Interaction, or a related field.",
+            "Proficiency in design tools such as Figma, Adobe XD, Illustrator, and Photoshop.",
+            "Strong understanding of UX principles and best practices.",
+            "Experience in creating responsive and adaptive designs.",
+            "Excellent communication and collaboration skills."
+        ]
+    }
+
 ];
 
 function Page() {
@@ -177,6 +206,7 @@ function Page() {
     }
 
     return (
+
         <Container maxWidth="lg" sx={{py: 12}}>
             <Box textAlign="center">
                 <Typography gutterBottom sx={{
@@ -197,17 +227,25 @@ function Page() {
             </Box>
             <Stack direction={{xs: 'column', md: 'row'}} spacing={4} mb={3}>
 
-                <Box sx={{
-                    display: {sm: "flex", xs: "unset"},
-                    justifyContent: "space-between",
-                    gap: 4
-                }}>
-                    <Box sx={{
-                        textAlign: {xs: "center", sm: "left"},
-                    }}>
-                        <Image src={job.logo} alt={job.title} width={200} height={200}/>
+                <Box
+                    sx={{
+                        display: { xs: "block", sm: "flex" },
+                        justifyContent: "space-between",
+                        gap: 4,
+                    }}
+                >
+                    {/* Image Section - 40% on sm+ */}
+                    <Box
+                        sx={{
+                            width: { xs: "100%", sm: "40%" },
+                            textAlign: { xs: "center", sm: "left" },
+                        }}
+                    >
+                        <Image src={job.logo} alt={job.title} width={250} height={250} />
                     </Box>
-                    <Box>
+
+                    {/* Content Section - 60% on sm+ */}
+                    <Box sx={{ width: { xs: "100%", sm: "60%" } }}>
                         {job.description.map((desc, i) => (
                             <Typography key={i} variant="body1" color="#1A1F26" gutterBottom>
                                 {desc}
@@ -215,13 +253,13 @@ function Page() {
                         ))}
 
                         <Box mt={2}>
-                            <ul style={{paddingLeft: '1.2em', margin: 0}}>
-                                <li style={{marginBottom: '8px'}}>
+                            <ul style={{ paddingLeft: "1.2em", margin: 0 }}>
+                                <li style={{ marginBottom: "8px" }}>
                                     <Typography component="span">
                                         <strong>Experience:</strong> {job.experience}
                                     </Typography>
                                 </li>
-                                <li style={{marginBottom: '8px'}}>
+                                <li style={{ marginBottom: "8px" }}>
                                     <Typography component="span">
                                         <strong>Openings:</strong> {job.openings}
                                     </Typography>
@@ -233,10 +271,9 @@ function Page() {
                                 </li>
                             </ul>
                         </Box>
-
-
                     </Box>
                 </Box>
+
             </Stack>
             <Box
                 sx={{
@@ -340,10 +377,10 @@ function Page() {
                                     fullWidth
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 50,
+                                        borderRadius: 2,
                                         backgroundColor: '#fff',
                                         '& .MuiOutlinedInput-root': {
-                                            borderRadius: 50,
+                                            borderRadius: 2,
                                             '&.Mui-focused fieldset': {
                                                 borderColor: 'black', // Black border on focus
                                             },
@@ -354,7 +391,7 @@ function Page() {
                                     }}
                                     InputProps={{
                                         sx: {
-                                            borderRadius: 50,
+                                            borderRadius: 2,
                                         },
                                     }}
                                     {...register('firstName', { required: 'First name is required' })}
@@ -370,10 +407,10 @@ function Page() {
                                     fullWidth
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 50,
+                                        borderRadius: 2,
                                         backgroundColor: '#fff',
                                         '& .MuiOutlinedInput-root': {
-                                            borderRadius: 50,
+                                            borderRadius: 2,
                                             '&.Mui-focused fieldset': {
                                                 borderColor: 'black', // Black border on focus
                                             },
@@ -383,7 +420,7 @@ function Page() {
                                         },
                                     }}
 
-                                    InputProps={{ sx: { borderRadius: 50 } }}
+                                    InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('lastName', { required: 'Last name is required' })}
                                     error={!!errors.lastName}
                                     helperText={errors.lastName?.message}
@@ -398,10 +435,10 @@ function Page() {
                                     fullWidth
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 50,
+                                        borderRadius: 2,
                                         backgroundColor: '#fff',
                                         '& .MuiOutlinedInput-root': {
-                                            borderRadius: 50,
+                                            borderRadius: 2,
                                             '&.Mui-focused fieldset': {
                                                 borderColor: 'black', // Black border on focus
                                             },
@@ -411,7 +448,7 @@ function Page() {
                                         },
                                     }}
 
-                                    InputProps={{ sx: { borderRadius: 50 } }}
+                                    InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('email', { required: 'Email is required' })}
                                     error={!!errors.email}
                                     helperText={errors.email?.message}
@@ -424,10 +461,10 @@ function Page() {
                                     fullWidth
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 50,
+                                        borderRadius: 2,
                                         backgroundColor: '#fff',
                                         '& .MuiOutlinedInput-root': {
-                                            borderRadius: 50,
+                                            borderRadius: 2,
                                             '&.Mui-focused fieldset': {
                                                 borderColor: 'black', // Black border on focus
                                             },
@@ -437,7 +474,7 @@ function Page() {
                                         },
                                     }}
 
-                                    InputProps={{ sx: { borderRadius: 50 } }}
+                                    InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('phone', { required: 'Phone number is required' })}
                                     error={!!errors.phone}
                                     helperText={errors.phone?.message}
@@ -447,7 +484,7 @@ function Page() {
                             {/* CV Upload */}
                             <Grid item xs={12}>
                                 <InputLabel sx={{ mb: 1 }}>Upload your latest CV</InputLabel>
-                                <Box sx={{ bgcolor: '#fff', p: 1.5, borderRadius: 50 }}>
+                                <Box sx={{ bgcolor: '#fff', p: 1.5, borderRadius: 2 }}>
                                     <input type="file" {...register('cv', { required: true })} />
                                 </Box>
                                 {errors.cv && <FormHelperText error>CV is required.</FormHelperText>}
@@ -461,10 +498,10 @@ function Page() {
                                     fullWidth
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 50,
+                                        borderRadius: 2,
                                         backgroundColor: '#fff',
                                         '& .MuiOutlinedInput-root': {
-                                            borderRadius: 50,
+                                            borderRadius: 2,
                                             '&.Mui-focused fieldset': {
                                                 borderColor: 'black', // Black border on focus
                                             },
@@ -474,7 +511,7 @@ function Page() {
                                         },
                                     }}
 
-                                    InputProps={{ sx: { borderRadius: 50 } }}
+                                    InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('experience', { required: 'Experience is required' })}
                                     error={!!errors.experience}
                                     helperText={errors.experience?.message}
@@ -490,10 +527,10 @@ function Page() {
                                     fullWidth
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 5,
+                                        borderRadius: 2,
                                         backgroundColor: '#fff',
                                         '& .MuiOutlinedInput-root': {
-                                            borderRadius: 5,
+                                            borderRadius: 2,
                                             '&.Mui-focused fieldset': {
                                                 borderColor: 'black', // Black border on focus
                                             },
@@ -503,7 +540,7 @@ function Page() {
                                         },
                                     }}
 
-                                    InputProps={{ sx: { borderRadius: 5 } }}
+                                    InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('description')}
                                 />
                             </Grid>
@@ -515,10 +552,10 @@ function Page() {
                                     fullWidth
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 50,
+                                        borderRadius: 2,
                                         backgroundColor: '#fff',
                                         '& .MuiOutlinedInput-root': {
-                                            borderRadius: 50,
+                                            borderRadius: 2,
                                             '&.Mui-focused fieldset': {
                                                 borderColor: 'black', // Black border on focus
                                             },
@@ -528,7 +565,7 @@ function Page() {
                                         },
                                     }}
 
-                                    InputProps={{ sx: { borderRadius: 50 } }}
+                                    InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('location', { required: 'Location is required' })}
                                     error={!!errors.location}
                                     helperText={errors.location?.message}
@@ -541,10 +578,10 @@ function Page() {
                                     fullWidth
                                     error={!!errors.relocate}
                                     sx={{
-                                        borderRadius: 50,
+                                        borderRadius: 2,
                                         backgroundColor: '#fff',
                                         '& .MuiOutlinedInput-root': {
-                                            borderRadius: 50,
+                                            borderRadius: 2,
                                             '&.Mui-focused fieldset': {
                                                 borderColor: 'black', // Black border on focus
                                             },
@@ -566,7 +603,7 @@ function Page() {
                                                 {...field}
                                                 labelId="relocate-label"
                                                 label="Are you willing to relocate to Surat, Gujarat?"
-                                                sx={{ borderRadius: 50 }}
+                                                sx={{ borderRadius: 2 }}
                                             >
                                                 <MenuItem value="Yes">Yes</MenuItem>
                                                 <MenuItem value="No">No</MenuItem>
@@ -585,10 +622,10 @@ function Page() {
                                     fullWidth
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 50,
+                                        borderRadius: 2,
                                         backgroundColor: '#fff',
                                         '& .MuiOutlinedInput-root': {
-                                            borderRadius: 50,
+                                            borderRadius: 2,
                                             '&.Mui-focused fieldset': {
                                                 borderColor: 'black', // Black border on focus
                                             },
@@ -597,7 +634,7 @@ function Page() {
                                             color: 'black', // 👈 Black label on focus
                                         },
                                     }}
-                                    InputProps={{ sx: { borderRadius: 50 } }}
+                                    InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('currentCTC')}
                                 />
                             </Grid>
@@ -609,10 +646,10 @@ function Page() {
                                     fullWidth
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 50,
+                                        borderRadius: 2,
                                         backgroundColor: '#fff',
                                         '& .MuiOutlinedInput-root': {
-                                            borderRadius: 50,
+                                            borderRadius: 2,
                                             '&.Mui-focused fieldset': {
                                                 borderColor: 'black', // Black border on focus
                                             },
@@ -621,7 +658,7 @@ function Page() {
                                             color: 'black', // 👈 Black label on focus
                                         },
                                     }}
-                                    InputProps={{ sx: { borderRadius: 50 } }}
+                                    InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('expectedCTC', { required: 'Expected CTC is required' })}
                                     error={!!errors.expectedCTC}
                                     helperText={errors.expectedCTC?.message}
@@ -636,10 +673,10 @@ function Page() {
                                     fullWidth
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 50,
+                                        borderRadius: 2,
                                         backgroundColor: '#fff',
                                         '& .MuiOutlinedInput-root': {
-                                            borderRadius: 50,
+                                            borderRadius: 2,
                                             '&.Mui-focused fieldset': {
                                                 borderColor: 'black', // Black border on focus
                                             },
@@ -648,7 +685,7 @@ function Page() {
                                             color: 'black', // 👈 Black label on focus
                                         },
                                     }}
-                                    InputProps={{ sx: { borderRadius: 50 } }}
+                                    InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('interviewAvailability')}
                                 />
                             </Grid>
@@ -660,10 +697,10 @@ function Page() {
                                     fullWidth
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 50,
+                                        borderRadius: 2,
                                         backgroundColor: '#fff',
                                         '& .MuiOutlinedInput-root': {
-                                            borderRadius: 50,
+                                            borderRadius: 2,
                                             '&.Mui-focused fieldset': {
                                                 borderColor: 'black', // Black border on focus
                                             },
@@ -672,7 +709,7 @@ function Page() {
                                             color: 'black', // 👈 Black label on focus
                                         },
                                     }}
-                                    InputProps={{ sx: { borderRadius: 50 } }}
+                                    InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('interviewType')}
                                 />
                             </Grid>
@@ -684,10 +721,10 @@ function Page() {
                                     fullWidth
                                     variant="outlined"
                                     sx={{
-                                        borderRadius: 50,
+                                        borderRadius: 2,
                                         backgroundColor: '#fff',
                                         '& .MuiOutlinedInput-root': {
-                                            borderRadius: 50,
+                                            borderRadius: 2,
                                             '&.Mui-focused fieldset': {
                                                 borderColor: 'black', // Black border on focus
                                             },
@@ -696,7 +733,7 @@ function Page() {
                                             color: 'black', // 👈 Black label on focus
                                         },
                                     }}
-                                    InputProps={{ sx: { borderRadius: 50 } }}
+                                    InputProps={{ sx: { borderRadius: 2 } }}
                                     {...register('noticePeriod')}
                                 />
                             </Grid>

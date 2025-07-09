@@ -18,11 +18,11 @@ function Page() {
     return (
         <>
             <HeadingPage bgImg={bg1.src} heading={'Career'} breadcrumbs={breadCrumbs}/>
-            {/*<IdeasAndDrive/>*/}
-            {/*<CompanyValue/>*/}
-            {/*<SeeAbout/>*/}
-            {/*<SomeofthePerks/>*/}
-            {/*<Hiring/>*/}
+            <IdeasAndDrive/>
+            <CompanyValue/>
+            <SeeAbout/>
+            <SomeofthePerks/>
+            <Hiring/>
             <Openings/>
         </>
     );
