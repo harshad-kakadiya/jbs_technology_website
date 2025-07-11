@@ -19,7 +19,7 @@ const Modification = () => {
                             item
                             xs={12}
                             md={6}
-                            sx={{ backgroundColor: "#F4F4F4", py: { xs: 7, xl: 10 } ,pl:{xs:3, xl: 26} }}
+                            sx={{ backgroundColor: "#F4F4F4", py: { xs: 7, xl: 10 } ,pl:{xs:3, xl: 26},px:{xs:1,sm:5,md:3}}}
                         >
 
                             <Typography
@@ -105,7 +105,7 @@ const Modification = () => {
                                 backgroundColor: "#fff",
                                 py: { xs: 7, xl: 10 }
                                 ,pr:{xs:2, xl: 26},
-                                pl:5
+                                pl: {md:5,xs:2,sm:5}
                             }}
                         >
                             <Typography
