@@ -99,7 +99,7 @@ const Modification = () => {
                                     }}
                                 >
                                     Our Focus is on Delivering Superior Value to our Clients for
-                                    Company Modification.
+                                    Company Modification
                                 </Typography>
                                 <Box
                                     sx={{
@@ -164,7 +164,7 @@ const Modification = () => {
                                     in overcoming their most critical challenges and seizing their
                                     greatest opportunities. Our achievements are rooted in
                                     fostering deep collaboration and cultivating a global
-                                    community of diverse individuals who are dedicated.
+                                    community of diverse individuals who are dedicated
                                 </Typography>
                                 <Typography
                                     sx={{
@@ -180,7 +180,7 @@ const Modification = () => {
                                     knowledge and experience in using the latest software
                                     standards. We have built a large pool of knowledge that we
                                     apply to deliver solutions that meet client’s needs,
-                                    expectations and budget.
+                                    expectations and budget
                                 </Typography>
                             </Box>
                             {/*<Box mt={5}>*/}

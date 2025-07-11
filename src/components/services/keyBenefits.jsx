@@ -15,32 +15,32 @@ function KeyBenefits() {
         {
             icon: Img22,
             title: "Full Ownership",
-            description: "You will own 100% of the software we build with you, and you'll never pay a subscription or royalty fees."
+            description: "You will own 100% of the software we build with you, and you'll never pay a subscription or royalty fees"
         },
         {
             icon: Img3,
             title: "Flexibility",
-            description: "Custom software development allows for more flexibility as you can stay agile and responsive to your users' needs and business landscape."
+            description: "Custom software development allows for more flexibility as you can stay agile and responsive to your users' needs and business landscape"
         },
         {
             icon: Img4,
             title: "Competitive Advantage",
-            description: "Unlike off-the-shelf solutions, custom software development allows you to build unique capabilities that differentiate you from your competitors."
+            description: "Unlike off-the-shelf solutions, custom software development allows you to build unique capabilities that differentiate you from your competitors"
         },
         {
             icon: Img5,
             title: "Scalability",
-            description: "As your business grows, you can revise and add features as you please, allowing your product to scale with ease."
+            description: "As your business grows, you can revise and add features as you please, allowing your product to scale with ease"
         },
         {
             icon: Img6,
             title: "Reduce Long-Term Costs",
-            description: "While custom software development can sometimes require a higher initial investment, it is more cost-effective in the long run as you're not paying subscriptions or royalty fees."
+            description: "While custom software development can sometimes require a higher initial investment, it is more cost-effective in the long run as you're not paying subscriptions or royalty fees"
         },
         {
             icon: Img7,
             title: "User Experience",
-            description: "When you build a product using custom software development it is built with your specific user in mind throughout the entire process."
+            description: "When you build a product using custom software development it is built with your specific user in mind throughout the entire process"
         },
     ];
 
@@ -98,7 +98,7 @@ function KeyBenefits() {
                                     }}
                                 >
                                     Custom software development allows you to design, build, and launch a solution
-                                    tailored specifically to your users' needs.
+                                    tailored specifically to your users' needs
                                 </Typography>
                                 <Typography
                                     sx={{
@@ -107,7 +107,7 @@ function KeyBenefits() {
                                     }}
                                 >
                                     Our process begins with a series of deep-dive product sessions to align your vision
-                                    with business objectives, creating the blueprint for a successful product.
+                                    with business objectives, creating the blueprint for a successful product
                                 </Typography>
                                 <Typography
                                     sx={{
@@ -117,16 +117,16 @@ function KeyBenefits() {
                                     }}
                                 >
                                     Our expert UX/UI and development teams then build your product from the ground up to
-                                    meet your users' needs and propel your business.
+                                    meet your users' needs and propel your business
                                 </Typography>
                             </Box>
                             <Box>
                                 <Typography
                                     sx={{
-                                        fontSize: "46px",
+                                        fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                         fontWeight: "700",
-                                        color: "#fff",
-                                        padding: "0px 0 30px 0",
+                                        color: "#0E314C",
+                                        padding: "10px 0 30px 0",
                                     }}
                                 >
                                     Key Benefits

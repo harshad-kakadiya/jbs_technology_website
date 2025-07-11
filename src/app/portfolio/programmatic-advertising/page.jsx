@@ -5,13 +5,12 @@ import React from "react";
 import bg1 from "../../../assets/images/blog/b-1.webp";
 import HeadingPage from "../../../components/global/headingPage";
 import StarIcon from "@mui/icons-material/Star";
-import img1 from "@/assets/images/portfolio/techuse/tech-figma.svg";
+import img1 from "@/assets/images/portfolio/techuse/chakra.png";
 import img2 from "@/assets/images/portfolio/techuse/React.webp";
 import img3 from "@/assets/images/portfolio/techuse/tech-node-js.svg";
-import img4 from "@/assets/images/portfolio/techuse/tech.mongodb.svg";
+import img4 from "@/assets/images/portfolio/techuse/png-transparent-postgresql-database-logo-database-symbol-blue-text-logo-thumbnail-removebg-preview.png";
 import img5 from "@/assets/images/portfolio/techuse/tech-express-js.svg";
-import img6 from "@/assets/images/services/ourproducts/next.png";
-import img7 from "@/assets/images/portfolio/techuse/download.png";
+import img7 from "@/assets/images/portfolio/techuse/sequelize.png";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import phoneimg1 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 180208.png";
 import LightbulbCircleIcon from "@mui/icons-material/LightbulbCircle";
@@ -50,51 +49,33 @@ function Page() {
         {
             name: "Problem",
             title: "Inefficient Ad Performance with Traditional Agencies",
-            description: "Most businesses struggle with inefficient ad spending and underperforming campaigns due to the limitations of traditional marketing agencies that lack specialized expertise in programmatic advertising.",
+            description: "Most businesses struggle with inefficient ad spending and underperforming campaigns due to the limitations of traditional marketing agencies that lack specialized expertise in programmatic advertising",
         },
         {
             name: "Solution",
             title: "Precision-Driven Programmatic Advertising by Experts",
-            description: "War Room offers a laser-focused approach to programmatic advertising through a dedicated and highly specialized ad operations team. By leveraging advanced targeting, data optimization, and real-time adjustments, we craft campaigns that outperform industry standards.",
+            description: "War Room offers a laser-focused approach to programmatic advertising through a dedicated and highly specialized ad operations team. By leveraging advanced targeting, data optimization, and real-time adjustments, we craft campaigns that outperform industry standards",
         },
         {
             name: "Results",
             title: "Consistently Higher Conversions and ROI",
-            description: "Clients consistently see a measurable increase in conversions, improved ROI, and overall campaign performance that far exceeds expectations proving that when ads are done right, results follow.",
+            description: "Clients consistently see a measurable increase in conversions, improved ROI, and overall campaign performance that far exceeds expectations proving that when ads are done right, results follow",
         },
 
     ];
 
-    const app = [
-        {
-            name: "Figma",
-            image: img1,
-        },
-        {
-            name: "React",
-            image: img2,
-        },
-        {
-            name: "Node.js",
-            image: img3,
-        },
-        {
-            name: "MongoDB",
-            image: img4,
-        },
-        {
-            name: "Express.js",
-            image: img5,
-        },
-        {
-            name:'Next.js',
-            image: img6
-        },
-        {
-            name:'Material UI',
-            image: img7
-        }
-    ];
+    const app = {
+        "FRONT-END": [
+            {name: "React", image: img2},
+            {name: "Chakra UI", image: img1},
+        ],
+        "BACK-END & DATABASES": [
+            {name: "Node.js", image: img3},
+            {name: "PostgreSQL", image: img4},
+            {name: "Express.js", image: img5},
+            {name: "Sequelize", image: img7},
+        ],
+    };
 
     const slides = [
         {
@@ -105,13 +86,13 @@ function Page() {
             title3: 'Generic Targeting Strategies',
             title4: 'Disjointed Ad Tech Stack',
             description1:
-                'Brands often struggle to see strong returns from traditional marketing agencies that lack specialized expertise in programmatic buying.',
+                'Brands often struggle to see strong returns from traditional marketing agencies that lack specialized expertise in programmatic buying',
             description2:
-                'Without real-time campaign optimization, ad spend is wasted on underperforming channels or irrelevant audiences.',
+                'Without real-time campaign optimization, ad spend is wasted on underperforming channels or irrelevant audiences',
             description3:
-                'Broad targeting methods result in impressions without conversions failing to capture high-intent users at the right time.',
+                'Broad targeting methods result in impressions without conversions failing to capture high-intent users at the right time',
             description4:
-                'Managing multiple disconnected tools and platforms creates inefficiencies and poor attribution accuracy.',
+                'Managing multiple disconnected tools and platforms creates inefficiencies and poor attribution accuracy',
             icon: <ArrowCircleRightIcon fontSize={'large'} />,
             image: phoneimg1,
         },
@@ -123,13 +104,13 @@ function Page() {
             title3: 'Real-Time Optimization Framework',
             title4: 'Data-Driven Campaign Scaling',
             description1:
-                'We begin with a comprehensive analysis of past ad performance, user behavior, and platform gaps to identify areas of opportunity.',
+                'We begin with a comprehensive analysis of past ad performance, user behavior, and platform gaps to identify areas of opportunity',
             description2:
-                'Custom targeting blueprints are created using behavioral data, device info, and location reaching the right person at the right moment.',
+                'Custom targeting blueprints are created using behavioral data, device info, and location reaching the right person at the right moment',
             description3:
-                'Our ad ops team monitors campaign performance live, making intelligent adjustments on-the-fly to maximize effectiveness.',
+                'Our ad ops team monitors campaign performance live, making intelligent adjustments on-the-fly to maximize effectiveness',
             description4:
-                'Winning creatives and audiences are scaled efficiently, while underperforming elements are paused to ensure cost-effective results.',
+                'Winning creatives and audiences are scaled efficiently, while underperforming elements are paused to ensure cost-effective results',
             icon: <LightbulbCircleIcon fontSize={'large'} />,
             image: phoneimg2,
         },
@@ -141,13 +122,13 @@ function Page() {
             title3: 'Real-Time Bidding & Optimization',
             title4: 'Transparent Reporting Dashboard',
             description1:
-                'A dedicated team of programmatic experts works exclusively on your campaign, ensuring hands-on management and deep performance focus.',
+                'A dedicated team of programmatic experts works exclusively on your campaign, ensuring hands-on management and deep performance focus',
             description2:
-                'Leverages user behavior, location, and intent signals to build precise audience segments and conversion paths.',
+                'Leverages user behavior, location, and intent signals to build precise audience segments and conversion paths',
             description3:
-                'Uses live bidding adjustments and performance-based triggers to continuously refine delivery and spend.',
+                'Uses live bidding adjustments and performance-based triggers to continuously refine delivery and spend',
             description4:
-                'Clients have access to real-time dashboards tracking KPIs, audience insights, and spend-to-conversion ratios.',
+                'Clients have access to real-time dashboards tracking KPIs, audience insights, and spend-to-conversion ratios',
             icon: <ArrowCircleRightIcon fontSize={'large'} />,
             image: phoneimg3,
         },
@@ -162,13 +143,13 @@ function Page() {
             <TechUse app={app}/>
             <MediaProject
                 title={
-                    'Dr. Ravi Menon is a globally recognized healthcare innovator focused on improving rural health outcomes in Southeast Asia and Sub-Saharan Africa.'
+                    'Dr. Ravi Menon is a globally recognized healthcare innovator focused on improving rural health outcomes in Southeast Asia and Sub-Saharan Africa'
                 }
                 description={
                     <>
-                        He founded HealthBridge Solutions, a digital health platform that has connected over 2 million patients in remote areas to licensed doctors through AI-powered telemedicine and mobile diagnostics.<br/><br/>
+                        He founded HealthBridge Solutions, a digital health platform that has connected over 2 million patients in remote areas to licensed doctors through AI-powered telemedicine and mobile diagnostics<br/><br/>
 
-                        Amina has collaborated with UN Women, the World Bank, and multiple grassroots NGOs to tackle sex-for-grades and economic abuse. She was honored with the “Global Change Leader” award in 2023.
+                        Amina has collaborated with UN Women, the World Bank, and multiple grassroots NGOs to tackle sex-for-grades and economic abuse. She was honored with the “Global Change Leader” award in 2023
                     </>
                 }
                 slides={slides}

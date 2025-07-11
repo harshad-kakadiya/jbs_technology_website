@@ -103,7 +103,7 @@ function Industries() {
                         <Grid item xs={12} md={5} lg={6}>
                             <Box component={'p'} sx={{color: 'cardTextGrey', fontWeight: 500,}}>
                                 Our expertise spans industries from banking, insurance, telecommunications, media,
-                                entertainment, distribution, retail, to many more.
+                                entertainment, distribution, retail, to many more
                             </Box>
                         </Grid>
                         <Grid item xs={2} sx={{display: {xs: 'none', md: 'block'}}}>

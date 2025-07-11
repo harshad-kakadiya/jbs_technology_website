@@ -14,22 +14,22 @@ function Capabilities() {
     const capability = [
         {
             title: "Web Development",
-            describtion: "From sleek brochure sites to robust web applications, we craft digital experiences that captivate, convert, and elevate your business.",
+            describtion: "From sleek brochure sites to robust web applications, we craft digital experiences that captivate, convert, and elevate your business",
             img: Img2,
         },
         {
             title: "Mobile App Development",
-            describtion: "Turn your app idea into reality with our expertise. From concept to launch, we develop bespoke applications that deliver measurable outcomes.",
+            describtion: "Turn your app idea into reality with our expertise. From concept to launch, we develop bespoke applications that deliver measurable outcomes",
             img: Img5,
         },
         {
             title: "UI/UX Designing",
-            describtion: "UI (User Interface) and UX (User Experience) design are fundamental components critical to the success of any digital product.",
+            describtion: "UI (User Interface) and UX (User Experience) design are fundamental components critical to the success of any digital product",
             img: Img6,
         },
         {
             title: "Digital Marketing",
-            describtion: "At JBS Technology, we boost your online presence with tailored digital marketing strategies for optimal engagement and conversions.",
+            describtion: "At JBS Technology, we boost your online presence with tailored digital marketing strategies for optimal engagement and conversions",
             img: Img7,
         },
         {
@@ -44,12 +44,12 @@ function Capabilities() {
         },
         {
             title: "Frontend",
-            describtion: "At JBS Technology, we create Pixel-perfect, responsive, and high-performance UI built with modern tech like React and Tailwind CSS.",
+            describtion: "At JBS Technology, we create Pixel-perfect, responsive, and high-performance UI built with modern tech like React and Tailwind CSS",
             img: Img4,
         },
         {
             title: "Backend",
-            describtion: "Secure, scalable, and high-performance server-side solutions using Node.js, Express, and modern databases.",
+            describtion: "Secure, scalable, and high-performance server-side solutions using Node.js, Express, and modern databases",
             img: Img8,
         }
     ];

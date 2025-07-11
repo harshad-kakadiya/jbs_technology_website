@@ -5,10 +5,10 @@ import React from "react";
 import bg1 from "../../../assets/images/blog/b-1.webp";
 import HeadingPage from "../../../components/global/headingPage";
 import StarIcon from "@mui/icons-material/Star";
-import img1 from "@/assets/images/portfolio/techuse/tech-figma.svg";
+import img1 from "@/assets/images/portfolio/techuse/Bootstrap_logo.svg.png";
 import img2 from "@/assets/images/portfolio/techuse/React.webp";
-import img3 from "@/assets/images/portfolio/techuse/tech-node-js.svg";
-import img4 from "@/assets/images/portfolio/techuse/tech.mongodb.svg";
+import img3 from "@/assets/images/portfolio/techuse/download.jpg";
+import img4 from "@/assets/images/portfolio/techuse/sql.jpg";
 import img5 from "@/assets/images/portfolio/techuse/tech-express-js.svg";
 import img6 from "@/assets/images/services/ourproducts/next.png";
 import img7 from "@/assets/images/portfolio/techuse/download.png";
@@ -51,52 +51,32 @@ function Page() {
             name: "Problem",
             title: "Lack of Integration Between Software and Hardware Systems",
             description:
-                "Diamond Software faced difficulties managing their EAS and RFID hardware with outdated or disconnected systems that lacked real-time capabilities and streamlined user experience.",
+                "Diamond Software faced difficulties managing their EAS and RFID hardware with outdated or disconnected systems that lacked real-time capabilities and streamlined user experience",
         },
         {
             name: "Solution",
             title: "Custom ERP for Seamless Hardware-Software Integration",
             description:
-                "JBS Technology designed a robust ERP platform tailored to the jewelry industry that connected directly with RFID and EAS systems offering real-time insights, instant alerts, and powerful analytics in a simplified interface.",
+                "JBS Technology designed a robust ERP platform tailored to the jewelry industry that connected directly with RFID and EAS systems offering real-time insights, instant alerts, and powerful analytics in a simplified interface",
         },
         {
             name: "Results",
             title: "Efficient Operations with Real-Time Visibility",
             description:
-                "The integrated ERP enhanced operational accuracy, reduced theft risks through real-time tracking, and empowered staff with actionable data leading to faster decision-making and improved system reliability.",
+                "The integrated ERP enhanced operational accuracy, reduced theft risks through real-time tracking, and empowered staff with actionable data leading to faster decision-making and improved system reliability",
         },
     ];
 
-    const app = [
-        {
-            name: "Figma",
-            image: img1,
-        },
-        {
-            name: "React",
-            image: img2,
-        },
-        {
-            name: "Node.js",
-            image: img3,
-        },
-        {
-            name: "MongoDB",
-            image: img4,
-        },
-        {
-            name: "Express.js",
-            image: img5,
-        },
-        {
-            name:'Next.js',
-            image: img6
-        },
-        {
-            name:'Material UI',
-            image: img7
-        }
-    ];
+    const app = {
+        "FRONT-END": [
+            {name: "React", image: img2},
+            {name: "Bootstrap", image: img1},
+        ],
+        "BACK-END & DATABASES": [
+            {name: ".net", image: img3},
+            {name: "mySQL", image: img4},
+        ],
+    };
 
     const slides = [
         {
@@ -107,13 +87,13 @@ function Page() {
             title3: 'Manual Reporting & Delay in Notifications',
             title4: 'Complex UI for Daily Users',
             description1:
-                'Diamond Software’s hardware was not integrated with a centralized platform, leading to fragmented data and management issues.',
+                'Diamond Software’s hardware was not integrated with a centralized platform, leading to fragmented data and management issues',
             description2:
-                'There was no system in place to monitor hardware events live, limiting staff’s ability to respond instantly.',
+                'There was no system in place to monitor hardware events live, limiting staff’s ability to respond instantly',
             description3:
-                'Notifications and security alerts were often delayed or missed due to lack of automation.',
+                'Notifications and security alerts were often delayed or missed due to lack of automation',
             description4:
-                'Staff found the existing UI overwhelming and difficult to navigate on a daily basis.',
+                'Staff found the existing UI overwhelming and difficult to navigate on a daily basis',
             icon: <ArrowCircleRightIcon fontSize={'large'} />,
             image: phoneimg1,
         },
@@ -125,13 +105,13 @@ function Page() {
             title3: 'Smart Alert & Notification System',
             title4: 'Integrated Analytics Engine',
             description1:
-                'Collaborated with Diamond Software to map EAS and RFID behavior, signal events, and sync parameters for ERP integration.',
+                'Collaborated with Diamond Software to map EAS and RFID behavior, signal events, and sync parameters for ERP integration',
             description2:
-                'Designed a modular UI that gives real-time status, hardware health, and movement alerts through an easy-to-read interface.',
+                'Designed a modular UI that gives real-time status, hardware health, and movement alerts through an easy-to-read interface',
             description3:
-                'Built a notification system that triggers SMS, in-app alerts, and emails instantly based on event categories.',
+                'Built a notification system that triggers SMS, in-app alerts, and emails instantly based on event categories',
             description4:
-                'Developed a reporting system to analyze daily trends, identify anomalies, and provide predictive insights.',
+                'Developed a reporting system to analyze daily trends, identify anomalies, and provide predictive insights',
             icon: <LightbulbCircleIcon fontSize={'large'} />,
             image: phoneimg2,
         },
@@ -143,13 +123,13 @@ function Page() {
             title3: 'Smart Alert Engine',
             title4: 'Role-Based Access & Analytics',
             description1:
-                'Connects directly with Diamond’s RFID tags and EAS gates to reflect real-time movement and triggers.',
+                'Connects directly with Diamond’s RFID tags and EAS gates to reflect real-time movement and triggers',
             description2:
-                'Tracks every RFID tag scanned and alerts any unauthorized movement or tampering with gate-level precision.',
+                'Tracks every RFID tag scanned and alerts any unauthorized movement or tampering with gate-level precision',
             description3:
-                'Sends immediate alerts through multi-channel notifications to predefined personnel based on event priority.',
+                'Sends immediate alerts through multi-channel notifications to predefined personnel based on event priority',
             description4:
-                'Admins and store managers can access reports, hardware status, and activity history filtered by user roles.',
+                'Admins and store managers can access reports, hardware status, and activity history filtered by user roles',
             icon: <ArrowCircleRightIcon fontSize={'large'} />,
             image: phoneimg3,
         },
@@ -165,12 +145,12 @@ function Page() {
             <TechUse app={app}/>
             <MediaProject
                 title={
-                    'Diamond Software approached us to develop a comprehensive software solution tailored to their advanced EAS and RFID systems.'
+                    'Diamond Software approached us to develop a comprehensive software solution tailored to their advanced EAS and RFID systems'
                 }
                 description={
                     <>
                         The project involved creating a user-friendly platform that integrates seamlessly with their existing hardware,<br /><br />
-                        offering real-time monitoring, instant notifications, and robust data analytics across retail and warehouse environments.
+                        offering real-time monitoring, instant notifications, and robust data analytics across retail and warehouse environments
                     </>
                 }
                 slides={slides}

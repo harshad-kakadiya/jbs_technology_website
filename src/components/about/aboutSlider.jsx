@@ -24,25 +24,25 @@ const AboutSlider = () => {
             year: "2021 - 2022",
             title: "Foundation & Digital Shift",
             description:
-                "JBS Technology began its journey by establishing a strong digital foundation, adopting cloud infrastructure and modern development practices to support long-term growth.",
+                "JBS Technology began its journey by establishing a strong digital foundation, adopting cloud infrastructure and modern development practices to support long-term growth",
         },
         {
             year: "2022 - 2023",
             title: "Innovation & Expansion",
             description:
-                "Building on its foundation, JBS expanded its solutions across industries, investing in R&D and launching innovative platforms to serve a global clientele.",
+                "Building on its foundation, JBS expanded its solutions across industries, investing in R&D and launching innovative platforms to serve a global clientele",
         },
         {
             year: "2023 - 2024",
             title: "Sustainable Leadership",
             description:
-                "Focused on sustainable technologies and ethical innovation, JBS strengthened its leadership position by promoting diversity, green practices, and future-focused thinking.",
+                "Focused on sustainable technologies and ethical innovation, JBS strengthened its leadership position by promoting diversity, green practices, and future-focused thinking",
         },
         {
             year: "2024 - 2025",
             title: "AI & Global Impact",
             description:
-                "Integrated advanced AI and automation across solutions, enabling smarter services and real-time decision-making, while expanding impact across new global markets.",
+                "Integrated advanced AI and automation across solutions, enabling smarter services and real-time decision-making, while expanding impact across new global markets",
         },
 
     ];

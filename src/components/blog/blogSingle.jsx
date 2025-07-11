@@ -37,8 +37,7 @@ const BlogSingle = () => {
       title: "5 Impactful Elements That Promote IT and Business",
       content: {
         introduction: [
-          "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula.",
-          "Quisque dignissim justo arcu, ut viverra elit venenatis. Pellentesque leo…"
+          "Discover the key elements that bridge the gap between IT innovations and strategic business growth",
         ],
         mainImage: single1,
         sections: [
@@ -96,8 +95,7 @@ const BlogSingle = () => {
       title: "Revolutionizing the Future of Financial Services",
       content: {
         introduction: [
-          "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula.",
-          "Quisque dignissim justo arcu, ut viverra elit venenatis. Pellentesque leo…"
+          "Explore how emerging technologies are reshaping financial services for a smarter tomorrow"
         ],
         mainImage: single2,
         sections: [
@@ -138,8 +136,7 @@ const BlogSingle = () => {
       title: "A Guide to Embracing Meaningful Change in Banking",
       content: {
         introduction: [
-          "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula.",
-          "Quisque dignissim justo arcu, ut viverra elit venenatis. Pellentesque leo…"
+          "Learn how banks can adapt to industry shifts through innovation and customer-centric strategies"
         ],
         mainImage: single3,
         sections: [
@@ -180,8 +177,7 @@ const BlogSingle = () => {
       title: "For the Wealthy, Work Is the New Retirement",
       content: {
         introduction: [
-          "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula.",
-          "Quisque dignissim justo arcu, ut viverra elit venenatis. Pellentesque leo…"
+          "Understand why today’s affluent individuals are redefining retirement through purpose-driven work"
         ],
         mainImage: single3,
         sections: [
