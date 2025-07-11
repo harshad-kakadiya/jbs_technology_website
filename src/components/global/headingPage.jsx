@@ -41,8 +41,8 @@ function HeadingPage({bgImg, heading, breadcrumbs = []}) {
                             zIndex: 50
                         }}>
                             {heading}
-                            <Divider sx={{backgroundColor: "#FFF", width: "50px", height: '2px', marginTop: "10px"}}/>
-                            <Divider sx={{backgroundColor: "#5A6168", width: "100%", height: '0.5px'}}/>
+                            <Divider sx={{backgroundColor: "#FFF" , width: "50px", height: '2px', marginTop: "10px"}}/>
+                            <Divider sx={{backgroundColor: "#5A6168" , width: "100%", height: '0.5px'}}/>
 
                             <Box sx={{
                                 fontWeight: "500",
