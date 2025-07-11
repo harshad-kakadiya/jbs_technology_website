@@ -103,7 +103,7 @@ function Blogslider() {
                                     }}
                                 >
                                     <Stack direction="row" spacing={1} alignItems="center" sx={{ pb: "10px" }}>
-                                        <Grid container >
+                                        <Grid container alignItems={'center'}>
                                             <Grid item xs={12} sm={6}>
                                                 <Box sx={{ display: "flex", alignItems: "center" }}>
                                                     <DateRangeIcon sx={{ mr: 1 }} />
@@ -120,7 +120,7 @@ function Blogslider() {
                                                         style={{
                                                             borderRadius: "50%",
                                                             marginRight: "10px",
-                                                            objectFit:"contain"
+                                                            objectFit:"cover"
                                                         }}
                                                     />
                                                     <Typography variant="body2">{item.admin}</Typography>

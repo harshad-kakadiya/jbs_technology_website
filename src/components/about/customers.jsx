@@ -116,12 +116,7 @@ const Customers = () => {
                                 <Typography
                                     variant="h2"
                                     sx={{
-                                        fontSize: {
-                                            xs: "28px",
-                                            sm: "32px",
-                                            md: "34px",
-                                            lg: "45px",
-                                        },
+                                        fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                         pb: 2,
                                         fontWeight: "500",
                                         color: "#0A1119",
@@ -181,6 +176,9 @@ const Customers = () => {
                                                         {item.testimonial}
                                                     </Typography>
                                                 </Box>
+                                                <Box sx={{display: "flex", alignItems: "center",justifyContent: "space-between"}}>
+
+
                                                 <Box
                                                     sx={{
                                                         padding: "30px",
@@ -269,27 +267,30 @@ const Customers = () => {
                                                                     {item.company}
                                                                 </Typography>
                                                             </Box>
+
                                                         </Box>
                                                     </Stack>
+                                                </Box>
+
+                                                <Box
+                                                    sx={{
+                                                        display: "flex",
+                                                        justifyContent: { xs: "center", md: "end" },
+                                                        gap: 2,
+                                                        // mt: 3,
+                                                    }}
+                                                >
+                                                    <IconButton className="custom-prev">
+                                                        <ArrowBack />
+                                                    </IconButton>
+                                                    <IconButton className="custom-next">
+                                                        <ArrowForward />
+                                                    </IconButton>
+                                                </Box>
                                                 </Box>
                                             </SwiperSlide>
                                         ))}
                                     </Swiper>
-                                    <Box
-                                        sx={{
-                                            display: "flex",
-                                            justifyContent: { xs: "center", md: "end" },
-                                            gap: 2,
-                                            mt: 3,
-                                        }}
-                                    >
-                                        <IconButton className="custom-prev">
-                                            <ArrowBack />
-                                        </IconButton>
-                                        <IconButton className="custom-next">
-                                            <ArrowForward />
-                                        </IconButton>
-                                    </Box>
                                 </Box>
                             </Box>
                         </Grid>

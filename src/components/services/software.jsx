@@ -12,7 +12,7 @@ function Software() {
                     <Box
                         sx={{
                             fontSize: { xs: "30px", md: "35px", lg: "45px" },
-                            fontWeight: "700",
+                            fontWeight: "500",
                             lineHeight: "75px",
                             display: "flex",
                             justifyContent: { xs: "center", lg: "flex-start" },

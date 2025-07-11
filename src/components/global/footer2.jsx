@@ -9,7 +9,7 @@ import {
     Grid,
 } from "@mui/material";
 import {Facebook, Twitter, Instagram, Telegram} from "@mui/icons-material";
-import img1 from "../../assets/images/logo/logo.png";
+import img1 from "../../assets/images/logo/logo-white.png";
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -80,12 +80,14 @@ function Footer2() {
             <Container maxWidth="xl">
                 <Grid container alignItems="center" spacing={2}>
                     <Grid item xs={12} md={4}>
-                        <Box sx={{display: "flex", justifyContent: {xs: "center", md: "left"} , height:'100px' , width:'100px'}}>
+                        <Box sx={{display: "flex", justifyContent: {xs: "center", md: "left"} , height:'100px'}}
+                            onClick={() => router.push('/')}
+                        >
                             <img
                                 src={footerData.logo.src}
                                 alt="Logo"
                                 style={{
-                                    width: '100%',
+                                    width: '100px',
                                     height: '100%',
                                     objectFit: 'contain'
                                 }}

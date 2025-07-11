@@ -61,16 +61,16 @@ function HowItWorks() {
     return (
         <Box>
             <Container maxWidth="lg" sx={{py: 6}}>
-                <Box sx={{ position: 'relative',}}>
+                <Box sx={{position: 'relative',}}>
                     <Box
                         sx={{
-                            fontSize: "45px",
-                            fontWeight: "700",
+                            fontSize: {xs: "30px", md: "35px", lg: "45px"},
+                            fontWeight: "500",
                             paddingBottom: "30px",
                             textAlign: "center",
                             paddingLeft: "20px",
                             position: 'relative',
-                            zIndex: 41,
+                            zIndex: 800,
                             background: '#fff',
                         }}
                     >
@@ -82,12 +82,12 @@ function HowItWorks() {
                             sx={{
                                 position: 'sticky',
                                 top: '20%',
-                                height: '400px',
+                                // height: '400px',
                                 display: 'flex',
                                 alignItems: 'center',
                                 zIndex: index + 1,
                                 background: '#fff',
-                                // py:6
+                                py:6
                             }}
                         >
                             <Box
@@ -105,14 +105,19 @@ function HowItWorks() {
                                     minWidth: '40px',
                                     mr: 2,
                                 }}>
-                                    <ArrowForwardIcon sx={{
-                                        bgcolor: '#E6107E',
-                                        color: '#FFF',
-                                        borderRadius: '50%',
-                                        fontSize: '28px',
-                                        mb: 0.5,
-                                    }}/>
-                                    {/* Vertical line, only show if not last section */}
+                                    {/*<ArrowForwardIcon sx={{*/}
+                                    {/*    bgcolor: '#E6107E',*/}
+                                    {/*    color: '#FFF',*/}
+                                    {/*    borderRadius: '50%',*/}
+                                    {/*    fontSize: '28px',*/}
+                                    {/*    mb: 0.5,*/}
+                                    {/*}}/>*/}
+                                    <Box sx={{
+                                        fontSize: {xs: "30px", md: "35px", lg: "45px"},
+                                        fontWeight: "700",
+                                    }}>
+                                        {index + 1}.
+                                    </Box>
                                     {index < sections.length - 1 && (
                                         <Box sx={{
                                             width: '3px',
@@ -126,8 +131,8 @@ function HowItWorks() {
                                 {/* Main content box */}
                                 <Box
                                     sx={{
-                                        borderLeft: '1px solid #000',
-                                        pl: 4,
+                                        // borderLeft: '1px solid #000',
+                                        pl: 2,
                                         width: '100%',
                                     }}
                                 >
@@ -135,8 +140,8 @@ function HowItWorks() {
                                         sx={{
                                             p: 4,
                                             borderRadius: "8px",
-                                            boxShadow:' 0 0 10px rgba(72, 69, 224, .1)',
-                                            // backgroundColor: "#fff",
+                                            boxShadow: ' 0 0 10px rgba(72, 69, 224, .1)',
+                                            backgroundColor: "#fff",
                                             // border:'1px solid #000',
                                         }}
                                     >
