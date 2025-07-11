@@ -27,7 +27,7 @@ function Posts() {
             smallImg: Img1,
             btn: "Marketing",
             title: "5 Impactful Elements That Promote IT and Business",
-            describtion: "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis, Pellentesque leo…",
+            describtion: "Discover the key elements that bridge the gap between IT innovations and strategic business growth",
         },
         {
             navigate:"/blog/startup-consulting",
@@ -36,7 +36,7 @@ function Posts() {
             smallImg: img2,
             btn: "Startup Consulting",
             title: "Revolutionizing the Future of Financial Services",
-            describtion: "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis, Pellentesque leo…",
+            describtion: "Explore how emerging technologies are reshaping financial services for a smarter tomorrow",
         },
         {
             navigate:"/blog/corporate",
@@ -45,7 +45,7 @@ function Posts() {
             smallImg: img3,
             btn: "Corporate",
             title: "A Guide to Embracing Meaningful Change in Banking",
-            describtion: "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis, Pellentesque leo…",
+            describtion: "Learn how banks can adapt to industry shifts through innovation and customer-centric strategies",
         },
         {
             navigate:"/blog/startup",
@@ -54,7 +54,7 @@ function Posts() {
             smallImg: img4,
             btn: "Startup Consulting",
             title: "For the Wealthy, Work Is the New Retirement",
-            describtion: "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis, Pellentesque leo…",
+            describtion: "Understand why today’s affluent individuals are redefining retirement through purpose-driven work",
         },
         {
             navigate:"/blog/consulting",
@@ -63,7 +63,7 @@ function Posts() {
             smallImg: img5,
             btn: "Buisness Consulting",
             title: "Providing bettest service for customers",
-            describtion: "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis, Pellentesque leo…",
+            describtion: "Uncover strategies that elevate customer experiences through improved service delivery",
         },
         {
             navigate:"/blog/corporatee",
@@ -72,7 +72,7 @@ function Posts() {
             smallImg: img6,
             btn: "Corporate",
             title: "A New Age for Trade & Supply Chain Finance",
-            describtion: "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis, Pellentesque leo…",
+            describtion: "See how digital transformation is revolutionizing trade operations and supply chain finance",
         }
     ];
     return (

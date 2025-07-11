@@ -135,7 +135,7 @@ const Customers = () => {
                                         textAlign: { xs: "center", md: "left" },
                                     }}
                                 >
-                                    More than 99% customer satisfaction is our success.
+                                    More than 99% customer satisfaction is our success
                                 </Typography>
                                 <BorderLinearProgress
                                     variant="determinate"

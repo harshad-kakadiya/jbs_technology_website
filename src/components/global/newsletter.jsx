@@ -44,7 +44,7 @@ function Newsletter() {
                                             Subscribe to Newsletter
                                         </Typography>
                                         <Box sx={{ color: "#C4C4C4" }}>
-                                            Please sign up to follow the latest news and events from us, we promise not to spam your inbox.
+                                            Please sign up to follow the latest news and events from us, we promise not to spam your inbox
                                         </Box>
                                     </Box>
                                 </Box>

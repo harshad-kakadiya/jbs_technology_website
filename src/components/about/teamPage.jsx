@@ -54,7 +54,7 @@ const TeamPage = () => {
                                 width: '90%'
                             }}
                         >
-                            Get to Know the Incredible Individuals Behind our Company.
+                            Get to Know the Incredible Individuals Behind our Company
                         </Typography>
                     </Grid>
                     <Grid item xs={12} lg={5} >

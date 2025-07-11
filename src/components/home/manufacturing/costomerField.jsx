@@ -11,22 +11,22 @@ const data = [
   {
     backgroundColor: "#D3D5D6",
     iconColor: "#121C27",
-    text: "We conduct in-depth assessments to understand the specific challenges faced by healthcare distributors and their acute and ASC customers. This includes analyzing their existing.",
+    text: "We conduct in-depth assessments to understand the specific challenges faced by healthcare distributors and their acute and ASC customers. This includes analyzing their existing",
   },
   {
     backgroundColor: "transparent",
     iconColor: "#121C27",
-    text: "Adjacency growth strategy for a leading healthcare supply chain technology and services company, yielding a clear and prioritized roadmap for both organic and inorganic opportunities.",
+    text: "Adjacency growth strategy for a leading healthcare supply chain technology and services company, yielding a clear and prioritized roadmap for both organic and inorganic opportunities",
   },
   {
     backgroundColor: "#D3D5D6",
     iconColor: "#121C27",
-    text: "We conduct a thorough analysis of the market landscape, identifying trends, regulatory requirements, and customer needs in the 503B outsourcing space. This analysis provides a foundation.",
+    text: "We conduct a thorough analysis of the market landscape, identifying trends, regulatory requirements, and customer needs in the 503B outsourcing space. This analysis provides a foundation",
   },
   {
     backgroundColor: "transparent",
     iconColor: "#121C27",
-    text: "Growth strategy roadmap for a group purchasing organization (GPO) seeking to evolve its competitive position and bolster its value proposition to provider members.",
+    text: "Growth strategy roadmap for a group purchasing organization (GPO) seeking to evolve its competitive position and bolster its value proposition to provider members",
   },
 ];
 
@@ -117,7 +117,7 @@ const CostomerField = () => {
                     }}
                   >
                     We are Always Confident the Best in our Field and
-                    Specialize.
+                    Specialize
                   </Typography>
                   <Typography
                     sx={{
@@ -129,7 +129,7 @@ const CostomerField = () => {
                     Our mission is to cultivate financial excellence in every
                     aspect of our clients’ lives. We are committed to providing
                     personalized, holistic financial solutions that align with
-                    our clients’ unique aspirations and circumstances.
+                    our clients’ unique aspirations and circumstances
                   </Typography>
                 </Box>
               </Box>

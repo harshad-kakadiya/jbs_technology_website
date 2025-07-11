@@ -10,12 +10,12 @@ function Businessventure() {
         {
             icon: <WorkspacePremiumIcon />,
             title: "Your extended team of co-founders",
-            des: "At our core, we design and build high-quality, user-centric software products for entrepreneurs and business leaders. Our approach is deeply rooted in the science of successful product development. This expertise, coupled with our rich entrepreneurial experience, enables us to add extra layers of value.",
+            des: "At our core, we design and build high-quality user-centric software products for entrepreneurs and business leaders Our approach is deeply rooted in the science of successful product development This expertise coupled with our rich entrepreneurial experience enables us to add extra layers of value",
         },
         {
             icon: <EmojiEventsIcon />,
             title: "Tangible results",
-            des: "We have an enviable track record of helping two-thirds of our clients achieve VC funding in an ecosystem where only ~0.05% of startups ever see that landmark.",
+            des: "We have an enviable track record of helping two-thirds of our clients achieve VC funding in an ecosystem where only ~0.05% of startups ever see that landmark",
         }
     ];
 

@@ -117,7 +117,7 @@ function Socialmedia() {
                 <Box
                     key={index}
                     sx={{
-                        padding: { md: '0 32px', sm: '0' },
+                        padding: '0 32px',
                         backgroundColor: item.bgcolor,
                         color: item.color,
                         // height:{md:"600px"},
@@ -211,7 +211,7 @@ function Socialmedia() {
                                         />
                                     </Grid>
                                     <Grid item md={6} sm={12}>
-                                        <Box sx={{padding:"0 20px" }}>
+                                        <Box>
                                             <Box sx={{height:'100%' , width: '120px'}}>
                                                 <img src={item.logo.src} alt={item.name} style={{objectFit: 'contain' , height: '100%' , width:'100%'}} />
                                             </Box>

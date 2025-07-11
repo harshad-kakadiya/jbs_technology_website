@@ -30,6 +30,7 @@ import Img24
 import Img25
     from "../../assets/images/services/ourproducts/png-transparent-final-cut-pro-macos-bigsur-icon-thumbnail-removebg-preview.png"
 import Img26 from "../../assets/images/services/ourproducts/davinci-resolve-logo-hero-removebg-preview.png"
+import Img27 from "../../assets/images/services/ourproducts/Typescript_logo_2020.svg.png"
 import Image from "next/image";
 
 function Ourproducts() {
@@ -41,10 +42,11 @@ function Ourproducts() {
             {name: "JavaScript", image: Img5},
             {name: "HTML 5", image: Img7},
             {name: "Next.js", image: Img13},
+            {name: "Typescript", image: Img27},
         ],
         "BACK-END & DATABASES": [
             {name: "Node.js", image: Img3},
-            {name: "SQL", image: Img6},
+            {name: "mySQL", image: Img6},
             {name: "PostgreSQL", image: Img15},
             {name: "Express.js", image: Img4},
             {name: "MongoDB", image: Img12},
@@ -90,7 +92,7 @@ function Ourproducts() {
                         color: "#4B535D"
                     }}>
                         Our team of developers has a range of experience in cutting-edge <br/> technologies. This allows
-                        us to create a tailor-made tech stack that will <br/> best support your project’s needs.
+                        us to create a tailor-made tech stack that will <br/> best support your project’s needs
                     </Box>
                 </Box>
                 <Box sx={{px: 4}}>

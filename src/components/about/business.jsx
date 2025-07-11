@@ -93,7 +93,7 @@ const Business = () => {
                                 }}>
                                     Our Consultants provide the highest quality advice and technical support and will
                                     assist your organization by thoroughly assessing your IT infrastructure and recommending
-                                    the best long-term approach given your unique resource requirements.
+                                    the best long-term approach given your unique resource requirements
                                 </Typography>
                             </Box>
                             <Box sx={{

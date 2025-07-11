@@ -8,25 +8,25 @@ function HowItWorks() {
         {
             title: "Product Scope",
             description:
-                "The Product Scope is an intensive 15-day structured process. It starts with an immersive focus session where you'll sit down with product experts and early-stage founders to dive into the product vision from a business standpoint.",
+                "The Product Scope is an intensive 15-day structured process. It starts with an immersive focus session where you'll sit down with product experts and early-stage founders to dive into the product vision from a business standpoint",
             items: ["User Stories", "Sitemap", "UX Personas", "Key BPMN", "Tech Spike", "Stakeholder Analysis"],
         },
         {
             title: "Key Screens",
             description:
-                "We start by creating the most important screens for your product. This allows you to see exactly how your product will look and then approve the design.",
+                "We start by creating the most important screens for your product This allows you to see exactly how your product will look and then approve the design",
             items: ["UI Concept", "Design System"],
         },
         {
             title: "All Screens",
             description:
-                "Once you are happy and approve the Key Screens, we extend the design to the remaining screens necessary for the MVP.",
+                "Once you are happy and approve the Key Screens, we extend the design to the remaining screens necessary for the MVP",
             items: ["Full Product UX/UI"],
         },
         {
             title: "Development",
             description:
-                "After your product is fully designed and approved, we start the implementation phase. During this phase, we progressively deliver the modules of the app, so you can test them during the process.",
+                "After your product is fully designed and approved, we start the implementation phase During this phase, we progressively deliver the modules of the app, so you can test them during the process",
             items: [
                 "Progressive Module Delivery",
                 "Ongoing Testing and Feedback",
@@ -37,7 +37,7 @@ function HowItWorks() {
         {
             title: "Test and Launch",
             description:
-                "Once your product is fully developed, we enter a testing phase during which we're in constant contact to fix major bugs and make sure your product is ready to go to market.",
+                "Once your product is fully developed, we enter a testing phase during which we're in constant contact to fix major bugs and make sure your product is ready to go to market",
             items: [
                 "Bug Reports & Fixes",
                 "User Acceptance Testing (UAT)",
@@ -48,7 +48,7 @@ function HowItWorks() {
         {
             title: "Iterations and Improvements",
             description:
-                "When your product is in the world and has started gaining traction, we work with you to digest user feedback and iterate your product, improving it for your customers.",
+                "When your product is in the world and has started gaining traction, we work with you to digest user feedback and iterate your product, improving it for your customers",
             items: [
                 "User Feedback Reports",
                 "Bug Fixes & Technical Improvements",
@@ -70,7 +70,7 @@ function HowItWorks() {
                             textAlign: "center",
                             paddingLeft: "20px",
                             position: 'relative',
-                            zIndex: 1000,
+                            zIndex: 41,
                             background: '#fff',
                         }}
                     >
