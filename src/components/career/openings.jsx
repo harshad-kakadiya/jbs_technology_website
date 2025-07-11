@@ -21,7 +21,7 @@ function Openings() {
             openings: 1,
             location: "Surat, Gujarat.",
             logo: react,
-            navigate:"career/react-developer"
+            navigate:"careers/react-developer"
         },
         {
             title: "flutter Developer",
@@ -29,7 +29,7 @@ function Openings() {
             openings: 0,
             location: "Surat, Gujarat.",
             logo: flutter,
-            navigate:"career/flutter-developer"
+            navigate:"careers/flutter-developer"
         },
         {
             title: " Human Resources Executive",
@@ -37,7 +37,7 @@ function Openings() {
             openings: 1,
             location: "Surat, Gujarat.",
             logo: human,
-            navigate: "career/human-resources-executive",
+            navigate: "careers/human-resources-executive",
         },
         {
             title: "Node.js Developer",
@@ -45,7 +45,7 @@ function Openings() {
             openings: 0,
             location: "Surat, Gujarat.",
             logo: node,
-            navigate:"career/nodejs-developer "
+            navigate:"careers/nodejs-developer "
         },
         {
             title: "Full Stack Developer",
@@ -53,21 +53,24 @@ function Openings() {
             openings: 0,
             location: "Surat, Gujarat.",
             logo: fullstack,
-            navigate:"career/full-stack-developer"
+            navigate:"careers/full-stack-developer"
         },
         {
             title: "UI/UX Designer",
-            experience: 1, // You can adjust this
-            openings: 1,   // Update based on actual availability
+            experience: 1,
+            openings: 1,
             location: "Surat, Gujarat.",
-            logo: uiux,    // Replace with actual logo variable for UI/UX
-            navigate: "career/ui-ux-designer"
+            logo: uiux,
+            navigate: "careers/ui-ux-designer"
         }
     ];
 
     return (
         <Box sx={{ display: 'flex', justifyContent: 'center', py:8,px:2 }}>
             <Box sx={{ width: '100%', maxWidth: 1200 }}>
+                <Box>
+                    <Typography component={'h1'} sx={{textAlign:'center' ,fontSize: { xs: "30px", md: "35px", lg: "45px" },pb:8 , fontWeight:600}}>Openings</Typography>
+                </Box>
                 <Grid container spacing={3}>
                     {jobData.map((job, index) => (
                         <Grid item xs={12} sm={6} md={4} key={index}>

@@ -75,7 +75,7 @@ function Ourproducts() {
 
 
     return (
-        <Box sx={{padding: "0 0 40px"}}>
+        <Box sx={{padding: "0 0 0px"}}>
             <Container maxWidth={"xl"}>
                 <Box  sx={{ padding: 4 }}>
                     <Box sx={{
@@ -93,7 +93,7 @@ function Ourproducts() {
                         us to create a tailor-made tech stack that will <br/> best support your project’s needs.
                     </Box>
                 </Box>
-                <Box sx={{padding: 4}}>
+                <Box sx={{px: 4}}>
                     {Object.keys(data).map((category, index) => (
                         <Box key={index} sx={{marginBottom: 3}}>
                             <Typography variant="h5" sx={{

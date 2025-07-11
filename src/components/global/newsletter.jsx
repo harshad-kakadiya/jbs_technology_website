@@ -7,7 +7,7 @@ function Newsletter() {
 
 
     return (
-        <Box sx={{ padding: "90px 0px" }}>
+        <Box sx={{ padding: "80px 0px" }}>
             {/*<Container maxWidth={'xl'}>*/}
                 <Box sx={{ width: "100%" }}>
                     <Box

@@ -17,12 +17,12 @@ function Page() {
 
     return (
         <>
-            <HeadingPage bgImg={bg1.src} heading={'Career'} breadcrumbs={breadCrumbs}/>
+            <HeadingPage bgImg={bg1.src} heading={'Careers'} breadcrumbs={breadCrumbs}/>
             <IdeasAndDrive/>
-            <CompanyValue/>
-            <SeeAbout/>
-            <SomeofthePerks/>
-            <Hiring/>
+            {/*<CompanyValue/>*/}
+            {/*<SeeAbout/>*/}
+            {/*<SomeofthePerks/>*/}
+            {/*<Hiring/>*/}
             <Openings/>
         </>
     );
