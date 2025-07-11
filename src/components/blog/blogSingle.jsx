@@ -18,6 +18,7 @@ import profileimg5 from "../../assets/images/blog/posts/img5.avif";
 import profileimg4 from "../../assets/images/blog/posts/img4.jpg";
 import profileimg3 from "../../assets/images/blog/posts/img3.jpg";
 import profileimg2 from "../../assets/images/blog/posts/Img2.jpg";
+import profileimg8 from "../../assets/images/blog/posts/csdcfad.jpg";
 
 import Post1 from "../../assets/images/blog/bolg/p7-152x164.webp";
 import Post2 from "../../assets/images/blog/bolg/p6-152x164.webp";
@@ -656,7 +657,7 @@ const BlogSingle = () => {
     {
       slug: 'corporatee',
       author: {
-        avatar: profileimg7,
+        avatar: profileimg8,
         name: "Marco Lee",
         role: "Supply Chain Finance Analyst",
         bio: "Specialist in trade finance, blockchain in logistics, and global economic shifts. Passionate about digital transformation in supply chains.",

@@ -25,9 +25,9 @@ function Businessventure() {
                 <Grid container spacing={3}>
                     <Grid item lg={5}>
                         <Box sx={{
-                            fontSize: "36px",
+                            fontSize: { xs: "30px", md: "35px", lg: "45px" },
                             fontWeight: "700",
-                            lineHeight: "45px",color: '#fff'
+                            lineHeight: {xl:"55px",lg:"50px",md:"45px",sm:"40px"},color: '#fff'
                         }}>
                             Why choose JBS Technology for your next business venture?
                         </Box>

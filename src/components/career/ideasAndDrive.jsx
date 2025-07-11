@@ -29,10 +29,10 @@ function IdeasAndDrive() {
                                 variant="h4"
 
                                 sx={{
-                                    fontWeight: 600,
+                                    fontWeight: 500,
                                     mb: 2,
                                     color: '#0A1119',
-                                    fontSize: {xs: 30, sm: 45},
+                                    fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                     textAlign: {xs: 'center', md: 'left'},
                                 }}
                             >

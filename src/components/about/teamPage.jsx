@@ -48,7 +48,7 @@ const TeamPage = () => {
                         </Typography>
                         <Typography
                             sx={{
-                                fontSize: '40px',
+                                fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                 lineHeight: '55px',
                                 fontWeight: '500',
                                 width: '90%'

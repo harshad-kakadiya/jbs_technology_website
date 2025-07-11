@@ -116,12 +116,7 @@ const Customers = () => {
                                 <Typography
                                     variant="h2"
                                     sx={{
-                                        fontSize: {
-                                            xs: "28px",
-                                            sm: "32px",
-                                            md: "34px",
-                                            lg: "45px",
-                                        },
+                                        fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                         pb: 2,
                                         fontWeight: "500",
                                         color: "#0A1119",

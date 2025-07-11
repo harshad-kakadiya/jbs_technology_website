@@ -79,7 +79,7 @@ function KeyBenefits() {
                                 <Typography
                                     sx={{
                                         fontSize: { xs: "30px", md: "35px", lg: "45px" },
-                                        fontWeight: "700",
+                                        fontWeight: "500",
                                         display: "flex",
                                         justifyContent: {xs: "center", lg: "flex-start"},
                                         alignItems: "center",

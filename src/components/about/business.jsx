@@ -76,7 +76,7 @@ const Business = () => {
                                 <Typography sx={{
                                     color: '#000000',
                                     fontWeight: '500',
-                                    fontSize:{xs:"29px", md:"35px",sm:"32px",lg:"38px"},
+                                    fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                     lineHeight: '50px',
                                     mt: '20px'
                                 }}>

@@ -369,7 +369,7 @@ function Page() {
                                 src={form}
                                 alt="Form"
                                 layout="fill"
-                                style={{objectFit: 'contain'}}
+                                style={{ objectFit: 'contain' }}
                             />
                         </Box>
                     </Grid>
@@ -380,13 +380,13 @@ function Page() {
                             component="form"
                             onSubmit={handleSubmit(onSubmit)}
                             noValidate
-                            sx={{p: 3, bgcolor: '#f5f5f5', borderRadius: 4}}
+                            sx={{ p: 3, bgcolor: '#f5f5f5', borderRadius: 4 }}
                         >
                             <Typography
                                 variant="h5"
                                 color="#1A1F26"
                                 gutterBottom
-                                sx={{fontSize: {xs: '24px', md: '28px'}, fontWeight: 600, mb: 3}}
+                                sx={{ fontSize: { xs: '24px', md: '28px' }, fontWeight: 600, mb: 3 }}
                             >
                                 Job Application Form
                             </Typography>
@@ -394,9 +394,9 @@ function Page() {
                             <Grid container spacing={2}>
                                 {/* First and Last Name */}
                                 <Grid item xs={12} sm={6}>
-                                    <Box>
+                                    <Box >
                                         <TextField
-                                            label="First Name"
+                                            label="First Name*"
                                             fullWidth
                                             size="small"
                                             variant="outlined"
@@ -424,465 +424,535 @@ function Page() {
                                                     borderRadius: 2,
                                                 },
                                             }}
-                                            {...register('firstName', {required: 'First name is required'})}
+                                            {...register('firstName', { required: 'First name is required' })}
                                             error={!!errors.firstName}
                                         />
-
-                                        {errors.firstName && (
-                                            <Box
-                                                sx={{
-                                                    backgroundColor: '#f5f5f5',
-                                                    color: '#d32f2f', // MUI default error color
-                                                    fontSize: '0.75rem',
-                                                    padding: '4px 8px',
-                                                    borderBottomLeftRadius: 8,
-                                                    borderBottomRightRadius: 8,
-                                                    mt: '2px',
-                                                }}
-                                            >
-                                                {errors.firstName.message}
-                                            </Box>
-                                        )}
+                                        {/* Fixed height container for error messages */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                            {errors.firstName && (
+                                                <Box
+                                                    sx={{
+                                                        backgroundColor: '#f5f5f5',
+                                                        color: '#d32f2f',
+                                                        fontSize: '0.75rem',
+                                                        padding: '4px 8px',
+                                                        borderBottomLeftRadius: 8,
+                                                        borderBottomRightRadius: 8,
+                                                    }}
+                                                >
+                                                    {errors.firstName.message}
+                                                </Box>
+                                            )}
+                                        </Box>
                                     </Box>
                                 </Grid>
 
-
                                 <Grid item xs={12} sm={6}>
-                                    <TextField
-                                        label="Last Name"
-                                        fullWidth
-                                        size="small"
-                                        variant="outlined"
-                                        sx={{
-                                            backgroundColor: '#fff',
-                                            borderRadius: 2,
-                                            '& .MuiOutlinedInput-root': {
-                                                borderRadius: 2,
-                                                '& fieldset': {
-                                                    border: 'none',
-                                                },
-                                                '&:hover fieldset': {
-                                                    border: '2px solid gray',
-                                                },
-                                                '&.Mui-focused fieldset': {
-                                                    border: '2px solid black',
-                                                },
-                                            },
-                                            '& label.Mui-focused': {
-                                                color: 'black',
-                                            },
-                                        }}
-
-                                        InputProps={{sx: {borderRadius: 2}}}
-                                        {...register('lastName', {required: 'Last name is required'})}
-                                        error={!!errors.lastName}
-                                    />
-                                    {errors.lastName && (
-                                        <Box
+                                    <Box >
+                                        <TextField
+                                            label="Last Name*"
+                                            fullWidth
+                                            size="small"
+                                            variant="outlined"
                                             sx={{
-                                                backgroundColor: '#f5f5f5',
-                                                color: '#d32f2f', // MUI default error color
-                                                fontSize: '0.75rem',
-                                                padding: '4px 8px',
-                                                borderBottomLeftRadius: 8,
-                                                borderBottomRightRadius: 8,
-                                                mt: '2px',
+                                                backgroundColor: '#fff',
+                                                borderRadius: 2,
+                                                '& .MuiOutlinedInput-root': {
+                                                    borderRadius: 2,
+                                                    '& fieldset': {
+                                                        border: 'none',
+                                                    },
+                                                    '&:hover fieldset': {
+                                                        border: '2px solid gray',
+                                                    },
+                                                    '&.Mui-focused fieldset': {
+                                                        border: '2px solid black',
+                                                    },
+                                                },
+                                                '& label.Mui-focused': {
+                                                    color: 'black',
+                                                },
                                             }}
-                                        >
-                                            {errors.lastName.message}
+                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            {...register('lastName', { required: 'Last name is required' })}
+                                            error={!!errors.lastName}
+                                        />
+                                        {/* Fixed height container for error messages */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                            {errors.lastName && (
+                                                <Box
+                                                    sx={{
+                                                        backgroundColor: '#f5f5f5',
+                                                        color: '#d32f2f',
+                                                        fontSize: '0.75rem',
+                                                        padding: '4px 8px',
+                                                        borderBottomLeftRadius: 8,
+                                                        borderBottomRightRadius: 8,
+                                                    }}
+                                                >
+                                                    {errors.lastName.message}
+                                                </Box>
+                                            )}
                                         </Box>
-                                    )}
+                                    </Box>
                                 </Grid>
 
                                 {/* Email & Phone */}
                                 <Grid item xs={12} sm={6}>
-                                    <TextField
-                                        type="email"
-                                        label="Email"
-                                        fullWidth
-                                        size="small"
-                                        variant="outlined"
-                                        sx={{
-                                            backgroundColor: '#fff',
-                                            borderRadius: 2,
-                                            '& .MuiOutlinedInput-root': {
-                                                borderRadius: 2,
-                                                '& fieldset': {
-                                                    border: 'none',
-                                                },
-                                                '&:hover fieldset': {
-                                                    border: '2px solid gray',
-                                                },
-                                                '&.Mui-focused fieldset': {
-                                                    border: '2px solid black',
-                                                },
-                                            },
-                                            '& label.Mui-focused': {
-                                                color: 'black',
-                                            },
-                                        }}
-
-                                        InputProps={{sx: {borderRadius: 2}}}
-                                        {...register('email', {required: 'Email is required'})}
-                                        error={!!errors.email}
-
-                                    />
-                                    {errors.email && (
-                                        <Box
+                                    <Box >
+                                        <TextField
+                                            type="email"
+                                            label="Email*"
+                                            fullWidth
+                                            size="small"
+                                            variant="outlined"
                                             sx={{
-                                                backgroundColor: '#f5f5f5',
-                                                color: '#d32f2f', // MUI default error color
-                                                fontSize: '0.75rem',
-                                                padding: '4px 8px',
-                                                borderBottomLeftRadius: 8,
-                                                borderBottomRightRadius: 8,
-                                                mt: '2px',
+                                                backgroundColor: '#fff',
+                                                borderRadius: 2,
+                                                '& .MuiOutlinedInput-root': {
+                                                    borderRadius: 2,
+                                                    '& fieldset': {
+                                                        border: 'none',
+                                                    },
+                                                    '&:hover fieldset': {
+                                                        border: '2px solid gray',
+                                                    },
+                                                    '&.Mui-focused fieldset': {
+                                                        border: '2px solid black',
+                                                    },
+                                                },
+                                                '& label.Mui-focused': {
+                                                    color: 'black',
+                                                },
                                             }}
-                                        >
-                                            {errors.email.message}
+                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            {...register('email', {
+                                                required: 'Email is required',
+                                                pattern: {
+                                                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                                                    message: 'Enter a valid email address',
+                                                },
+                                            })}
+                                            error={!!errors.email}
+                                        />
+                                        {/* Fixed height container for error messages */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                            {errors.email && (
+                                                <Box
+                                                    sx={{
+                                                        backgroundColor: '#f5f5f5',
+                                                        color: '#d32f2f',
+                                                        fontSize: '0.75rem',
+                                                        padding: '4px 8px',
+                                                        borderBottomLeftRadius: 8,
+                                                        borderBottomRightRadius: 8,
+                                                    }}
+                                                >
+                                                    {errors.email.message}
+                                                </Box>
+                                            )}
                                         </Box>
-                                    )}
+                                    </Box>
                                 </Grid>
 
                                 <Grid item xs={12} sm={6}>
-                                    <TextField
-                                        label="Phone Number"
-                                        fullWidth
-                                        size="small"
-                                        variant="outlined"
-                                        sx={{
-                                            backgroundColor: '#fff',
-                                            borderRadius: 2,
-                                            '& .MuiOutlinedInput-root': {
+                                    <Box >
+                                        <TextField
+                                            label="Phone Number*"
+                                            fullWidth
+                                            size="small"
+                                            variant="outlined"
+                                            sx={{
+                                                backgroundColor: '#fff',
                                                 borderRadius: 2,
-                                                '& fieldset': {
-                                                    border: 'none',
+                                                '& .MuiOutlinedInput-root': {
+                                                    borderRadius: 2,
+                                                    '& fieldset': {
+                                                        border: 'none',
+                                                    },
+                                                    '&:hover fieldset': {
+                                                        border: '2px solid gray',
+                                                    },
+                                                    '&.Mui-focused fieldset': {
+                                                        border: '2px solid black',
+                                                    },
                                                 },
-                                                '&:hover fieldset': {
-                                                    border: '2px solid gray',
+                                                '& label.Mui-focused': {
+                                                    color: 'black',
                                                 },
-                                                '&.Mui-focused fieldset': {
-                                                    border: '2px solid black',
+                                            }}
+                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            {...register('phone', {
+                                                required: 'Phone number is required',
+                                                pattern: {
+                                                    value: /^[0-9]{10}$/,
+                                                    message: 'Enter a valid 10-digit phone number',
                                                 },
-                                            },
-                                            '& label.Mui-focused': {
-                                                color: 'black',
-                                            },
-                                        }}
-
-                                        InputProps={{sx: {borderRadius: 2}}}
-                                        {...register('phone', {required: 'Phone number is required'})}
-                                        error={!!errors.phone}
-
-                                    />{errors.phone && (
-                                    <Box
-                                        sx={{
-                                            backgroundColor: '#f5f5f5',
-                                            color: '#d32f2f', // MUI default error color
-                                            fontSize: '0.75rem',
-                                            padding: '4px 8px',
-                                            borderBottomLeftRadius: 8,
-                                            borderBottomRightRadius: 8,
-                                            mt: '2px',
-                                        }}
-                                    >
-                                        {errors.phone.message}
+                                            })}
+                                            error={!!errors.phone}
+                                        />
+                                        {/* Fixed height container for error messages */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                            {errors.phone && (
+                                                <Box
+                                                    sx={{
+                                                        backgroundColor: '#f5f5f5',
+                                                        color: '#d32f2f',
+                                                        fontSize: '0.75rem',
+                                                        padding: '4px 8px',
+                                                        borderBottomLeftRadius: 8,
+                                                        borderBottomRightRadius: 8,
+                                                    }}
+                                                >
+                                                    {errors.phone.message}
+                                                </Box>
+                                            )}
+                                        </Box>
                                     </Box>
-                                )}
                                 </Grid>
 
                                 {/* CV Upload */}
                                 <Grid item xs={12}>
-                                    <InputLabel sx={{mb: 1}}>Upload your latest CV</InputLabel>
-                                    <Box sx={{bgcolor: '#fff', p: 1.5, borderRadius: 2}}>
-                                        <input type="file" {...register('cv', {required: true})} />
+                                    <Box >
+                                        <InputLabel sx={{ mb: 1 }}>Upload your latest CV*</InputLabel>
+                                        <Box sx={{ bgcolor: '#fff', p: 1.5, borderRadius: 2 }}>
+                                            <input type="file" {...register('cv', { required: 'CV is required' })} />
+                                        </Box>
+                                        {/* Fixed height container for error messages */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                            {errors.cv && (
+                                                <Box
+                                                    sx={{
+                                                        backgroundColor: '#f5f5f5',
+                                                        color: '#d32f2f',
+                                                        fontSize: '0.75rem',
+                                                        padding: '4px 8px',
+                                                        borderBottomLeftRadius: 8,
+                                                        borderBottomRightRadius: 8,
+                                                    }}
+                                                >
+                                                    {errors.cv.message}
+                                                </Box>
+                                            )}
+                                        </Box>
                                     </Box>
-                                    {errors.cv && <FormHelperText error>CV is required.</FormHelperText>}
                                 </Grid>
 
                                 {/* Experience */}
                                 <Grid item xs={12}>
-                                    <TextField
-                                        label="Total experience in Years"
-                                        placeholder="e.g. 4.5"
-                                        fullWidth
-                                        size="small"
-                                        variant="outlined"
-                                        sx={{
-                                            backgroundColor: '#fff',
-                                            borderRadius: 2,
-                                            '& .MuiOutlinedInput-root': {
-                                                borderRadius: 2,
-                                                '& fieldset': {
-                                                    border: 'none',
-                                                },
-                                                '&:hover fieldset': {
-                                                    border: '2px solid gray',
-                                                },
-                                                '&.Mui-focused fieldset': {
-                                                    border: '2px solid black',
-                                                },
-                                            },
-                                            '& label.Mui-focused': {
-                                                color: 'black',
-                                            },
-                                        }}
-
-                                        InputProps={{sx: {borderRadius: 2}}}
-                                        {...register('experience', {required: 'Experience is required'})}
-                                        error={!!errors.experience}
-
-                                    />
-                                    {errors.experience && (
-                                        <Box
+                                    <Box >
+                                        <TextField
+                                            label="Total experience in Years*"
+                                            placeholder="e.g. 4.5"
+                                            fullWidth
+                                            size="small"
+                                            variant="outlined"
                                             sx={{
-                                                backgroundColor: '#f5f5f5',
-                                                color: '#d32f2f', // MUI default error color
-                                                fontSize: '0.75rem',
-                                                padding: '4px 8px',
-                                                borderBottomLeftRadius: 8,
-                                                borderBottomRightRadius: 8,
-                                                mt: '2px',
+                                                backgroundColor: '#fff',
+                                                borderRadius: 2,
+                                                '& .MuiOutlinedInput-root': {
+                                                    borderRadius: 2,
+                                                    '& fieldset': {
+                                                        border: 'none',
+                                                    },
+                                                    '&:hover fieldset': {
+                                                        border: '2px solid gray',
+                                                    },
+                                                    '&.Mui-focused fieldset': {
+                                                        border: '2px solid black',
+                                                    },
+                                                },
+                                                '& label.Mui-focused': {
+                                                    color: 'black',
+                                                },
                                             }}
-                                        >
-                                            {errors.experience.message}
+                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            {...register('experience', { required: 'Experience is required' })}
+                                            error={!!errors.experience}
+                                        />
+                                        {/* Fixed height container for error messages */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                            {errors.experience && (
+                                                <Box
+                                                    sx={{
+                                                        backgroundColor: '#f5f5f5',
+                                                        color: '#d32f2f',
+                                                        fontSize: '0.75rem',
+                                                        padding: '4px 8px',
+                                                        borderBottomLeftRadius: 8,
+                                                        borderBottomRightRadius: 8,
+                                                    }}
+                                                >
+                                                    {errors.experience.message}
+                                                </Box>
+                                            )}
                                         </Box>
-                                    )}
+                                    </Box>
                                 </Grid>
 
                                 {/* Description */}
                                 <Grid item xs={12}>
-                                    <TextField
-                                        label="Description"
-                                        multiline
-                                        rows={3}
-                                        fullWidth
-                                        size="small"
-                                        variant="outlined"
-                                        sx={{
-                                            backgroundColor: '#fff',
-                                            borderRadius: 2,
-                                            '& .MuiOutlinedInput-root': {
+                                    <Box >
+                                        <TextField
+                                            label="Description"
+                                            multiline
+                                            rows={3}
+                                            fullWidth
+                                            size="small"
+                                            variant="outlined"
+                                            sx={{
+                                                backgroundColor: '#fff',
                                                 borderRadius: 2,
-                                                '& fieldset': {
-                                                    border: 'none',
+                                                '& .MuiOutlinedInput-root': {
+                                                    borderRadius: 2,
+                                                    '& fieldset': {
+                                                        border: 'none',
+                                                    },
+                                                    '&:hover fieldset': {
+                                                        border: '2px solid gray',
+                                                    },
+                                                    '&.Mui-focused fieldset': {
+                                                        border: '2px solid black',
+                                                    },
                                                 },
-                                                '&:hover fieldset': {
-                                                    border: '2px solid gray',
+                                                '& label.Mui-focused': {
+                                                    color: 'black',
                                                 },
-                                                '&.Mui-focused fieldset': {
-                                                    border: '2px solid black',
-                                                },
-                                            },
-                                            '& label.Mui-focused': {
-                                                color: 'black',
-                                            },
-                                        }}
-
-                                        InputProps={{sx: {borderRadius: 2}}}
-                                        {...register('description')}
-                                    />
-
+                                            }}
+                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            {...register('description')}
+                                        />
+                                        {/* Fixed height container for error messages - no error for description */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}></Box>
+                                    </Box>
                                 </Grid>
 
                                 {/* Location */}
                                 <Grid item xs={12}>
-                                    <TextField
-                                        label="Where are you currently located?"
-                                        fullWidth
-                                        size="small"
-                                        variant="outlined"
-                                        sx={{
-                                            backgroundColor: '#fff',
-                                            borderRadius: 2,
-                                            '& .MuiOutlinedInput-root': {
-                                                borderRadius: 2,
-                                                '& fieldset': {
-                                                    border: 'none',
-                                                },
-                                                '&:hover fieldset': {
-                                                    border: '2px solid gray',
-                                                },
-                                                '&.Mui-focused fieldset': {
-                                                    border: '2px solid black',
-                                                },
-                                            },
-                                            '& label.Mui-focused': {
-                                                color: 'black',
-                                            },
-                                        }}
-
-                                        InputProps={{sx: {borderRadius: 2}}}
-                                        {...register('location', {required: 'Location is required'})}
-                                        error={!!errors.location}
-
-                                    />
-                                    {errors.location && (
-                                        <Box
+                                    <Box >
+                                        <TextField
+                                            label="Where are you currently located?*"
+                                            fullWidth
+                                            size="small"
+                                            variant="outlined"
                                             sx={{
-                                                backgroundColor: '#f5f5f5',
-                                                color: '#d32f2f', // MUI default error color
-                                                fontSize: '0.75rem',
-                                                padding: '4px 8px',
-                                                borderBottomLeftRadius: 8,
-                                                borderBottomRightRadius: 8,
-                                                mt: '2px',
+                                                backgroundColor: '#fff',
+                                                borderRadius: 2,
+                                                '& .MuiOutlinedInput-root': {
+                                                    borderRadius: 2,
+                                                    '& fieldset': {
+                                                        border: 'none',
+                                                    },
+                                                    '&:hover fieldset': {
+                                                        border: '2px solid gray',
+                                                    },
+                                                    '&.Mui-focused fieldset': {
+                                                        border: '2px solid black',
+                                                    },
+                                                },
+                                                '& label.Mui-focused': {
+                                                    color: 'black',
+                                                },
                                             }}
-                                        >
-                                            {errors.location.message}
+                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            {...register('location', { required: 'Location is required' })}
+                                            error={!!errors.location}
+                                        />
+                                        {/* Fixed height container for error messages */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                            {errors.location && (
+                                                <Box
+                                                    sx={{
+                                                        backgroundColor: '#f5f5f5',
+                                                        color: '#d32f2f',
+                                                        fontSize: '0.75rem',
+                                                        padding: '4px 8px',
+                                                        borderBottomLeftRadius: 8,
+                                                        borderBottomRightRadius: 8,
+                                                    }}
+                                                >
+                                                    {errors.location.message}
+                                                </Box>
+                                            )}
                                         </Box>
-                                    )}
+                                    </Box>
                                 </Grid>
 
                                 {/* Relocation */}
                                 <Grid item xs={12}>
-                                    <FormControl
-                                        fullWidth
-                                        size="small"
-
-                                        sx={{
-                                            backgroundColor: '#fff',
-                                            borderRadius: 2,
-                                            '& .MuiOutlinedInput-root': {
+                                    <Box >
+                                        <FormControl
+                                            fullWidth
+                                            size="small"
+                                            sx={{
+                                                backgroundColor: '#fff',
                                                 borderRadius: 2,
-                                                '& fieldset': {
-                                                    border: 'none',
+                                                '& .MuiOutlinedInput-root': {
+                                                    borderRadius: 2,
+                                                    '& fieldset': {
+                                                        border: 'none',
+                                                    },
+                                                    '&:hover fieldset': {
+                                                        border: '2px solid gray',
+                                                    },
+                                                    '&.Mui-focused fieldset': {
+                                                        border: '2px solid black',
+                                                    },
                                                 },
-                                                '&:hover fieldset': {
-                                                    border: '2px solid gray',
+                                                '& label.Mui-focused': {
+                                                    color: 'black',
                                                 },
-                                                '&.Mui-focused fieldset': {
-                                                    border: '2px solid black',
-                                                },
-                                            },
-                                            '& label.Mui-focused': {
-                                                color: 'black',
-                                            },
-                                        }}
-                                    >
-                                        <InputLabel id="relocate-label">
-                                            Are you willing to relocate to Surat, Gujarat?
-                                        </InputLabel>
-                                        <Controller
-                                            name="relocate"
-                                            control={control}
-
-                                            render={({field}) => (
-                                                <Select
-                                                    {...field}
-                                                    labelId="relocate-label"
-                                                    label="Are you willing to relocate to Surat, Gujarat?"
-                                                    sx={{borderRadius: 2}}
+                                            }}
+                                            error={!!errors.relocate}
+                                        >
+                                            <InputLabel id="relocate-label">
+                                                Are you willing to relocate to Surat, Gujarat?*
+                                            </InputLabel>
+                                            <Controller
+                                                name="relocate"
+                                                control={control}
+                                                rules={{ required: 'Relocation preference is required' }}
+                                                render={({ field }) => (
+                                                    <Select
+                                                        {...field}
+                                                        labelId="relocate-label"
+                                                        label="Are you willing to relocate to Surat, Gujarat?*"
+                                                        sx={{ borderRadius: 2 }}
+                                                    >
+                                                        <MenuItem value="Yes">Yes</MenuItem>
+                                                        <MenuItem value="No">No</MenuItem>
+                                                    </Select>
+                                                )}
+                                            />
+                                        </FormControl>
+                                        {/* Fixed height container for error messages */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                            {errors.relocate && (
+                                                <Box
+                                                    sx={{
+                                                        backgroundColor: '#f5f5f5',
+                                                        color: '#d32f2f',
+                                                        fontSize: '0.75rem',
+                                                        padding: '4px 8px',
+                                                        borderBottomLeftRadius: 8,
+                                                        borderBottomRightRadius: 8,
+                                                    }}
                                                 >
-                                                    <MenuItem value="Yes">Yes</MenuItem>
-                                                    <MenuItem value="No">No</MenuItem>
-                                                </Select>
+                                                    {errors.relocate.message}
+                                                </Box>
                                             )}
-                                        />
-                                        <FormHelperText>{errors.relocate?.message}</FormHelperText>
-                                    </FormControl>
+                                        </Box>
+                                    </Box>
                                 </Grid>
 
                                 {/* CTC Fields */}
                                 <Grid item xs={12} sm={6}>
-                                    <TextField
-                                        label="Current CTC (LPA)"
-                                        placeholder="e.g. 4 LPA"
-                                        fullWidth
-                                        size="small"
-                                        variant="outlined"
-                                        sx={{
-                                            backgroundColor: '#fff',
-                                            borderRadius: 2,
-                                            '& .MuiOutlinedInput-root': {
-                                                borderRadius: 2,
-                                                '& fieldset': {
-                                                    border: 'none',
-                                                },
-                                                '&:hover fieldset': {
-                                                    border: '2px solid gray',
-                                                },
-                                                '&.Mui-focused fieldset': {
-                                                    border: '2px solid black',
-                                                },
-                                            },
-                                            '& label.Mui-focused': {
-                                                color: 'black',
-                                            },
-                                        }}
-                                        InputProps={{sx: {borderRadius: 2}}}
-                                        {...register('currentCTC', {required: 'Current CTC is required'})}
-                                        error={!!errors.currentCTC}
-                                    />
-                                    {errors.currentCTC && (
-                                        <Box
+                                    <Box >
+                                        <TextField
+                                            label="Current CTC (LPA)*"
+                                            placeholder="e.g. 4 LPA"
+                                            fullWidth
+                                            size="small"
+                                            variant="outlined"
                                             sx={{
-                                                backgroundColor: '#f5f5f5',
-                                                color: '#d32f2f', // MUI default error color
-                                                fontSize: '0.75rem',
-                                                padding: '4px 8px',
-                                                borderBottomLeftRadius: 8,
-                                                borderBottomRightRadius: 8,
-                                                mt: '2px',
+                                                backgroundColor: '#fff',
+                                                borderRadius: 2,
+                                                '& .MuiOutlinedInput-root': {
+                                                    borderRadius: 2,
+                                                    '& fieldset': {
+                                                        border: 'none',
+                                                    },
+                                                    '&:hover fieldset': {
+                                                        border: '2px solid gray',
+                                                    },
+                                                    '&.Mui-focused fieldset': {
+                                                        border: '2px solid black',
+                                                    },
+                                                },
+                                                '& label.Mui-focused': {
+                                                    color: 'black',
+                                                },
                                             }}
-                                        >
-                                            {errors.currentCTC.message}
+                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            {...register('currentCTC', { required: 'Current CTC is required' })}
+                                            error={!!errors.currentCTC}
+                                        />
+                                        {/* Fixed height container for error messages */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                            {errors.currentCTC && (
+                                                <Box
+                                                    sx={{
+                                                        backgroundColor: '#f5f5f5',
+                                                        color: '#d32f2f',
+                                                        fontSize: '0.75rem',
+                                                        padding: '4px 8px',
+                                                        borderBottomLeftRadius: 8,
+                                                        borderBottomRightRadius: 8,
+                                                    }}
+                                                >
+                                                    {errors.currentCTC.message}
+                                                </Box>
+                                            )}
                                         </Box>
-                                    )}
+                                    </Box>
                                 </Grid>
 
                                 <Grid item xs={12} sm={6}>
-                                    <TextField
-                                        label="Expected CTC (LPA)"
-                                        placeholder="e.g. 6 LPA"
-                                        fullWidth
-                                        size="small"
-                                        variant="outlined"
-                                        sx={{
-                                            backgroundColor: '#fff',
-                                            borderRadius: 2,
-                                            '& .MuiOutlinedInput-root': {
+                                    <Box >
+                                        <TextField
+                                            label="Expected CTC (LPA)*"
+                                            placeholder="e.g. 6 LPA"
+                                            fullWidth
+                                            size="small"
+                                            variant="outlined"
+                                            sx={{
+                                                backgroundColor: '#fff',
                                                 borderRadius: 2,
-                                                '& fieldset': {
-                                                    border: 'none',
+                                                '& .MuiOutlinedInput-root': {
+                                                    borderRadius: 2,
+                                                    '& fieldset': {
+                                                        border: 'none',
+                                                    },
+                                                    '&:hover fieldset': {
+                                                        border: '2px solid gray',
+                                                    },
+                                                    '&.Mui-focused fieldset': {
+                                                        border: '2px solid black',
+                                                    },
                                                 },
-                                                '&:hover fieldset': {
-                                                    border: '2px solid gray',
+                                                '& label.Mui-focused': {
+                                                    color: 'black',
                                                 },
-                                                '&.Mui-focused fieldset': {
-                                                    border: '2px solid black',
-                                                },
-                                            },
-                                            '& label.Mui-focused': {
-                                                color: 'black',
-                                            },
-                                        }}
-                                        InputProps={{sx: {borderRadius: 2}}}
-                                        {...register('expectedCTC', {required: 'Expected CTC is required'})}
-                                        error={!!errors.expectedCTC}
-
-                                    />{errors.expectedCTC && (
-                                    <Box
-                                        sx={{
-                                            backgroundColor: '#f5f5f5',
-                                            color: '#d32f2f', // MUI default error color
-                                            fontSize: '0.75rem',
-                                            padding: '4px 8px',
-                                            borderBottomLeftRadius: 8,
-                                            borderBottomRightRadius: 8,
-                                            mt: '2px',
-                                        }}
-                                    >
-                                        {errors.expectedCTC.message}
+                                            }}
+                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            {...register('expectedCTC', { required: 'Expected CTC is required' })}
+                                            error={!!errors.expectedCTC}
+                                        />
+                                        {/* Fixed height container for error messages */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                            {errors.expectedCTC && (
+                                                <Box
+                                                    sx={{
+                                                        backgroundColor: '#f5f5f5',
+                                                        color: '#d32f2f',
+                                                        fontSize: '0.75rem',
+                                                        padding: '4px 8px',
+                                                        borderBottomLeftRadius: 8,
+                                                        borderBottomRightRadius: 8,
+                                                    }}
+                                                >
+                                                    {errors.expectedCTC.message}
+                                                </Box>
+                                            )}
+                                        </Box>
                                     </Box>
-                                )}
                                 </Grid>
 
                                 {/* Interview Details */}
                                 <Grid item xs={12}>
-                                    <Box>
+                                    <Box >
                                         <TextField
-                                            label="Interview Availability"
+                                            label="Interview Availability*"
                                             placeholder="e.g. I can be available on Saturday 10AM to 2PM"
                                             fullWidth
                                             size="small"
@@ -906,36 +976,36 @@ function Page() {
                                                     color: 'black',
                                                 },
                                             }}
-                                            InputProps={{sx: {borderRadius: 2}}}
+                                            InputProps={{ sx: { borderRadius: 2 } }}
                                             {...register('interviewAvailability', {
                                                 required: 'Interview availability is required',
                                             })}
                                             error={!!errors.interviewAvailability}
                                         />
-
-                                        {errors.interviewAvailability && (
-                                            <Box
-                                                sx={{
-                                                    backgroundColor: '#f5f5f5',
-                                                    color: '#d32f2f',
-                                                    fontSize: '0.75rem',
-                                                    padding: '4px 8px',
-                                                    borderBottomLeftRadius: 8,
-                                                    borderBottomRightRadius: 8,
-                                                    mt: '2px',
-                                                }}
-                                            >
-                                                {errors.interviewAvailability.message}
-                                            </Box>
-                                        )}
+                                        {/* Fixed height container for error messages */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                            {errors.interviewAvailability && (
+                                                <Box
+                                                    sx={{
+                                                        backgroundColor: '#f5f5f5',
+                                                        color: '#d32f2f',
+                                                        fontSize: '0.75rem',
+                                                        padding: '4px 8px',
+                                                        borderBottomLeftRadius: 8,
+                                                        borderBottomRightRadius: 8,
+                                                    }}
+                                                >
+                                                    {errors.interviewAvailability.message}
+                                                </Box>
+                                            )}
+                                        </Box>
                                     </Box>
                                 </Grid>
 
-
                                 <Grid item xs={12}>
-                                    <Box>
+                                    <Box >
                                         <TextField
-                                            label="Office or Online Interview Preference"
+                                            label="Office or Online Interview Preference*"
                                             placeholder="e.g. I can come to office."
                                             fullWidth
                                             size="small"
@@ -959,35 +1029,36 @@ function Page() {
                                                     color: 'black',
                                                 },
                                             }}
-                                            InputProps={{sx: {borderRadius: 2}}}
+                                            InputProps={{ sx: { borderRadius: 2 } }}
                                             {...register('interviewType', {
                                                 required: 'Interview preference is required',
                                             })}
                                             error={!!errors.interviewType}
                                         />
-
-                                        {errors.interviewType && (
-                                            <Box
-                                                sx={{
-                                                    backgroundColor: '#f5f5f5',
-                                                    color: '#d32f2f',
-                                                    fontSize: '0.75rem',
-                                                    padding: '4px 8px',
-                                                    borderBottomLeftRadius: 8,
-                                                    borderBottomRightRadius: 8,
-                                                    mt: '2px',
-                                                }}
-                                            >
-                                                {errors.interviewType.message}
-                                            </Box>
-                                        )}
+                                        {/* Fixed height container for error messages */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                            {errors.interviewType && (
+                                                <Box
+                                                    sx={{
+                                                        backgroundColor: '#f5f5f5',
+                                                        color: '#d32f2f',
+                                                        fontSize: '0.75rem',
+                                                        padding: '4px 8px',
+                                                        borderBottomLeftRadius: 8,
+                                                        borderBottomRightRadius: 8,
+                                                    }}
+                                                >
+                                                    {errors.interviewType.message}
+                                                </Box>
+                                            )}
+                                        </Box>
                                     </Box>
                                 </Grid>
 
                                 <Grid item xs={12}>
-                                    <Box>
+                                    <Box >
                                         <TextField
-                                            label="Notice Period / Immediate Joiner?"
+                                            label="Notice Period / Immediate Joiner?*"
                                             placeholder="e.g. Yes I can join immediately."
                                             fullWidth
                                             size="small"
@@ -1011,33 +1082,34 @@ function Page() {
                                                     color: 'black',
                                                 },
                                             }}
-                                            InputProps={{sx: {borderRadius: 2}}}
+                                            InputProps={{ sx: { borderRadius: 2 } }}
                                             {...register('noticePeriod', {
                                                 required: 'Notice period info is required',
                                             })}
                                             error={!!errors.noticePeriod}
                                         />
-
-                                        {errors.noticePeriod && (
-                                            <Box
-                                                sx={{
-                                                    backgroundColor: '#f5f5f5',
-                                                    color: '#d32f2f',
-                                                    fontSize: '0.75rem',
-                                                    padding: '4px 8px',
-                                                    borderBottomLeftRadius: 8,
-                                                    borderBottomRightRadius: 8,
-                                                    mt: '2px',
-                                                }}
-                                            >
-                                                {errors.noticePeriod.message}
-                                            </Box>
-                                        )}
+                                        {/* Fixed height container for error messages */}
+                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                            {errors.noticePeriod && (
+                                                <Box
+                                                    sx={{
+                                                        backgroundColor: '#f5f5f5',
+                                                        color: '#d32f2f',
+                                                        fontSize: '0.75rem',
+                                                        padding: '4px 8px',
+                                                        borderBottomLeftRadius: 8,
+                                                        borderBottomRightRadius: 8,
+                                                    }}
+                                                >
+                                                    {errors.noticePeriod.message}
+                                                </Box>
+                                            )}
+                                        </Box>
                                     </Box>
                                 </Grid>
 
                                 {/* Submit Button */}
-                                <Grid item xs={12}>
+                                <Grid item xs={12} sx={{ mt: 2 }}>
                                     <Button
                                         variant="contained"
                                         type="submit"
