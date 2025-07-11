@@ -75,7 +75,7 @@ function Collaborate() {
         {
             icon: <FmdGoodIcon/>,
             title: "Address Business",
-            description: "City Center complex, 203, Savlia Circle, Yogi Chowk Ground, Chikuwadi, Nana Varachha, Surat, Gujarat 395006"
+            description: "203-Second Floor, City Center complex, Yogi Chowk, Nana Varachha, Surat, Gujarat 395010"
         },
         {
             icon: <SmsIcon/>,

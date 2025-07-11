@@ -41,7 +41,7 @@ function Footer2() {
         contact: {
             title: "Get in Touch!",
             details: [
-                "City Center complex, 203, Savlia Circle, Yogi Chowk Ground, Chikuwadi, Nana Varachha, Surat, Gujarat 395006",
+                "203-Second Floor, City Center complex, Yogi Chowk, Nana Varachha, Surat, Gujarat 395010",
                 "Call us: +91 79844 43901",
                 "Email: jbs.technology26@gmail.com",
                 "Mon–Sat: 8:00am–7:00pm / Holiday: Closed",
@@ -50,12 +50,12 @@ function Footer2() {
         services: {
             title: "Company",
             links: [
-                "About",
+                "About Us",
                 "Services",
                 "Portfolio",
-                "Blog",
+                "Blogs",
                 "Careers",
-                "Contact",
+                "Contact Us",
             ]
         },
         newsletter: {

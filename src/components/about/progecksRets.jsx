@@ -58,7 +58,7 @@ const ProgecksRets = () => {
             >
                 <Grid container spacing={4}>
                     {stats.map((stat, index) => (
-                        <Grid item xs={12} sm={6} md={6} lg={3} key={index} sx={{display:'flex' , justifyContent:'center'}}>
+                        <Grid item xs={12} sm={6} md={6} lg={3} key={index} sx={{display:'flex' , justifyContent: {lg:'center' , xs:'start'}}}>
                             <Box
                                 sx={{
                                     display: "flex",
