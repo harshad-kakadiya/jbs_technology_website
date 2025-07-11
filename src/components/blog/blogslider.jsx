@@ -29,8 +29,8 @@ const slides = [
         comments: "Comments",
         title: "5 Impactful Elements That Promote IT and Business",
         description:
-            "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis. Pellentesque leo eros," +
-            " sollicitudin vel lacinia non,…",
+            "iscover the core elements that seamlessly connect IT innovations with strategic business goals.\n" +
+            "Unlock transformative growth by aligning technology solutions with real-world business impact.",
         button: "Continue Reading",
     },
     {
@@ -43,8 +43,8 @@ const slides = [
         comments: "Comments",
         title: "Revolutionizing the Future of Financial Services",
         description:
-            "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis. Pellentesque leo eros," +
-            " sollicitudin vel lacinia non,…",
+            "Explore how emerging technologies are transforming financial services with enhanced efficiency, security, and personalization.\n" +
+            "Step into a smarter tomorrow powered by AI, blockchain, and data-driven innovation in finance.",
         button: "Continue Reading",
     },
     {
@@ -57,15 +57,15 @@ const slides = [
         comments: "Comments",
         title: "A Guide to Embracing Meaningful Change in Banking",
         description:
-            "Quisque consectetur purus ut suscipit faucibus. Sed at ornare ligula. Quisque dignissim justo arcu, ut viverra elit venenatis. Pellentesque leo eros," +
-            " sollicitudin vel lacinia non,…",
+            "Learn how banks can navigate industry shifts by embracing innovation and prioritizing customer-centric strategies.\n" +
+            "Drive sustainable growth by aligning digital transformation with evolving customer expectations.",
         button: "Continue Reading",
     },
 ];
-function Blogslider() {
+function    Blogslider() {
     const router = useRouter();
     return (
-        <Box sx={{ width: "100%", height: "100%", position: "relative", padding: "0 0 110px 0" }}>
+        <Box sx={{ width: "100%", height: "100%", position: "relative", padding: "90px 0 90px 0" }}>
             <Container maxWidth={'xl'}>
                 <Swiper
                     modules={[EffectFade, Autoplay]}

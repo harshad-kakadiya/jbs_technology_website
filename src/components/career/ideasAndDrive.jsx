@@ -60,45 +60,40 @@ function IdeasAndDrive() {
                         </Box>
 
                         {/* Circle Button Section */}
-                        <Box
-                            sx={{
-                                width: 216,
-                                height: 216,
-                                backgroundColor: '#121C27',
-                                borderRadius: '50%',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                color: 'white',
-                                textAlign: 'center',
-                                cursor: 'pointer',
+                        <a href="#scrolling" style={{ textDecoration: 'none' }}>
+                            <Box
+                                sx={{
+                                    width: 216,
+                                    height: 216,
+                                    backgroundColor: '#121C27',
+                                    borderRadius: '50%',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    color: 'white',
+                                    textAlign: 'center',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.3s ease',
+                                    '&:hover': {
+                                        backgroundColor: '#121C27', // slightly lighter on hover
+                                        transform: 'scale(1.05)',
+                                    },
+                                }}
+                            >
+                                <WorkOutlineIcon sx={{ fontSize: 40, mb: 1 }} />
+                                <Typography variant="body1" sx={{ fontWeight: 500 }}>
+                                    View Open Positions
+                                </Typography>
+                            </Box>
+                        </a>
 
-                            }}
-                        >
-                            <WorkOutlineIcon sx={{fontSize: 40, mb: 1}}/>
-                            <Typography variant="body1" sx={{fontWeight: 500}}>
-                                View Open Positions
-                            </Typography>
-                        </Box>
                     </Box>
                 </Container>
             </Box>
 
 
-            {/*<Box*/}
-            {/*    sx={{*/}
 
-            {/*        mx: { md: "30px", lg:"40px"}*/}
-            {/*    }}*/}
-            {/*>*/}
-            {/*    <Typography*/}
-            {/*        component={'img'}*/}
-            {/*        src={img.src}*/}
-            {/*        sx={{width: '100%', height: {md:'600px',sm:"full",xs:"full"}, objectFit: {lg:"cover",xs:"contain"}, objectPosition: "top"}}*/}
-            {/*    />*/}
-
-            {/*</Box>*/}
         </>
     );
 }

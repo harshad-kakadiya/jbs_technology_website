@@ -76,7 +76,7 @@ const Industry = () => {
                                 <Box>
                                     <Typography
                                         variant="h5"
-                                        sx={{fontSize: '22px', fontWeight: '500', lineHeight: '35px', mb: '18px'}}
+                                        sx={{fontSize: '22px', fontWeight: '500', lineHeight: '35px', mb: '10px'}}
                                     >
                                         {feature.title}
                                     </Typography>

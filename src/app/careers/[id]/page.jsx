@@ -230,9 +230,10 @@ function Page() {
             <Container maxWidth="lg" sx={{py: 12}}>
                 <Box textAlign="center">
                     <Typography gutterBottom sx={{
-                        fontSize: {xs: "33px", lg: "40px"},
+                         fontSize: { xs: "30px", md: "35px", lg: "45px" },
                         fontWeight: 600,
-                        color: "#1A1F26"
+                        color: "#1A1F26",
+                        mb:{lg:6 , xs:4}
                     }}>
                         {job.title}
                     </Typography>
