@@ -14,7 +14,7 @@ import imgBlack from '../../assets/images/logo/logo-white.png';
 import imgWhite from '../../assets/images/logo/logo-white.png';
 import EastIcon from '@mui/icons-material/East';
 import {usePathname, useRouter} from 'next/navigation';
-import {List, ListItem, ListItemText, Typography} from '@mui/material';
+import {Container, List, ListItem, ListItemText, Typography} from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
 function Navigation() {
@@ -54,93 +54,95 @@ function Navigation() {
                     zIndex: 999,
                 }}
             >
-                <Toolbar sx={{justifyContent: 'space-between'}}>
-                    <Box sx={{height: '100%', display: 'flex', alignItems: 'center'}}>
-                        <Box sx={{filter: 'drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2))'}}>
-                            <Link href="/" passHref>
-                                <img
-                                    src={(scrolled || path === '/') ? imgBlack.src : imgWhite.src}
-                                    alt="Logo"
-                                    style={{width: '100%', height: '80px', objectFit: 'cover'}}
-                                />
-                            </Link>
-                        </Box>
-                    </Box>
-
-                    {/* Desktop Navigation */}
-                    <Box sx={{display: 'flex', alignItems: 'center' }}>
-                        <Box sx={{display: {xs: 'none', lg: 'flex'}, alignItems: 'center'}}>
-                            <Box sx={{display: 'flex', gap: '15px', marginLeft: '20px'}}>
-                                {navItems.map(({name, route}) => (
-                                    <Link key={name} href={route} passHref>
-                                        <Typography
-                                            sx={{
-                                                textTransform: 'capitalize',
-                                                color: (scrolled || path === '/') ? '#000' : '#fff',
-                                                cursor: 'pointer',
-                                                fontSize: 15,
-                                                margin: '0 15px',
-                                                position: 'relative',
-                                                display: 'inline-block',
-                                                '&::after': {
-                                                    content: '""',
-                                                    position: 'absolute',
-                                                    left: 0,
-                                                    bottom: -2,
-                                                    height: '2px',
-                                                    width: path === route ? '100%' : '0%',
-                                                    backgroundColor: (scrolled || path === '/') ? '#000' : '#fff',
-                                                    transition: 'width 0.4s ease-in-out',
-                                                },
-                                                '&:hover::after': {
-                                                    width: '100%',
-                                                },
-                                            }}
-                                        >
-                                            {name}
-                                        </Typography>
-                                    </Link>
-                                ))}
+                <Container maxWidth={'xl'}>
+                    <Box sx={{justifyContent: 'space-between' , display: 'flex', alignItems: 'center'}}>
+                        <Box sx={{height: '100%', display: 'flex', alignItems: 'center'}}>
+                            <Box sx={{filter: 'drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2))'}}>
+                                <Link href="/" passHref>
+                                    <img
+                                        src={(scrolled || path === '/') ? imgBlack.src : imgWhite.src}
+                                        alt="Logo"
+                                        style={{width: '100%', height: '80px', objectFit: 'cover'}}
+                                    />
+                                </Link>
                             </Box>
                         </Box>
 
-                        {/* Desktop Button */}
-                        <Box sx={{display: {lg: 'flex', xs: 'none'} , pl:5}}>
-                            <Button
-                                variant="outlined"
+                        {/* Desktop Navigation */}
+                        <Box sx={{display: 'flex', alignItems: 'center'}}>
+                            <Box sx={{display: {xs: 'none', lg: 'flex'}, alignItems: 'center'}}>
+                                <Box sx={{display: 'flex', gap: '15px', marginLeft: '20px'}}>
+                                    {navItems.map(({name, route}) => (
+                                        <Link key={name} href={route} passHref>
+                                            <Typography
+                                                sx={{
+                                                    textTransform: 'capitalize',
+                                                    color: (scrolled || path === '/') ? '#000' : '#fff',
+                                                    cursor: 'pointer',
+                                                    fontSize: 15,
+                                                    margin: '0 15px',
+                                                    position: 'relative',
+                                                    display: 'inline-block',
+                                                    '&::after': {
+                                                        content: '""',
+                                                        position: 'absolute',
+                                                        left: 0,
+                                                        bottom: -2,
+                                                        height: '2px',
+                                                        width: path === route ? '100%' : '0%',
+                                                        backgroundColor: (scrolled || path === '/') ? '#000' : '#fff',
+                                                        transition: 'width 0.4s ease-in-out',
+                                                    },
+                                                    '&:hover::after': {
+                                                        width: '100%',
+                                                    },
+                                                }}
+                                            >
+                                                {name}
+                                            </Typography>
+                                        </Link>
+                                    ))}
+                                </Box>
+                            </Box>
+
+                            {/* Desktop Button */}
+                            <Box sx={{display: {lg: 'flex', xs: 'none'}, pl: 5}}>
+                                <Button
+                                    variant="outlined"
+                                    sx={{
+                                        textTransform: 'capitalize',
+                                        borderRadius: '30px',
+                                        padding: '12px 30px',
+                                        borderColor: (scrolled || path === '/') ? '#000' : '#fff',
+                                        color: (scrolled || path === '/') ? '#000' : '#fff',
+                                        ':hover': {backgroundColor: '#000', color: '#fff'},
+                                    }}
+                                    onClick={() => router.push('/contact')}
+                                >
+                                    Plan With Us
+                                    <Box sx={{marginLeft: '10px', display: 'flex', alignItems: 'center'}}>
+                                        <EastIcon/>
+                                    </Box>
+                                </Button>
+                            </Box>
+                        </Box>
+
+                        {/* Mobile Menu Icon */}
+                        <Box sx={{display: {lg: 'none', xs: 'flex'}, alignItems: 'center', gap: '15px'}}>
+                            <IconButton
                                 sx={{
-                                    textTransform: 'capitalize',
-                                    borderRadius: '30px',
-                                    padding: '12px 30px',
-                                    borderColor: (scrolled || path === '/') ? '#000' : '#fff',
+                                    border: '1px solid #8E8E8EFF',
                                     color: (scrolled || path === '/') ? '#000' : '#fff',
+                                    display: {lg: 'none', xs: 'flex'},
                                     ':hover': {backgroundColor: '#000', color: '#fff'},
                                 }}
-                                onClick={() => router.push('/contact')}
+                                onClick={() => setMenuOpen(!menuOpen)}
                             >
-                                Plan With Us
-                                <Box sx={{marginLeft: '10px', display: 'flex', alignItems: 'center'}}>
-                                    <EastIcon/>
-                                </Box>
-                            </Button>
+                                {menuOpen ? <CloseIcon/> : <MenuIcon style={{fontSize: '26px'}}/>}
+                            </IconButton>
                         </Box>
                     </Box>
-
-                    {/* Mobile Menu Icon */}
-                    <Box sx={{display: {lg: 'none', xs: 'flex'}, alignItems: 'center', gap: '15px'}}>
-                        <IconButton
-                            sx={{
-                                border: '1px solid #8E8E8EFF',
-                                color: (scrolled || path === '/') ? '#000' : '#fff',
-                                display: {lg: 'none', xs: 'flex'},
-                                ':hover': {backgroundColor: '#000', color: '#fff'},
-                            }}
-                            onClick={() => setMenuOpen(!menuOpen)}
-                        >
-                            {menuOpen ? <CloseIcon/> : <MenuIcon style={{fontSize: '26px'}}/>}
-                        </IconButton>
-                    </Box>
-                </Toolbar>
+                </Container>
             </AppBar>
 
             {/* Mobile Dropdown Menu */}
