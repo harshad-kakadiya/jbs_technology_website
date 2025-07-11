@@ -9,7 +9,7 @@ import {
     Grid,
 } from "@mui/material";
 import {Facebook, Twitter, Instagram, Telegram} from "@mui/icons-material";
-import img1 from "../../assets/images/logo/logo.png";
+import img1 from "../../assets/images/logo/logo-white.png";
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
