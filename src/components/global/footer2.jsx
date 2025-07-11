@@ -33,7 +33,7 @@ function Footer2() {
         contact: {
             title: "Get in Touch!",
             details: [
-                "203, City Center, Savlia Cir, Sanman Society, Mansarovar Society, Yoginagar Society, Surat, Gujarat 395006",
+                "City Center complex, 203, Savlia Circle, Yogi Chowk Ground, Chikuwadi, Nana Varachha, Surat, Gujarat 395006",
                 "Call us: +91 79844 43901",
                 "Email: jbs.technology26@gmail.com",
                 "Mon–Sat: 8:00am–7:00pm / Holiday: Closed",
