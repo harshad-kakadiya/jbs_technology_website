@@ -20,7 +20,7 @@ function Businessventure() {
     ];
 
     return (
-        <Box sx={{  padding: "90px 32px 0" ,backgroundColor: '#141C25'}}>
+        <Box sx={{  padding: {sm:"90px 32px 0" , xs:'40px 32px 0'} ,backgroundColor: '#141C25'}}>
             <Container maxWidth={"xl"}>
                 <Grid container spacing={3}>
                     <Grid item lg={5}>

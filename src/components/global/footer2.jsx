@@ -41,7 +41,7 @@ function Footer2() {
         contact: {
             title: "Get in Touch!",
             details: [
-                "203,Second Floor, City Center complex, Yogi Chowk, Nana Varachha, Surat, Gujarat 395010",
+                "203, Second Floor, City Center complex, Yogi Chowk, Nana Varachha, Surat, Gujarat 395010",
                 "Call us: +91 79844 43901",
                 "Email: jbs.technology26@gmail.com",
                 "Mon–Sat: 8:00am–7:00pm / Holiday: Closed",

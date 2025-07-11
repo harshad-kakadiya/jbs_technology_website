@@ -45,7 +45,7 @@ function KeyBenefits() {
     ];
 
     return (
-        <Box sx={{pb: '120px'}}>
+        <Box sx={{pb: {sm:'90px' , xs:'40px'}}}>
             <Container maxWidth={'xl'}>
                 <Grid container spacing={4}>
                     <Grid item xs={12} lg={3}>
@@ -124,7 +124,7 @@ function KeyBenefits() {
                                 <Typography
                                     sx={{
                                         fontSize: { xs: "30px", md: "35px", lg: "45px" },
-                                        fontWeight: "700",
+                                        fontWeight: "500",
                                         color: "#0E314C",
                                         padding: "10px 0 30px 0",
                                     }}
