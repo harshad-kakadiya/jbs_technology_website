@@ -26,19 +26,37 @@ import aw11 from "../../assets/images/about/customers/aw11.webp";
 import aw12 from "../../assets/images/about/customers/aw12.webp";
 
 const review = [
+
     {
         logo: aw9,
+        name: "Sarah Williams",
+        company: "Director, Radical Orange Pty Ltd.",
+        rating: 5,
+        testimonial: "The team at JBS Technology Business Consulting has been absolutely great to work with. They truly went above and beyond, streamlining all of our accounts so we can stay focused on growing our business. Their support has made a real difference."
     },
     {
         logo: aw10,
+        name: "John Doe",
+        company: "Operations Manager, Example Corp.",
+        rating: 5,
+        testimonial: "Outstanding service and support from start to finish. The Jbs Technology team was incredibly responsive and professional throughout our entire project implementation."
     },
     {
         logo: aw11,
+        name: "Jane Smith",
+        company: "Startup Studio",
+        rating: 5,
+        testimonial: "I highly recommend Jbs Technology to any business looking for reliable consulting services. They made our digital transformation seamless and remarkably efficient."
     },
     {
         logo: aw12,
+        name: "Mark Johnson",
+        company: "Growth Solutions Ltd.",
+        rating: 5,
+        testimonial: "Exceptional attention to detail and an unwavering commitment to customer satisfaction. The team's expertise helped us achieve results beyond our expectations."
     },
 ];
+
 const Customers = () => {
     const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
         height: 3,
@@ -58,6 +76,7 @@ const Customers = () => {
             }),
         },
     }));
+
     return (
         <Box sx={{ pt: 5, padding:"120px 0" }}>
             <Container maxWidth="xl">
@@ -114,7 +133,7 @@ const Customers = () => {
                                 <Typography
                                     variant="h6"
                                     sx={{
-                                        fontSize: { xs: "14px", sm: "16px", md: "16 px" },
+                                        fontSize: { xs: "14px", sm: "16px", md: "16px" },
                                         pb: 2,
                                         color: "#0A1119",
                                         fontWeight: "500",
@@ -138,6 +157,9 @@ const Customers = () => {
                                         className="mySwiper"
                                         spaceBetween={20}
                                         slidesPerView={1}
+                                        loop={true}
+                                        loopFillGroupWithBlank={true}
+                                        centeredSlides={false}
                                         breakpoints={{
                                             640: { slidesPerView: 1, spaceBetween: 20 },
                                             768: { slidesPerView: 1, spaceBetween: 30 },
@@ -156,11 +178,7 @@ const Customers = () => {
                                                             textAlign: { xs: "start", md: "left" },
                                                         }}
                                                     >
-                                                        Giles and his team at Jbs Technology Business Consulting
-                                                        have been absolutely great to work with and they
-                                                        definitely have gone above and Jbs Technology for us by
-                                                        streamlining all of our accounts so that we can
-                                                        focus.
+                                                        {item.testimonial}
                                                     </Typography>
                                                 </Box>
                                                 <Box
@@ -181,7 +199,7 @@ const Customers = () => {
                                                             }}
                                                         >
                                                             <Avatar
-                                                                src={item.logo}
+                                                                src={item.logo.src}
                                                                 alt=""
                                                                 sx={{
                                                                     width: 76,
@@ -223,11 +241,11 @@ const Customers = () => {
                                                                             },
                                                                         }}
                                                                     >
-                                                                        Heather Smith - Talk
+                                                                        {item.name}
                                                                     </Typography>
                                                                     <Rating
                                                                         name="read-only"
-                                                                        value={5}
+                                                                        value={item.rating}
                                                                         readOnly
                                                                         sx={{
                                                                             color: "#0A1119",
@@ -248,7 +266,7 @@ const Customers = () => {
                                                                         textAlign: { xs: "center", md: "left" },
                                                                     }}
                                                                 >
-                                                                    Director, Radical Orange Pty Ltd.
+                                                                    {item.company}
                                                                 </Typography>
                                                             </Box>
                                                         </Box>
@@ -256,21 +274,22 @@ const Customers = () => {
                                                 </Box>
                                             </SwiperSlide>
                                         ))}
-                                        <Box
-                                            sx={{
-                                                display: "flex",
-                                                justifyContent: { xs: "center", md: "end" },
-                                                gap: 2,
-                                            }}
-                                        >
-                                            <IconButton className="custom-prev">
-                                                <ArrowBack />
-                                            </IconButton>
-                                            <IconButton className="custom-next">
-                                                <ArrowForward />
-                                            </IconButton>
-                                        </Box>
                                     </Swiper>
+                                    <Box
+                                        sx={{
+                                            display: "flex",
+                                            justifyContent: { xs: "center", md: "end" },
+                                            gap: 2,
+                                            mt: 3,
+                                        }}
+                                    >
+                                        <IconButton className="custom-prev">
+                                            <ArrowBack />
+                                        </IconButton>
+                                        <IconButton className="custom-next">
+                                            <ArrowForward />
+                                        </IconButton>
+                                    </Box>
                                 </Box>
                             </Box>
                         </Grid>
