@@ -61,6 +61,7 @@ function Businessventure() {
                                     </Box>
                                     <Box sx={{
                                         color: "#000",
+                                        fontSize: "21px",
                                         fontWeight: "bold",
                                         paddingLeft: "15px"
                                     }}>

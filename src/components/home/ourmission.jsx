@@ -13,12 +13,12 @@ import {useRouter} from "next/navigation";
 const slides = [
     {
         title: "Our Mission",
-        description: "At JBS Technology in Surat, our mission is to deliver custom software, web applications, and future ready products that help businesses grow through technology",
+        description: "At JBS Technology in Surat, our mission is to deliver custom software, web applications, and future-ready products that help businesses grow through technology",
         img:img1
     },
     {
         title: "Our Vision",
-        description: "To be a trusted technology partner, offering scalable digital solutions that drive innovation and global business growth",
+        description: "Our vision is to be a trusted technology partner, offering scalable digital solutions that drive innovation and global business growth",
         img:img2
     }
 
@@ -30,7 +30,10 @@ const WestIcon = () => (
     </svg>
 );
 const EastIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path fill="currentColor" d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+        <path fill="currentColor"
+              d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"/>
+    </svg>
 );
 
 
@@ -97,7 +100,7 @@ function Ourmission() {
                                 }}
                             >
                                 At JBS Technology in Surat, Gujarat, we offer custom software solutions, scalable
-                                digital experiences, and web applications As a trusted technology partner, our expert
+                                digital experiences, and web applications. As a trusted technology partner, our expert
                                 software engineers help businesses grow through future-ready digital products tailored
                                 to your needs
 

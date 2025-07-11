@@ -44,7 +44,7 @@ const TeamPage = () => {
                                 letterSpacing: '2.5px',
                             }}
                         >
-                            THE TEAMS MEMBER
+                            THE TEAM MEMBERS
                         </Typography>
                         <Typography
                             sx={{

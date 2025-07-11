@@ -1,10 +1,10 @@
 'use client';
 
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import {Box, Button, Container, Grid, Typography} from "@mui/material";
 import React from "react";
 import WestIcon from "@mui/icons-material/West";
 import EastIcon from "@mui/icons-material/East";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper, SwiperSlide} from "swiper/react";
 
 import log1 from "../../assets/images/about/clients/brand-11.png";
 import log2 from "../../assets/images/about/clients/brand-22.png";
@@ -25,14 +25,14 @@ import log88 from "../../assets/images/about/clients/brand-8.png";
 import {Autoplay, EffectFade} from "swiper/modules";
 
 const logoData = [
-    { id: 1, logo1: log1, logo11: log11 },
-    { id: 2, logo1: log2, logo11: log22 },
-    { id: 3, logo1: log3, logo11: log33 },
-    { id: 4, logo1: log4, logo11: log44 },
-    { id: 5, logo1: log5, logo11: log55 },
-    { id: 6, logo1: log6, logo11: log66 },
-    { id: 7, logo1: log7, logo11: log77 },
-    { id: 8, logo1: log8, logo11: log88 },
+    {id: 1, logo1: log1, logo11: log11},
+    {id: 2, logo1: log2, logo11: log22},
+    {id: 3, logo1: log3, logo11: log33},
+    {id: 4, logo1: log4, logo11: log44},
+    {id: 5, logo1: log5, logo11: log55},
+    {id: 6, logo1: log6, logo11: log66},
+    {id: 7, logo1: log7, logo11: log77},
+    {id: 8, logo1: log8, logo11: log88},
 ];
 
 const Clients = () => {
@@ -53,8 +53,8 @@ const Clients = () => {
     return (
         <Box>
             <Container maxWidth="xl">
-                <Box sx={{ mt: 7 }}>
-                    <Grid container spacing={2} sx={{ mt: 8 }}>
+                <Box sx={{mt: 7}}>
+                    <Grid container spacing={2} sx={{mt: 8}}>
                         <Grid item xs={12} sm={6}>
                             <Typography
                                 variant="span"
@@ -70,9 +70,9 @@ const Clients = () => {
                             <Typography
                                 variant="h3"
                                 sx={{
-                                    fontSize: { xs: "30px", md: "35px", lg: "45px" },
+                                    fontSize: {xs: "30px", md: "35px", lg: "45px"},
                                     fontWeight: "600",
-                                    lineHeight: { xs: "30px", sm: "30px" },
+                                    lineHeight: {xs: "30px", sm: "30px"},
                                     mt: 2,
                                 }}
                             >
@@ -85,20 +85,19 @@ const Clients = () => {
                                 sx={{
                                     textAlign: "start",
                                     display: "flex",
-                                    justifyContent: { xs: "start", sm: "center" },
+                                    justifyContent: {xs: "start", sm: "center"},
                                 }}
                             >
                                 <Typography
                                     sx={{
-                                        width: { xs: "100%", md: "80%" },
+                                        width: {xs: "100%", md: "80%"},
                                         color: "#4B535D",
                                         fontSize: "16px",
                                         lineHeight: "26px",
                                     }}
                                 >
-                                    From an early stage start-up’s growth strategies to helping
-                                    existing businesses, we have done it all! The results speak
-                                    for themselves Our services work
+                                    From an early-stage startup’s growth strategies to helping existing businesses —
+                                    we’ve done it all! The results speak for themselves. Our services work
                                 </Typography>
                             </Box>
                         </Grid>
@@ -109,7 +108,7 @@ const Clients = () => {
                         sx={{
                             my: 9,
                             position: "relative",
-                            px: { xs: 2, sm: 4 },
+                            px: {xs: 2, sm: 4},
                         }}
                     >
                         <Swiper
@@ -124,15 +123,15 @@ const Clients = () => {
                             }}
                             speed={500} // smooth transition
                             breakpoints={{
-                                1200: { slidesPerView: 5 },
-                                992: { slidesPerView: 4 },
-                                768: { slidesPerView: 3 },
-                                425: { slidesPerView: 2 },
-                                320: { slidesPerView: 1 },
+                                1200: {slidesPerView: 5},
+                                992: {slidesPerView: 4},
+                                768: {slidesPerView: 3},
+                                425: {slidesPerView: 2},
+                                320: {slidesPerView: 1},
                             }}
                         >
 
-                        {logoData.map((logo) => (
+                            {logoData.map((logo) => (
                                 <SwiperSlide key={logo.id}>
                                     <Box
                                         sx={{
@@ -205,60 +204,64 @@ const Clients = () => {
                         <Button
                             onClick={handlePrev}
                             sx={{
-                                display: { xs: "none", lg: "flex" },
+                                display: {xs: "none", lg: "flex"},
                                 position: "absolute",
                                 top: "50%",
                                 left: 0,
                                 transform: "translateY(-50%)",
                                 zIndex: 10,
-                                border: '1px solid gray',
                                 borderRadius: '50%',
                                 height: '60px',
                                 width: '60px',
-                                minWidth: "unset", // prevent MUI from forcing default button width
+                                minWidth: "unset",
                                 padding: 0,
                                 alignItems: "center",
                                 justifyContent: "center",
                                 color: "cardTextGrey",
                                 backgroundColor: "#fff",
-                                boxShadow: 2,
+                                boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.2)",
                                 transition: "0.3s",
+                                opacity: 0.8,
                                 "&:hover": {
                                     transform: "scale(0.9) translateY(-50%)",
+                                    opacity: 0.6,
                                 },
                             }}
                         >
-                            <WestIcon />
+                            <WestIcon/>
                         </Button>
 
                         <Button
                             onClick={handleNext}
                             sx={{
-                                display: { xs: "none", lg: "flex" },
+                                display: {xs: "none", lg: "flex"},
                                 position: "absolute",
                                 top: "50%",
                                 right: 0,
                                 transform: "translateY(-50%)",
                                 zIndex: 10,
-                                border: '1px solid gray',
                                 borderRadius: '50%',
                                 height: '60px',
                                 width: '60px',
-                                minWidth: "unset", // prevent MUI from forcing default button width
+                                minWidth: "unset",
                                 padding: 0,
                                 alignItems: "center",
                                 justifyContent: "center",
                                 color: "cardTextGrey",
                                 backgroundColor: "#fff",
-                                boxShadow: 2,
+                                boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.2)",
+
                                 transition: "0.3s",
+                                opacity: 0.8,
                                 "&:hover": {
                                     transform: "scale(0.9) translateY(-50%)",
+                                    opacity: 0.6,
                                 },
                             }}
                         >
-                            <EastIcon fontSize="small" />
+                            <EastIcon fontSize="small"/>
                         </Button>
+
 
                     </Box>
                 </Box>

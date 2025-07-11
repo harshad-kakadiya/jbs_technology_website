@@ -27,7 +27,7 @@ function Page() {
     if (!project) {
         return (
             <div className="text-center py-20 text-white text-xl">
-                Blog not found.
+                Blogs not found.
             </div>
         );
     }

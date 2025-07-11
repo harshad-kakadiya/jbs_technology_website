@@ -13,14 +13,14 @@ const slides = [
     {
         title: "Top-Rated Software Development Company",
         description:
-            "Unlock scalable growth with a trusted software engineering partner We deliver cutting edge custom software solutions, web applications, and digital experiences designed to accelerate your business success",
+            "Unlock scalable growth with a trusted software engineering partner. We deliver cutting-edge custom software solutions, web applications, and digital experiences designed to accelerate your business success",
         button: "Book Your Free Consultation",
         image: img1,
     },
     {
         title: "Custom Software Solutions You Can Trust",
         description:
-            "Partner with a reliable technology company to build future ready digital products Our expert developers craft secure, scalable, and innovative solutions tailored to your business goals",
+            "Partner with a reliable technology company to build future-ready digital products. Our expert developers craft secure, scalable, and innovative solutions tailored to your business goals",
         button: "Book Your Free Consultation",
         image: img2,
     }
