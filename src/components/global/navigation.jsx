@@ -45,12 +45,12 @@ function Navigation() {
             <AppBar
                 position={(!scrolled && path === '/') ? 'static' : 'fixed'}
                 sx={{
-                    backgroundColor: (scrolled || path === '/') ? 'white' : 'rgba(128, 128, 128, 0.5)',
+                    backgroundColor: (scrolled || path === '/') ? 'white' : 'rgba(128, 128, 128, 0.2)',
                     color: (scrolled || path === '/') ? '#000' : '#fff',
                     padding: '10px 0',
                     boxShadow: (scrolled || path === '/') ? '0 2px 10px rgba(0, 0, 0, 0.1)' : 'none',
                     transition: 'all 0.3s ease',
-                    backdropFilter: 'blur(8px)',
+                    backdropFilter: 'blur(12px)',
                     zIndex: 999,
                 }}
             >
