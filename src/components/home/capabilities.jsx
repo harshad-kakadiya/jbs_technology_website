@@ -34,7 +34,7 @@ function Capabilities() {
         },
         {
             title: "Artificial Intelligence",
-            describtion: "Amplify your business with TechM by infusing AI in every aspect of your business, democratizing AI responsibly",
+            describtion: "Amplify your business with JBS Technology by integrating AI into every layer of your operations for smarter, faster, and scalable growth., democratizing AI responsibly",
             img: Img1,
         },
         {
