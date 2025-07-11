@@ -5,7 +5,7 @@ import Img1 from '../../assets/images/services/1services/Img1.svg';
 
 function Software() {
     return (
-        <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center',py:"120px"}}>
+        <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center',py: {md:"90px" ,xs:'40px' , sm:'50px'}}}>
             <Container maxWidth={"xl"}>
 
                 <Box sx={{ width: '100%', px: {xs:'20px',md:"50px" , lg:'unset'} }}>
@@ -13,7 +13,7 @@ function Software() {
                         sx={{
                             fontSize: { xs: "30px", md: "35px", lg: "45px" },
                             fontWeight: "500",
-                            lineHeight: "75px",
+                            lineHeight: {md:"75px" , sm:'55px' },
                             display: "flex",
                             justifyContent: { xs: "center", lg: "flex-start" },
                             alignItems: "center",
