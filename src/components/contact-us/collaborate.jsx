@@ -168,7 +168,7 @@ function Collaborate() {
                                                                     display: "flex",
                                                                     justifyContent: "center",
                                                                     alignItems: "center",
-                                                                    p:2
+                                                                    p:2,
                                                                 }}
                                                             >
                                                                 {item.icon}
