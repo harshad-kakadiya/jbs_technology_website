@@ -80,7 +80,9 @@ function Footer2() {
             <Container maxWidth="xl">
                 <Grid container alignItems="center" spacing={2}>
                     <Grid item xs={12} md={4}>
-                        <Box sx={{display: "flex", justifyContent: {xs: "center", md: "left"} , height:'100px'}}>
+                        <Box sx={{display: "flex", justifyContent: {xs: "center", md: "left"} , height:'100px'}}
+                            onClick={() => router.push('/')}
+                        >
                             <img
                                 src={footerData.logo.src}
                                 alt="Logo"
