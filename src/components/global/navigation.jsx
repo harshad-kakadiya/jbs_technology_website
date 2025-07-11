@@ -78,7 +78,7 @@ function Navigation() {
                                             color: (scrolled || path === '/') ? '#000' : '#fff',
                                             cursor: 'pointer',
                                             fontSize: 15,
-                                            padding: '0 15px',
+                                            margin: '0 15px',
                                             position: 'relative',
                                             display: 'inline-block',
                                             '&::after': {
