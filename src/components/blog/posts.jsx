@@ -14,6 +14,7 @@ import img3 from "../../assets/images/blog/posts/img3.jpg";
 import img4 from "../../assets/images/blog/posts/img4.jpg";
 import img5 from "../../assets/images/blog/posts/img6.jpeg";
 import img6 from "../../assets/images/blog/posts/img7.jpg";
+import img7 from "../../assets/images/blog/posts/csdcfad.jpg";
 import Image from "next/image";
 import EastIcon from '@mui/icons-material/East';
 import {useRouter} from "next/navigation";
@@ -69,7 +70,7 @@ function Posts() {
             navigate:"/blog/corporatee",
             date: "18 April 2024",
             img: Img7,
-            smallImg: img6,
+            smallImg: img7,
             btn: "Corporate",
             title: "A New Age for Trade & Supply Chain Finance",
             describtion: "See how digital transformation is revolutionizing trade operations and supply chain finance",
@@ -78,7 +79,7 @@ function Posts() {
     return (
         <Box>
             <Container maxWidth={"xl"}>
-                <Typography variant="h3" component="h3" sx={{ fontWeight: 500, marginBottom: "70px",paddingLeft:"15px" }}>
+                <Typography sx={{ fontWeight: 500, marginBottom: "70px",paddingLeft:"15px",fontSize: { xs: "30px", md: "35px", lg: "45px" }, }}>
                     Recent Posts
                 </Typography>
                 <Grid container spacing={3}>
@@ -113,7 +114,7 @@ function Posts() {
                                         style={{
                                             borderRadius: "50%",
                                             marginRight: "10px",
-                                            objectFit:"contain"
+                                            objectFit:"cover"
                                         }}
                                     />
                                     <Typography variant="body2" sx={{ color: "mediumGray" }}>

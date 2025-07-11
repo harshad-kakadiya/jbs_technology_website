@@ -82,7 +82,7 @@ function Ourproducts() {
                 <Box  sx={{ padding: 4 }}>
                     <Box sx={{
                         fontSize: { xs: "30px", md: "35px", lg: "45px" },
-                        fontWeight: "bold",
+                        fontWeight: "500",
                     }}>
                         The tech behind our products
                     </Box>

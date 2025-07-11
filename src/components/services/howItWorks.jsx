@@ -64,8 +64,8 @@ function HowItWorks() {
                 <Box sx={{ position: 'relative',}}>
                     <Box
                         sx={{
-                            fontSize: "45px",
-                            fontWeight: "700",
+                            fontSize: { xs: "30px", md: "35px", lg: "45px" },
+                            fontWeight: "500",
                             paddingBottom: "30px",
                             textAlign: "center",
                             paddingLeft: "20px",

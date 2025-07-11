@@ -69,7 +69,7 @@ function Openings() {
         <Box sx={{ display: 'flex', justifyContent: 'center', py:8,px:2 }}>
             <Box sx={{ width: '100%', maxWidth: 1200 }}>
                 <Box>
-                    <Typography component={'h1'} sx={{textAlign:'center' ,fontSize: { xs: "30px", md: "35px", lg: "45px" },pb:8 , fontWeight:600}}>Openings</Typography>
+                    <Typography component={'h1'} sx={{textAlign:'center' ,fontSize: { xs: "30px", md: "35px", lg: "45px" },pb:8 , fontWeight:500}}>Openings</Typography>
                 </Box>
                 <Grid container spacing={3}>
                     {jobData.map((job, index) => (

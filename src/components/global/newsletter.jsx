@@ -40,7 +40,7 @@ function Newsletter() {
                                         <DraftsIcon sx={{ fontSize: 'xxx-large' }} />
                                     </Box>
                                     <Box>
-                                        <Typography variant="h5" component="h5" sx={{ color: "#fff", fontWeight: 500, fontSize: "30px", marginBottom: "15px" }}>
+                                        <Typography variant="h5" component="h5" sx={{ color: "#fff", fontWeight: 500,fontSize: { xs: "30px", md: "35px", lg: "45px" }, marginBottom: "15px" }}>
                                             Subscribe to Newsletter
                                         </Typography>
                                         <Box sx={{ color: "#C4C4C4" }}>
