@@ -86,19 +86,19 @@ function IdeasAndDrive() {
             </Box>
 
 
-            <Box
-                sx={{
+            {/*<Box*/}
+            {/*    sx={{*/}
 
-                    mx: { md: "30px", lg:"40px"}
-                }}
-            >
-                <Typography
-                    component={'img'}
-                    src={img.src}
-                    sx={{width: '100%', height: {md:'600px',sm:"full",xs:"full"}, objectFit: {lg:"cover",xs:"contain"}, objectPosition: "top"}}
-                />
+            {/*        mx: { md: "30px", lg:"40px"}*/}
+            {/*    }}*/}
+            {/*>*/}
+            {/*    <Typography*/}
+            {/*        component={'img'}*/}
+            {/*        src={img.src}*/}
+            {/*        sx={{width: '100%', height: {md:'600px',sm:"full",xs:"full"}, objectFit: {lg:"cover",xs:"contain"}, objectPosition: "top"}}*/}
+            {/*    />*/}
 
-            </Box>
+            {/*</Box>*/}
         </>
     );
 }

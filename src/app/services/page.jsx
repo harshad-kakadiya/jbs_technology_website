@@ -7,21 +7,23 @@ import HeadingPage from "../../components/global/headingPage";
 import Software from "@/components/services/software";
 import KeyBenefits from "@/components/services/keyBenefits";
 import HowItWorks from "@/components/services/howItWorks";
+import Newsletter from "@/components/global/newsletter";
 
 function Page() {
-    const breadCrumbs = [
-        {label:'Home',route: '/'},
-        {label:'Services',route: '/services'},
-    ]
+    // const breadCrumbs = [
+    //     {label:'Home',route: '/'},
+    //     {label:'Services',route: '/services'},
+    // ]
     return (
         <>
-            <HeadingPage bgImg={bg1.src} heading={'Services'} breadcrumbs={breadCrumbs}/>
+            <HeadingPage bgImg={bg1.src} heading={'Services'} />
             <Software/>
             <KeyBenefits/>
             {/*<Service />*/}
             <BusinessVenture/>
             <HowItWorks/>
             <Ourproducts/>
+            <Newsletter/>
         </>
     );
 }

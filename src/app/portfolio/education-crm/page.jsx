@@ -20,7 +20,7 @@ import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07
 function Page() {
     const breadCrumbs = [
         {label: 'Home', route: '/'},
-        {label: 'Education CRM', route: '/portfolio/education-crm'},
+        {label: 'Portfolio', route: '/portfolio'},
     ]
 
     const detaile = [
@@ -88,7 +88,7 @@ function Page() {
 
     const slides = [
         {
-            name: 'The Challenges',
+            name: 'Challenges',
             number: '01',
             title1: 'Fragmented Institutional Workflows',
             title2: 'Need for Real-Time Data and Insights',
@@ -106,7 +106,7 @@ function Page() {
             image: phoneimg1,
         },
         {
-            name: 'The Process',
+            name: 'Process',
             number: '02',
             title1: 'Discovery & Requirement Analysis',
             title2: 'System Architecture & Planning',
@@ -126,7 +126,7 @@ function Page() {
             image: phoneimg2,
         },
         {
-            name: 'Key Features',
+            name: 'Features',
             number: '03',
             title1: 'Centralized Dashboard',
             title2: 'Automated Fee Management',

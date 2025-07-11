@@ -14,7 +14,7 @@ const stats = [
         icon: (
             <FavoriteIcon sx={{fontSize: {xs: "20px", sm: "22px", md: "25px"}}}/>
         ),
-        value: 4900,
+        value: 4.9,
         label: "Customer Satisfaction",
     },
     {
@@ -25,6 +25,7 @@ const stats = [
         ),
         value: 5,
         label: "Years Proven Track Record",
+        state:'+',
     },
     {
         icon: (
@@ -40,6 +41,7 @@ const stats = [
         ),
         value: 14,
         label: "Team Members",
+        state:'+',
     },
 ];
 const ProgecksRets = () => {
@@ -83,14 +85,15 @@ const ProgecksRets = () => {
                                         sx={{
                                             fontWeight: "bold",
                                             color: "#333",
-                                            fontSize: {xs: "28px", sm: "36px", md: "55px"},
+                                            fontSize: { xs: 40, sm: 55, md: 60 },
                                         }}
                                     >
                                         {inView ? (
-                                            <CountUp end={stat.value} duration={2} separator="."/>
+                                            <CountUp end={stat.value} duration={2} decimals={index === 0 ? 1 : 0} />
                                         ) : (
                                             "0"
-                                        )}{stat.state}
+                                        )}
+                                        {stat.state}
                                     </Typography>
                                     <Typography
                                         variant="body2"

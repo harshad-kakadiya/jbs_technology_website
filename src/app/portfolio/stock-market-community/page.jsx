@@ -21,7 +21,7 @@ import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07
 function Page() {
     const breadCrumbs = [
         {label: 'Home', route: '/'},
-        {label: 'Stock Market Community', route: '/portfolio/stock-market-community'},
+        {label: 'Portfolio', route: '/portfolio'},
     ]
 
     const detaile = [
@@ -96,7 +96,7 @@ function Page() {
 
     const slides = [
         {
-            name: 'The Challenges',
+            name: 'Challenges',
             number: '01',
             title1: 'Scattered Market Information',
             title2: 'Lack of Beginner-Friendly Resources',
@@ -114,7 +114,7 @@ function Page() {
             image: phoneimg1,
         },
         {
-            name: 'The Process',
+            name: 'Process',
             number: '02',
             title1: 'UX-Focused Design for Accessibility',
             title2: 'Integrated Real-Time APIs',
@@ -132,7 +132,7 @@ function Page() {
             image: phoneimg2,
         },
         {
-            name: 'Key Features',
+            name: 'Features',
             number: '03',
             title1: 'Live Stock Market Tracker',
             title2: 'Beginner Education Hub',

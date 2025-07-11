@@ -3,14 +3,14 @@ import bg1 from "../../assets/images/contact/ct1.webp";
 import Collaborate from "../../components/contact-us/collaborate";
 import Offices from "../../components/contact-us/offices";
 import {Box} from "@mui/material";
-const breadCrumbs = [
-    {label:'Home',route: '/'},
-    {label:'Contact',route: '/contact'},
-]
+// const breadCrumbs = [
+//     {label:'Home',route: '/'},
+//     {label:'Contact',route: '/contact'},
+// ]
 function Page() {
     return (
         <>
-            <HeadingPage bgImg={bg1.src} heading={'Contact Us'} breadcrumbs={breadCrumbs}/>
+            <HeadingPage bgImg={bg1.src} heading={'Contact Us'} />
             <Collaborate/>
             {/*<Offices/>*/}
             <Box>

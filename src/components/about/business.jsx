@@ -16,7 +16,7 @@ const Business = () => {
                 }
                 return prevProgress + increment;
             });
-        }, 50);
+        }, 25);
         const timer2 = setInterval(() => {
             setProgress2((prevProgress) => {
                 if (prevProgress >= 90) {
@@ -25,7 +25,7 @@ const Business = () => {
                 }
                 return prevProgress + increment;
             });
-        }, 50);
+        }, 25);
         const timer3 = setInterval(() => {
             setProgress3((prevProgress) => {
                 if (prevProgress >= 95) {
@@ -34,7 +34,7 @@ const Business = () => {
                 }
                 return prevProgress + increment;
             });
-        }, 50);
+        }, 25);
         return () => {
             clearInterval(timer1);
             clearInterval(timer2);
@@ -45,7 +45,7 @@ const Business = () => {
         <div>
             <Container maxWidth="xl">
                 <Box sx={{
-                    padding:"120px 0"
+                    padding:"90px 0"
                 }}>
                     <Grid container spacing={10} sx={{
                         display:"flex",

@@ -22,7 +22,7 @@ import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07
 function Page() {
     const breadCrumbs = [
         {label: 'Home', route: '/'},
-        {label: 'consumer-co-operative', route: '/portfolio/consumer-co-operative'},
+        {label: 'Portfolio', route: '/portfolio'},
     ]
 
     const detaile = [
@@ -100,7 +100,7 @@ function Page() {
 
     const slides = [
         {
-            name: 'The Challenges',
+            name: 'Challenges',
             number: '01',
             title1: 'Fragmented Operational Systems',
             title2: 'Limited Transparency & Trust',
@@ -118,7 +118,7 @@ function Page() {
             image: phoneimg1,
         },
         {
-            name: 'The Process',
+            name: 'Process',
             number: '02',
             title1: 'Workflow Standardization Across Cooperatives',
             title2: 'Member Management & Role-Based Access',
@@ -136,7 +136,7 @@ function Page() {
             image: phoneimg2,
         },
         {
-            name: 'Key Features',
+            name: 'Features',
             number: '03',
             title1: 'Cooperative Registry & Directory',
             title2: 'Digital Meeting & Voting Tools',

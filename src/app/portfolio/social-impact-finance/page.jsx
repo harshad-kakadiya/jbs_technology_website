@@ -21,7 +21,7 @@ import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07
 function Page() {
     const breadCrumbs = [
         {label: 'Home', route: '/'},
-        {label: 'Social Impact Finance', route: '/portfolio/social-impact-finance'},
+        {label: 'Portfolio', route: '/portfolio'},
     ]
 
     const detaile = [
@@ -93,7 +93,7 @@ function Page() {
 
     const slides = [
         {
-            name: 'The Challenges',
+            name: 'Challenges',
             number: '01',
             title1: 'Exploitation for Education and Employment',
             title2: 'Lack of Safe Financial Alternatives',
@@ -111,7 +111,7 @@ function Page() {
             image: phoneimg1,
         },
         {
-            name: 'The Process',
+            name: 'Process',
             number: '02',
             title1: 'Needs Assessment & Community Research',
             title2: 'Building Safe Financial Access Channels',
@@ -129,7 +129,7 @@ function Page() {
             image: phoneimg2,
         },
         {
-            name: 'Key Features',
+            name: 'Features',
             number: '03',
             title1: 'Safe and Transparent Financial Access',
             title2: 'Microloans, Grants & Tuition Support',

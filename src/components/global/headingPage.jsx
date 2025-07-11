@@ -6,7 +6,7 @@ import bg1 from '../../assets/images/blog/b-1.webp';
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 import {useRouter} from "next/navigation";
 
-function HeadingPage({bgImg , heading , breadcrumbs}) {
+function HeadingPage({bgImg , heading , breadcrumbs = []}) {
     const router = useRouter();
 
     return (
@@ -15,10 +15,10 @@ function HeadingPage({bgImg , heading , breadcrumbs}) {
             <Box sx={{
                 background: `url(${bgImg}) no-repeat center center`,
                 backgroundSize: 'cover',
-                height: { xs: '388px', sm: "407px", lg: "588px" },
+                height: { xs: '388px', sm: "407px", lg: "550px" },
                 width: "100%",
                 position: "relative",
-                padding: { lg: "274px 0px 26px 0px", md: "70px 0px 50px 0px" },
+                padding: { lg: "274px 0px 26px 0px", md: "70px 0px 50px 0px" }
             }}>
 
                 <Box sx={{
@@ -69,7 +69,7 @@ function HeadingPage({bgImg , heading , breadcrumbs}) {
                         display: "flex",
                         mt: { md: "45px", sm: "15px" },
                     }}>
-                        {breadcrumbs.map((crumb, index) => (
+                        {(breadcrumbs.length > 0 && breadcrumbs) && breadcrumbs.map((crumb, index) => (
                             <React.Fragment key={index}>
                                 <Box
                                     component="a"

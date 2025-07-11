@@ -11,15 +11,15 @@ import HeadingPage from "../../components/global/headingPage";
 import bg1 from "../../assets/images/blog/b-1.webp";
 
 
-const breadCrumbs = [
-    {label:'Home',route: '/'},
-    {label:'About',route: '/about'},
-]
+// const breadCrumbs = [
+//     {label:'Home',route: '/'},
+//     {label:'About',route: '/about'},
+// ]
 
 const Page = () => {
     return (
         <>
-            <HeadingPage bgImg={bg1.src} heading={'About'} breadcrumbs={breadCrumbs}/>
+            <HeadingPage bgImg={bg1.src} heading={'About'} />
             <Modification/>
             <AboutSlider/>
             <Business/>
