@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
@@ -13,8 +13,8 @@ import Image from 'next/image';
 import imgBlack from '../../assets/images/logo/logo-white.png';
 import imgWhite from '../../assets/images/logo/logo-white.png';
 import EastIcon from '@mui/icons-material/East';
-import { usePathname, useRouter } from 'next/navigation';
-import { List, ListItem, ListItemText, Typography } from '@mui/material';
+import {usePathname, useRouter} from 'next/navigation';
+import {List, ListItem, ListItemText, Typography} from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
 function Navigation() {
@@ -24,12 +24,12 @@ function Navigation() {
     const router = useRouter();
 
     const navItems = [
-        { name: 'About', route: '/about' },
-        { name: 'Services', route: '/services' },
-        { name: 'Portfolio', route: '/portfolio' },
-        { name: 'Blog', route: '/blog' },
-        { name: 'Careers', route: '/careers' },
-        { name: 'Contact', route: '/contact' },
+        {name: 'About', route: '/about'},
+        {name: 'Services', route: '/services'},
+        {name: 'Portfolio', route: '/portfolio'},
+        {name: 'Blog', route: '/blog'},
+        {name: 'Careers', route: '/careers'},
+        {name: 'Contact', route: '/contact'},
     ];
 
     useEffect(() => {
@@ -54,88 +54,90 @@ function Navigation() {
                     zIndex: 999,
                 }}
             >
-                <Toolbar sx={{ justifyContent: 'space-between' }}>
-                    <Box sx={{ height: '100%', display: 'flex', alignItems: 'center' }}>
-                        <Box sx={{ filter: 'drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2))' }}>
+                <Toolbar sx={{justifyContent: 'space-between'}}>
+                    <Box sx={{height: '100%', display: 'flex', alignItems: 'center'}}>
+                        <Box sx={{filter: 'drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2))'}}>
                             <Link href="/" passHref>
                                 <img
                                     src={(scrolled || path === '/') ? imgBlack.src : imgWhite.src}
                                     alt="Logo"
-                                    style={{ width: '100%', height: '80px', objectFit: 'cover' }}
+                                    style={{width: '100%', height: '80px', objectFit: 'cover'}}
                                 />
                             </Link>
                         </Box>
                     </Box>
 
                     {/* Desktop Navigation */}
-                    <Box sx={{ display: { xs: 'none', lg: 'flex' }, alignItems: 'center' }}>
-                        <Box sx={{ display: 'flex', gap: '15px', marginLeft: '20px' }}>
-                            {navItems.map(({ name, route }) => (
-                                <Link key={name} href={route} passHref>
-                                    <Typography
-                                        sx={{
-                                            textTransform: 'capitalize',
-                                            color: (scrolled || path === '/') ? '#000' : '#fff',
-                                            cursor: 'pointer',
-                                            fontSize: 15,
-                                            margin: '0 15px',
-                                            position: 'relative',
-                                            display: 'inline-block',
-                                            '&::after': {
-                                                content: '""',
-                                                position: 'absolute',
-                                                left: 0,
-                                                bottom: -2,
-                                                height: '2px',
-                                                width: path === route ? '100%' : '0%',
-                                                backgroundColor: (scrolled || path === '/') ? '#000' : '#fff',
-                                                transition: 'width 0.4s ease-in-out',
-                                            },
-                                            '&:hover::after': {
-                                                width: '100%',
-                                            },
-                                        }}
-                                    >
-                                        {name}
-                                    </Typography>
-                                </Link>
-                            ))}
+                    <Box sx={{display: 'flex', alignItems: 'center' }}>
+                        <Box sx={{display: {xs: 'none', lg: 'flex'}, alignItems: 'center'}}>
+                            <Box sx={{display: 'flex', gap: '15px', marginLeft: '20px'}}>
+                                {navItems.map(({name, route}) => (
+                                    <Link key={name} href={route} passHref>
+                                        <Typography
+                                            sx={{
+                                                textTransform: 'capitalize',
+                                                color: (scrolled || path === '/') ? '#000' : '#fff',
+                                                cursor: 'pointer',
+                                                fontSize: 15,
+                                                margin: '0 15px',
+                                                position: 'relative',
+                                                display: 'inline-block',
+                                                '&::after': {
+                                                    content: '""',
+                                                    position: 'absolute',
+                                                    left: 0,
+                                                    bottom: -2,
+                                                    height: '2px',
+                                                    width: path === route ? '100%' : '0%',
+                                                    backgroundColor: (scrolled || path === '/') ? '#000' : '#fff',
+                                                    transition: 'width 0.4s ease-in-out',
+                                                },
+                                                '&:hover::after': {
+                                                    width: '100%',
+                                                },
+                                            }}
+                                        >
+                                            {name}
+                                        </Typography>
+                                    </Link>
+                                ))}
+                            </Box>
+                        </Box>
+
+                        {/* Desktop Button */}
+                        <Box sx={{display: {lg: 'flex', xs: 'none'} , pl:5}}>
+                            <Button
+                                variant="outlined"
+                                sx={{
+                                    textTransform: 'capitalize',
+                                    borderRadius: '30px',
+                                    padding: '12px 30px',
+                                    borderColor: (scrolled || path === '/') ? '#000' : '#fff',
+                                    color: (scrolled || path === '/') ? '#000' : '#fff',
+                                    ':hover': {backgroundColor: '#000', color: '#fff'},
+                                }}
+                                onClick={() => router.push('/contact')}
+                            >
+                                Plan With Us
+                                <Box sx={{marginLeft: '10px', display: 'flex', alignItems: 'center'}}>
+                                    <EastIcon/>
+                                </Box>
+                            </Button>
                         </Box>
                     </Box>
 
-                    {/* Desktop Button */}
-                    <Box sx={{ display: { lg: 'flex', xs: 'none' } }}>
-                        <Button
-                            variant="outlined"
-                            sx={{
-                                textTransform: 'capitalize',
-                                borderRadius: '30px',
-                                padding: '12px 30px',
-                                borderColor: (scrolled || path === '/') ? '#000' : '#fff',
-                                color: (scrolled || path === '/') ? '#000' : '#fff',
-                                ':hover': { backgroundColor: '#000', color: '#fff' },
-                            }}
-                            onClick={() => router.push('/contact')}
-                        >
-                            Plan With Us
-                            <Box sx={{ marginLeft: '10px', display: 'flex', alignItems: 'center' }}>
-                                <EastIcon />
-                            </Box>
-                        </Button>
-                    </Box>
-
                     {/* Mobile Menu Icon */}
-                    <Box sx={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                    <Box sx={{display: {lg: 'none', xs: 'flex'}, alignItems: 'center', gap: '15px'}}>
                         <IconButton
                             sx={{
                                 border: '1px solid #8E8E8EFF',
                                 color: (scrolled || path === '/') ? '#000' : '#fff',
-                                display: { lg: 'none', xs: 'flex' },
-                                ':hover': { backgroundColor: '#000', color: '#fff' },
+                                display: {lg: 'none', xs: 'flex'},
+                                ':hover': {backgroundColor: '#000', color: '#fff'},
                             }}
                             onClick={() => setMenuOpen(!menuOpen)}
                         >
-                            {menuOpen ? <CloseIcon /> : <MenuIcon style={{ fontSize: '26px' }} />}
+                            {menuOpen ? <CloseIcon/> : <MenuIcon style={{fontSize: '26px'}}/>}
                         </IconButton>
                     </Box>
                 </Toolbar>
@@ -147,7 +149,7 @@ function Navigation() {
                 timeout={400}
                 unmountOnExit
                 sx={{
-                    display: { xs: 'block', lg: 'none' },
+                    display: {xs: 'block', lg: 'none'},
                     position: 'fixed',
                     top: '100px',
                     width: '100%',
@@ -157,8 +159,8 @@ function Navigation() {
                     overflow: 'hidden',
                 }}
             >
-                <List sx={{ padding: '8px 0' }}>
-                    {navItems.map(({ name, route }, index) => (
+                <List sx={{padding: '8px 0'}}>
+                    {navItems.map(({name, route}, index) => (
                         <Box key={index}>
                             <ListItem
                                 button
@@ -200,8 +202,6 @@ function Navigation() {
 }
 
 export default Navigation;
-
-
 
 
 // "use client";

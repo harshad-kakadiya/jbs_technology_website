@@ -5,18 +5,21 @@ import bgImg from '../../assets/images/home/ourmission/overvision.webp';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay, Navigation} from "swiper/modules";
 import "swiper/css";
-import img1 from '../../assets/images/home/ourmission/overmission.png'
+import img1 from '../../assets/images/home/ourmission/2188481-middle-removebg-preview.png'
+import img2 from '../../assets/images/home/ourmission/istockphoto-1370679958-612x612-removebg-preview.png'
 import Image from "next/image";
 import {useRouter} from "next/navigation";
 
 const slides = [
     {
         title: "Our Mission",
-        description: "At JBS Technology in Surat, our mission is to deliver custom software, web applications, and future ready products that help businesses grow through technology"
+        description: "At JBS Technology in Surat, our mission is to deliver custom software, web applications, and future ready products that help businesses grow through technology",
+        img:img1
     },
     {
         title: "Our Vision",
-        description: "To be a trusted technology partner, offering scalable digital solutions that drive innovation and global business growth"
+        description: "To be a trusted technology partner, offering scalable digital solutions that drive innovation and global business growth",
+        img:img2
     }
 
 ];
@@ -171,7 +174,7 @@ function Ourmission() {
                                     }}
                                 >
                                     <Box sx={{paddingBottom: "25px"}}>
-                                        <Image src={img1} alt={img1}/>
+                                        <Image src={item.img} alt={img1} style={{ width: "50px" , height:'50px' , objectFit: 'contain' }} />
                                     </Box>
                                     <Typography
                                         variant="h5"

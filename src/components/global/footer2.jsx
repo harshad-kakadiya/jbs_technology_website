@@ -64,8 +64,8 @@ function Footer2() {
             description: "Sign up for updates and exclusive content.",
         },
         footerBottom: {
-            left: "© 2025 Custom Company. All rights reserved.",
-            links: ["Privacy Policy", "Terms of Use", "Support"],
+            left: "© 2025 JBS Technology. All rights reserved.",
+            links: ["Privacy Policy"],
         },
     };
 
@@ -80,7 +80,7 @@ function Footer2() {
             <Container maxWidth="xl">
                 <Grid container alignItems="center" spacing={2}>
                     <Grid item xs={12} md={4}>
-                        <Box sx={{display: "flex", justifyContent: {xs: "center", md: "left"} , height:'100px'}}
+                        <Box sx={{display: "flex", justifyContent: {xs: "center", md: "left"} , height:'100px' }}
                             onClick={() => router.push('/')}
                         >
                             <img
@@ -89,7 +89,8 @@ function Footer2() {
                                 style={{
                                     width: '100px',
                                     height: '100%',
-                                    objectFit: 'contain'
+                                    objectFit: 'contain',
+                                    cursor:'pointer'
                                 }}
                             />
                         </Box>
@@ -270,9 +271,9 @@ function Footer2() {
                         <Box
                             sx={{
                                 display: "flex",
-                                gap: "20px",
+                                // gap: "20px",
                                 flexWrap: "wrap",
-                                justifyContent: "center",
+                                justifyContent: "end",
                             }}
                         >
                             {footerData.footerBottom.links.map((link, index) => (
