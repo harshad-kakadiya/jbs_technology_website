@@ -176,6 +176,9 @@ const Customers = () => {
                                                         {item.testimonial}
                                                     </Typography>
                                                 </Box>
+                                                <Box sx={{display: "flex", alignItems: "center",justifyContent: "space-between"}}>
+
+
                                                 <Box
                                                     sx={{
                                                         padding: "30px",
@@ -264,27 +267,30 @@ const Customers = () => {
                                                                     {item.company}
                                                                 </Typography>
                                                             </Box>
+
                                                         </Box>
                                                     </Stack>
+                                                </Box>
+
+                                                <Box
+                                                    sx={{
+                                                        display: "flex",
+                                                        justifyContent: { xs: "center", md: "end" },
+                                                        gap: 2,
+                                                        // mt: 3,
+                                                    }}
+                                                >
+                                                    <IconButton className="custom-prev">
+                                                        <ArrowBack />
+                                                    </IconButton>
+                                                    <IconButton className="custom-next">
+                                                        <ArrowForward />
+                                                    </IconButton>
+                                                </Box>
                                                 </Box>
                                             </SwiperSlide>
                                         ))}
                                     </Swiper>
-                                    <Box
-                                        sx={{
-                                            display: "flex",
-                                            justifyContent: { xs: "center", md: "end" },
-                                            gap: 2,
-                                            mt: 3,
-                                        }}
-                                    >
-                                        <IconButton className="custom-prev">
-                                            <ArrowBack />
-                                        </IconButton>
-                                        <IconButton className="custom-next">
-                                            <ArrowForward />
-                                        </IconButton>
-                                    </Box>
                                 </Box>
                             </Box>
                         </Grid>
