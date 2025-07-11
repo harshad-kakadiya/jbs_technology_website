@@ -57,11 +57,11 @@ function Capabilities() {
     return (
         <Container maxWidth={"xl"}>
             <Box sx={{marginTop: {xs: "20px", lg: "50px"}}}>
-                <Grid container >
+                <Grid container>
                     <Grid item lg={3}>
                         <Box
                             sx={{
-                                fontSize: { xs: "30px", md: "35px", lg: "45px" },
+                                fontSize: {xs: "30px", md: "35px", lg: "45px"},
                                 lineHeight: "55px",
                                 fontWeight: "600",
                                 paddingBottom: {md: "0px", lg: "80px"}
@@ -82,7 +82,7 @@ function Capabilities() {
                             }}
                         >
                             At JBS Technology, a top software development company in Surat, we deliver custom software
-                            solutions, scalable web applications, and future ready digital products As your trusted
+                            solutions, scalable web applications, and future-ready digital products. As your trusted
                             technology partner, we help drive business growth through innovation and speed
                         </Box>
                     </Grid>

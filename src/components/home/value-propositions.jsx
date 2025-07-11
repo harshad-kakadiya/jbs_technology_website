@@ -12,25 +12,25 @@ const valuePropositions = [
     {
         title: "Cost Effectiveness",
         description:
-            "Cut costs and boost profits with our custom software solutions and tech-driven business consulting",
+            "Cut costs. Boost profits. With our custom software solutions and tech-driven business consulting",
         icon: <AccountBalanceWalletIcon fontSize="large" />,
     },
     {
         title: "Innovative Technology",
         description:
-            "Build future-ready digital products with expert software engineers and modern web applications",
+            "Build future-ready digital products. With expert software engineers and modern web applications",
         icon: <CloudOutlinedIcon fontSize="large" />,
     },
     {
         title: "Industry Expertise",
         description:
-            "Get trusted software solutions tailored by expert engineers with deep industry knowledge",
+            "Get trusted software solutions. Tailored by expert engineers with deep industry knowledge",
         icon: <FolderOutlinedIcon fontSize="large" />,
     },
     {
         title: "Scale Expansion",
         description:
-            "Grow faster with scalable digital experiences from a top software development company",
+            "Grow faster. With scalable digital experiences from a top software development company",
         icon: <OpenInFullOutlinedIcon fontSize="large" />,
     }
 
