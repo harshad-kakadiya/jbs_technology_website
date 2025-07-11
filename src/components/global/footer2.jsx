@@ -19,6 +19,14 @@ import {useRouter} from "next/navigation";
 
 function Footer2() {
     const router = useRouter();
+    const navItems = [
+        { name: 'About', route: '/about' },
+        { name: 'Services', route: '/services' },
+        { name: 'Portfolio', route: '/portfolio' },
+        { name: 'Blog', route: '/blog' },
+        { name: 'Careers', route: '/careers' },
+        { name: 'Contact', route: '/contact' },
+    ];
     const footerData = {
         logo: img1,
         socialLinks: [
@@ -40,16 +48,14 @@ function Footer2() {
             ],
         },
         services: {
-            title: "Our Services",
+            title: "Company",
             links: [
-                "Web Development",
-                "Artificial Intelligence",
-                "Cloud and Infrastructure Services",
-                "Game Development",
-                "Mobile App Development",
-                "UI/UX Designing",
-                "Digital Marketing",
-                "Android Development",
+                "About",
+                "Services",
+                "Portfolio",
+                "Blog",
+                "Careers",
+                "Contact",
             ]
         },
         newsletter: {
@@ -147,7 +153,10 @@ function Footer2() {
                                             transform: "translateX(0px)",
                                         },
                                     }}
-                                    onClick={() => router.push('./services')}
+                                    onClick={() => {
+                                        const navItem = navItems.find(item => item.name.toLowerCase() === service.toLowerCase());
+                                        if (navItem) router.push(navItem.route);
+                                    }}
                                 >
                                     <Box
                                         className="icon"
@@ -164,6 +173,7 @@ function Footer2() {
                                     {service}
                                 </Typography>
                             ))}
+
                         </Box>
                     </Grid>
                     <Grid item xs={12} sm={6} md={4}>
