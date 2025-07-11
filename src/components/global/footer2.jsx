@@ -41,7 +41,7 @@ function Footer2() {
         contact: {
             title: "Get in Touch!",
             details: [
-                "203-Second Floor, City Center complex, Yogi Chowk, Nana Varachha, Surat, Gujarat 395010",
+                "203,Second Floor, City Center complex, Yogi Chowk, Nana Varachha, Surat, Gujarat 395010",
                 "Call us: +91 79844 43901",
                 "Email: jbs.technology26@gmail.com",
                 "Mon–Sat: 8:00am–7:00pm / Holiday: Closed",
@@ -262,16 +262,14 @@ function Footer2() {
 
                 <Divider sx={{my: 4, backgroundColor: "gray"}}/>
                 <Grid container spacing={2}>
-                    <Grid item xs={12} md={6} sx={{textAlign: {xs: "center", md: "left"}}}>
+                    <Grid item xs={12} sm={6} sx={{textAlign: {xs: "center", sm: "left"}}}>
                         <Typography variant="body2" sx={{fontSize: "12px", color: "#C4C4C4"}}>
                             {footerData.footerBottom.left}
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} md={6} sx={{textAlign: {xs: "center", md: "right"}}}>
+                    <Grid item xs={12} sm={6} sx={{textAlign: {xs: "center", sm: "right"}}}>
                         <Box
                             sx={{
-                                display: "flex",
-                                // gap: "20px",
                                 flexWrap: "wrap",
                                 justifyContent: "end",
                             }}

@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from "react";
+import React, {useState} from "react";
 import {Box, Container, Grid} from "@mui/material";
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import SmsIcon from '@mui/icons-material/Sms';
@@ -60,8 +60,8 @@ function Collaborate() {
     };
 
     const handleChange = (field) => (e) => {
-        setFormData({ ...formData, [field]: e.target.value });
-        setErrors({ ...errors, [field]: '' }); // Clear error on change
+        setFormData({...formData, [field]: e.target.value});
+        setErrors({...errors, [field]: ''}); // Clear error on change
     };
 
     const handleSubmit = () => {
@@ -75,7 +75,7 @@ function Collaborate() {
         {
             icon: <FmdGoodIcon/>,
             title: "Address Business",
-            description: "203-Second Floor, City Center complex, Yogi Chowk, Nana Varachha, Surat, Gujarat 395010"
+            description: "203, Second Floor, City Center complex, Yogi Chowk, Nana Varachha, Surat, Gujarat 395010"
         },
         {
             icon: <SmsIcon/>,
@@ -115,12 +115,12 @@ function Collaborate() {
     ];
 
     const serviceOptions = [
-        { value: "Express Delivery", label: "Express Delivery" },
-        { value: "Insurance", label: "Insurance" },
-        { value: "Packaging", label: "Packaging" },
-        { value: "Web Development", label: "Web Development" },
-        { value: "Mobile Development", label: "Mobile Development" },
-        { value: "Digital Marketing", label: "Digital Marketing" },
+        {value: "Express Delivery", label: "Express Delivery"},
+        {value: "Insurance", label: "Insurance"},
+        {value: "Packaging", label: "Packaging"},
+        {value: "Web Development", label: "Web Development"},
+        {value: "Mobile Development", label: "Mobile Development"},
+        {value: "Digital Marketing", label: "Digital Marketing"},
     ];
 
     return (
@@ -135,7 +135,7 @@ function Collaborate() {
                                 <Grid item lg={6} xs={12}>
                                     <Box sx={{padding: {lg: "100px 15px 100px 25px", xs: "70px 15px 30px 15px"}}}>
                                         <Box sx={{
-                                            fontSize: { xs: "30px", md: "35px", lg: "45px" },
+                                            fontSize: {xs: "30px", md: "35px", lg: "45px"},
                                             fontWeight: "500",
                                             lineHeight: "55px",
                                             paddingBottom: "20px"
@@ -156,22 +156,23 @@ function Collaborate() {
                                                     <Box
                                                         sx={{
                                                             display: "flex",
-                                                            alignItems: "center",
-                                                            gap: "15px",
+                                                            gap: "10px",
                                                         }}
                                                     >
-                                                        <Box
-                                                            sx={{
-                                                                color: "#fff",
-                                                                p: 1,
-                                                                borderRadius: "50%",
-                                                                background: "#000",
-                                                                display: "flex",
-                                                                justifyContent: "center",
-                                                                alignItems: "center",
-                                                            }}
-                                                        >
-                                                            {item.icon}
+                                                        <Box>
+                                                            <Box
+                                                                sx={{
+                                                                    color: "#fff",
+                                                                    borderRadius: "50%",
+                                                                    background: "#000",
+                                                                    display: "flex",
+                                                                    justifyContent: "center",
+                                                                    alignItems: "center",
+                                                                    p:2
+                                                                }}
+                                                            >
+                                                                {item.icon}
+                                                            </Box>
                                                         </Box>
                                                         <Box>
                                                             <Box
@@ -206,7 +207,7 @@ function Collaborate() {
                                                 display: "flex",
                                                 paddingTop: "32px",
                                                 fontSize: "14px",
-                                                justifyContent: { xs: "center", lg: "flex-start" },
+                                                justifyContent: {xs: "center", lg: "flex-start"},
                                                 gap: "16px",
                                             }}
                                         >
@@ -225,7 +226,7 @@ function Collaborate() {
                                                             fontSize: 25,
                                                             cursor: "pointer",
                                                             transition: "color 0.3s",
-                                                            "&:hover": { color: "#0072b1" },
+                                                            "&:hover": {color: "#0072b1"},
                                                         }}
                                                         onClick={() => window.open(social.link, "_blank")}
                                                     />
@@ -241,80 +242,80 @@ function Collaborate() {
                                                 {/* Full Name Input */}
                                                 <Grid item xs={12} sm={6}>
                                                     {/*<Box sx={{minHeight: "90px"}}>*/}
-                                                        <TextField
-                                                            fullWidth
-                                                            placeholder="Full Name*"
-                                                            variant="outlined"
-                                                            value={formData.fullName}
-                                                            onChange={handleChange("fullName")}
-                                                            error={Boolean(errors.fullName)}
-                                                            helperText={errors.fullName || " "}
-                                                            FormHelperTextProps={{
-                                                                sx: {
-                                                                    marginLeft: 0,
-                                                                    marginTop: "4px",
-                                                                    minHeight: "20px",
-                                                                }
-                                                            }}
-                                                            InputProps={{
-                                                                sx: {
-                                                                    color: "black",
-                                                                    borderRadius: 2,
-                                                                    background: "#f2f2f2",
-                                                                    height: "50px",
-                                                                    fontSize: "15px",
-                                                                    "& .MuiOutlinedInput-notchedOutline": {
-                                                                        border: "none",
-                                                                    },
-                                                                    "&:hover .MuiOutlinedInput-notchedOutline": {
-                                                                        border: "1px solid #000",
-                                                                    },
-                                                                    "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-                                                                        border: "2px solid #000",
-                                                                    },
+                                                    <TextField
+                                                        fullWidth
+                                                        placeholder="Full Name*"
+                                                        variant="outlined"
+                                                        value={formData.fullName}
+                                                        onChange={handleChange("fullName")}
+                                                        error={Boolean(errors.fullName)}
+                                                        helperText={errors.fullName || " "}
+                                                        FormHelperTextProps={{
+                                                            sx: {
+                                                                marginLeft: 0,
+                                                                marginTop: "4px",
+                                                                minHeight: "20px",
+                                                            }
+                                                        }}
+                                                        InputProps={{
+                                                            sx: {
+                                                                color: "black",
+                                                                borderRadius: 2,
+                                                                background: "#f2f2f2",
+                                                                height: "50px",
+                                                                fontSize: "15px",
+                                                                "& .MuiOutlinedInput-notchedOutline": {
+                                                                    border: "none",
                                                                 },
-                                                            }}
-                                                        />
+                                                                "&:hover .MuiOutlinedInput-notchedOutline": {
+                                                                    border: "1px solid #000",
+                                                                },
+                                                                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                                                                    border: "2px solid #000",
+                                                                },
+                                                            },
+                                                        }}
+                                                    />
                                                     {/*</Box>*/}
                                                 </Grid>
 
                                                 {/* Email Address Input */}
                                                 <Grid item xs={12} sm={6}>
                                                     {/*<Box sx={{minHeight: "90px"}}>*/}
-                                                        <TextField
-                                                            fullWidth
-                                                            placeholder="Email Address*"
-                                                            variant="outlined"
-                                                            value={formData.email}
-                                                            onChange={handleChange("email")}
-                                                            error={Boolean(errors.email)}
-                                                            helperText={errors.email || " "}
-                                                            FormHelperTextProps={{
-                                                                sx: {
-                                                                    marginLeft: 0,
-                                                                    marginTop: "4px",
-                                                                    minHeight: "20px",
-                                                                }
-                                                            }}
-                                                            InputProps={{
-                                                                sx: {
-                                                                    color: "black",
-                                                                    borderRadius: 2,
-                                                                    background: "#f2f2f2",
-                                                                    height: "50px",
-                                                                    fontSize: "15px",
-                                                                    "& .MuiOutlinedInput-notchedOutline": {
-                                                                        border: "none",
-                                                                    },
-                                                                    "&:hover .MuiOutlinedInput-notchedOutline": {
-                                                                        border: "1px solid #000",
-                                                                    },
-                                                                    "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-                                                                        border: "2px solid #000",
-                                                                    },
+                                                    <TextField
+                                                        fullWidth
+                                                        placeholder="Email Address*"
+                                                        variant="outlined"
+                                                        value={formData.email}
+                                                        onChange={handleChange("email")}
+                                                        error={Boolean(errors.email)}
+                                                        helperText={errors.email || " "}
+                                                        FormHelperTextProps={{
+                                                            sx: {
+                                                                marginLeft: 0,
+                                                                marginTop: "4px",
+                                                                minHeight: "20px",
+                                                            }
+                                                        }}
+                                                        InputProps={{
+                                                            sx: {
+                                                                color: "black",
+                                                                borderRadius: 2,
+                                                                background: "#f2f2f2",
+                                                                height: "50px",
+                                                                fontSize: "15px",
+                                                                "& .MuiOutlinedInput-notchedOutline": {
+                                                                    border: "none",
                                                                 },
-                                                            }}
-                                                        />
+                                                                "&:hover .MuiOutlinedInput-notchedOutline": {
+                                                                    border: "1px solid #000",
+                                                                },
+                                                                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                                                                    border: "2px solid #000",
+                                                                },
+                                                            },
+                                                        }}
+                                                    />
                                                     {/*</Box>*/}
                                                 </Grid>
 
@@ -329,8 +330,8 @@ function Collaborate() {
                                                         onChange={(e) => {
                                                             const value = e.target.value;
                                                             if (/^\d*$/.test(value) && value.length <= 10) {
-                                                                setFormData({ ...formData, phone: value });
-                                                                setErrors({ ...errors, phone: "" });
+                                                                setFormData({...formData, phone: value});
+                                                                setErrors({...errors, phone: ""});
                                                             }
                                                         }}
                                                         error={Boolean(errors.phone)}
@@ -368,52 +369,52 @@ function Collaborate() {
                                                 {/* Select Dropdown */}
                                                 <Grid item xs={12} sm={6}>
                                                     {/*<Box sx={{minHeight: "90px"}}>*/}
-                                                        <FormControl fullWidth error={Boolean(errors.service)}>
-                                                            <Select
-                                                                value={formData.service}
-                                                                onChange={handleChange("service")}
-                                                                displayEmpty
-                                                                variant="outlined"
-                                                                sx={{
-                                                                    borderRadius: 2,
-                                                                    background: "#f2f2f2",
-                                                                    height: "50px",
-                                                                    "& .MuiOutlinedInput-notchedOutline": {
-                                                                        border: "none",
-                                                                    },
-                                                                    "&:hover .MuiOutlinedInput-notchedOutline": {
-                                                                        border: "1px solid #000",
-                                                                    },
-                                                                    "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-                                                                        border: "2px solid #000",
-                                                                    },
-                                                                    "& .MuiSelect-select": {
-                                                                        padding: "10px 20px",
-                                                                        color: formData.service ? "black" : "#8a8a8a",
-                                                                        fontSize: "15px",
-                                                                    },
-                                                                }}
-                                                                renderValue={(selected) => {
-                                                                    if (!selected) {
-                                                                        return <span style={{ color: "#8a8a8a" }}>What are your needs?</span>;
-                                                                    }
-                                                                    return selected;
-                                                                }}
-                                                            >
-                                                                {serviceOptions.map((option) => (
-                                                                    <MenuItem key={option.value} value={option.value}>
-                                                                        {option.label}
-                                                                    </MenuItem>
-                                                                ))}
-                                                            </Select>
-                                                            <FormHelperText sx={{
-                                                                marginLeft: 0,
-                                                                marginTop: "4px",
-                                                                minHeight: "20px",
-                                                            }}>
-                                                                {errors.service || " "}
-                                                            </FormHelperText>
-                                                        </FormControl>
+                                                    <FormControl fullWidth error={Boolean(errors.service)}>
+                                                        <Select
+                                                            value={formData.service}
+                                                            onChange={handleChange("service")}
+                                                            displayEmpty
+                                                            variant="outlined"
+                                                            sx={{
+                                                                borderRadius: 2,
+                                                                background: "#f2f2f2",
+                                                                height: "50px",
+                                                                "& .MuiOutlinedInput-notchedOutline": {
+                                                                    border: "none",
+                                                                },
+                                                                "&:hover .MuiOutlinedInput-notchedOutline": {
+                                                                    border: "1px solid #000",
+                                                                },
+                                                                "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                                                                    border: "2px solid #000",
+                                                                },
+                                                                "& .MuiSelect-select": {
+                                                                    padding: "10px 20px",
+                                                                    color: formData.service ? "black" : "#8a8a8a",
+                                                                    fontSize: "15px",
+                                                                },
+                                                            }}
+                                                            renderValue={(selected) => {
+                                                                if (!selected) {
+                                                                    return <span style={{color: "#8a8a8a"}}>What are your needs?</span>;
+                                                                }
+                                                                return selected;
+                                                            }}
+                                                        >
+                                                            {serviceOptions.map((option) => (
+                                                                <MenuItem key={option.value} value={option.value}>
+                                                                    {option.label}
+                                                                </MenuItem>
+                                                            ))}
+                                                        </Select>
+                                                        <FormHelperText sx={{
+                                                            marginLeft: 0,
+                                                            marginTop: "4px",
+                                                            minHeight: "20px",
+                                                        }}>
+                                                            {errors.service || " "}
+                                                        </FormHelperText>
+                                                    </FormControl>
                                                     {/*</Box>*/}
                                                 </Grid>
                                             </Grid>
