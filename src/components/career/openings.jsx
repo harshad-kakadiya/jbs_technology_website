@@ -93,6 +93,7 @@ function Openings() {
                                         height: 0,
                                         borderLeft: "20px solid #1A1F26",
                                         borderTop: "20px solid transparent",
+
                                     }
                                 }}
                                 onClick={() => router.push(job.navigate)}
