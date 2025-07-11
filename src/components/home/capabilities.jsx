@@ -13,46 +13,45 @@ import Img8
 function Capabilities() {
     const capability = [
         {
-            title: "Artificial Intelligence",
-            describtion: "JBS Technology integrates AI powered custom software solutions to drive business growth with future-ready digital products",
-            img: Img1,
-        },
-        {
             title: "Web Development",
-            describtion: "As a leading software company in Surat, we build web applications and scalable digital experiences for business success",
+            describtion: "From sleek brochure sites to robust web applications, we craft digital experiences that captivate, convert, and elevate your business.",
             img: Img2,
         },
         {
-            title: "Cloud and Infrastructure Services",
-            describtion: "We offer cloud solutions and infrastructure support by expert software engineers trusted across Surat and beyond",
-            img: Img3,
-        },
-        {
-            title: "Game Development",
-            describtion: "JBS Technology delivers immersive, high quality games powered by future-ready tech and expert developers",
-            img: Img4,
-        },
-        {
             title: "Mobile App Development",
-            describtion: "We create scalable mobile apps tailored to your goals with custom software solutions built in Surat, Gujarat",
+            describtion: "Turn your app idea into reality with our expertise. From concept to launch, we develop bespoke applications that deliver measurable outcomes.",
             img: Img5,
         },
         {
             title: "UI/UX Designing",
-            describtion: "Our UI/UX design services enhance digital products with user focused, scalable experiences built by experts",
+            describtion: "UI (User Interface) and UX (User Experience) design are fundamental components critical to the success of any digital product.",
             img: Img6,
         },
         {
             title: "Digital Marketing",
-            describtion: "Boost your brand with digital marketing strategies that drive ROI powered by technology and tailored solutions",
+            describtion: "At JBS Technology, we boost your online presence with tailored digital marketing strategies for optimal engagement and conversions.",
             img: Img7,
         },
         {
-            title: "Android Development",
-            describtion: "Build powerful Android apps with hands on guidance from expert software engineers at JBS Technology, Surat",
+            title: "Artificial Intelligence",
+            describtion: "Amplify your business with TechM by infusing AI in every aspect of your business, democratizing AI responsibly",
+            img: Img1,
+        },
+        {
+            title: "Agentic AI",
+            describtion: "Empower your organization with a powerfully designed infrastructure stack and support technologies",
+            img: Img3,
+        },
+        {
+            title: "Frontend",
+            describtion: "At JBS Technology, we create Pixel-perfect, responsive, and high-performance UI built with modern tech like React and Tailwind CSS.",
+            img: Img4,
+        },
+        {
+            title: "Backend",
+            describtion: "Secure, scalable, and high-performance server-side solutions using Node.js, Express, and modern databases.",
             img: Img8,
         }
-
     ];
 
     return (
