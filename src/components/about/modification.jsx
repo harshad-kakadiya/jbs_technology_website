@@ -95,8 +95,7 @@ const Modification = () => {
                                         fontWeight: 500,
                                         color: "#000",
                                         mb: 4,
-                                        fontSize: {xs: "24px", md: "36px", lg: "45px"},
-                                    }}
+                                        fontSize: { xs: "30px", md: "35px", lg: "45px" },                                    }}
                                 >
                                     Our Focus is on Delivering Superior Value to our Clients for
                                     Company Modification.
