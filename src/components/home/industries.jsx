@@ -98,7 +98,8 @@ function Industries() {
                 <Container maxWidth={'xl'}>
                     <Grid container alignItems={'center'}>
                         <Grid item xs={12} md={5} lg={4}>
-                            <Box component={'h2'} sx={{fontSize: { xs: "30px", md: "35px", lg: "45px" }, fontWeight: 600}}>Industries</Box>
+                            <Box component={'h2'}
+                                 sx={{fontSize: {xs: "30px", md: "35px", lg: "45px"}, fontWeight: 600}}>Industries</Box>
                         </Grid>
                         <Grid item xs={12} md={5} lg={6}>
                             <Box component={'p'} sx={{color: 'cardTextGrey', fontWeight: 500,}}>
@@ -134,7 +135,7 @@ function Industries() {
                                     sx={{
                                         color: 'cardTextGrey',
                                         position: 'absolute',
-                                        top: -35    ,
+                                        top: -35,
                                         right: 12,
                                         border: '1px solid gray',
                                         borderRadius: '50%',
@@ -206,7 +207,7 @@ function Industries() {
                                 backgroundColor: 'white',
                                 border: '1px solid #E7E7E7'
                             }}>
-                                <Box sx={{p: {xs: '70px 7px', md: '80px 8px', sm: '100px 10px'}}}>
+                                <Box sx={{p: {xs: '70px 0px', md: '80px 0px', sm: '100px 0px'}, display: 'flex' , justifyContent:'center' , alignItems: 'center' , flexDirection:'column'}}>
                                     <Box sx={{' svg': {fontSize: {xs: '50px', md: '65px'}}}}>
                                         {item.icon}
                                     </Box>

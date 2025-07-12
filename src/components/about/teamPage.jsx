@@ -120,7 +120,7 @@ const TeamPage = () => {
                 <Box sx={{ border: '0.1px solid #4b535d ', my: 7 }}/>
                 </Container>
                 <Container maxWidth={'xl'}>
-                    <Grid container spacing={4} sx={{ display: 'flex' , justifyContent: 'center' }}>
+                    <Grid container spacing={4} sx={{ display: 'flex' , justifyContent: {sm:'center'} }}>
                         {[
                             'We are Always Dedicated to our Work',
                             'Are Leading Consultants that you can Trust',

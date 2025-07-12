@@ -415,10 +415,19 @@ function Page() {
                                                     '&.Mui-focused fieldset': {
                                                         border: '2px solid black',
                                                     },
+                                                    // ✅ override red border on error
+                                                    '&.Mui-error fieldset': {
+                                                        border: '2px solid gray', // or black/any color you prefer
+                                                    },
                                                 },
                                                 '& label.Mui-focused': {
                                                     color: 'black',
                                                 },
+                                                // ✅ override red label on error
+                                                '& label.Mui-error': {
+                                                    color: '#595959', // light grey
+                                                },
+
                                             }}
                                             InputProps={{
                                                 sx: {
@@ -428,6 +437,7 @@ function Page() {
                                             {...register('firstName', { required: 'First name is required' })}
                                             error={!!errors.firstName}
                                         />
+
                                         {/* Fixed height container for error messages */}
                                         <Box sx={{ height: '15px', mt: '2px' }}>
                                             {errors.firstName && (
@@ -469,9 +479,17 @@ function Page() {
                                                     '&.Mui-focused fieldset': {
                                                         border: '2px solid black',
                                                     },
+                                                    // ✅ override red border on error
+                                                    '&.Mui-error fieldset': {
+                                                        border: '2px solid gray', // or black/any color you prefer
+                                                    },
                                                 },
                                                 '& label.Mui-focused': {
                                                     color: 'black',
+                                                },
+                                                // ✅ override red label on error
+                                                '& label.Mui-error': {
+                                                    color: '#595959', // light grey
                                                 },
                                             }}
                                             InputProps={{ sx: { borderRadius: 2 } }}
@@ -521,9 +539,17 @@ function Page() {
                                                     '&.Mui-focused fieldset': {
                                                         border: '2px solid black',
                                                     },
+                                                    // ✅ override red border on error
+                                                    '&.Mui-error fieldset': {
+                                                        border: '2px solid gray', // or black/any color you prefer
+                                                    },
                                                 },
                                                 '& label.Mui-focused': {
                                                     color: 'black',
+                                                },
+                                                // ✅ override red label on error
+                                                '& label.Mui-error': {
+                                                    color: '#595959', // light grey
                                                 },
                                             }}
                                             InputProps={{ sx: { borderRadius: 2 } }}
@@ -577,9 +603,17 @@ function Page() {
                                                     '&.Mui-focused fieldset': {
                                                         border: '2px solid black',
                                                     },
+                                                    // ✅ override red border on error
+                                                    '&.Mui-error fieldset': {
+                                                        border: '2px solid gray', // or black/any color you prefer
+                                                    },
                                                 },
                                                 '& label.Mui-focused': {
                                                     color: 'black',
+                                                },
+                                                // ✅ override red label on error
+                                                '& label.Mui-error': {
+                                                    color: '#595959', // light grey
                                                 },
                                             }}
                                             InputProps={{ sx: { borderRadius: 2 } }}
@@ -662,9 +696,17 @@ function Page() {
                                                     '&.Mui-focused fieldset': {
                                                         border: '2px solid black',
                                                     },
+                                                    // ✅ override red border on error
+                                                    '&.Mui-error fieldset': {
+                                                        border: '2px solid gray', // or black/any color you prefer
+                                                    },
                                                 },
                                                 '& label.Mui-focused': {
                                                     color: 'black',
+                                                },
+                                                // ✅ override red label on error
+                                                '& label.Mui-error': {
+                                                    color: '#595959', // light grey
                                                 },
                                             }}
                                             InputProps={{ sx: { borderRadius: 2 } }}
@@ -715,9 +757,17 @@ function Page() {
                                                     '&.Mui-focused fieldset': {
                                                         border: '2px solid black',
                                                     },
+                                                    // ✅ override red border on error
+                                                    '&.Mui-error fieldset': {
+                                                        border: '2px solid gray', // or black/any color you prefer
+                                                    },
                                                 },
                                                 '& label.Mui-focused': {
                                                     color: 'black',
+                                                },
+                                                // ✅ override red label on error
+                                                '& label.Mui-error': {
+                                                    color: '#595959', // light grey
                                                 },
                                             }}
                                             InputProps={{ sx: { borderRadius: 2 } }}
@@ -750,9 +800,17 @@ function Page() {
                                                     '&.Mui-focused fieldset': {
                                                         border: '2px solid black',
                                                     },
+                                                    // ✅ override red border on error
+                                                    '&.Mui-error fieldset': {
+                                                        border: '2px solid gray', // or black/any color you prefer
+                                                    },
                                                 },
                                                 '& label.Mui-focused': {
                                                     color: 'black',
+                                                },
+                                                // ✅ override red label on error
+                                                '& label.Mui-error': {
+                                                    color: '#595959', // light grey
                                                 },
                                             }}
                                             InputProps={{ sx: { borderRadius: 2 } }}
@@ -799,9 +857,17 @@ function Page() {
                                                     '&.Mui-focused fieldset': {
                                                         border: '2px solid black',
                                                     },
+                                                    // ✅ override red border on error
+                                                    '&.Mui-error fieldset': {
+                                                        border: '2px solid gray', // or black/any color you prefer
+                                                    },
                                                 },
                                                 '& label.Mui-focused': {
                                                     color: 'black',
+                                                },
+                                                // ✅ override red label on error
+                                                '& label.Mui-error': {
+                                                    color: '#595959', // light grey
                                                 },
                                             }}
                                             error={!!errors.relocate}
@@ -869,9 +935,17 @@ function Page() {
                                                     '&.Mui-focused fieldset': {
                                                         border: '2px solid black',
                                                     },
+                                                    // ✅ override red border on error
+                                                    '&.Mui-error fieldset': {
+                                                        border: '2px solid gray', // or black/any color you prefer
+                                                    },
                                                 },
                                                 '& label.Mui-focused': {
                                                     color: 'black',
+                                                },
+                                                // ✅ override red label on error
+                                                '& label.Mui-error': {
+                                                    color: '#595959', // light grey
                                                 },
                                             }}
                                             InputProps={{ sx: { borderRadius: 2 } }}
@@ -920,9 +994,17 @@ function Page() {
                                                     '&.Mui-focused fieldset': {
                                                         border: '2px solid black',
                                                     },
+                                                    // ✅ override red border on error
+                                                    '&.Mui-error fieldset': {
+                                                        border: '2px solid gray', // or black/any color you prefer
+                                                    },
                                                 },
                                                 '& label.Mui-focused': {
                                                     color: 'black',
+                                                },
+                                                // ✅ override red label on error
+                                                '& label.Mui-error': {
+                                                    color: '#595959', // light grey
                                                 },
                                             }}
                                             InputProps={{ sx: { borderRadius: 2 } }}
@@ -972,9 +1054,17 @@ function Page() {
                                                     '&.Mui-focused fieldset': {
                                                         border: '2px solid black',
                                                     },
+                                                    // ✅ override red border on error
+                                                    '&.Mui-error fieldset': {
+                                                        border: '2px solid gray', // or black/any color you prefer
+                                                    },
                                                 },
                                                 '& label.Mui-focused': {
                                                     color: 'black',
+                                                },
+                                                // ✅ override red label on error
+                                                '& label.Mui-error': {
+                                                    color: '#595959', // light grey
                                                 },
                                             }}
                                             InputProps={{ sx: { borderRadius: 2 } }}
@@ -1025,9 +1115,17 @@ function Page() {
                                                     '&.Mui-focused fieldset': {
                                                         border: '2px solid black',
                                                     },
+                                                    // ✅ override red border on error
+                                                    '&.Mui-error fieldset': {
+                                                        border: '2px solid gray', // or black/any color you prefer
+                                                    },
                                                 },
                                                 '& label.Mui-focused': {
                                                     color: 'black',
+                                                },
+                                                // ✅ override red label on error
+                                                '& label.Mui-error': {
+                                                    color: '#595959', // light grey
                                                 },
                                             }}
                                             InputProps={{ sx: { borderRadius: 2 } }}
@@ -1078,9 +1176,17 @@ function Page() {
                                                     '&.Mui-focused fieldset': {
                                                         border: '2px solid black',
                                                     },
+                                                    // ✅ override red border on error
+                                                    '&.Mui-error fieldset': {
+                                                        border: '2px solid gray', // or black/any color you prefer
+                                                    },
                                                 },
                                                 '& label.Mui-focused': {
                                                     color: 'black',
+                                                },
+                                                // ✅ override red label on error
+                                                '& label.Mui-error': {
+                                                    color: '#595959', // light grey
                                                 },
                                             }}
                                             InputProps={{ sx: { borderRadius: 2 } }}

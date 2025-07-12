@@ -24,12 +24,12 @@ function Navigation() {
     const router = useRouter();
 
     const navItems = [
-        {name: 'About', route: '/about'},
+        {name: 'About Us', route: '/about'},
         {name: 'Services', route: '/services'},
         {name: 'Portfolio', route: '/portfolio'},
-        {name: 'Blog', route: '/blog'},
+        {name: 'Blogs', route: '/blog'},
         {name: 'Careers', route: '/careers'},
-        {name: 'Contact', route: '/contact'},
+        {name: 'Contact Us', route: '/contact'},
     ];
 
     useEffect(() => {

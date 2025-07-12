@@ -24,7 +24,10 @@ function HeadingPage({bgImg, heading, breadcrumbs = []}) {
                 backgroundSize: 'cover',
                 height: {xs: '388px', sm: "407px", lg: "550px"},
                 width: "100%",
-                padding: {lg: "274px 0px 26px 0px", md: "70px 0px 50px 0px"},
+                pt: 5,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
             }}>
                 <Container maxWidth={'xl'}>
                     <Box sx={{

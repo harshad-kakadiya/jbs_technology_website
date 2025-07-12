@@ -52,11 +52,11 @@ const Business = () => {
                         justifyContent:{xs:"start",md:"center",sm:"center",lg:"center"}
                     }}>
                         <Grid item xs={12}  md={6} lg={6} >
-                            <Box display="flex" justifyContent="center">
+                            <Box display="flex" justifyContent="center" sx={{height: {md:'650px' , xs:'100%'}}}>
                                 <img
                                     src="https://demo.bravisthemes.com/herrington/wp-content/uploads/2024/05/ab5.webp"
                                     alt="Business Growth"
-                                    style={{ width: '100%', height: '650px',objectFit: 'cover' }}
+                                    style={{ width: '100%', height: '100%',objectFit: {md:'cover' , xs:'contain'} }}
                                 />
                             </Box>
                         </Grid>

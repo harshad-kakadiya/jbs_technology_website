@@ -19,7 +19,7 @@ import bg1 from "../../assets/images/blog/b-1.webp";
 const Page = () => {
     return (
         <>
-            <HeadingPage bgImg={bg1.src} heading={'About'} />
+            <HeadingPage bgImg={bg1.src} heading={'About Us'} />
             <Modification/>
             <AboutSlider/>
             <Business/>

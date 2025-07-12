@@ -78,7 +78,7 @@ const Customers = () => {
     }));
 
     return (
-        <Box sx={{ pt: 5, padding:"120px 0" }}>
+        <Box sx={{ pt: 5, padding: {sm:"90px 0" , xs:'90px 0 40px'} }}>
             <Container maxWidth="xl">
                 <Box sx={{ px: { xs: 2, sm: 5, md: 8 } }}>
                     <Grid
