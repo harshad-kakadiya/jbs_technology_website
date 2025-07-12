@@ -73,7 +73,10 @@ const Business = () => {
                                 </Typography>
                             </Box>
                             <Box>
-                                <Typography sx={{
+                                <Typography
+                                    variant="h2"
+                                    component="h2"
+                                    sx={{
                                     color: '#000000',
                                     fontWeight: '500',
                                     fontSize: { xs: "30px", md: "35px", lg: "45px" },

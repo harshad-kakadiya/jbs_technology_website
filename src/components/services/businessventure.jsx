@@ -24,7 +24,10 @@ function Businessventure() {
             <Container maxWidth={"xl"}>
                 <Grid container spacing={3}>
                     <Grid item lg={5}>
-                        <Box sx={{
+                        <Box
+                            variant="h2"
+                            component="h2"
+                            sx={{
                             fontSize: { xs: "30px", md: "35px", lg: "45px" },
                             fontWeight: "700",
                             lineHeight: {xl:"55px",lg:"50px",md:"45px",sm:"40px"},color: '#fff'

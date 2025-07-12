@@ -39,6 +39,7 @@ const Collab = () => {
                         >
                             <Typography
                                 variant="h2"
+                                component="h2"
                                 sx={{
                                     fontSize: {xs: "22px", sm: "28px", md: "36px", lg: "42px"},
                                     color: "black",

@@ -66,6 +66,8 @@ const ValueCard = ({ item }) => (
             </Box>
             <Typography
                 className="title"
+                variant="h2"
+                component="h2"
                 fontWeight="bold"
                 sx={{
                     marginBottom: 1,

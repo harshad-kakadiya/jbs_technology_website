@@ -17,6 +17,42 @@ import LightbulbCircleIcon from "@mui/icons-material/LightbulbCircle";
 import phoneimg2 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 180419.png";
 import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 180504.png";
 
+export const metadata = {
+    title: "Case Study: Programmatic Advertising Platform | JBS Technology",
+    description:
+        "Explore how JBS Technology helped War Room build a precision-driven programmatic advertising solution, improving ROI and ad efficiency through real-time optimization and advanced targeting.",
+    keywords:
+        "programmatic advertising, ad optimization, real-time bidding, advertising technology, ad operations, adtech software, custom ad platform, JBS Technology, War Room project",
+    openGraph: {
+        title: "Programmatic Ad Platform Case Study – War Room | JBS Technology",
+        description:
+            "Discover how JBS Technology built a smart advertising platform for War Room with advanced targeting, campaign optimization, and transparent dashboards.",
+        url: "https://www.jbstechnology.com/portfolio/war-room", // Replace with actual live URL
+        siteName: "JBS Technology",
+        images: [
+            {
+                url: "https://www.jbstechnology.com/images/portfolio/war-room-og.jpg", // Replace with actual OG image URL
+                width: 1200,
+                height: 630,
+                alt: "War Room Programmatic Advertising Platform – Case Study by JBS Technology",
+            },
+        ],
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "War Room: Ad Optimization Platform by JBS Technology",
+        description:
+            "JBS Technology developed a performance-focused adtech solution for War Room, driving real-time campaign optimization and higher ROI.",
+        images: ["https://www.jbstechnology.com/images/portfolio/war-room-og.jpg"], // Replace if needed
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: false,
+    },
+};
+
 
 function Page() {
     const breadCrumbs = [

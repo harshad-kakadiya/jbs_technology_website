@@ -20,12 +20,13 @@ import {useRouter} from "next/navigation";
 function Footer2() {
     const router = useRouter();
     const navItems = [
-        { name: 'About', route: '/about' },
+        { name: 'home', route: '/' },
+        { name: 'About Us', route: '/about' },
         { name: 'Services', route: '/services' },
         { name: 'Portfolio', route: '/portfolio' },
         { name: 'Blog', route: '/blog' },
         { name: 'Careers', route: '/careers' },
-        { name: 'Contact', route: '/contact' },
+        { name: 'Contact Us', route: '/contact' },
     ];
     const footerData = {
         logo: img1,
@@ -50,6 +51,7 @@ function Footer2() {
         services: {
             title: "Company",
             links: [
+                "Home",
                 "About Us",
                 "Services",
                 "Portfolio",

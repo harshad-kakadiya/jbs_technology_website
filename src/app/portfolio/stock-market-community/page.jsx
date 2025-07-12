@@ -15,6 +15,41 @@ import LightbulbCircleIcon from "@mui/icons-material/LightbulbCircle";
 import phoneimg2 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 183650.png";
 import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 183942.png";
 
+export const metadata = {
+    title: "Stock Market Community Platform – Hedger by JBS Technology",
+    description:
+        "Explore how JBS Technology built 'Hedger Community' – a real-time stock market platform offering expert insights, discussion forums, and educational resources for investors.",
+    keywords:
+        "Stock market app, stock community platform, investor community, real-time stock tracker, JBS Technology, Hedger case study, financial platform development, stock discussion board, stock education app, beginner investing tools",
+    openGraph: {
+        title: "Case Study: Hedger Stock Market Community | JBS Technology",
+        description:
+            "A smart, user-centric stock market platform with real-time APIs, community forums, and financial insights built by JBS Technology.",
+        url: "https://www.jbstechnology.com/portfolio/stock-market-community", // update if needed
+        siteName: "JBS Technology",
+        images: [
+            {
+                url: "https://www.jbstechnology.com/images/portfolio/stock-market-og.jpg", // update to real OG image
+                width: 1200,
+                height: 630,
+                alt: "Hedger Stock Market Community Platform by JBS Technology",
+            },
+        ],
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Hedger – Stock Market Community Case Study | JBS Technology",
+        description:
+            "Discover how JBS Technology helped build Hedger – a social-first stock platform with real-time data, forums, and beginner-friendly education.",
+        images: ["https://www.jbstechnology.com/images/portfolio/stock-market-og.jpg"], // update to real OG image
+    },
+    robots: {
+        index: true,
+        follow: true,
+    },
+};
+
 
 function Page() {
     const breadCrumbs = [

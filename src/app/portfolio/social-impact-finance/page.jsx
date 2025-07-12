@@ -18,6 +18,42 @@ import LightbulbCircleIcon from "@mui/icons-material/LightbulbCircle";
 import phoneimg2 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 182308.png";
 import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 182340.png";
 
+export const metadata = {
+    title: "Case Study: Girls First Finance – Social Impact Platform | JBS Technology",
+    description:
+        "Explore how JBS Technology helped Girls First Finance build a secure, dignified digital platform for educational funding and financial empowerment of women across Africa and South Asia.",
+    keywords:
+        "girls education platform, financial empowerment, social impact finance, microloans for girls, anti-sexual exploitation tech, digital grants platform, gender equality fintech, JBS Technology, Girls First Finance case study",
+    openGraph: {
+        title: "Social Impact Finance Case Study – Girls First Finance | JBS Technology",
+        description:
+            "JBS Technology developed a safe and accessible platform enabling thousands of girls to access microloans, scholarships, and financial mentorship without exploitation.",
+        url: "https://www.jbstechnology.com/portfolio/social-impect-finance", // update to real URL
+        siteName: "JBS Technology",
+        images: [
+            {
+                url: "https://www.jbstechnology.com/images/portfolio/social-impact-og.jpg", // change to actual OG image
+                width: 1200,
+                height: 630,
+                alt: "Social Impact Finance Platform – Girls First Finance | JBS Technology",
+            },
+        ],
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Girls First Finance – Empowerment Platform by JBS Technology",
+        description:
+            "See how JBS Technology built a secure digital microloan and scholarship platform to empower girls with safe, independent access to education.",
+        images: ["https://www.jbstechnology.com/images/portfolio/social-impact-og.jpg"], // change to real path
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: false,
+    },
+};
+
 
 function Page() {
     const breadCrumbs = [

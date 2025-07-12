@@ -184,12 +184,12 @@ const jobListings = [
 ];
 
 const posts = [
-    { slug: 'react-developer', title: 'React.js Developer' },
-    { slug: 'flutter-developer',  title: 'Flutter Developer' },
-    { slug: 'human-resources-executive',  title: 'HR' },
-    { slug: 'nodejs-developer',  title: 'Node.js Developer' },
-    { slug: 'full-stack-developer',  title: 'Full Stack Developer' },
-    { slug: 'ui-ux-designer',  title: 'UI/UX Designer' },
+    {slug: 'react-developer', title: 'React.js Developer'},
+    {slug: 'flutter-developer', title: 'Flutter Developer'},
+    {slug: 'human-resources-executive', title: 'HR'},
+    {slug: 'nodejs-developer', title: 'Node.js Developer'},
+    {slug: 'full-stack-developer', title: 'Full Stack Developer'},
+    {slug: 'ui-ux-designer', title: 'UI/UX Designer'},
 ];
 
 function Page() {
@@ -209,8 +209,8 @@ function Page() {
     };
 
     const breadCrumbs = [
-        { label: "Home" , route: '/' },
-        { label: 'Careers', route: '/careers' },
+        {label: "Home", route: '/'},
+        {label: 'Careers', route: '/careers'},
     ];
 
     if (!job) {
@@ -228,24 +228,7 @@ function Page() {
         <Box>
             <HeadingPage bgImg={bg1.src} heading={project.title} breadcrumbs={breadCrumbs}/>
             <Container maxWidth="lg" sx={{py: 12}}>
-                <Box textAlign="center">
-                    <Typography gutterBottom sx={{
-                         fontSize: { xs: "30px", md: "35px", lg: "45px" },
-                        fontWeight: 600,
-                        color: "#1A1F26",
-                        mb:{lg:6 , xs:4}
-                    }}>
-                        {job.title}
-                    </Typography>
-                </Box>
-                {/*<Box>*/}
-                {/*    <Typography gutterBottom sx={{*/}
-                {/*        my: 3,*/}
-                {/*        fontSize: "16px"*/}
-                {/*    }}>*/}
-                {/*        {job.category} / <b style={{color: "green"}}>{job.title}</b>*/}
-                {/*    </Typography>*/}
-                {/*</Box>*/}
+
                 <Stack direction={{xs: 'column', md: 'row'}} spacing={4} mb={3}>
 
                     <Box
@@ -306,7 +289,7 @@ function Page() {
                     }}
                 >
                     <Box sx={{flex: 1, minWidth: 300}}>
-                        <Typography variant="h6" gutterBottom
+                        <Typography variant="h3" component='h3' gutterBottom
                                     sx={{fontSize: {xs: "24px", md: "28px"}, fontWeight: 600}}>
                             Responsibilities
                         </Typography>
@@ -329,7 +312,7 @@ function Page() {
                     </Box>
 
                     <Box sx={{flex: 1, minWidth: 300}}>
-                        <Typography variant="h6" gutterBottom
+                        <Typography variant="h3" component='h3' gutterBottom
                                     sx={{fontSize: {xs: "24px", md: "28px"}, fontWeight: 600}}>
                             Qualifications
                         </Typography>
@@ -434,12 +417,12 @@ function Page() {
                                                     borderRadius: 2,
                                                 },
                                             }}
-                                            {...register('firstName', { required: 'First name is required' })}
+                                            {...register('firstName', {required: 'First name is required'})}
                                             error={!!errors.firstName}
                                         />
 
                                         {/* Fixed height container for error messages */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                        <Box sx={{height: '15px', mt: '2px'}}>
                                             {errors.firstName && (
                                                 <Box
                                                     sx={{
@@ -459,7 +442,7 @@ function Page() {
                                 </Grid>
 
                                 <Grid item xs={12} sm={6}>
-                                    <Box >
+                                    <Box>
                                         <TextField
                                             label="Last Name*"
                                             fullWidth
@@ -492,12 +475,12 @@ function Page() {
                                                     color: '#595959', // light grey
                                                 },
                                             }}
-                                            InputProps={{ sx: { borderRadius: 2 } }}
-                                            {...register('lastName', { required: 'Last name is required' })}
+                                            InputProps={{sx: {borderRadius: 2}}}
+                                            {...register('lastName', {required: 'Last name is required'})}
                                             error={!!errors.lastName}
                                         />
                                         {/* Fixed height container for error messages */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                        <Box sx={{height: '15px', mt: '2px'}}>
                                             {errors.lastName && (
                                                 <Box
                                                     sx={{
@@ -518,7 +501,7 @@ function Page() {
 
                                 {/* Email & Phone */}
                                 <Grid item xs={12} sm={6}>
-                                    <Box >
+                                    <Box>
                                         <TextField
                                             type="email"
                                             label="Email*"
@@ -552,7 +535,7 @@ function Page() {
                                                     color: '#595959', // light grey
                                                 },
                                             }}
-                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            InputProps={{sx: {borderRadius: 2}}}
                                             {...register('email', {
                                                 required: 'Email is required',
                                                 pattern: {
@@ -563,7 +546,7 @@ function Page() {
                                             error={!!errors.email}
                                         />
                                         {/* Fixed height container for error messages */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                        <Box sx={{height: '15px', mt: '2px'}}>
                                             {errors.email && (
                                                 <Box
                                                     sx={{
@@ -583,7 +566,7 @@ function Page() {
                                 </Grid>
 
                                 <Grid item xs={12} sm={6}>
-                                    <Box >
+                                    <Box>
                                         <TextField
                                             label="Phone Number*"
                                             fullWidth
@@ -616,7 +599,7 @@ function Page() {
                                                     color: '#595959', // light grey
                                                 },
                                             }}
-                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            InputProps={{sx: {borderRadius: 2}}}
                                             {...register('phone', {
                                                 required: 'Phone number is required',
                                                 pattern: {
@@ -627,7 +610,7 @@ function Page() {
                                             error={!!errors.phone}
                                         />
                                         {/* Fixed height container for error messages */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                        <Box sx={{height: '15px', mt: '2px'}}>
                                             {errors.phone && (
                                                 <Box
                                                     sx={{
@@ -648,13 +631,13 @@ function Page() {
 
                                 {/* CV Upload */}
                                 <Grid item xs={12}>
-                                    <Box >
-                                        <InputLabel sx={{ mb: 1 }}>Upload your latest CV*</InputLabel>
-                                        <Box sx={{ bgcolor: '#fff', p: 1.5, borderRadius: 2 }}>
-                                            <input type="file" {...register('cv', { required: 'CV is required' })} />
+                                    <Box>
+                                        <InputLabel sx={{mb: 1}}>Upload your latest CV*</InputLabel>
+                                        <Box sx={{bgcolor: '#fff', p: 1.5, borderRadius: 2}}>
+                                            <input type="file" {...register('cv', {required: 'CV is required'})} />
                                         </Box>
                                         {/* Fixed height container for error messages */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                        <Box sx={{height: '15px', mt: '2px'}}>
                                             {errors.cv && (
                                                 <Box
                                                     sx={{
@@ -675,7 +658,7 @@ function Page() {
 
                                 {/* Experience */}
                                 <Grid item xs={12}>
-                                    <Box >
+                                    <Box>
                                         <TextField
                                             label="Total experience in Years*"
                                             placeholder="e.g. 4.5"
@@ -709,12 +692,12 @@ function Page() {
                                                     color: '#595959', // light grey
                                                 },
                                             }}
-                                            InputProps={{ sx: { borderRadius: 2 } }}
-                                            {...register('experience', { required: 'Experience is required' })}
+                                            InputProps={{sx: {borderRadius: 2}}}
+                                            {...register('experience', {required: 'Experience is required'})}
                                             error={!!errors.experience}
                                         />
                                         {/* Fixed height container for error messages */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                        <Box sx={{height: '15px', mt: '2px'}}>
                                             {errors.experience && (
                                                 <Box
                                                     sx={{
@@ -735,7 +718,7 @@ function Page() {
 
                                 {/* Description */}
                                 <Grid item xs={12}>
-                                    <Box >
+                                    <Box>
                                         <TextField
                                             label="Description"
                                             multiline
@@ -770,17 +753,17 @@ function Page() {
                                                     color: '#595959', // light grey
                                                 },
                                             }}
-                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            InputProps={{sx: {borderRadius: 2}}}
                                             {...register('description')}
                                         />
                                         {/* Fixed height container for error messages - no error for description */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}></Box>
+                                        <Box sx={{height: '15px', mt: '2px'}}></Box>
                                     </Box>
                                 </Grid>
 
                                 {/* Location */}
                                 <Grid item xs={12}>
-                                    <Box >
+                                    <Box>
                                         <TextField
                                             label="Where are you currently located?*"
                                             fullWidth
@@ -813,12 +796,12 @@ function Page() {
                                                     color: '#595959', // light grey
                                                 },
                                             }}
-                                            InputProps={{ sx: { borderRadius: 2 } }}
-                                            {...register('location', { required: 'Location is required' })}
+                                            InputProps={{sx: {borderRadius: 2}}}
+                                            {...register('location', {required: 'Location is required'})}
                                             error={!!errors.location}
                                         />
                                         {/* Fixed height container for error messages */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                        <Box sx={{height: '15px', mt: '2px'}}>
                                             {errors.location && (
                                                 <Box
                                                     sx={{
@@ -839,7 +822,7 @@ function Page() {
 
                                 {/* Relocation */}
                                 <Grid item xs={12}>
-                                    <Box >
+                                    <Box>
                                         <FormControl
                                             fullWidth
                                             size="small"
@@ -878,13 +861,13 @@ function Page() {
                                             <Controller
                                                 name="relocate"
                                                 control={control}
-                                                rules={{ required: 'Relocation preference is required' }}
-                                                render={({ field }) => (
+                                                rules={{required: 'Relocation preference is required'}}
+                                                render={({field}) => (
                                                     <Select
                                                         {...field}
                                                         labelId="relocate-label"
                                                         label="Are you willing to relocate to Surat, Gujarat?*"
-                                                        sx={{ borderRadius: 2 }}
+                                                        sx={{borderRadius: 2}}
                                                     >
                                                         <MenuItem value="Yes">Yes</MenuItem>
                                                         <MenuItem value="No">No</MenuItem>
@@ -893,7 +876,7 @@ function Page() {
                                             />
                                         </FormControl>
                                         {/* Fixed height container for error messages */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                        <Box sx={{height: '15px', mt: '2px'}}>
                                             {errors.relocate && (
                                                 <Box
                                                     sx={{
@@ -914,7 +897,7 @@ function Page() {
 
                                 {/* CTC Fields */}
                                 <Grid item xs={12} sm={6}>
-                                    <Box >
+                                    <Box>
                                         <TextField
                                             label="Current CTC (LPA)*"
                                             placeholder="e.g. 4 LPA"
@@ -948,12 +931,12 @@ function Page() {
                                                     color: '#595959', // light grey
                                                 },
                                             }}
-                                            InputProps={{ sx: { borderRadius: 2 } }}
-                                            {...register('currentCTC', { required: 'Current CTC is required' })}
+                                            InputProps={{sx: {borderRadius: 2}}}
+                                            {...register('currentCTC', {required: 'Current CTC is required'})}
                                             error={!!errors.currentCTC}
                                         />
                                         {/* Fixed height container for error messages */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                        <Box sx={{height: '15px', mt: '2px'}}>
                                             {errors.currentCTC && (
                                                 <Box
                                                     sx={{
@@ -973,7 +956,7 @@ function Page() {
                                 </Grid>
 
                                 <Grid item xs={12} sm={6}>
-                                    <Box >
+                                    <Box>
                                         <TextField
                                             label="Expected CTC (LPA)*"
                                             placeholder="e.g. 6 LPA"
@@ -1007,12 +990,12 @@ function Page() {
                                                     color: '#595959', // light grey
                                                 },
                                             }}
-                                            InputProps={{ sx: { borderRadius: 2 } }}
-                                            {...register('expectedCTC', { required: 'Expected CTC is required' })}
+                                            InputProps={{sx: {borderRadius: 2}}}
+                                            {...register('expectedCTC', {required: 'Expected CTC is required'})}
                                             error={!!errors.expectedCTC}
                                         />
                                         {/* Fixed height container for error messages */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                        <Box sx={{height: '15px', mt: '2px'}}>
                                             {errors.expectedCTC && (
                                                 <Box
                                                     sx={{
@@ -1033,7 +1016,7 @@ function Page() {
 
                                 {/* Interview Details */}
                                 <Grid item xs={12}>
-                                    <Box >
+                                    <Box>
                                         <TextField
                                             label="Interview Availability*"
                                             placeholder="e.g. I can be available on Saturday 10AM to 2PM"
@@ -1067,14 +1050,14 @@ function Page() {
                                                     color: '#595959', // light grey
                                                 },
                                             }}
-                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            InputProps={{sx: {borderRadius: 2}}}
                                             {...register('interviewAvailability', {
                                                 required: 'Interview availability is required',
                                             })}
                                             error={!!errors.interviewAvailability}
                                         />
                                         {/* Fixed height container for error messages */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                        <Box sx={{height: '15px', mt: '2px'}}>
                                             {errors.interviewAvailability && (
                                                 <Box
                                                     sx={{
@@ -1094,7 +1077,7 @@ function Page() {
                                 </Grid>
 
                                 <Grid item xs={12}>
-                                    <Box >
+                                    <Box>
                                         <TextField
                                             label="Office or Online Interview Preference*"
                                             placeholder="e.g. I can come to office."
@@ -1128,14 +1111,14 @@ function Page() {
                                                     color: '#595959', // light grey
                                                 },
                                             }}
-                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            InputProps={{sx: {borderRadius: 2}}}
                                             {...register('interviewType', {
                                                 required: 'Interview preference is required',
                                             })}
                                             error={!!errors.interviewType}
                                         />
                                         {/* Fixed height container for error messages */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                        <Box sx={{height: '15px', mt: '2px'}}>
                                             {errors.interviewType && (
                                                 <Box
                                                     sx={{
@@ -1155,7 +1138,7 @@ function Page() {
                                 </Grid>
 
                                 <Grid item xs={12}>
-                                    <Box >
+                                    <Box>
                                         <TextField
                                             label="Notice Period / Immediate Joiner?*"
                                             placeholder="e.g. Yes I can join immediately."
@@ -1189,14 +1172,14 @@ function Page() {
                                                     color: '#595959', // light grey
                                                 },
                                             }}
-                                            InputProps={{ sx: { borderRadius: 2 } }}
+                                            InputProps={{sx: {borderRadius: 2}}}
                                             {...register('noticePeriod', {
                                                 required: 'Notice period info is required',
                                             })}
                                             error={!!errors.noticePeriod}
                                         />
                                         {/* Fixed height container for error messages */}
-                                        <Box sx={{ height: '15px', mt: '2px' }}>
+                                        <Box sx={{height: '15px', mt: '2px'}}>
                                             {errors.noticePeriod && (
                                                 <Box
                                                     sx={{
@@ -1216,7 +1199,7 @@ function Page() {
                                 </Grid>
 
                                 {/* Submit Button */}
-                                <Grid item xs={12} sx={{ mt: 2 }}>
+                                <Grid item xs={12} sx={{mt: 2}}>
                                     <Button
                                         variant="contained"
                                         type="submit"

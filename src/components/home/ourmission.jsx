@@ -83,8 +83,11 @@ function Ourmission() {
                             </Typography>
 
                             <Typography
+                                variant="h2"
+                                component="h2"
                                 sx={{
                                     fontSize: {md: "35px", xs: "26px", lg: "45px"},
+                                    fontWeight: 500,
                                     color: "#fff",
                                     marginBottom: "10px",
                                 }}

@@ -68,7 +68,8 @@ const Clients = () => {
                                 Recognized by the best
                             </Typography>
                             <Typography
-                                variant="h3"
+                                variant="h2"
+                                component="h2"
                                 sx={{
                                     fontSize: {xs: "30px", md: "35px", lg: "45px"},
                                     fontWeight: "600",
