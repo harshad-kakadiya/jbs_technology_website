@@ -6,8 +6,12 @@ import {
 import CheckIcon from '@mui/icons-material/Check';
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import Image from 'next/image';
+import {useRouter} from "next/navigation";
+
 
 const DevlopTogetherPage = ({ heading, description, features, imageSrc, buttonText, contactNumber }) => {
+
+    const router = useRouter();
     return (
         <Box sx={{ backgroundColor: '#f8f9fa', py: { xs: 4, md: 5 } }}>
             <Container maxWidth="xl">
@@ -102,6 +106,7 @@ const DevlopTogetherPage = ({ heading, description, features, imageSrc, buttonTe
                                 gap: 2
                             }}>
                                 <Button
+                                    onClick={() => router.push('/contact')}
                                     variant="contained"
                                     size="large"
                                     sx={{

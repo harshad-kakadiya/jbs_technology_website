@@ -162,7 +162,7 @@ function Collaborate() {
                                         sx: {
                                             color: "black",
                                             borderRadius: 2,
-                                            background: "#f2f2f2",
+                                            background: "rgba(242 , 242 , 242 , 0.7)",
                                             height: "50px",
                                             fontSize: "15px",
                                             "& .MuiOutlinedInput-notchedOutline": {
@@ -202,7 +202,7 @@ function Collaborate() {
                                         sx: {
                                             color: "black",
                                             borderRadius: 2,
-                                            background: "#f2f2f2",
+                                            background: "rgba(242 , 242 , 242 , 0.7)",
                                             height: "50px",
                                             fontSize: "15px",
                                             "& .MuiOutlinedInput-notchedOutline": {
@@ -248,7 +248,7 @@ function Collaborate() {
                                         sx: {
                                             color: "black",
                                             borderRadius: 2,
-                                            background: "#f2f2f2",
+                                            background: "rgba(242 , 242 , 242 , 0.7)",
                                             height: "50px",
                                             fontSize: "15px",
                                             "& .MuiOutlinedInput-notchedOutline": {
@@ -278,7 +278,7 @@ function Collaborate() {
                                         variant="outlined"
                                         sx={{
                                             borderRadius: 2,
-                                            background: "#f2f2f2",
+                                            background: "rgba(242 , 242 , 242 , 0.7)",
                                             height: "50px",
                                             "& .MuiOutlinedInput-notchedOutline": {
                                                 border: "none",
@@ -343,7 +343,7 @@ function Collaborate() {
                                     sx: {
                                         color: "black",
                                         borderRadius: "20px",
-                                        background: "#f2f2f2",
+                                        background: "rgba(242 , 242 , 242 , 0.7)",
                                         padding: "20px 25px",
                                         fontSize: "15px",
                                         "& .MuiOutlinedInput-notchedOutline": {

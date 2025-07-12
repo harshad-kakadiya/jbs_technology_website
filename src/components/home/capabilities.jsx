@@ -31,7 +31,7 @@ function Capabilities() {
             img: Img5,
         },
         {
-            navigation : "/hire-ui-uxdevloper-india",
+            navigation : "/hire-ui-uxdesigner-india",
             title: "UI/UX Designing",
             describtion: "UI (User Interface) and UX (User Experience) design are fundamental components critical to the success of any digital product",
             img: Img6,
@@ -55,13 +55,13 @@ function Capabilities() {
             img: Img3,
         },
         {
-            navigation : "/hire-frontend-india",
+            navigation : "/hire-frontend-developer-india",
             title: "Frontend",
             describtion: "At JBS Technology, we create Pixel-perfect, responsive, and high-performance UI built with modern tech like React and Tailwind CSS",
             img: Img4,
         },
         {
-            navigation : "/hire-backend-india",
+            navigation : "/hire-backend-developer-india",
             title: "Backend",
             describtion: "Secure, scalable, and high-performance server-side solutions using Node.js, Express, and modern databases",
             img: Img8,
