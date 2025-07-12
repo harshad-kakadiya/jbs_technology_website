@@ -68,7 +68,8 @@ const Clients = () => {
                                 Recognized by the best
                             </Typography>
                             <Typography
-                                variant="h3"
+                                variant="h2"
+                                component="h2"
                                 sx={{
                                     fontSize: {xs: "30px", md: "35px", lg: "45px"},
                                     fontWeight: "600",
@@ -162,6 +163,7 @@ const Clients = () => {
                                             <Typography
                                                 component="img"
                                                 src={logo.logo11.src}
+                                                alt={'logo'}
                                                 className="logo11"
                                                 sx={{
                                                     position: "absolute",
@@ -176,6 +178,7 @@ const Clients = () => {
                                             <Typography
                                                 component="img"
                                                 src={logo.logo1.src}
+                                                alt={'logo'}
                                                 className="logo1"
                                                 sx={{
                                                     position: "absolute",

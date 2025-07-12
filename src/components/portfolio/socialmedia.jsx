@@ -140,6 +140,8 @@ function Socialmedia() {
                                                 <img src={item.logo.src} alt={item.name} style={{objectFit: 'contain' , height: '100%' , width:'100%'}} />
                                             </Box>
                                             <Box
+                                                variant="h2"
+                                                component="h2"
                                                 sx={{
                                                     fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                                     fontWeight: '500',

@@ -10,6 +10,8 @@ function Software() {
 
                 <Box sx={{ width: '100%', px: {xs:'20px',md:"50px" , lg:'unset'} }}>
                     <Box
+                        variant="h2"
+                        component="h2"
                         sx={{
                             fontSize: { xs: "30px", md: "35px", lg: "45px" },
                             fontWeight: "500",

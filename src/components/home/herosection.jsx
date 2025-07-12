@@ -73,8 +73,8 @@ function Herosection() {
                                     }}
                                 >
                                     <Typography
-                                        variant="h2"
-                                        component="h2"
+                                        variant="h1"
+                                        component="h1"
                                         sx={{
                                             fontSize: { xl: "52px", md: '45px', sm: "35px", xs: "28px" },
                                             fontWeight: 500,
@@ -104,6 +104,10 @@ function Herosection() {
                                             display: "inline-block",
                                             borderRadius: "1e3px",
                                             cursor:"pointer",
+                                            transition:'0.3s',
+                                            '&:hover': {
+                                                transform:'translateY(-5px)'
+                                            }
                                         }}
                                         onClick={() => router.push('/contact')}
                                     >

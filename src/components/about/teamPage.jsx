@@ -47,6 +47,8 @@ const TeamPage = () => {
                             THE TEAM MEMBERS
                         </Typography>
                         <Typography
+                            variant="h2"
+                            component="h2"
                             sx={{
                                 fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                 lineHeight: '55px',
@@ -147,6 +149,7 @@ const TeamPage = () => {
                 <Typography
                     component={'img'}
                     src={Team.src}
+                    alt={'team'}
                     sx={{
                         width: '100%',
                         height: '550px',

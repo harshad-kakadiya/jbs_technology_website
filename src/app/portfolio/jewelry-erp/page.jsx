@@ -18,6 +18,42 @@ import LightbulbCircleIcon from "@mui/icons-material/LightbulbCircle";
 import phoneimg2 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 184852.png";
 import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 185010.png";
 
+export const metadata = {
+    title: "Case Study: Jewelry ERP System for RFID & EAS Integration | JBS Technology",
+    description:
+        "Discover how JBS Technology developed a real-time Jewelry ERP system for Diamond Software, integrating RFID and EAS hardware with smart alerts, dashboards, and analytics.",
+    keywords:
+        "Jewelry ERP, RFID ERP integration, EAS ERP software, retail security software, smart inventory, Diamond Software, JBS Technology, ERP for jewelry industry",
+    openGraph: {
+        title: "Jewelry ERP System – Diamond Software | Case Study by JBS Technology",
+        description:
+            "Explore how JBS Technology built a powerful ERP solution for jewelry retail and warehouse operations, integrating RFID and EAS systems in real time.",
+        url: "https://www.jbstechnology.com/portfolio/loyal-string", // Replace with actual live URL
+        siteName: "JBS Technology",
+        images: [
+            {
+                url: "https://www.jbstechnology.com/images/portfolio/loyal-string-og.jpg", // Replace with actual OG image
+                width: 1200,
+                height: 630,
+                alt: "Jewelry ERP Case Study – JBS Technology",
+            },
+        ],
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Jewelry ERP with RFID & EAS Integration – Diamond Software x JBS Technology",
+        description:
+            "JBS Technology helped Diamond Software digitize and integrate retail security hardware with a real-time Jewelry ERP dashboard.",
+        images: ["https://www.jbstechnology.com/images/portfolio/loyal-string-og.jpg"], // Replace if needed
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: false,
+    },
+};
+
 
 function Page() {
     const breadCrumbs = [

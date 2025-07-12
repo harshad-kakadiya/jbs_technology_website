@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
-import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
+import {Box, Card, CardContent, Grid, Typography} from "@mui/material";
 import {useRouter} from "next/navigation";
 
 import react from "../../assets/images/career/react-logo.webp"
@@ -21,7 +21,7 @@ function Openings() {
             openings: 1,
             location: "Surat, Gujarat.",
             logo: react,
-            navigate:"careers/react-developer"
+            navigate: "careers/react-developer"
         },
         {
             title: "flutter Developer",
@@ -29,7 +29,7 @@ function Openings() {
             openings: 0,
             location: "Surat, Gujarat.",
             logo: flutter,
-            navigate:"careers/flutter-developer"
+            navigate: "careers/flutter-developer"
         },
         {
             title: " Human Resources Executive",
@@ -45,7 +45,7 @@ function Openings() {
             openings: 0,
             location: "Surat, Gujarat.",
             logo: node,
-            navigate:"careers/nodejs-developer "
+            navigate: "careers/nodejs-developer "
         },
         {
             title: "Full Stack Developer",
@@ -53,7 +53,7 @@ function Openings() {
             openings: 0,
             location: "Surat, Gujarat.",
             logo: fullstack,
-            navigate:"careers/full-stack-developer"
+            navigate: "careers/full-stack-developer"
         },
         {
             title: "UI/UX Designer",
@@ -66,10 +66,18 @@ function Openings() {
     ];
 
     return (
-        <Box id="scrolling" sx={{ display: 'flex', justifyContent: 'center', py:8,px:2 }}>
-            <Box sx={{ width: '100%', maxWidth: 1200 }}>
+        <Box id="scrolling" sx={{display: 'flex', justifyContent: 'center', py: 8, px: 2}}>
+            <Box sx={{width: '100%', maxWidth: 1200}}>
                 <Box>
-                    <Typography component={'h1'} sx={{textAlign:'center' ,fontSize: { xs: "30px", md: "35px", lg: "45px" },pb:8 , fontWeight:500}}>Openings</Typography>
+                    <Typography
+                        variant="h2"
+                        component="h2"
+                        sx={{
+                            textAlign: 'center',
+                            fontSize: {xs: "30px", md: "35px", lg: "45px"},
+                            pb: 8,
+                            fontWeight: 500
+                        }}>Openings</Typography>
                 </Box>
                 <Grid container spacing={3}>
                     {jobData.map((job, index) => (
@@ -79,7 +87,7 @@ function Openings() {
                                     height: "100%",
                                     boxShadow: "0 0 10px rgba(72, 69, 224, .1)",
                                     borderRadius: 0,
-                                    p:"10px",
+                                    p: "10px",
                                     bgcolor: "white",
                                     color: "#1A1F26",
                                     cursor: "pointer",
@@ -113,23 +121,31 @@ function Openings() {
                                             alt={job.title}
                                             width={80}
                                             height={80}
-                                            style={{ objectFit: "contain" }}
+                                            style={{objectFit: "contain"}}
                                         />
                                     </Box>
                                     <Typography
                                         sx={{
                                             fontWeight: 500,
                                             fontSize: "19px",
-                                            mb:"12px",
-                                            "&:hover":{
-                                            }
+                                            mb: "12px",
+                                            "&:hover": {}
                                         }}
                                     >
                                         {job.title}
                                     </Typography>
-                                    <Typography sx={{fontSize:"14px", lineHeight: 1.8, color:"#6084a4"}}>Experience: {job.experience}</Typography>
-                                    <Typography sx={{fontSize:"14px", lineHeight: 1.8, color:"#6084a4"}}>No of Openings: {job.openings}</Typography>
-                                    <Typography sx={{fontSize:"14px", lineHeight: 1.8, color:"#6084a4"}}>Location: {job.location}</Typography>
+                                    <Typography sx={{
+                                        fontSize: "14px",
+                                        lineHeight: 1.8,
+                                        color: "#6084a4"
+                                    }}>Experience: {job.experience}</Typography>
+                                    <Typography sx={{fontSize: "14px", lineHeight: 1.8, color: "#6084a4"}}>No of
+                                        Openings: {job.openings}</Typography>
+                                    <Typography sx={{
+                                        fontSize: "14px",
+                                        lineHeight: 1.8,
+                                        color: "#6084a4"
+                                    }}>Location: {job.location}</Typography>
                                 </CardContent>
                             </Card>
                         </Grid>

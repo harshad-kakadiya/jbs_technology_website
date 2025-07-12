@@ -17,6 +17,42 @@ import LightbulbCircleIcon from "@mui/icons-material/LightbulbCircle";
 import phoneimg2 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 182556.png";
 import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 182741.png";
 
+export const metadata = {
+    title: "Case Study: Gold Loan Services Platform – Easy Gold Fincorp | JBS Technology",
+    description:
+        "Explore how JBS Technology helped Easy Gold Fincorp digitize gold loan operations with a secure, real-time platform improving transparency, speed, and compliance.",
+    keywords:
+        "Gold loan CRM, gold finance software, digital loan platform, e-KYC, fintech solution, financial software, JBS Technology, Easy Gold Fincorp case study",
+    openGraph: {
+        title: "Gold Loan Services – Easy Gold Fincorp | Case Study by JBS Technology",
+        description:
+            "See how Easy Gold Fincorp partnered with JBS Technology to launch a secure, scalable digital platform for gold loan processing, KYC, and real-time dashboards.",
+        url: "https://www.jbstechnology.com/portfolio/egf", // Update to your actual live URL
+        siteName: "JBS Technology",
+        images: [
+            {
+                url: "https://www.jbstechnology.com/images/portfolio/egf-og.jpg", // Replace with actual OG image path
+                width: 1200,
+                height: 630,
+                alt: "Easy Gold Fincorp Digital Platform – Case Study",
+            },
+        ],
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Case Study: Digital Gold Loan Platform | Easy Gold Fincorp x JBS Technology",
+        description:
+            "Learn how JBS Technology transformed gold loan operations at Easy Gold Fincorp with a secure digital platform.",
+        images: ["https://www.jbstechnology.com/images/portfolio/egf-og.jpg"], // Replace if needed
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: false,
+    },
+};
+
 
 function Page() {
     const breadCrumbs = [

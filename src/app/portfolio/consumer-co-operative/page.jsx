@@ -15,6 +15,42 @@ import LightbulbCircleIcon from "@mui/icons-material/LightbulbCircle";
 import phoneimg2 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 184356.png";
 import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 184443.png";
 
+export const metadata = {
+    title: "Case Study: Digital Cooperative Platform for NCCF | JBS Technology",
+    description:
+        "Discover how JBS Technology helped NCCF modernize its cooperative systems with a unified digital platform, improving transparency, governance, and operational efficiency.",
+    keywords:
+        "NCCF, consumer cooperative, case study, digital transformation, AI for cooperatives, cooperative management software, JBS Technology project",
+    openGraph: {
+        title: "Case Study: Digital Cooperative Platform for NCCF | JBS Technology",
+        description:
+            "Explore our work with NCCF to build a unified digital system for cooperatives across India, enhancing transparency, compliance, and efficiency.",
+        url: "https://www.jbstechnology.com/portfolio/consumer-co-operative", // Replace with your actual URL
+        siteName: "JBS Technology",
+        images: [
+            {
+                url: "https://www.jbstechnology.com/images/portfolio/nccf-og.jpg", // Replace with actual OG image
+                width: 1200,
+                height: 630,
+                alt: "NCCF Case Study – JBS Technology",
+            },
+        ],
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Case Study: NCCF Cooperative Platform | JBS Technology",
+        description:
+            "JBS Technology built a transparent, scalable cooperative platform for NCCF to modernize operations and support democratic processes.",
+        images: ["https://www.jbstechnology.com/images/portfolio/nccf-og.jpg"], // Replace with actual OG image
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: false,
+    },
+};
+
 
 function Page() {
     const breadCrumbs = [
