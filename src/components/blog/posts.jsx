@@ -106,6 +106,9 @@ function Posts() {
                                     '&:hover .image': {
                                         transform: "scale(1.1)",
                                     },
+                                    '&:hover .icon': {
+                                        marginLeft: "20px",
+                                    },
                                 }}
                             >
                                 <Box
@@ -228,9 +231,7 @@ function Posts() {
                                         alignItems: "center",
                                         fontWeight: 500,
                                         cursor: "pointer",
-                                        '&:hover .icon': {
-                                            marginLeft: "20px",
-                                        },
+
                                     }}
                                 >
                                     Continue Reading <EastIcon className={'icon'}

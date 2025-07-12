@@ -18,6 +18,7 @@ import Image from "next/image";
 import {useRouter} from "next/navigation";
 import img2 from "../../assets/images/blog/posts/Img2.jpg";
 import img3 from "../../assets/images/blog/posts/img3.jpg";
+import EastIcon from "@mui/icons-material/East";
 const slides = [
     {
         navigate:"/blog/marketing",
@@ -31,7 +32,6 @@ const slides = [
         description:
             "iscover the core elements that seamlessly connect IT innovations with strategic business goals.\n" +
             "Unlock transformative growth by aligning technology solutions with real-world business impact.",
-        button: "Continue Reading",
     },
     {
         navigate:"/blog/startup-consulting",
@@ -45,7 +45,6 @@ const slides = [
         description:
             "Explore how emerging technologies are transforming financial services with enhanced efficiency, security, and personalization.\n" +
             "Step into a smarter tomorrow powered by AI, blockchain, and data-driven innovation in finance.",
-        button: "Continue Reading",
     },
     {
         navigate:"/blog/corporate",
@@ -59,7 +58,6 @@ const slides = [
         description:
             "Learn how banks can navigate industry shifts by embracing innovation and prioritizing customer-centric strategies.\n" +
             "Drive sustainable growth by aligning digital transformation with evolving customer expectations.",
-        button: "Continue Reading",
     },
 ];
 function    Blogslider() {
@@ -91,6 +89,9 @@ function    Blogslider() {
                                     url(${item.image.src}) no-repeat center`,
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
+                                    '&:hover .icon': {
+                                        marginLeft: "20px",
+                                    },
                                 }}
                             >
                                 <Box
@@ -180,19 +181,19 @@ function    Blogslider() {
                                     }}>
                                         {item.description}
                                     </Typography>
-                                    <Button
-                                        onClick={() => router.push(item.navigate)}
-                                        endIcon={<TrendingFlatIcon />}
+                                    <Box
                                         sx={{
-                                            mt: 2,
-                                            color: "#fff",
-                                            fontSize: "15px",
-                                            paddingLeft: 0,
-                                            fontWeight: "500"
+                                            marginTop: "20px",
+                                            display: "flex",
+                                            alignItems: "center",
+                                            fontWeight: 500,
+                                            cursor: "pointer",
+
                                         }}
                                     >
-                                        {item.button}
-                                    </Button>
+                                        Continue Reading <EastIcon className={'icon'}
+                                                                   sx={{transition: ".3s", marginLeft: "10px"}}/>
+                                    </Box>
                                 </Box>
                             </Box>
                         </SwiperSlide>
