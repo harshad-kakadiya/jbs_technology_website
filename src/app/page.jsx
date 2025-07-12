@@ -6,6 +6,7 @@ import Capabilities from "../components/home/capabilities";
 import ValuePropositions from "../components/home/value-propositions";
 import FunFactCounter from "../components/global/funfactcouter";
 import Clients from "@/components/about/clients";
+import ProgecksRets from "@/components/about/progecksRets";
 
 export const metadata = {
     title: "Top AI & IT Services Company | JBS Technology",
@@ -49,23 +50,24 @@ export default function Home() {
             <Herosection />
             <ValuePropositions />
             <Capabilities />
-            <FunFactCounter
-                gap={true}
-                color={false}
-                heading="Fun Facts"
-                counters={[
-                    { value: 100 },
-                    { value: 160 },
-                    { value: 14 },
-                    { value: 9300 },
-                ]}
-                counterDetails={[
-                    "Happy Clients",
-                    "Projects",
-                    "In-house specialists",
-                    "Hours Spent",
-                ]}
-            />
+            {/*<FunFactCounter*/}
+            {/*    gap={true}*/}
+            {/*    color={false}*/}
+            {/*    heading="Fun Facts"*/}
+            {/*    counters={[*/}
+            {/*        { value: 100 },*/}
+            {/*        { value: 160 },*/}
+            {/*        { value: 14 },*/}
+            {/*        { value: 9300 },*/}
+            {/*    ]}*/}
+            {/*    counterDetails={[*/}
+            {/*        "Happy Clients",*/}
+            {/*        "Projects",*/}
+            {/*        "In-house specialists",*/}
+            {/*        "Hours Spent",*/}
+            {/*    ]}*/}
+            {/*/>*/}
+            <ProgecksRets/>
             <Ourmission />
             <Industries />
             <Testimonial />

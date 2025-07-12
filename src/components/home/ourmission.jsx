@@ -53,7 +53,7 @@ function Ourmission() {
         }
     };
     return (
-        <Box sx={{mt: 10, mb: 4, mx: {md: "45px", sm: "30px", xs: "0px"}}}>
+        <Box sx={{ mb: 4, mx: {md: "45px", sm: "30px", xs: "0px"}}}>
             {/*<Container maxWidth="xl" >*/}
             <Grid container className={'ourMission'}>
                 <Grid item xs={12} md={9}>

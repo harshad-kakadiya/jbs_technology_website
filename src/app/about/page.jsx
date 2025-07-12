@@ -53,7 +53,7 @@ const Page = () => {
             <AboutSlider />
             <Business />
             <Industry />
-            <ProgecksRets />
+            {/*<ProgecksRets />*/}
             <TeamPage />
             <Customers />
             <Collab />

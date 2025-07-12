@@ -47,12 +47,12 @@ const stats = [
 const ProgecksRets = () => {
     const {ref, inView} = useInView({triggerOnce: true, threshold: 0.1});
     return (
-        <Box sx={{px: {md:6 , xs:3}}}>
+        <Box sx={{px: {md:6 , sm:'30px'} , mt: 10,}}>
             <Box
                 ref={ref}
                 sx={{
                     backgroundColor: "#F5F5F5",
-                    py: {xs: 4, sm: 6},
+                    py: {xs: 4, sm: 8},
                     px: {xs: 2, sm: 4},
                 }}
             >
@@ -78,7 +78,7 @@ const ProgecksRets = () => {
                                 >
                                     {stat.icon}
                                 </Box>
-                                <Box>
+                                <Box sx={{display:{xs:"unset" , xl:'flex'} , alignItems:"center" , gap:2}}>
                                     <Typography
                                         variant="h4"
                                         sx={{
