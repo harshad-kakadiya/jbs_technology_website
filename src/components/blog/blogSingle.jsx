@@ -29,286 +29,258 @@ import {useParams} from 'next/navigation';
 const BlogSingle = () => {
   const blogPosts = [
     {
-      slug: 'marketing',
-      author: "Admin",
+      slug: 'ai-innovation-india',
+      author: 'Admin',
       authorAvatar: photo,
-      date: "23 Apr 24",
-      category: "Business Strategy",
+      date: '12 July 2024',
+      category: 'Artificial Intelligence',
       commentsCount: 5,
-      title: "5 Impactful Elements That Promote IT and Business",
+      title: 'How AI Is Powering the Next Wave of IT Solutions',
       content: {
         introduction: [
-          "Discover the key elements that bridge the gap between IT innovations and strategic business growth",
+          "Discover how artificial intelligence is transforming IT infrastructure, automation, and user experiences. Leverage AI to streamline operations, enhance decision-making, and unlock new levels of innovation."
         ],
         mainImage: single1,
         sections: [
           {
-            title: "5 Impactful Elements That Promote IT and Business",
-            content: "Technology and business are increasingly intertwined, and their integration is vital for competitive growth. Below are five key elements driving this transformation:",
+            title: 'Transforming IT with AI',
+            content: "Artificial Intelligence is reshaping IT operations by enabling predictive analytics, intelligent automation, and real-time optimization.",
             subsections: [
               {
-                title: "1. Strategic IT Alignment",
-                content: "Aligning IT initiatives with business goals ensures optimal investment in technologies that directly support growth and operational efficiency."
+                title: '1. Smarter Infrastructure Management',
+                content: 'AI tools detect issues proactively and automate responses, reducing downtime and improving reliability.'
               },
               {
-                title: "2. Data-Driven Decision Making",
-                content: "Leveraging big data and analytics tools enables companies to uncover insights, forecast trends, and make informed decisions quickly and effectively."
-              },
-              {
-                title: "3. Cybersecurity Resilience",
-                content: "With growing digital operations, robust cybersecurity practices are essential to protect data, maintain trust, and ensure business continuity."
-              },
-              {
-                title: "4. Cloud Transformation",
-                content: "Cloud computing offers scalability, cost savings, and remote access, making it a key factor in agile business models and digital collaboration."
-              },
-              {
-                title: "5. IT-Enabled Innovation",
-                content: "Innovation through digital platforms, automation, and emerging tech (like AI/ML) enables businesses to differentiate and respond to market changes."
+                title: '2. Enhanced User Experience',
+                content: 'Conversational AI and recommendation systems are improving customer engagement and personalization.'
               }
             ]
-          },
-          {
-            title: "The Role of Cross-Functional Collaboration",
-            content: "Effective collaboration between IT and business teams fosters communication, reduces silos, and accelerates the delivery of valuable outcomes."
           }
         ],
         quote: {
-          text: "Digital transformation isn’t just an IT project it’s a business revolution.",
-          author: "Elena Wirth – CIO Insights"
+          text: 'AI is no longer just a tool—it’s the engine behind next-gen IT.',
+          author: 'Sophia King – AI Strategist'
         },
-        images: [single2, single3],
+        images: [single2 , single3],
         conclusion: [
-          "In a tech-driven world, aligning IT with core business priorities is no longer optional it's essential for long-term growth and success.",
-          "Organizations that embrace these elements are better positioned to innovate, compete, and thrive in dynamic markets."
+          'From automation to insights, AI is revolutionizing how businesses operate.',
+          'Companies investing in AI now will lead tomorrow’s digital landscape.'
         ]
       },
-      tags: ["Digital Strategy", "IT Alignment", "Innovation"]
+      tags: ['AI', 'Automation', 'Innovation', 'IT Solutions']
     },
 
     {
-      slug: 'startup-consulting',
-      author: "Sophia Turner",
+      slug: 'agentic-ai-india',
+      author: 'Admin',
       authorAvatar: photo,
-      date: "23 Apr 24",
-      category: "Startup-Consulting",
+      date: '11 July 2024',
+      category: 'Agentic AI',
       commentsCount: 4,
-      title: "Revolutionizing the Future of Financial Services",
+      title: 'The Rise of Agentic AI in Intelligent Automation',
       content: {
         introduction: [
-          "Explore how emerging technologies are reshaping financial services for a smarter tomorrow"
+          'Explore how autonomous AI agents are driving adaptive decision-making and continuous learning.'
         ],
         mainImage: single2,
         sections: [
           {
-            title: "Technology-Driven Disruption",
-            content: "The financial sector is undergoing a dramatic transformation through digitalization, automation, and customer-first platforms.",
+            title: 'Autonomous Agents at Work',
+            content: 'Agentic AI introduces intelligent systems that adapt, learn, and act independently to optimize outcomes.',
             subsections: [
               {
-                title: "1. FinTech Integration",
-                content: "Emerging FinTech tools are improving access, lowering fees, and challenging legacy banking models."
+                title: '1. Decision-Making Without Supervision',
+                content: 'AI agents handle complex workflows with minimal human intervention, increasing agility.'
               },
               {
-                title: "2. AI and Automation",
-                content: "Artificial intelligence powers smarter decisions in lending, fraud detection, and customer service."
+                title: '2. Learning Through Feedback Loops',
+                content: 'They continuously refine strategies using data-driven feedback mechanisms.'
               }
             ]
           }
         ],
         quote: {
-          text: "The future of finance will be personalized, predictive, and always available.",
-          author: "Lena Brooks – FinTech Analyst"
+          text: 'Agentic AI will define the next frontier in business automation.',
+          author: 'David Chen – Autonomous Systems Expert'
         },
         images: [single1, single3],
         conclusion: [
-          "Financial services are rapidly evolving, shifting power toward consumers.",
-          "Companies that embrace innovation today will define the industry tomorrow."
+          'Agentic AI enables businesses to scale intelligently and respond in real-time.',
+          'It’s not just automation—it’s autonomy with purpose.'
         ]
       },
-      tags: ["Finance", "FinTech", "Innovation"]
+      tags: ['Agentic AI', 'Autonomy', 'Business Automation']
     },
+
     {
-      slug: 'corporate',
-      author: "Michael Lee",
+      slug: 'web-development-india',
+      author: 'Admin',
       authorAvatar: photo,
-      date: "23 Apr 24",
-      category: "Corporate",
-      commentsCount: 5,
-      title: "A Guide to Embracing Meaningful Change in Banking",
+      date: '10 July 2024',
+      category: 'Web Development',
+      commentsCount: 3,
+      title: 'Modern Web Development Trends for Scalable Solutions',
       content: {
         introduction: [
-          "Learn how banks can adapt to industry shifts through innovation and customer-centric strategies"
+          'Discover the latest frameworks, best practices, and performance strategies shaping today’s web applications.'
         ],
         mainImage: single3,
         sections: [
           {
-            title: "Modernizing Legacy Systems",
-            content: "Change in banking starts with upgrading the technology stack while maintaining compliance and trust.",
+            title: 'Future-Proofing Web Applications',
+            content: 'Modern web development emphasizes scalability, responsiveness, and performance optimization.',
             subsections: [
               {
-                title: "1. Rethinking Outdated Infrastructure",
-                content: "Legacy systems limit growth and customer experience strategic upgrades are vital."
+                title: '1. Component-Based Architectures',
+                content: 'Frameworks like React and Vue.js offer modularity and reusability.'
               },
               {
-                title: "2. Driving Cultural and Process Shifts",
-                content: "Change isn't just tech; it requires mindset and workflow adjustments across teams."
+                title: '2. JAMstack and Headless CMS',
+                content: 'Speed and security through decoupled architectures.'
               }
             ]
           }
         ],
         quote: {
-          text: "Transformation in banking doesn’t start with systems it starts with courage.",
-          author: "Michael Lee"
+          text: 'Scalable web solutions begin with solid architecture and modern tools.',
+          author: 'Jane Doe – Frontend Specialist'
         },
         images: [single2],
         conclusion: [
-          "Banks that embrace change proactively are positioned to lead, not follow.",
-          "It’s not about disruption for the sake of it, but about building a resilient, future-ready institution."
+          'Stay ahead with adaptable web technologies and clean code practices.',
+          'A fast, secure web app is the backbone of digital success.'
         ]
       },
-      tags: ["Banking", "Change Management", "Digital Transformation"]
+      tags: ['Web Development', 'Performance', 'Frontend']
     },
+
     {
-      slug: 'startup',
-      author: "Salman Rushdie",
+      slug: 'mobile-app-development-india',
+      author: 'Admin',
       authorAvatar: photo,
-      date: "23 Apr 24",
-      category: "Modern Startup",
-      commentsCount: 5,
-      title: "For the Wealthy, Work Is the New Retirement",
+      date: '09 July 2024',
+      category: 'Mobile App Development',
+      commentsCount: 2,
+      title: 'Creating Impactful Mobile Apps for a Digital-First World',
       content: {
         introduction: [
-          "Understand why today’s affluent individuals are redefining retirement through purpose-driven work"
+          'Learn how businesses are building seamless mobile experiences using cross-platform and native development tools.'
         ],
         mainImage: single3,
         sections: [
           {
-            title: "Redefining Retirement for the Ultra-Wealthy",
-            content: "For many high-net-worth individuals, retirement no longer means stepping away it means engaging more meaningfully.",
+            title: 'Mobile-First Engagement Strategies',
+            content: 'Today’s users expect intuitive, fast, and personalized mobile experiences.',
             subsections: [
               {
-                title: "1. Purpose Over Rest",
-                content: "Many affluent individuals pursue passion projects, startups, or philanthropy instead of traditional retirement."
+                title: '1. Cross-Platform vs Native',
+                content: 'Evaluate trade-offs in performance, cost, and user experience.'
               },
               {
-                title: "2. Legacy Building Through Work",
-                content: "Work becomes a way to create impact, build influence, and leave a lasting legacy beyond just wealth."
+                title: '2. Integration and Responsiveness',
+                content: 'Ensure smooth data flow and adaptive layouts across devices.'
               }
             ]
           }
         ],
         quote: {
-          text: "For some, work isn’t about income anymore it’s about identity and meaning.",
-          author: "Michael Lee"
+          text: 'A great app meets users where they are—on the move.',
+          author: 'Arjun Patel – App Product Manager'
         },
         images: [single2],
         conclusion: [
-          "Retirement, for the wealthy, is less about escape and more about evolution.",
-          "The next chapter isn’t about slowing down it’s about shifting focus with purpose."
+          'Mobile apps are more than tools—they’re brand touchpoints.',
+          'Designing with the user in mind drives retention and satisfaction.'
         ]
       },
-      tags: ["Wealth", "Lifestyle", "Retirement", "Purpose", "Identity"]
+      tags: ['Mobile Development', 'Cross-Platform', 'App Strategy']
     },
+
     {
-      slug: 'consulting',
-      author: "R.K. Narayan",
+      slug: 'ui-ux-design-india',
+      author: 'Admin',
       authorAvatar: photo,
-      date: "18 Apr 24",
-      category: "Business Consulting",
-      commentsCount: 6,
-      title: "Providing Best Service for Customers",
+      date: '08 July 2024',
+      category: 'UI/UX Designing',
+      commentsCount: 3,
+      title: 'Crafting Exceptional Digital Experiences Through UI/UX',
       content: {
         introduction: [
-          "Exceptional service has become a major differentiator in today’s market.",
-          "Businesses that prioritize customer satisfaction build stronger, lasting relationships."
+          'Understand how design thinking, usability, and user research fuel successful digital interfaces.'
         ],
         mainImage: single3,
         sections: [
           {
-            title: "Customer-Centric Service Models",
-            content: "Focusing on customer needs and feedback fosters loyalty and trust...",
+            title: 'Design That Delivers',
+            content: 'UI/UX design is the bridge between user needs and digital solutions.',
             subsections: [
               {
-                title: "1. Listening Actively",
-                content: "Effective service starts with understanding listening to your customer is key."
+                title: '1. Empathy-Led Research',
+                content: 'User research guides intuitive and useful designs.'
               },
               {
-                title: "2. Personalizing the Experience",
-                content: "Tailoring solutions to individual needs helps customers feel valued and heard."
+                title: '2. Accessibility and Aesthetics',
+                content: 'Balance beauty with usability to reach and engage more users.'
               }
             ]
           }
         ],
         quote: {
-          text: "Customers may forget what you said but they'll never forget how you made them feel.",
-          author: "Maya Angelou"
+          text: 'Good design is invisible. Great design is unforgettable.',
+          author: 'Lea Tran – UX Researcher'
         },
         images: [single1, single2],
         conclusion: [
-          "Investing in excellent service is investing in long-term success.",
-          "Make service a culture, not just a department."
+          'Prioritize UI/UX to drive conversions and build loyalty.',
+          'A seamless interface is your competitive advantage.'
         ]
       },
-      tags: ["Customer Experience", "Service Excellence", "Business Consulting", "Loyalty"]
+      tags: ['UI', 'UX', 'User Experience', 'Design Thinking']
     },
+
     {
-      slug: 'corporatee',
-      author: "Marco Lee",
+      slug: 'digital-marketing-india',
+      author: 'Admin',
       authorAvatar: photo,
-      date: "18 Apr 24",
-      category: "Corporate",
-      commentsCount: 6,
-      title: "A New Age for Trade & Supply Chain Finance",
+      date: '07 July 2024',
+      category: 'Digital Marketing',
+      commentsCount: 4,
+      title: 'Digital Marketing Strategies for the Modern Tech Brand',
       content: {
         introduction: [
-          "Global trade is evolving rapidly, and financial systems must keep pace.",
-          "Modern supply chains demand smarter, faster, and more secure financial frameworks."
+          'Explore performance marketing, SEO, content strategies, and analytics-driven campaigns that elevate your brand’s digital footprint.'
         ],
         mainImage: single3,
         sections: [
           {
-            title: "Digitization in Trade Finance",
-            content: "The shift from paper-based to digital systems is redefining how trade operates.",
+            title: 'Winning in the Digital Arena',
+            content: 'Digital marketing is a blend of art, science, and strategy for growth.',
             subsections: [
               {
-                title: "1. Blockchain and Transparency",
-                content: "Distributed ledger technologies provide verifiable records and reduce fraud in trade transactions."
+                title: '1. Performance & SEO',
+                content: 'Leverage data to optimize campaigns and increase visibility.'
               },
               {
-                title: "2. Real-Time Payments",
-                content: "Instant cross-border payment solutions are speeding up the movement of goods and capital."
-              }
-            ]
-          },
-          {
-            title: "Risk Management and Compliance",
-            content: "Increased visibility across supply networks helps mitigate financial risk and adhere to global regulations.",
-            subsections: [
-              {
-                title: "1. Automated Risk Scoring",
-                content: "AI-powered tools help lenders assess buyer/supplier reliability instantly."
-              },
-              {
-                title: "2. Dynamic Compliance Tools",
-                content: "Adapting to changing regulatory environments with real-time updates improves global partnerships."
+                title: '2. Content & Storytelling',
+                content: 'Connect with audiences through valuable, relevant content.'
               }
             ]
           }
         ],
         quote: {
-          text: "Trade finance isn't just about money it's the backbone of global commerce.",
-          author: "Michael Lee"
+          text: 'Marketing is no longer about the stuff you make but the stories you tell.',
+          author: 'Seth Godin'
         },
         images: [single2],
         conclusion: [
-          "As supply chains get more complex, finance must get smarter.",
-          "Adopting digital solutions today sets the foundation for tomorrow’s global growth."
+          'Great digital marketing speaks to the right people at the right time.',
+          'Craft stories, optimize delivery, and let data lead the way.'
         ]
       },
-      tags: ["Trade", "Finance", "Supply Chain", "Blockchain", "Innovation"]
+      tags: ['Marketing', 'SEO', 'Content Strategy', 'Digital Growth']
     }
-
   ];
+
 
   const {id} = useParams();
   const project = blogPosts.find((p) => p.slug === id);
@@ -325,7 +297,7 @@ const BlogSingle = () => {
 
   const [comments, setComments] = useState([
     {
-      slug: 'marketing',
+      slug: 'ai-innovation-india',
       commentss: [
         {
           id: 1,
@@ -351,7 +323,7 @@ const BlogSingle = () => {
       ]
     },
     {
-      slug: 'startup-consulting',
+      slug: 'agentic-ai-india',
       commentss: [
         {
           id: 1,
@@ -377,7 +349,7 @@ const BlogSingle = () => {
       ]
     },
     {
-      slug: 'corporate',
+      slug: 'web-development-india',
       commentss: [
         {
           id: 1,
@@ -403,7 +375,7 @@ const BlogSingle = () => {
       ]
     },
     {
-      slug: 'startup',
+      slug: 'mobile-app-development-india',
       commentss: [
         {
           id: 1,
@@ -429,7 +401,7 @@ const BlogSingle = () => {
       ]
     },
     {
-      slug: 'consulting',
+      slug: 'ui-ux-design-india',
       commentss: [
         {
           id: 1,
@@ -455,7 +427,7 @@ const BlogSingle = () => {
       ]
     },
     {
-      slug: 'corporatee',
+      slug: 'digital-marketing-india',
       commentss: [
         {
           id: 1,
@@ -537,146 +509,146 @@ const BlogSingle = () => {
 
   const sidebarData = [
     {
-      slug: 'marketing',
+      slug: 'ai-innovation-india',
       author: {
         avatar: photo,
-        name: "Mehul Patel",
-        role: "IT Strategy Expert",
-        bio: "Expert in aligning technology with business goals to drive transformation and performance in digital-first organizations.",
+        name: "Dr. Anika Rao",
+        role: "AI Solutions Architect",
+        bio: "Leader in AI strategy and enterprise transformation, helping companies harness AI for competitive advantage.",
         socialLinks: [
-          { name: "Facebook", url: "#" },
+          { name: "LinkedIn", url: "#" },
+          { name: "Twitter", url: "#" }
+        ]
+      },
+      categories: [
+        { name: "Artificial Intelligence", count: 6 },
+        { name: "IT Solutions", count: 4 },
+        { name: "Enterprise Automation", count: 3 }
+      ],
+      recentPosts: [
+        { image: Post1, date: "July 10, 2025", title: "The Impact of AI on Customer Support Systems" },
+        { image: Post2, date: "July 5, 2025", title: "Leveraging AI for Predictive Maintenance in IT" }
+      ],
+      tags: ["AI", "Automation", "Digital Innovation", "Smart IT"]
+    },
+
+    {
+      slug: 'agentic-ai-india',
+      author: {
+        avatar: profileimg2,
+        name: "Victor Wang",
+        role: "Autonomous Systems Expert",
+        bio: "Designs scalable agentic architectures to power self-adaptive enterprise solutions and business logic automation.",
+        socialLinks: [
           { name: "Twitter", url: "#" },
+          { name: "LinkedIn", url: "#" }
+        ]
+      },
+      categories: [
+        { name: "Agentic AI", count: 4 },
+        { name: "Autonomous Tech", count: 3 }
+      ],
+      recentPosts: [
+        { image: Post3, date: "July 9, 2025", title: "Why Agentic AI Is the Future of Decision Engines" }
+      ],
+      tags: ["Agentic AI", "Intelligent Systems", "Adaptive Automation"]
+    },
+
+    {
+      slug: 'web-development-india',
+      author: {
+        avatar: profileimg3,
+        name: "Leah Moore",
+        role: "Full Stack Developer",
+        bio: "Passionate about building fast, scalable web applications using modern stacks like React, Node.js, and Next.js.",
+        socialLinks: [
+          { name: "Twitter", url: "#" },
+          { name: "GitHub", url: "#" },
+          { name: "LinkedIn", url: "#" }
+        ]
+      },
+      categories: [
+        { name: "Web Development", count: 7 },
+        { name: "Frontend", count: 4 },
+        { name: "JavaScript", count: 6 }
+      ],
+      recentPosts: [
+        { image: Post1, date: "July 6, 2025", title: "Performance Optimization Tips for React Apps" },
+        { image: Post2, date: "July 3, 2025", title: "Server-Side Rendering in Modern Web Apps" }
+      ],
+      tags: ["Web Dev", "React", "Next.js", "Frontend", "Backend"]
+    },
+
+    {
+      slug: 'mobile-app-development-india',
+      author: {
+        avatar: profileimg4,
+        name: "Karan Desai",
+        role: "Mobile App Architect",
+        bio: "Expert in cross-platform mobile development with Flutter and native technologies, focused on UX performance.",
+        socialLinks: [
+          { name: "Twitter", url: "#" },
+          { name: "LinkedIn", url: "#" }
+        ]
+      },
+      categories: [
+        { name: "Mobile Apps", count: 5 },
+        { name: "Flutter", count: 3 },
+        { name: "Android/iOS", count: 4 }
+      ],
+      recentPosts: [
+        { image: Post3, date: "July 4, 2025", title: "Native vs. Hybrid: Which App Strategy Wins?" }
+      ],
+      tags: ["Flutter", "React Native", "App UX", "Cross-Platform"]
+    },
+
+    {
+      slug: 'ui-ux-design-india',
+      author: {
+        avatar: profileimg6,
+        name: "Eliza Tran",
+        role: "UX Researcher",
+        bio: "Crafting accessible and intuitive digital interfaces by applying human-centered design principles and analytics.",
+        socialLinks: [
           { name: "Instagram", url: "#" },
           { name: "LinkedIn", url: "#" }
         ]
       },
       categories: [
-        { name: "Digital Strategy", count: 4 },
-        { name: "IT Solutions", count: 5 },
-        { name: "Business Consulting", count: 6 },
-        { name: "Enterprise Tech", count: 3 },
-        { name: "Cloud Computing", count: 2 }
+        { name: "UI/UX", count: 6 },
+        { name: "Design Thinking", count: 3 },
+        { name: "Product Design", count: 4 }
       ],
       recentPosts: [
-        { image: Post1, date: "July 1, 2025", title: "How Cloud Adoption Drives Business Agility" },
-        { image: Post2, date: "June 28, 2025", title: "Top Cybersecurity Trends Businesses Should Watch" },
-        { image: Post3, date: "June 25, 2025", title: "Digital Innovation: Tools That Power Growth" }
+        { image: Post1, date: "July 8, 2025", title: "UX Metrics That Actually Matter" },
+        { image: Post2, date: "July 6, 2025", title: "How to Design for Accessibility" }
       ],
-      tags: ["Digital Strategy", "IT Alignment", "Innovation", "Cloud", "Business"]
+      tags: ["UX", "UI", "Design", "User Research", "Accessibility"]
     },
+
     {
-      slug: 'startup-consulting',
+      slug: 'digital-marketing-india',
       author: {
-        avatar: profileimg2,
-        name: "Sophia Turner",
-        role: "FinTech Analyst",
-        bio: "Researcher and strategist focused on the intersection of technology and financial innovation, helping firms navigate digital disruption.",
+        avatar: profileimg7,
+        name: "Nathan Joseph",
+        role: "Digital Marketing Lead",
+        bio: "Helping brands scale through content, SEO, paid media, and analytics-driven storytelling.",
         socialLinks: [
+          { name: "Twitter", url: "#" },
           { name: "Facebook", url: "#" },
           { name: "LinkedIn", url: "#" }
         ]
       },
       categories: [
-        { name: "FinTech", count: 5 },
-        { name: "Financial Services", count: 4 },
-        { name: "Innovation", count: 3 }
+        { name: "Marketing", count: 8 },
+        { name: "SEO", count: 5 },
+        { name: "Content Strategy", count: 6 }
       ],
       recentPosts: [
-        { image: Post2, date: "July 2, 2025", title: "Top 5 Blockchain Trends Reshaping Finance" },
-        { image: Post3, date: "June 30, 2025", title: "Why Personalization is the Future of Banking" }
+        { image: Post1, date: "July 5, 2025", title: "How to Run a High-ROI Digital Campaign" },
+        { image: Post2, date: "June 30, 2025", title: "Marketing Automation Tools for 2025" }
       ],
-      tags: ["FinTech", "Banking", "Innovation", "Finance", "Automation"]
-    },
-    {
-      slug: 'corporate',
-      author: {
-        avatar: profileimg3,
-        name: "Michael Lee",
-        role: "Transformation Advisor",
-        bio: "Specialist in leading digital and operational change for financial institutions across global markets.",
-        socialLinks: [
-          { name: "Twitter", url: "#" },
-          { name: "LinkedIn", url: "#" }
-        ]
-      },
-      categories: [
-        { name: "Financial Consulting", count: 6 },
-        { name: "Banking Strategy", count: 4 }
-      ],
-      recentPosts: [
-        { image: Post2, date: "June 28, 2025", title: "A Guide to Embracing Meaningful Change in Banking" }
-      ],
-      tags: ["Banking", "Change", "Consulting", "Transformation"]
-    },
-    {
-      slug: 'startup',
-      author: {
-        avatar: profileimg4,
-        name: "Salman Rushdie",
-        role: "Lifestyle & Wealth Advisor",
-        bio: "Advising high-net-worth individuals on purpose-driven work and post-retirement legacy planning.",
-        socialLinks: [
-          { name: "Twitter", url: "#" },
-          { name: "LinkedIn", url: "#" }
-        ]
-      },
-      categories: [
-        { name: "Modern Lifestyles", count: 7 },
-        { name: "Wealth Management", count: 4 }
-      ],
-      recentPosts: [
-        { image: Post1, date: "July 4, 2025", title: "For the Wealthy, Work Is the New Retirement" }
-      ],
-      tags: ["Wealth", "Retirement", "Legacy", "Lifestyle", "Purpose"]
-    },
-    {
-      slug: 'consulting',
-      author: {
-        avatar: profileimg6,
-        name: "R.K. Narayan",
-        role: "Customer Success Strategist",
-        bio: "Dedicated to elevating customer experience through scalable consulting solutions and long-term vision.",
-        socialLinks: [
-          { name: "Twitter", url: "#" },
-          { name: "LinkedIn", url: "#" },
-          { name: "Facebook", url: "#" }
-        ]
-      },
-      categories: [
-        { name: "Business Consulting", count: 8 },
-        { name: "Customer Experience", count: 6 },
-        { name: "Service Strategy", count: 4 }
-      ],
-      recentPosts: [
-        { image: Post1, date: "June 15, 2024", title: "Providing Best Service for Customers" },
-        { image: Post2, date: "May 28, 2024", title: "How to Build a Customer-Centric Culture" },
-        { image: Post3, date: "May 10, 2024", title: "Key KPIs for Service-Led Organizations" }
-      ],
-      tags: ["Consulting", "Customer Service", "Experience", "Retention", "Strategy"]
-    },
-    {
-      slug: 'corporatee',
-      author: {
-        avatar: profileimg8,
-        name: "Marco Lee",
-        role: "Supply Chain Finance Analyst",
-        bio: "Specialist in trade finance, blockchain in logistics, and global economic shifts. Passionate about digital transformation in supply chains.",
-        socialLinks: [
-          { name: "Twitter", url: "#" },
-          { name: "LinkedIn", url: "#" }
-        ]
-      },
-      categories: [
-        { name: "Trade Finance", count: 7 },
-        { name: "Supply Chain", count: 4 },
-        { name: "FinTech", count: 6 }
-      ],
-      recentPosts: [
-        { image: Post1, date: "June 01, 2024", title: "A New Age for Trade & Supply Chain Finance" },
-        { image: Post2, date: "May 20, 2024", title: "How Blockchain Is Reshaping Global Trade" },
-        { image: Post3, date: "May 12, 2024", title: "Smart Contracts and the Future of Logistics" }
-      ],
-      tags: ["Finance", "Supply Chain", "Blockchain", "Trade", "Innovation"]
+      tags: ["Marketing", "SEO", "Branding", "Content", "Analytics"]
     }
   ];
 

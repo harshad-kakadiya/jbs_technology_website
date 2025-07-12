@@ -23,60 +23,61 @@ function Posts() {
     const router = useRouter();
     const Data = [
         {
-            navigate: "/blog/marketing",
-            date: "23 April 2024",
+            navigate: "/blog/ai-innovation-india",
+            date: "12 July 2024",
             img: Img2,
             smallImg: Img1,
-            btn: "Marketing",
-            title: "5 Impactful Elements That Promote IT and Business",
-            describtion: "Discover the key elements that bridge the gap between IT innovations and strategic business growth",
+            btn: "Artificial Intelligence",
+            title: "How AI Is Powering the Next Wave of IT Solutions",
+            describtion: "Discover how artificial intelligence is transforming IT infrastructure, automation, and user experiences. Leverage AI to streamline operations, enhance decision-making, and unlock new levels of innovation.",
         },
         {
-            navigate: "/blog/startup-consulting",
-            date: "23 April 2024",
+            navigate: "/blog/agentic-ai-india",
+            date: "11 July 2024",
             img: Img3,
             smallImg: img2,
-            btn: "Startup Consulting",
-            title: "Revolutionizing the Future of Financial Services",
-            describtion: "Explore how emerging technologies are reshaping financial services for a smarter tomorrow",
+            btn: "Agentic AI",
+            title: "The Rise of Agentic AI in Intelligent Automation",
+            describtion: "Explore how autonomous AI agents are driving adaptive decision-making and continuous learning. Empower businesses with scalable, self-directed systems for smarter operations.",
         },
         {
-            navigate: "/blog/corporate",
-            date: "23 April 2024",
+            navigate: "/blog/web-development-india",
+            date: "10 July 2024",
             img: Img4,
             smallImg: img3,
-            btn: "Corporate",
-            title: "A Guide to Embracing Meaningful Change in Banking",
-            describtion: "Learn how banks can adapt to industry shifts through innovation and customer-centric strategies",
+            btn: "Web Development",
+            title: "Modern Web Development Trends for Scalable Solutions",
+            describtion: "Discover the latest frameworks, best practices, and performance strategies shaping today’s web applications. Build responsive, secure, and future-proof websites.",
         },
         {
-            navigate: "/blog/startup",
-            date: "23 April 2024",
+            navigate: "/blog/mobile-app-development-india",
+            date: "09 July 2024",
             img: Img5,
             smallImg: img4,
-            btn: "Startup Consulting",
-            title: "For the Wealthy, Work Is the New Retirement",
-            describtion: "Understand why today’s affluent individuals are redefining retirement through purpose-driven work",
+            btn: "Mobile App Development",
+            title: "Creating Impactful Mobile Apps for a Digital-First World",
+            describtion: "Learn how businesses are building seamless mobile experiences using cross-platform and native development tools. Boost engagement with fast, intuitive apps.",
         },
         {
-            navigate: "/blog/consulting",
-            date: "18 April 2024",
+            navigate: "/blog/ui-ux-design-india",
+            date: "08 July 2024",
             img: Img6,
             smallImg: img5,
-            btn: "Buisness Consulting",
-            title: "Providing bettest service for customers",
-            describtion: "Uncover strategies that elevate customer experiences through improved service delivery",
+            btn: "UI/UX Designing",
+            title: "Crafting Exceptional Digital Experiences Through UI/UX",
+            describtion: "Understand how design thinking, usability, and user research fuel successful digital interfaces. Design products that delight and convert.",
         },
         {
-            navigate: "/blog/corporatee",
-            date: "18 April 2024",
+            navigate: "/blog/digital-marketing-india",
+            date: "07 July 2024",
             img: Img7,
-            smallImg: img7,
-            btn: "Corporate",
-            title: "A New Age for Trade & Supply Chain Finance",
-            describtion: "See how digital transformation is revolutionizing trade operations and supply chain finance",
+            smallImg: img6,
+            btn: "Digital Marketing",
+            title: "Digital Marketing Strategies for the Modern Tech Brand",
+            describtion: "Explore performance marketing, SEO, content strategies, and analytics-driven campaigns that elevate your brand’s digital footprint.",
         }
     ];
+
     return (
         <Box>
             <Container maxWidth={"xl"}>
@@ -220,10 +221,16 @@ function Posts() {
                                 <Box
                                     sx={{
                                         color: "mediumGray",
+                                        display: "-webkit-box",
+                                        WebkitLineClamp: 2,
+                                        WebkitBoxOrient: "vertical",
+                                        overflow: "hidden",
+                                        textOverflow: "ellipsis",
                                     }}
                                 >
                                     {item.describtion}
                                 </Box>
+
                                 <Box
                                     sx={{
                                         marginTop: "20px",
