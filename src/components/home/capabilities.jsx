@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import {Box, Container, Grid} from "@mui/material";
 import Img1 from "../../assets/images/home/Capabilities/Img1.jpg";
@@ -9,45 +11,57 @@ import Img6 from "../../assets/images/home/Capabilities/UI-UX.08fda19222eb922b6d
 import Img7 from "../../assets/images/home/Capabilities/image_720.png";
 import Img8
     from "../../assets/images/home/Capabilities/top-view-unrecognizable-hacker-performing-cyberattack-night_720.jpg";
+import {useRouter} from "next/navigation";
 
 function Capabilities() {
+    const router = useRouter();
+
+
     const capability = [
         {
+            navigation : "/hire-webdeveloper-india",
             title: "Web Development",
             describtion: "From sleek brochure sites to robust web applications, we craft digital experiences that captivate, convert, and elevate your business",
             img: Img2,
         },
         {
+            navigation : "/hire-mobileappdeveloper-india",
             title: "Mobile App Development",
             describtion: "Turn your app idea into reality with our expertise. From concept to launch, we develop bespoke applications that deliver measurable outcomes",
             img: Img5,
         },
         {
+            navigation : "/hire-ui-uxdevloper-india",
             title: "UI/UX Designing",
             describtion: "UI (User Interface) and UX (User Experience) design are fundamental components critical to the success of any digital product",
             img: Img6,
         },
         {
+            navigation : "/hire-digitalmarketing-india",
             title: "Digital Marketing",
             describtion: "At JBS Technology, we boost your online presence with tailored digital marketing strategies for optimal engagement and conversions",
             img: Img7,
         },
         {
+            navigation : "/hire-artificial-india",
             title: "Artificial Intelligence",
             describtion: "Amplify your business with JBS Technology by integrating AI into every layer of your operations for smarter, faster, and scalable growth., democratizing AI responsibly",
             img: Img1,
         },
         {
+            navigation : "/hire-agenticai-india",
             title: "Agentic AI",
             describtion: "Empower your organization with a powerfully designed infrastructure stack and support technologies",
             img: Img3,
         },
         {
+            navigation : "/hire-frontend-india",
             title: "Frontend",
             describtion: "At JBS Technology, we create Pixel-perfect, responsive, and high-performance UI built with modern tech like React and Tailwind CSS",
             img: Img4,
         },
         {
+            navigation : "/hire-backend-india",
             title: "Backend",
             describtion: "Secure, scalable, and high-performance server-side solutions using Node.js, Express, and modern databases",
             img: Img8,
@@ -91,13 +105,15 @@ function Capabilities() {
                 </Grid>
                 <Grid container spacing={3}>
                     {capability.map((item, index) => (
-                        <Grid item key={index} xs={12} md={3}>
+                        <Grid item key={index} xs={12} md={4} lg={3}>
                             <Box
+                                onClick={() => router.push(item.navigation)}
                                 sx={{
                                     height: {md: "400px", xs: "362px"},
                                     width: "100%",
                                     position: "relative",
                                     overflow: "hidden",
+                                    cursor: "pointer",
                                     "&:hover .bg-img": {
                                         filter: "grayscale(0.5) blur(2px)", // On hover: grayscale 0.5 and blur 2px
                                         transition: "filter 0.3s ease",

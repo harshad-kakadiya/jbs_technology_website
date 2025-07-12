@@ -14,33 +14,12 @@ import PieChartIcon from '@mui/icons-material/PieChart';
 import GroupIcon from '@mui/icons-material/Group';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 
-function Servicess() {
-
-    const services = [
-        {
-            id: 1,
-            icon: <PieChartIcon sx={{ fontSize: 70 }} />,
-            title: "We are a Full-Service Firm",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt tellus sed nisl accumsan vestibulum."
-        },
-        {
-            id: 2,
-            icon: <GroupIcon sx={{ fontSize: 70 }} />,
-            title: "Pre-Paid Agreements",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt tellus sed nisl accumsan vestibulum."
-        },
-        {
-            id: 3,
-            icon: <AccountBalanceIcon sx={{ fontSize: 70 }} />,
-            title: "We are a Full-Service Firm",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt tellus sed nisl accumsan vestibulum."
-        }
-    ];
+function Servicess({services}) {
 
     return (
         <Box sx={{
             backgroundColor: '#f8f9fa',
-            py: { xs: 4, sm: 6, md: 8 }
+            py: { xs: 4, sm: 6, md: 0 }
         }}>
             <Container maxWidth="lg">
                 <Grid container spacing={{ xs: 3, md: 3 }}>

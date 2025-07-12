@@ -41,7 +41,7 @@ const ValueCard = ({ item }) => (
             textAlign: "center",
             overflow: "hidden",
             position: "relative",
-            height: {xs: '190px', md: '210px'},
+            height: {xs: '180px', md: '200px'},
             borderRadius: "8px",
             transition: "transform 0.5s ease",
             "&:hover .contain": {

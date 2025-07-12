@@ -11,32 +11,10 @@ import {
 } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
 import Image from 'next/image';
-import img1 from '@/assets/images/singleCapability/svd4.jpg';
 
-// 🔸 Dynamic content below
-const dynamicContent = {
-    title: "How we Help you Limit Risks and Launch your Business.",
-    description: "Through experienced startup consultants who understand the isolated tasks necessary, a client can rely on a professional to manage a critical step in the early stages and focus on other items that need attention.",
-    services: [
-        {
-            id: 1,
-            title: "Strategy And Planning",
-            description: "The tasks necessary to get a business established are big obstacles when looked at as a whole. Business startup consultants breakdown the individual tasks and responsibilities, source vendors if necessary."
-        },
-        {
-            id: 2,
-            title: "Business Structure Development",
-            description: "Startups have to execute multiple items simultaneous. Consultants can help assisting clients execute major critical steps in the early stages of the business. Quisque consectetur purus ut auctor faucibus."
-        },
-        {
-            id: 3,
-            title: "Legal Business Formation",
-            description: "Clients have to form a legal structure for their business. Consultants advice on options such as sole proprietor, corporation, LLC, and the pros and cons of it. They also help with other accounts such as banking."
-        }
-    ]
-};
 
-function OurApproach() {
+
+function OurApproach({dynamicContent}) {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -68,7 +46,7 @@ function OurApproach() {
                     justifyContent: 'space-between',
                     alignItems: { xs: 'flex-start', md: 'center' },
                     gap: { xs: 3, md: 0 },
-                    mb: 5
+                    mb: 0
                 }}>
                     <Typography
                         variant="h3"
@@ -109,17 +87,17 @@ function OurApproach() {
                             sx={{
                                 position: 'relative',
                                 width: '100%',
-                                height: { xs: '300px', sm: '400px', md: '500px', lg: '608px' },
+                                height: { xs: '300px', sm: '400px', md: '500px', lg: '400px' },
                                 overflow: 'hidden',
                                 borderRadius: { xs: 2, md: 0 }
                             }}
                         >
                             <Image
-                                src={img1}
+                                src={dynamicContent.img}
                                 alt="Business consultation meeting"
                                 fill
                                 style={{
-                                    objectFit: 'cover',
+                                    objectFit: 'contain',
                                     objectPosition: 'center'
                                 }}
                                 priority

@@ -13,51 +13,14 @@ import {
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 
-const Faqs = () => {
+const Faqs = ({faqData}) => {
     const [expanded, setExpanded] = useState("panel1");
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
     };
 
-    const faqData = [
-        {
-            id: "panel1",
-            question: "Who are your typical clients?",
-            answer:
-                "We work with a variety of clients. We work with the heads of municipalities' transportation planning, traffic engineering or economic development departments, and with mayors’ offices.",
-        },
-        {
-            id: "panel2",
-            question: "What is the process for beginning a project?",
-            answer:
-                "Our project initiation process begins with a comprehensive consultation to understand your specific needs and objectives. We then develop a customized proposal outlining the scope, timeline, and deliverables for your project.",
-        },
-        {
-            id: "panel3",
-            question: "Can you help a client get funding?",
-            answer:
-                "Yes, we can assist clients in identifying potential funding sources and help prepare grant applications. Our team has experience with various federal, state, and local funding programs relevant to transportation and infrastructure projects.",
-        },
-        {
-            id: "panel4",
-            question: "What if my project lies outside your team’s skillset?",
-            answer:
-                "If your project requires expertise outside our core competencies, we have a network of trusted partners and consultants we can bring in to ensure your project receives the specialized attention it needs.",
-        },
-        {
-            id: "panel5",
-            question: "Will you tell me how to run my business?",
-            answer:
-                "We focus on providing strategic guidance and recommendations based on our expertise, but we respect that you know your business best. Our role is to support your decision-making with data-driven insights and industry best practices.",
-        },
-        {
-            id: "panel6",
-            question: "Are you a data controller or processor?",
-            answer:
-                "Our role as a data controller or processor depends on the specific nature of our engagement with you. We can discuss the details of data handling and our respective responsibilities during our initial consultation.",
-        },
-    ];
+
 
     return (
         <Box sx={{ py: { xs: 6, md: 10 }, bgcolor: "#f8f9fa" }}>

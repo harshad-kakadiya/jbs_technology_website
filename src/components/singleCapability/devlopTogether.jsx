@@ -1,47 +1,22 @@
 'use client';
 import React from 'react';
 import {
-    Box,
-    Typography,
-    Button,
-    Grid,
-    Container,
-    useTheme,
-    useMediaQuery,
-    IconButton
+    Box, Typography, Button, Grid, Container, IconButton
 } from "@mui/material";
 import CheckIcon from '@mui/icons-material/Check';
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import Image from 'next/image';
-import img1 from '../../assets/images/singleCapability/img1.jpg'; // adjust the path as needed
 
-const DevlopTogetherPage = () => {
-    // 🔼 DATA SECTION
-    const heading = "If you want to Start a Business from Scratch, Focus on the Difference.";
-    const description = "Starting a new business comes with a vast amount of steps. These are steps, which have to be not just taken but also known about in advance. As an investor and entrepreneur, many of these can be paralyzing, cause inertia, and not allow for forward movement.";
-    const features = [
-        "Lay the foundations for successful innovation",
-        "Create an innovative business culture",
-        "Business Structure Development",
-        "Find the right innovation projects for your business"
-    ];
-    const imageSrc = img1;
-    const buttonText = "Let's Develop Together";
-    const contactNumber = "(234) 109-6666";
-
-    // 🔽 COMPONENT UI SECTION
-    const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-
+const DevlopTogetherPage = ({ heading, description, features, imageSrc, buttonText, contactNumber }) => {
     return (
-        <Box sx={{ backgroundColor: '#f8f9fa', py: { xs: 4, md: 15 } }}>
+        <Box sx={{ backgroundColor: '#f8f9fa', py: { xs: 4, md: 5 } }}>
             <Container maxWidth="xl">
                 <Grid container spacing={0} alignItems="center">
                     {/* Image Section */}
                     <Grid item xs={12} md={5}>
                         <Box sx={{
                             position: 'relative',
-                            height: { xs: '300px', sm: '400px', md: '500px', lg: '600px' },
+                            height: { xs: '300px', sm: '400px', md: '500px', lg: '500px' },
                             overflow: 'hidden',
                             borderRadius: { xs: 2, md: 0 }
                         }}>
@@ -49,7 +24,7 @@ const DevlopTogetherPage = () => {
                                 src={imageSrc}
                                 alt="Business consultation meeting"
                                 fill
-                                style={{ objectFit: 'cover', objectPosition: 'center' }}
+                                style={{ objectFit: 'contain', objectPosition: 'center' }}
                                 priority
                             />
                         </Box>
@@ -132,13 +107,13 @@ const DevlopTogetherPage = () => {
                                     sx={{
                                         backgroundColor: '#0A1119',
                                         color: 'white',
-                                        px: { xs: 4, sm: 6 }, // horizontal padding (0px 35px ≈ 4 to 6 spacing units)
-                                        py: { xs: 1.5, sm: 1.8 }, // vertical padding (instead of lineHeight hack)
+                                        px: { xs: 4, sm: 6 },
+                                        py: { xs: 1.5, sm: 1.8 },
                                         fontSize: { xs: '14px', sm: '15px' },
                                         fontWeight: 400,
                                         borderRadius: '999px',
                                         textTransform: 'none',
-                                        minHeight: { xs: '44px', sm: '50px' }, // ensures consistent height on all devices
+                                        minHeight: { xs: '44px', sm: '50px' },
                                         '&:hover': {
                                             backgroundColor: '#34495e'
                                         }
@@ -146,7 +121,6 @@ const DevlopTogetherPage = () => {
                                 >
                                     {buttonText}
                                 </Button>
-
 
                                 <Box sx={{
                                     display: 'flex',
