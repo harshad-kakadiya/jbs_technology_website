@@ -207,11 +207,23 @@ function Industries() {
                                 backgroundColor: 'white',
                                 border: '1px solid #E7E7E7'
                             }}>
-                                <Box sx={{p: {xs: '70px 0px', md: '80px 0px', sm: '100px 0px'}, display: 'flex' , justifyContent:'center' , alignItems: 'center' , flexDirection:'column'}}>
+                                <Box sx={{
+                                    p: {xs: '70px 0px', md: '80px 0px', sm: '100px 0px'},
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    flexDirection: 'column'
+                                }}>
                                     <Box sx={{' svg': {fontSize: {xs: '50px', md: '65px'}}}}>
                                         {item.icon}
                                     </Box>
-                                    <Box sx={{my: 1, fontSize: 17}}>{item.title}</Box>
+                                    <Box
+                                        variant="h2"
+                                         component="h2"
+                                         sx={{my: 1, fontSize: 17}}
+                                    >
+                                        {item.title}
+                                    </Box>
                                 </Box>
                             </Box>
                             <Box sx={{lineHeight: 0}}>

@@ -63,6 +63,8 @@ function HowItWorks() {
             <Container maxWidth="lg" sx={{py: 6}}>
                 <Box sx={{position: 'relative',}}>
                     <Box
+                        variant="h2"
+                        component="h2"
                         sx={{
                             fontSize: {xs: "30px", md: "35px", lg: "45px"},
                             fontWeight: "500",

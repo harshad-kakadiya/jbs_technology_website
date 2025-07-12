@@ -24,6 +24,7 @@ function Navigation() {
     const router = useRouter();
 
     const navItems = [
+        {name: 'Home', route: '/'},
         {name: 'About Us', route: '/about'},
         {name: 'Services', route: '/services'},
         {name: 'Portfolio', route: '/portfolio'},

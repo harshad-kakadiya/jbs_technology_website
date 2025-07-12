@@ -17,6 +17,42 @@ import phoneimg2 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07
 import phoneimg3 from "@/assets/images/portfolio/mediaProject/Screenshot 2025-07-03 182034.png";
 import img7 from "@/assets/images/portfolio/techuse/js.webp";
 
+export const metadata = {
+    title: "Case Study: EduAura – Institute Management CRM | JBS Technology",
+    description:
+        "Explore how JBS Technology developed a custom Institute Management System (IMS) CRM for EduAura, streamlining operations across 300+ educational institutions.",
+    keywords:
+        "education CRM, EduAura, IMS, institute management system, school software, edtech solution, JBS Technology project, student information system",
+    openGraph: {
+        title: "EduAura – Institute Management CRM Case Study | JBS Technology",
+        description:
+            "Learn how JBS Technology helped EduAura transform school and college operations with a custom-built CRM platform for admissions, fees, communication, and reporting.",
+        url: "https://www.jbstechnology.com/portfolio/eduaura", // Replace with your real URL
+        siteName: "JBS Technology",
+        images: [
+            {
+                url: "https://www.jbstechnology.com/images/portfolio/eduaura-og.jpg", // Replace with real OG image
+                width: 1200,
+                height: 630,
+                alt: "EduAura Education CRM - Case Study",
+            },
+        ],
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Case Study: EduAura Education CRM | JBS Technology",
+        description:
+            "How JBS Technology helped EduAura digitize academic operations with a powerful Institute Management CRM. A complete EdTech case study.",
+        images: ["https://www.jbstechnology.com/images/portfolio/eduaura-og.jpg"], // Replace if needed
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: false,
+    },
+};
+
 
 function Page() {
     const breadCrumbs = [

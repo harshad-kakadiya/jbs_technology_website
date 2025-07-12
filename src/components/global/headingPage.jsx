@@ -35,7 +35,10 @@ function HeadingPage({bgImg, heading, breadcrumbs = []}) {
                         justifyContent: (breadcrumbs.length > 0 && breadcrumbs) ? "unset" : ' center',
                         alignItems: "center",
                     }}>
-                        <Box sx={{
+                        <Box
+                            variant="h1"
+                            component="h1"
+                            sx={{
                             fontWeight: "400",
                             fontSize: {md: "60px", xs: "40px"},
                             color: "white",

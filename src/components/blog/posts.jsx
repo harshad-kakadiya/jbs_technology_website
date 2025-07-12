@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Box, Container, Grid, Typography } from "@mui/material";
+import {Box, Container, Grid, Typography} from "@mui/material";
 import Img1 from "../../assets/images/blog/posts/Img1.jpg";
 import Img2 from "../../assets/images/blog/posts/Img2.webp";
 import Img3 from "../../assets/images/blog/posts/Img3.webp";
@@ -18,11 +18,12 @@ import img7 from "../../assets/images/blog/posts/csdcfad.jpg";
 import Image from "next/image";
 import EastIcon from '@mui/icons-material/East';
 import {useRouter} from "next/navigation";
+
 function Posts() {
     const router = useRouter();
     const Data = [
         {
-            navigate:"/blog/marketing",
+            navigate: "/blog/marketing",
             date: "23 April 2024",
             img: Img2,
             smallImg: Img1,
@@ -31,7 +32,7 @@ function Posts() {
             describtion: "Discover the key elements that bridge the gap between IT innovations and strategic business growth",
         },
         {
-            navigate:"/blog/startup-consulting",
+            navigate: "/blog/startup-consulting",
             date: "23 April 2024",
             img: Img3,
             smallImg: img2,
@@ -40,7 +41,7 @@ function Posts() {
             describtion: "Explore how emerging technologies are reshaping financial services for a smarter tomorrow",
         },
         {
-            navigate:"/blog/corporate",
+            navigate: "/blog/corporate",
             date: "23 April 2024",
             img: Img4,
             smallImg: img3,
@@ -49,7 +50,7 @@ function Posts() {
             describtion: "Learn how banks can adapt to industry shifts through innovation and customer-centric strategies",
         },
         {
-            navigate:"/blog/startup",
+            navigate: "/blog/startup",
             date: "23 April 2024",
             img: Img5,
             smallImg: img4,
@@ -58,7 +59,7 @@ function Posts() {
             describtion: "Understand why today’s affluent individuals are redefining retirement through purpose-driven work",
         },
         {
-            navigate:"/blog/consulting",
+            navigate: "/blog/consulting",
             date: "18 April 2024",
             img: Img6,
             smallImg: img5,
@@ -67,7 +68,7 @@ function Posts() {
             describtion: "Uncover strategies that elevate customer experiences through improved service delivery",
         },
         {
-            navigate:"/blog/corporatee",
+            navigate: "/blog/corporatee",
             date: "18 April 2024",
             img: Img7,
             smallImg: img7,
@@ -79,12 +80,20 @@ function Posts() {
     return (
         <Box>
             <Container maxWidth={"xl"}>
-                <Typography sx={{ fontWeight: 500, marginBottom: "70px",paddingLeft:"15px",fontSize: { xs: "30px", md: "35px", lg: "45px" }, }}>
+                <Typography
+                    variant="h2"
+                    component="h2"
+                    sx={{
+                        fontWeight: 500,
+                        marginBottom: "70px",
+                        paddingLeft: "15px",
+                        fontSize: {xs: "30px", md: "35px", lg: "45px"},
+                    }}>
                     Recent Posts
                 </Typography>
                 <Grid container spacing={3}>
                     {Data.map((item, index) => (
-                        <Grid item xs={12} md={6} lg={4} key={index} >
+                        <Grid item xs={12} md={6} lg={4} key={index}>
                             <Box
                                 onClick={() => router.push(item.navigate)}
                                 sx={{
@@ -114,10 +123,10 @@ function Posts() {
                                         style={{
                                             borderRadius: "50%",
                                             marginRight: "10px",
-                                            objectFit:"cover"
+                                            objectFit: "cover"
                                         }}
                                     />
-                                    <Typography variant="body2" sx={{ color: "mediumGray" }}>
+                                    <Typography variant="body2" sx={{color: "mediumGray"}}>
                                         By Admin &nbsp;
                                     </Typography>
                                 </Box>
@@ -157,14 +166,14 @@ function Posts() {
                                         <Typography
                                             variant="h6"
                                             component="div"
-                                            sx={{ fontSize: "35px", lineHeight: "1.2" }}
+                                            sx={{fontSize: "35px", lineHeight: "1.2"}}
                                         >
                                             {item.date.split(" ")[0]}
                                         </Typography>
                                         <Typography
                                             variant="body2"
                                             component="div"
-                                            sx={{ fontSize: "15px", lineHeight: "1.2" }}
+                                            sx={{fontSize: "15px", lineHeight: "1.2"}}
                                         >
                                             {item.date.split(" ")[1]}
                                         </Typography>
@@ -217,14 +226,15 @@ function Posts() {
                                         marginTop: "20px",
                                         display: "flex",
                                         alignItems: "center",
-                                        fontWeight:500,
-                                        cursor:"pointer",
+                                        fontWeight: 500,
+                                        cursor: "pointer",
                                         '&:hover .icon': {
                                             marginLeft: "20px",
                                         },
                                     }}
                                 >
-                                    Continue Reading <EastIcon className={'icon'} sx={{ transition: ".3s", marginLeft: "10px" }} />
+                                    Continue Reading <EastIcon className={'icon'}
+                                                               sx={{transition: ".3s", marginLeft: "10px"}}/>
                                 </Box>
                             </Box>
                         </Grid>
@@ -234,4 +244,5 @@ function Posts() {
         </Box>
     );
 }
+
 export default Posts;

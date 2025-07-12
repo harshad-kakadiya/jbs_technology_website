@@ -134,7 +134,10 @@ function Collaborate() {
                             <Grid container>
                                 <Grid item lg={6} xs={12}>
                                     <Box sx={{padding: {lg: "100px 15px 100px 25px", xs: "70px 15px 30px 15px"}}}>
-                                        <Box sx={{
+                                        <Box
+                                            variant="h2"
+                                            component="h2"
+                                            sx={{
                                             fontSize: {xs: "30px", md: "35px", lg: "45px"},
                                             fontWeight: "500",
                                             lineHeight: "55px",

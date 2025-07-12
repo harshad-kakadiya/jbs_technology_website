@@ -37,7 +37,8 @@ const Modification = () => {
                             </Typography>
 
                             <Typography
-                                variant="h3"
+                                variant="h2"
+                                component="h2"
                                 sx={{
                                     fontWeight: 500,
                                     color: "#000",

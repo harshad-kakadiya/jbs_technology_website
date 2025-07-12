@@ -80,7 +80,10 @@ function Ourproducts() {
         <Box sx={{padding: "0 0 0px"}}>
             <Container maxWidth={"xl"}>
                 <Box  sx={{ padding: 4 }}>
-                    <Box sx={{
+                    <Box
+                        variant="h2"
+                        component="h2"
+                        sx={{
                         fontSize: { xs: "30px", md: "35px", lg: "45px" },
                         fontWeight: "500",
                     }}>

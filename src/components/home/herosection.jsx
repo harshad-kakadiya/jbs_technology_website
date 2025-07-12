@@ -73,8 +73,8 @@ function Herosection() {
                                     }}
                                 >
                                     <Typography
-                                        variant="h2"
-                                        component="h2"
+                                        variant="h1"
+                                        component="h1"
                                         sx={{
                                             fontSize: { xl: "52px", md: '45px', sm: "35px", xs: "28px" },
                                             fontWeight: 500,

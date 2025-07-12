@@ -26,8 +26,8 @@ function IdeasAndDrive() {
                         {/* Text Section */}
                         <Box sx={{maxWidth: 700, my: {xs: 0, md: 5},}}>
                             <Typography
-                                variant="h4"
-
+                                variant="h2"
+                                component="h2"
                                 sx={{
                                     fontWeight: 500,
                                     mb: 2,

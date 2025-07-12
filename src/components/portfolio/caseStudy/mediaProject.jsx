@@ -84,7 +84,8 @@ function MediaProject({title  , description , slides , projectdes , status ,name
                                         {item.number}
                                     </Typography>
                                     <Typography
-                                        variant="h6"
+                                        variant="h2"
+                                        component="h2"
                                         sx={{
                                             color: '#0F172A',
                                             fontSize: '36px',

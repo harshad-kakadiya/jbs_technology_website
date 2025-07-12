@@ -77,6 +77,8 @@ function KeyBenefits() {
                         <Box>
                             <Box>
                                 <Typography
+                                    variant="h2"
+                                    component="h2"
                                     sx={{
                                         fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                         fontWeight: "500",
@@ -122,6 +124,8 @@ function KeyBenefits() {
                             </Box>
                             <Box>
                                 <Typography
+                                    variant="h2"
+                                    component="h2"
                                     sx={{
                                         fontSize: { xs: "30px", md: "35px", lg: "45px" },
                                         fontWeight: "500",

@@ -93,7 +93,8 @@ function Testimonial() {
     return (
         <Box sx={{my:{xs:5,lg:7}}}>
             <Box
-                component={"h2"}
+                variant="h2"
+                component="h2"
                 sx={{
                     fontSize: { xs: "30px", md: "35px", lg: "45px" },
                     fontWeight: 600,
