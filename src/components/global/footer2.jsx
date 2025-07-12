@@ -20,13 +20,13 @@ import {useRouter} from "next/navigation";
 function Footer2() {
     const router = useRouter();
     const navItems = [
-        { name: 'home', route: '/' },
-        { name: 'About Us', route: '/about' },
-        { name: 'Services', route: '/services' },
-        { name: 'Portfolio', route: '/portfolio' },
-        { name: 'Blog', route: '/blog' },
-        { name: 'Careers', route: '/careers' },
-        { name: 'Contact Us', route: '/contact' },
+        {name: 'home', route: '/'},
+        {name: 'About Us', route: '/about'},
+        {name: 'Services', route: '/services'},
+        {name: 'Portfolio', route: '/portfolio'},
+        {name: 'Blog', route: '/blog'},
+        {name: 'Careers', route: '/careers'},
+        {name: 'Contact Us', route: '/contact'},
     ];
     const footerData = {
         logo: img1,
@@ -67,7 +67,7 @@ function Footer2() {
         },
         footerBottom: {
             left: "© 2025 JBS Technology. All rights reserved.",
-            links: ["Privacy Policy"],
+            links: [{name: "Privacy Policy", route: "/privacy-policy"}],
         },
     };
 
@@ -82,8 +82,8 @@ function Footer2() {
             <Container maxWidth="xl">
                 <Grid container alignItems="center" spacing={2}>
                     <Grid item xs={12} md={4}>
-                        <Box sx={{display: "flex", justifyContent: {xs: "center", md: "left"} , height:'100px' }}
-                            onClick={() => router.push('/')}
+                        <Box sx={{display: "flex", justifyContent: {xs: "center", md: "left"}, height: '100px'}}
+                             onClick={() => router.push('/')}
                         >
                             <img
                                 src={footerData.logo.src}
@@ -92,7 +92,7 @@ function Footer2() {
                                     width: '100px',
                                     height: '100%',
                                     objectFit: 'contain',
-                                    cursor:'pointer'
+                                    cursor: 'pointer'
                                 }}
                             />
                         </Box>
@@ -135,7 +135,7 @@ function Footer2() {
                 <Grid container spacing={4}>
                     <Grid item xs={12} sm={6} md={3}>
                         <Box sx={{py: "20px", backgroundColor: "#1A1F26", borderRadius: "8px"}}>
-                            <Typography variant="h6" sx={{fontWeight: 500, mb: 3, marginLeft:'23px'}}>
+                            <Typography variant="h6" sx={{fontWeight: 500, mb: 3, marginLeft: '23px'}}>
                                 {footerData.services.title}
                             </Typography>
                             {footerData.services.links.map((service, index) => (
@@ -277,8 +277,11 @@ function Footer2() {
                             }}
                         >
                             {footerData.footerBottom.links.map((link, index) => (
-                                <Typography key={index} variant="body2" sx={{fontSize: "12px", color: "#C4C4C4"}}>
-                                    {link}
+                                <Typography key={index} variant="body2"
+                                            sx={{fontSize: "12px", color: "#C4C4C4", cursor: "pointer"}}
+                                            onClick={() => router.push('/privacy-policy')}
+                                >
+                                    {link.name}
                                 </Typography>
                             ))}
                         </Box>

@@ -6,9 +6,24 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import LabelIcon from "@mui/icons-material/Label";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import photo from "../../assets/images/blog/bolg/author-96x96.jpg";
-import single1 from "../../assets/images/blog/bolg/single1.webp";
-import single2 from "../../assets/images/blog/bolg/single2.webp";
-import single3 from "../../assets/images/blog/bolg/single3.webp";
+import single3 from "../../assets/images/blog/bolg/ai3.jpg";
+import single1 from "../../assets/images/blog/bolg/ai1.png";
+import single2 from "../../assets/images/blog/bolg/ai2.jpg";
+import single6 from "../../assets/images/blog/bolg/agentic3.jpg";
+import single4 from "../../assets/images/blog/bolg/agentic1.jpg";
+import single5 from "../../assets/images/blog/bolg/agentic2.jpg";
+import single7 from "../../assets/images/blog/bolg/web1.jpg";
+import single8 from "../../assets/images/blog/bolg/web2.jpg";
+import single9 from "../../assets/images/blog/bolg/web3.jpg";
+import single12 from "../../assets/images/blog/bolg/mobile1.jpg";
+import single10 from "../../assets/images/blog/bolg/mobile2.jpg";
+import single11 from "../../assets/images/blog/bolg/mobile3.jpg";
+import single13 from "../../assets/images/blog/bolg/digital2.jpg";
+import single14 from "../../assets/images/blog/bolg/digital1.jpg";
+import single15 from "../../assets/images/blog/bolg/digital3.jpg";
+import single16 from "../../assets/images/blog/bolg/marketing1.jpg";
+import single17 from "../../assets/images/blog/bolg/marketing2.jpg";
+import single18 from "../../assets/images/blog/bolg/marketing3.jpg";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import ShareIcon from "@mui/icons-material/Share";
 import ReplyIcon from "@mui/icons-material/Reply";
@@ -82,7 +97,7 @@ const BlogSingle = () => {
         introduction: [
           'Explore how autonomous AI agents are driving adaptive decision-making and continuous learning.'
         ],
-        mainImage: single2,
+        mainImage: single4,
         sections: [
           {
             title: 'Autonomous Agents at Work',
@@ -103,7 +118,7 @@ const BlogSingle = () => {
           text: 'Agentic AI will define the next frontier in business automation.',
           author: 'David Chen – Autonomous Systems Expert'
         },
-        images: [single1, single3],
+        images: [single5, single6],
         conclusion: [
           'Agentic AI enables businesses to scale intelligently and respond in real-time.',
           'It’s not just automation—it’s autonomy with purpose.'
@@ -124,7 +139,7 @@ const BlogSingle = () => {
         introduction: [
           'Discover the latest frameworks, best practices, and performance strategies shaping today’s web applications.'
         ],
-        mainImage: single3,
+        mainImage: single7,
         sections: [
           {
             title: 'Future-Proofing Web Applications',
@@ -145,7 +160,7 @@ const BlogSingle = () => {
           text: 'Scalable web solutions begin with solid architecture and modern tools.',
           author: 'Jane Doe – Frontend Specialist'
         },
-        images: [single2],
+        images: [single8 , single9],
         conclusion: [
           'Stay ahead with adaptable web technologies and clean code practices.',
           'A fast, secure web app is the backbone of digital success.'
@@ -166,7 +181,7 @@ const BlogSingle = () => {
         introduction: [
           'Learn how businesses are building seamless mobile experiences using cross-platform and native development tools.'
         ],
-        mainImage: single3,
+        mainImage: single10,
         sections: [
           {
             title: 'Mobile-First Engagement Strategies',
@@ -187,7 +202,7 @@ const BlogSingle = () => {
           text: 'A great app meets users where they are—on the move.',
           author: 'Arjun Patel – App Product Manager'
         },
-        images: [single2],
+        images: [single11 , single12],
         conclusion: [
           'Mobile apps are more than tools—they’re brand touchpoints.',
           'Designing with the user in mind drives retention and satisfaction.'
@@ -208,7 +223,7 @@ const BlogSingle = () => {
         introduction: [
           'Understand how design thinking, usability, and user research fuel successful digital interfaces.'
         ],
-        mainImage: single3,
+        mainImage: single13,
         sections: [
           {
             title: 'Design That Delivers',
@@ -229,7 +244,7 @@ const BlogSingle = () => {
           text: 'Good design is invisible. Great design is unforgettable.',
           author: 'Lea Tran – UX Researcher'
         },
-        images: [single1, single2],
+        images: [single14, single15],
         conclusion: [
           'Prioritize UI/UX to drive conversions and build loyalty.',
           'A seamless interface is your competitive advantage.'
@@ -250,7 +265,7 @@ const BlogSingle = () => {
         introduction: [
           'Explore performance marketing, SEO, content strategies, and analytics-driven campaigns that elevate your brand’s digital footprint.'
         ],
-        mainImage: single3,
+        mainImage: single16,
         sections: [
           {
             title: 'Winning in the Digital Arena',
@@ -271,7 +286,7 @@ const BlogSingle = () => {
           text: 'Marketing is no longer about the stuff you make but the stories you tell.',
           author: 'Seth Godin'
         },
-        images: [single2],
+        images: [single17 , single18],
         conclusion: [
           'Great digital marketing speaks to the right people at the right time.',
           'Craft stories, optimize delivery, and let data lead the way.'
