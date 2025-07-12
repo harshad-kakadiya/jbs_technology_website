@@ -29,7 +29,7 @@ const valuePropositions = [
         description: "Grow faster. With scalable digital experiences from a top software development company",
         icon: <OpenInFullOutlinedIcon fontSize="large" />,
     }
-];
+]; 
 
 // ✅ Correct for JavaScript/JSX
 const ValueCard = ({ item }) => (
