@@ -228,24 +228,7 @@ function Page() {
         <Box>
             <HeadingPage bgImg={bg1.src} heading={project.title} breadcrumbs={breadCrumbs}/>
             <Container maxWidth="lg" sx={{py: 12}}>
-                <Box textAlign="center">
-                    <Typography gutterBottom sx={{
-                         fontSize: { xs: "30px", md: "35px", lg: "45px" },
-                        fontWeight: 600,
-                        color: "#1A1F26",
-                        mb:{lg:6 , xs:4}
-                    }}>
-                        {job.title}
-                    </Typography>
-                </Box>
-                {/*<Box>*/}
-                {/*    <Typography gutterBottom sx={{*/}
-                {/*        my: 3,*/}
-                {/*        fontSize: "16px"*/}
-                {/*    }}>*/}
-                {/*        {job.category} / <b style={{color: "green"}}>{job.title}</b>*/}
-                {/*    </Typography>*/}
-                {/*</Box>*/}
+
                 <Stack direction={{xs: 'column', md: 'row'}} spacing={4} mb={3}>
 
                     <Box
