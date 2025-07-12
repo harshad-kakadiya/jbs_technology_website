@@ -97,7 +97,7 @@ const Clients = () => {
                                         lineHeight: "26px",
                                     }}
                                 >
-                                    From an early-stage startup’s growth strategies to helping existing businesses —
+                                    From an early-stage startup’s growth strategies to helping existing businesses
                                     we’ve done it all! The results speak for themselves. Our services work
                                 </Typography>
                             </Box>

@@ -56,7 +56,7 @@ export default function Home() {
                 counters={[
                     { value: 100 },
                     { value: 160 },
-                    { value: 30 },
+                    { value: 14 },
                     { value: 9300 },
                 ]}
                 counterDetails={[
