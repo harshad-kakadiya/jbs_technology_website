@@ -68,6 +68,10 @@ const Collab = () => {
                                     borderRadius: "30px",
                                     fontSize: {xs: "12px", sm: "14px"},
                                     textTransform: "unset",
+                                    transition: "0.3s",
+                                    ":hover": {
+                                        transform: "translateY(-5px)",
+                                    },
                                 }}
                                 onClick={() => router.push("/contact")}
                             >

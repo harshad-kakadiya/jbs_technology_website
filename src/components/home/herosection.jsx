@@ -104,6 +104,10 @@ function Herosection() {
                                             display: "inline-block",
                                             borderRadius: "1e3px",
                                             cursor:"pointer",
+                                            transition:'0.3s',
+                                            '&:hover': {
+                                                transform:'translateY(-5px)'
+                                            }
                                         }}
                                         onClick={() => router.push('/contact')}
                                     >
