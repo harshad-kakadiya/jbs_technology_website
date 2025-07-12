@@ -7,6 +7,8 @@ import OpenInFullOutlinedIcon from "@mui/icons-material/OpenInFullOutlined";
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
+import {Autoplay} from "swiper/modules";
+
 
 const valuePropositions = [
     {
@@ -29,7 +31,7 @@ const valuePropositions = [
         description: "Grow faster. With scalable digital experiences from a top software development company",
         icon: <OpenInFullOutlinedIcon fontSize="large" />,
     }
-]; 
+];
 
 // ✅ Correct for JavaScript/JSX
 const ValueCard = ({ item }) => (
@@ -110,7 +112,10 @@ const ValuePropositions = () => {
     return (
         <Container maxWidth="xl" sx={{paddingY: 3}}>
             {isSmallScreen ? (
-                <Swiper spaceBetween={10} breakpoints={{
+                <Swiper modules={[Autoplay]} spaceBetween={10} loop={true} autoplay={true} autoplay={{
+                    delay: 3000, // 2 seconds between slides
+                    disableOnInteraction: false,
+                }} breakpoints={{
                     0: {
                         slidesPerView: 1,
                     },
