@@ -55,7 +55,7 @@ function HeadingPage({bgImg, heading, breadcrumbs = []}) {
                                 fontSize: {xs: "15px"},
                                 color: "white",
                                 display: "flex",
-                                mt: {md: "45px", sm: "15px"},
+                                mt: {md: "45px", sm: "15px",xs:"25px"},
                             }}>
                                 {(breadcrumbs.length > 0 && breadcrumbs) && breadcrumbs.map((crumb, index) => (
                                     <React.Fragment key={index}>
