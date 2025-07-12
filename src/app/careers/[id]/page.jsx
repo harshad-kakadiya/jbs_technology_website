@@ -228,27 +228,7 @@ function Page() {
         <Box>
             <HeadingPage bgImg={bg1.src} heading={project.title} breadcrumbs={breadCrumbs}/>
             <Container maxWidth="lg" sx={{py: 12}}>
-                <Box textAlign="center">
-                    <Typography gutterBottom
-                                variant="h2"
-                                component="h2"
-                                sx={{
-                                    fontSize: {xs: "30px", md: "35px", lg: "45px"},
-                                    fontWeight: 600,
-                                    color: "#1A1F26",
-                                    mb: {lg: 6, xs: 4}
-                                }}>
-                        {job.title}
-                    </Typography>
-                </Box>
-                {/*<Box>*/}
-                {/*    <Typography gutterBottom sx={{*/}
-                {/*        my: 3,*/}
-                {/*        fontSize: "16px"*/}
-                {/*    }}>*/}
-                {/*        {job.category} / <b style={{color: "green"}}>{job.title}</b>*/}
-                {/*    </Typography>*/}
-                {/*</Box>*/}
+
                 <Stack direction={{xs: 'column', md: 'row'}} spacing={4} mb={3}>
 
                     <Box
@@ -373,7 +353,7 @@ function Page() {
                                 src={form}
                                 alt="Form"
                                 layout="fill"
-                                style={{objectFit: 'contain'}}
+                                style={{ objectFit: 'contain' }}
                             />
                         </Box>
                     </Grid>
@@ -384,14 +364,13 @@ function Page() {
                             component="form"
                             onSubmit={handleSubmit(onSubmit)}
                             noValidate
-                            sx={{p: 3, bgcolor: '#f5f5f5', borderRadius: 4}}
+                            sx={{ p: 3, bgcolor: '#f5f5f5', borderRadius: 4 }}
                         >
                             <Typography
-                                variant="h3"
-                                component='h3'
+                                variant="h5"
                                 color="#1A1F26"
                                 gutterBottom
-                                sx={{fontSize: {xs: '24px', md: '28px'}, fontWeight: 600, mb: 3}}
+                                sx={{ fontSize: { xs: '24px', md: '28px' }, fontWeight: 600, mb: 3 }}
                             >
                                 Job Application Form
                             </Typography>
@@ -399,7 +378,7 @@ function Page() {
                             <Grid container spacing={2}>
                                 {/* First and Last Name */}
                                 <Grid item xs={12} sm={6}>
-                                    <Box>
+                                    <Box >
                                         <TextField
                                             label="First Name*"
                                             fullWidth
