@@ -405,23 +405,23 @@ const privacyData = [
 function Privacy() {
     return (
         <Container maxWidth="xl">
-            <Box sx={{ padding: "180px 0 50px 0" }}>
+            <Box sx={{ py:{sm:'90px' , xs:'50px'} }}>
                 {privacyData.map((section, index) => (
                     <Box key={index} mb={index === 0 ? 8 : 7}>
                         {/* Section Title */}
-                        {section.title && (
-                            <Typography
-                                variant={index === 0 ? 'h2' : 'h4'}
-                                fontWeight={700}
-                                gutterBottom
-                                sx={{
-                                    color: textColor,
-                                    mb: index === 0 ? 2 : 3
-                                }}
-                            >
-                                {section.title}
-                            </Typography>
-                        )}
+                        {/*{section.title && (*/}
+                        {/*    <Typography*/}
+                        {/*        variant={index === 0 ? 'h2' : 'h4'}*/}
+                        {/*        fontWeight={700}*/}
+                        {/*        gutterBottom*/}
+                        {/*        sx={{*/}
+                        {/*            color: textColor,*/}
+                        {/*            mb: index === 0 ? 2 : 3*/}
+                        {/*        }}*/}
+                        {/*    >*/}
+                        {/*        {section.title}*/}
+                        {/*    </Typography>*/}
+                        {/*)}*/}
 
                         {/* Subtitle */}
                         {section.subtitle && (
