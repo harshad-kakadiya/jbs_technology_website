@@ -21,43 +21,43 @@ import img3 from "../../assets/images/blog/posts/img3.jpg";
 import EastIcon from "@mui/icons-material/East";
 const slides = [
     {
-        navigate:"/blog/marketing",
+        navigate:"/blog/ai-innovation-india",
         image: bg1,
-        date: "23 Apr 24",
+        date: "12 July 2024",
         smallimg: img,
         admin: "By admin",
-        marketing: "Marketing",
+        marketing: "AI & Innovation",
         comments: "Comments",
-        title: "5 Impactful Elements That Promote IT and Business",
+        title: "How AI Is Powering the Next Wave of IT Solutions",
         description:
-            "iscover the core elements that seamlessly connect IT innovations with strategic business goals.\n" +
-            "Unlock transformative growth by aligning technology solutions with real-world business impact.",
+            "Discover how artificial intelligence is transforming IT infrastructure, automation, and user experiences.\n" +
+            "Leverage AI to streamline operations, enhance decision-making, and unlock new levels of innovation.",
     },
     {
-        navigate:"/blog/startup-consulting",
+        navigate:"/blog/agentic-ai-india",
         image: bg2,
-        date: "23 Apr 24",
+        date: "10 July 2024",
         smallimg: img2,
         admin: "By admin",
-        marketing: "Startup Consulting",
+        marketing: "Cloud Computing",
         comments: "Comments",
-        title: "Revolutionizing the Future of Financial Services",
+        title: "The Rise of Agentic AI in Intelligent Automation",
         description:
-            "Explore how emerging technologies are transforming financial services with enhanced efficiency, security, and personalization.\n" +
-            "Step into a smarter tomorrow powered by AI, blockchain, and data-driven innovation in finance.",
+            "Explore how autonomous AI agents are driving adaptive decision-making and continuous learning. Empower businesses with scalable, self-directed systems for smarter operations.\n" +
+            "Redefine enterprise efficiency with agentic AI that learns, evolves, and makes decisions autonomously.",
     },
     {
-        navigate:"/blog/corporate",
+        navigate:"/blog/cybersecurity-trends-india",
         image: bg3,
-        date: "23 Apr 24",
+        date: "08 July 2024",
         smallimg: img3,
         admin: "By admin",
-        marketing: "Corporate",
+        marketing: "Cybersecurity",
         comments: "Comments",
-        title: "A Guide to Embracing Meaningful Change in Banking",
+        title: "Modern Web Development Trends for Scalable Solutions",
         description:
-            "Learn how banks can navigate industry shifts by embracing innovation and prioritizing customer-centric strategies.\n" +
-            "Drive sustainable growth by aligning digital transformation with evolving customer expectations.",
+            "Discover the latest frameworks, best practices, and performance strategies shaping today’s web applications. Build responsive, secure, and future-proof websites.\n" +
+            "Stay ahead in the digital race with scalable architectures and cutting-edge development tools.",
     },
 ];
 function    Blogslider() {

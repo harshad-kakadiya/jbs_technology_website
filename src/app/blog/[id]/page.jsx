@@ -5,12 +5,12 @@ import bg1 from "../../../assets/images/blog/b-1.webp";
 import HeadingPage from "../../../components/global/headingPage";
 
 const posts = [
-    { slug: 'marketing', id: '1', title: '5 Impactful Elements That Promote IT and Business' },
-    { slug: 'startup-consulting', id: '2', title: 'Revolutionizing the Future of Financial Services' },
-    { slug: 'corporate', id: '3', title: 'A Guide to Embracing Meaningful Change in Banking' },
-    { slug: 'startup', id: '4', title: 'For the Wealthy, Work Is the New Retirement' },
-    { slug: 'consulting', id: '5', title: 'Providing best service for customers' },
-    { slug: 'corporatee', id: '6', title: 'A New Age for Trade & Supply Chain Finance' },
+    { slug: 'ai-innovation-india', id: '1', title: 'How AI Is Powering the Next Wave of IT Solutions' },
+    { slug: 'agentic-ai-india', id: '2', title: 'The Rise of Agentic AI in Intelligent Automation' },
+    { slug: 'web-development-india', id: '3', title: 'Modern Web Development Trends for Scalable Solutions' },
+    { slug: 'mobile-app-development-india', id: '4', title: 'Creating Impactful Mobile Apps for a Digital-First World' },
+    { slug: 'ui-ux-design-india', id: '5', title: 'Crafting Exceptional Digital Experiences Through UI/UX' },
+    { slug: 'digital-marketing-india', id: '6', title: 'Digital Marketing Strategies for the Modern Tech Brand' },
 ];
 
 // ✅ SEO: Dynamic Meta Tags
