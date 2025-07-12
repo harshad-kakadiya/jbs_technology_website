@@ -46,7 +46,7 @@ function OurApproach({dynamicContent}) {
                     justifyContent: 'space-between',
                     alignItems: { xs: 'flex-start', md: 'center' },
                     gap: { xs: 3, md: 0 },
-                    mb: 0
+                    mb: 4
                 }}>
                     <Typography
                         variant="h3"
@@ -97,7 +97,7 @@ function OurApproach({dynamicContent}) {
                                 alt="Business consultation meeting"
                                 fill
                                 style={{
-                                    objectFit: 'contain',
+                                    objectFit: 'cover',
                                     objectPosition: 'center'
                                 }}
                                 priority
@@ -122,7 +122,7 @@ function OurApproach({dynamicContent}) {
                                             gap: 2,
                                             mb: 1.5
                                         }}>
-                                            <Box sx={{ pr: 3.5 }}>
+                                            <Box >
                                                 <Box
                                                     sx={{
                                                         borderRadius: "50%",
@@ -148,7 +148,7 @@ function OurApproach({dynamicContent}) {
                                                         fontWeight: 500,
                                                         color: '#0A1119',
                                                         lineHeight: '26px',
-                                                        mb: "19px",
+                                                        mb: "10px",
                                                         wordBreak: 'break-word'
                                                     }}
                                                 >
