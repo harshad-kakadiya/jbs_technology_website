@@ -162,6 +162,7 @@ const Clients = () => {
                                             <Typography
                                                 component="img"
                                                 src={logo.logo11.src}
+                                                alt={'logo'}
                                                 className="logo11"
                                                 sx={{
                                                     position: "absolute",
@@ -176,6 +177,7 @@ const Clients = () => {
                                             <Typography
                                                 component="img"
                                                 src={logo.logo1.src}
+                                                alt={'logo'}
                                                 className="logo1"
                                                 sx={{
                                                     position: "absolute",

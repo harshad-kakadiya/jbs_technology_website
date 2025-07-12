@@ -147,6 +147,7 @@ const TeamPage = () => {
                 <Typography
                     component={'img'}
                     src={Team.src}
+                    alt={'team'}
                     sx={{
                         width: '100%',
                         height: '550px',

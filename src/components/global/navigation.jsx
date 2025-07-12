@@ -115,7 +115,7 @@ function Navigation() {
                                         padding: '12px 30px',
                                         borderColor: (scrolled || path === '/') ? '#000' : '#fff',
                                         color: (scrolled || path === '/') ? '#000' : '#fff',
-                                        ':hover': {backgroundColor: '#000', color: '#fff'},
+                                        ':hover': {backgroundColor: (scrolled || path === '/') ? '#000' : '#fff', color: (scrolled || path === '/') ? '#FFF' : '#000'},
                                     }}
                                     onClick={() => router.push('/contact')}
                                 >

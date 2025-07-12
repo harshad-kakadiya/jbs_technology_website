@@ -70,6 +70,10 @@ const Modification = () => {
                                         textTransform: "none",
                                         px: 4,
                                         py: 1.5,
+                                        transition:'0.3s',
+                                        ":hover": {
+                                            transform: "translateY(-5px)",
+                                        },
                                     }}
                                     onClick={() => router.push("/contact")}
                                 >
@@ -84,9 +88,11 @@ const Modification = () => {
                                         textTransform: "none",
                                         px: 4,
                                         py: 1.5,
+                                        transition:'0.3s',
                                         ":hover": {
                                             backgroundColor: "#1A1F26",
                                             color: "#fff",
+                                            transform: "translateY(-5px)",
                                         },
                                     }}
                                     onClick={() => router.push("/services")}
