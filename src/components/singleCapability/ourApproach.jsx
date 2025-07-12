@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React from 'react';
 import {
     Box,
@@ -13,11 +13,11 @@ import CheckIcon from "@mui/icons-material/Check";
 import Image from 'next/image';
 import img1 from '@/assets/images/singleCapability/svd4.jpg';
 
-function OurApproach() {
-    const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-
-    const services = [
+// 🔸 Dynamic content below
+const dynamicContent = {
+    title: "How we Help you Limit Risks and Launch your Business.",
+    description: "Through experienced startup consultants who understand the isolated tasks necessary, a client can rely on a professional to manage a critical step in the early stages and focus on other items that need attention.",
+    services: [
         {
             id: 1,
             title: "Strategy And Planning",
@@ -33,7 +33,12 @@ function OurApproach() {
             title: "Legal Business Formation",
             description: "Clients have to form a legal structure for their business. Consultants advice on options such as sole proprietor, corporation, LLC, and the pros and cons of it. They also help with other accounts such as banking."
         }
-    ];
+    ]
+};
+
+function OurApproach() {
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
         <Box sx={{
@@ -56,7 +61,7 @@ function OurApproach() {
                     Our Approach
                 </Typography>
 
-                {/* Responsive Title & Description */}
+                {/* Title & Description */}
                 <Box sx={{
                     display: 'flex',
                     flexDirection: { xs: 'column', md: 'row' },
@@ -79,7 +84,7 @@ function OurApproach() {
                             wordBreak: 'break-word'
                         }}
                     >
-                        How we Help you Limit Risks and Launch your Business.
+                        {dynamicContent.title}
                     </Typography>
 
                     <Typography
@@ -93,14 +98,12 @@ function OurApproach() {
                             wordBreak: 'break-word'
                         }}
                     >
-                        Through experienced startup consultants who understand the isolated tasks necessary, a client
-                        can rely on a professional to manage a critical step in the early stages and focus on other
-                        items that need attention.
+                        {dynamicContent.description}
                     </Typography>
                 </Box>
 
                 <Grid container spacing={7} alignItems="center">
-                    {/* Image Section */}
+                    {/* Image */}
                     <Grid item xs={12} md={5}>
                         <Box
                             sx={{
@@ -124,7 +127,7 @@ function OurApproach() {
                         </Box>
                     </Grid>
 
-                    {/* Text Content Section */}
+                    {/* Services List */}
                     <Grid item xs={12} md={7}>
                         <Box sx={{
                             pl: { xs: 0, md: 6, lg: 8 },
@@ -132,7 +135,7 @@ function OurApproach() {
                             pt: { xs: 4, md: 0 }
                         }}>
                             <Stack spacing={4}>
-                                {services.map((service, index) => (
+                                {dynamicContent.services.map((service, index) => (
                                     <Box key={service.id}>
                                         <Box sx={{
                                             display: 'flex',
@@ -190,7 +193,7 @@ function OurApproach() {
                                         </Box>
 
                                         {/* Divider */}
-                                        {index !== services.length - 1 && (
+                                        {index !== dynamicContent.services.length - 1 && (
                                             <Box sx={{ borderBottom: '1px solid #E0E0E0', mt: 3, mb: 2 }} />
                                         )}
                                     </Box>
